@@ -10,6 +10,16 @@ module.exports = {
         psemibold: ["Poppins-SemiBold", "sans-serif"],
         pbold: ["Poppins-Bold", "sans-serif"],
       },
+      colors: {
+        // Primary color
+        primary: "hsl(var(--primary))",
+        secondary: "hsl(var(--secondary))",
+        // Typography
+        foreground: "hsl(var(--foreground))",
+        "foreground-secondary": "hsl(var(--foreground-secondary))",
+        background: "hsl(var(--background))",
+        "background-secondary": "hsl(var(--background-secondary))",
+      },
     },
   },
   plugins: [],

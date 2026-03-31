@@ -1,7 +1,6 @@
 export const useUserData = () => {
   return {
-    name: "Pullolo",
     avatar:
-      "https://static.wikia.nocookie.net/cookierunkingdom/images/a/a6/Strawberry-cookie.png/revision/latest",
+      "https://png.pngtree.com/png-clipart/20250318/original/pngtree-anime-girl-embracing-her-stomach-in-a-delicate-expression-image-clipart-png-image_20679807.png",
   };
 };

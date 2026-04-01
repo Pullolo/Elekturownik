@@ -17,6 +17,8 @@ module.exports = {
         // Typography
         foreground: "hsl(var(--foreground))",
         "foreground-secondary": "hsl(var(--foreground-secondary))",
+        "foreground-primary": "hsl(var(--foreground-primary))",
+        // Backgrounds
         background: "hsl(var(--background))",
         "background-secondary": "hsl(var(--background-secondary))",
       },

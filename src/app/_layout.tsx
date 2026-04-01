@@ -5,6 +5,7 @@ import { useEffect } from "react";
 import { View } from "react-native";
 import "react-native-reanimated";
 import "../global.css";
+import { TabBarProvider } from "../hooks/TabBarContext";
 
 SplashScreen.preventAutoHideAsync();
 
@@ -33,13 +34,17 @@ export default function RootLayout() {
 
   return (
     <View className="flex-1 w-full h-full bg-background">
-      <Stack
-        screenOptions={{
-          headerShown: false,
-        }}
-        initialRouteName="index"
-      ></Stack>
-      <StatusBar style="auto" />
+      <TabBarProvider>
+        <Stack
+          screenOptions={{
+            headerShown: false,
+          }}
+          initialRouteName="index"
+        >
+          <Stack.Screen name="(tabs)" />
+        </Stack>
+        <StatusBar style="auto" />
+      </TabBarProvider>
     </View>
   );
 }

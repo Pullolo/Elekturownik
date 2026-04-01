@@ -1,4 +1,4 @@
-import { Lightbulb } from "lucide-react-native";
+import { LucideProps } from "lucide-react-native";
 import { ReactNode, useState } from "react";
 import { Text, TouchableOpacity, View } from "react-native";
 import Animated, {
@@ -6,17 +6,22 @@ import Animated, {
   FadeOut,
   LinearTransition,
 } from "react-native-reanimated";
+import useColors from "../hooks/useColors";
 
-const AnimatedTouchable = Animated.createAnimatedComponent(TouchableOpacity);
+export const AnimatedTouchable =
+  Animated.createAnimatedComponent(TouchableOpacity);
 
 export default function ExpandableCard({
   text,
   children,
+  LIcon,
 }: {
   text: string;
   children?: ReactNode;
+  LIcon: React.FC<LucideProps>;
 }) {
   const [expanded, setExpanded] = useState(false);
+  const color = useColors();
 
   return (
     <AnimatedTouchable
@@ -27,7 +32,7 @@ export default function ExpandableCard({
     >
       <View className="w-full flex flex-row items-center justify-between">
         <View className="w-fit gap-2 flex flex-row items-center justify-start">
-          <Lightbulb size={32} color={"#EE3F86"} />
+          <LIcon size={32} color={color.primary} />
           <Text className="text-primary font-pmedium text-lg">{text}</Text>
         </View>
         <Text className="text-primary font-pmedium text-3xl">
@@ -36,7 +41,7 @@ export default function ExpandableCard({
       </View>
 
       {expanded && children ? (
-        <Animated.View entering={FadeIn} exiting={FadeOut}>
+        <Animated.View className={"w-full"} entering={FadeIn} exiting={FadeOut}>
           {children}
         </Animated.View>
       ) : null}

@@ -4,12 +4,13 @@
 
 :root {
   /* colors */
-  --primary: 335.66 83.73% 59.02%; /* pink-50  #FBEAF0 */
+  --primary: 335.66 83.73% 59.02%; /* #ee3f86  */
   --secondary: 342 69% 86%; /* pink-100 #F4C0D1 */
 
   /* Typography */
   --foreground: 40 2% 26%; /* gray-800 #444441 */
   --foreground-secondary: 42 2% 53%; /* gray-400 #888780 */
+  --foreground-primary: 335.82 74.44% 35.29% /* pink-800 #9d174d */;
 
   /* Backgrounds */
   --background: 342 71% 95%; /* pink-50  #FBEAF0 */

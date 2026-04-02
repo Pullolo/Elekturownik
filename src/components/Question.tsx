@@ -11,6 +11,7 @@ import {
 import { useState } from "react";
 import { Text, View } from "react-native";
 import { Question } from "../data/types";
+import { pluralize } from "../lib/utils";
 import ExamplesCard from "./ExamplesCard";
 import ExpandableCard from "./ExpandableCard";
 import Badge from "./ui/Badge";
@@ -33,6 +34,11 @@ export default function QuestionCard({
         </Text>
       </View>
     );
+
+  const numOfWords = question.suggested_answer
+    .join(" ")
+    .trim()
+    .split(" ").length;
 
   return (
     <View className="w-full flex flex-col justify-center items-center gap-4">
@@ -59,16 +65,20 @@ export default function QuestionCard({
       </View>
 
       {showAnswer ? (
-        <View className="w-full flex flex-col justify-center items-start h-fit bg-primary rounded-3xl p-4">
-          <View className="w-full flex flex-row gap-2">
-            <Badge text={`Przykładowa odpowiedź`} />
+        <View className="w-full flex flex-col justify-center items-start h-fit bg-white rounded-3xl p-4">
+          <View className="w-full flex flex-row justify-between items-center">
+            <Badge text={`Przykładowa odpowiedź`} theme="primary" />
+            <Badge
+              text={`${pluralize(numOfWords, "słowo", "słowa", "słów")}`}
+              theme="noBackground"
+            />
           </View>
-          <View className="w-full flex-col flex justify-center gap-8 p-4">
+          <View className="w-full flex-col flex justify-center gap-8 py-4 px-2">
             {question.suggested_answer.map((answer, index) => {
               return (
                 <Text
                   key={`mapped-answer-${index}`}
-                  className="text-white font-psemibold text-lg text-pretty"
+                  className="text-foreground/60 font-pregular text-sm text-pretty"
                 >
                   {answer}
                 </Text>
@@ -76,12 +86,14 @@ export default function QuestionCard({
             })}
           </View>
           <View className="w-full flex-row items-center justify-between px-4">
-            <Text className="text-white/50 font-psemibold text-2xl">...</Text>
+            <Text className="text-foreground/50 font-psemibold text-2xl">
+              ...
+            </Text>
             <Text
               onPress={() => {
                 scrollToTop();
               }}
-              className="text-white/50 font-pmedium text-base underline"
+              className="text-foreground/50 font-pmedium text-base underline"
             >
               {"Powrót do pytania"}
             </Text>

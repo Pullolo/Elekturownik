@@ -12,7 +12,7 @@ const ScreenWrapper = ({
   return (
     <SafeAreaView
       className={cn(
-        "flex flex-col gap-8 px-6 pt-12 pb-1 bg-background min-h-screen flex-1",
+        "flex w-full flex-col gap-8 px-6 pt-12 pb-1 bg-background min-h-screen flex-1",
         className,
       )}
     >

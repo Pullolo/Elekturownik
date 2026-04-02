@@ -25,7 +25,7 @@ export default function ExpandableCard({
 
   return (
     <AnimatedTouchable
-      layout={LinearTransition.springify()} // 👈 this animates height automatically
+      layout={LinearTransition.springify()}
       activeOpacity={0.7}
       className="w-full flex flex-col justify-center items-start bg-secondary rounded-3xl p-4 overflow-hidden"
       onPress={() => setExpanded(!expanded)}

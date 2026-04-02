@@ -42,6 +42,7 @@ export default function RootLayout() {
           initialRouteName="index"
         >
           <Stack.Screen name="(tabs)" />
+          <Stack.Screen name="(notabs)" />
         </Stack>
         <StatusBar style="auto" />
       </TabBarProvider>

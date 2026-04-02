@@ -1,18 +1,41 @@
 import DailyQuestionWidget from "@/src/components/DailyQuestionWidget";
 import Heading from "@/src/components/Heading";
+import BooksIconographySvg from "@/src/components/icons/BooksIconographySvg";
+import IdeaIconographySvg from "@/src/components/icons/IdeaIconographySvg";
+import QuestionIconographySvg from "@/src/components/icons/QuestionIconographySvg";
 import ScreenWrapper from "@/src/components/ScreenWrapper";
 import { useTabBar } from "@/src/hooks/TabBarContext";
+import { useBooks } from "@/src/hooks/useBooks";
+import useColors from "@/src/hooks/useColors";
 import { useQuestions } from "@/src/hooks/useQuestions";
-import { getDailyQuestion } from "@/src/lib/utils";
-import { ScrollView, View, Text, TouchableOpacity } from "react-native";
-import { Book, HelpCircle } from "lucide-react-native";
-import { useRouter } from "expo-router";
+import { getDailyQuestion, getRandomPath } from "@/src/lib/utils";
+import { router } from "expo-router";
+import React, { useState } from "react";
+import { ScrollView, Text, TouchableOpacity, View } from "react-native";
+import { DonutChart } from "react-native-circular-chart";
+import { SvgProps } from "react-native-svg";
 
 export default function Home() {
+  const colors = useColors();
+  const DATA = [
+    {
+      name: "Przerobione pytania",
+      value: 30,
+      color: colors.primary,
+    },
+    {
+      name: "Do przerobienia",
+      value: 46,
+      color: colors.secondary,
+    },
+  ];
+
+  const [chartWidth, setChartWidth] = useState(0);
+
   const { questions } = useQuestions();
+  const { books } = useBooks();
   const question = getDailyQuestion([...questions]);
   const { tabBarHeight } = useTabBar();
-  const router = useRouter();
 
   return (
     <ScreenWrapper>
@@ -24,38 +47,105 @@ export default function Home() {
         <Heading text="Witaj" />
         <DailyQuestionWidget question={question} />
 
-        <View className="w-full flex flex-col gap-4">
-          <TouchableOpacity
-            onPress={() => router.push("/books")}
-            className="w-full bg-white rounded-3xl p-6 flex-row items-center gap-5 shadow-sm"
-          >
-            <Book color="#ec4899" size={36} />
-            <View className="flex-1">
-              <Text className="text-pink-500 font-bold text-lg">
-                Spis lektur
-              </Text>
-              <Text className="text-pink-400 text-base mt-1">
-                Przejdź do pełnego spisu lektur
-              </Text>
-            </View>
-          </TouchableOpacity>
+        <View className="flex flex-col w-full gap-4">
+          <View className="w-full flex flex-row gap-4">
+            <GirdCard
+              title="Lista Pytań"
+              description="Przeglądaj pytania maturalne i ćwicz odpowiedzi krok po kroku."
+              onPress={() => router.push("/questions")}
+              Svg={QuestionIconographySvg}
+            />
 
-          <TouchableOpacity
-            onPress={() => router.push("/questions")}
-            className="w-full bg-white rounded-3xl p-6 flex-row items-center gap-5 shadow-sm"
-          >
-            <HelpCircle color="#ec4899" size={36} />
-            <View className="flex-1">
-              <Text className="text-pink-500 font-bold text-lg">
-                Spis pytań
+            <GirdCard
+              title="Spis Lektur"
+              description="Opracowania, motywy i bohaterowie wszystkich lektur."
+              onPress={() => router.push("/books")}
+              Svg={BooksIconographySvg}
+            />
+          </View>
+          <View className="w-full flex flex-row gap-4">
+            <GirdCard
+              title="Zaskocz Mnie"
+              description="Wylosuj pytanie albo opracowanie lektury."
+              onPress={() => {
+                const path = getRandomPath(books, questions);
+                // @ts-ignore
+                router.push(`/(notabs)/${path}`);
+              }}
+              Svg={IdeaIconographySvg}
+            />
+
+            <TouchableOpacity
+              className="flex-1 bg-white rounded-3xl py-4 px-6 flex-col items-start justify-start gap-6 shadow-sm"
+              activeOpacity={0.7}
+              onLayout={(e) => {
+                setChartWidth(Math.round(e.nativeEvent.layout.width - 20 * 2));
+              }}
+            >
+              <Text className="text-primary font-pbold text-lg ">
+                {"Postępy"}
               </Text>
-              <Text className="text-pink-400 text-base mt-1">
-                Przejdź do listy pytań
+              <View className="w-full items-center justify-center">
+                {chartWidth > 0 && (
+                  <DonutChart
+                    data={DATA}
+                    strokeWidth={14}
+                    radius={chartWidth / 2 - 8}
+                    containerWidth={chartWidth}
+                    containerHeight={chartWidth}
+                    type="round"
+                    startAngle={180 + 40}
+                    endAngle={360 + (180 - 40)}
+                    animationType="slide"
+                    labelValueStyle={{
+                      fontSize: 24,
+                      fontFamily: "Poppins-Regular, sans-serif",
+                    }}
+                    labelTitleStyle={{
+                      fontSize: 10,
+                      fontFamily: "Poppins-Regular, sans-serif",
+                      textAlign: "center",
+                    }}
+                  />
+                )}
+              </View>
+              <Text className="text-primary/70 text-sm font-pregular">
+                {"Monitoruj swoje postępy każdego dnia."}
               </Text>
-            </View>
-          </TouchableOpacity>
+            </TouchableOpacity>
+          </View>
         </View>
       </ScrollView>
     </ScreenWrapper>
+  );
+}
+
+export function GirdCard({
+  title,
+  description,
+  onPress,
+  Svg,
+}: {
+  title: string;
+  description: string;
+  onPress?: () => void;
+  Svg?: React.FC<{ color: string } & SvgProps>;
+}) {
+  const colors = useColors();
+
+  return (
+    <TouchableOpacity
+      onPress={onPress}
+      className="flex-1 bg-white rounded-3xl py-4 px-6 flex-col items-start justify-between gap-5 shadow-sm"
+      activeOpacity={0.7}
+    >
+      <Text className="text-primary font-pbold text-lg">{title}</Text>
+      <View className="h-24 w-full">
+        {Svg && <Svg color={colors.primary} />}
+      </View>
+      <Text className="text-primary/70 text-sm font-pregular">
+        {description}
+      </Text>
+    </TouchableOpacity>
   );
 }

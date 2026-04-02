@@ -1,6 +1,6 @@
 import { clsx, type ClassValue } from "clsx";
 import { twMerge } from "tailwind-merge";
-import { Question } from "../data/types";
+import { Book, Question } from "../data/types";
 
 export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
@@ -45,4 +45,49 @@ export function getDailyQuestion(questions: Question[]): Question {
   // Cycle through if list < 365
   const index = dayOfYear % shuffled.length;
   return shuffled[index];
+}
+
+export const clamp = (text: string, maxLength: number) =>
+  text.length > maxLength ? text.slice(0, maxLength - 3) + "..." : text;
+
+export function pluralize(
+  count: number,
+  one: string,
+  few: string,
+  many: string,
+): string {
+  if (count === 1) return `${count} ${one}`;
+  if (
+    count % 10 >= 2 &&
+    count % 10 <= 4 &&
+    (count % 100 < 10 || count % 100 >= 20)
+  )
+    return `${count} ${few}`;
+  return `${count} ${many}`;
+}
+
+export function getRandomPath(
+  books: Book[],
+  questions: Question[],
+): string | null {
+  const pickBook = Math.random() < 0.5;
+
+  if (pickBook && books.length > 0) {
+    const randomBook = books[Math.floor(Math.random() * books.length)];
+    return `book/${randomBook.id}`;
+  }
+
+  if (questions.length > 0) {
+    const randomQuestion =
+      questions[Math.floor(Math.random() * questions.length)];
+    return `question/${randomQuestion.id}`;
+  }
+
+  // fallback if one array is empty
+  if (books.length > 0) {
+    const randomBook = books[Math.floor(Math.random() * books.length)];
+    return `book/${randomBook.id}`;
+  }
+
+  return null;
 }

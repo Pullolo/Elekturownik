@@ -1,7 +1,6 @@
-import colors from "../constants/colors";
+﻿// hooks/useColors.ts
+import { useThemeContext } from "@/src/components/context/ThemeContext";
 
-const useColors = () => {
-  return colors.pink;
-};
-
-export default useColors;
+export default function useColors() {
+  return useThemeContext().colors; // auto-updates on theme change
+}

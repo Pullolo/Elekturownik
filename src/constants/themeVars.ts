@@ -1,0 +1,78 @@
+// constants/themeVars.ts
+import { vars } from "nativewind";
+import { ThemeName } from "./colors";
+
+export const themes = {
+  pink: vars({
+    "--primary": "335.66 83.73% 59.02%",
+    "--secondary": "342 69% 86%",
+    "--foreground": "40 2% 26%",
+    "--foreground-secondary": "42 2% 53%",
+    "--foreground-primary": "335.82 74.44% 35.29%",
+    "--background": "342 71% 95%",
+    "--background-secondary": "43 14% 94%",
+  }),
+  green: vars({
+    "--primary": "145 58% 49%",
+    "--secondary": "135 68% 90%",
+    "--foreground": "56 55% 18%",
+    "--foreground-secondary": "142 72% 32%",
+    "--foreground-primary": "153 56% 32%",
+    "--background": "150 72% 96%",
+    "--background-secondary": "145 76% 90%",
+  }),
+  blue: vars({
+    "--primary": "217 91% 60%",
+    "--secondary": "213 97% 87%",
+    "--foreground": "213 51% 24%",
+    "--foreground-secondary": "213 97% 69%",
+    "--foreground-primary": "221 83% 53%",
+    "--background": "214 100% 97%",
+    "--background-secondary": "213 97% 87%",
+  }),
+  purple: vars({
+    "--primary": "271 81% 65%",
+    "--secondary": "270 95% 93%",
+    "--foreground": "275 90% 18%",
+    "--foreground-secondary": "270 67% 77%",
+    "--foreground-primary": "272 72% 47%",
+    "--background": "270 100% 98%",
+    "--background-secondary": "270 95% 93%",
+  }),
+  red: vars({
+    "--primary": "0 84% 60%",
+    "--secondary": "0 93% 94%",
+    "--foreground": "0 87% 16%",
+    "--foreground-secondary": "0 91% 71%",
+    "--foreground-primary": "0 73% 41%",
+    "--background": "0 86% 97%",
+    "--background-secondary": "0 93% 94%",
+  }),
+  orange: vars({
+    "--primary": "25 95% 53%",
+    "--secondary": "33 100% 88%",
+    "--foreground": "17 89% 13%",
+    "--foreground-secondary": "17 75% 32%",
+    "--foreground-primary": "21 90% 42%",
+    "--background": "33 100% 97%",
+    "--background-secondary": "33 100% 91%",
+  }),
+  yellow: vars({
+    "--primary": "45 93% 47%",
+    "--secondary": "55 97% 88%",
+    "--foreground": "28 87% 13%",
+    "--foreground-secondary": "48 96% 53%",
+    "--foreground-primary": "41 96% 32%",
+    "--background": "55 97% 97%",
+    "--background-secondary": "55 96% 91%",
+  }),
+  gray: vars({
+    "--primary": "220 9% 46%",
+    "--secondary": "220 13% 82%",
+    "--foreground": "220 26% 14%",
+    "--foreground-secondary": "220 9% 61%",
+    "--foreground-primary": "220 13% 26%",
+    "--background": "210 20% 98%",
+    "--background-secondary": "220 14% 96%",
+  }),
+} satisfies Record<ThemeName, ReturnType<typeof vars>>;

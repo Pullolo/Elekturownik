@@ -37,12 +37,12 @@ export default function ExamplesCard({ examples }: { examples: string[] }) {
               activeOpacity={0.7}
             >
               {index === 0 ? null : (
-                <View className="w-full h-[1px] bg-pink-800/10 rounded-full z-50"></View>
+                <View className="w-full h-[1px] bg-foreground-primary/10 rounded-full z-50"></View>
               )}
               <View className="w-full gap-2 flex flex-row items-center justify-between">
                 <View className="w-fit gap-2 flex flex-row items-center justify-start">
                   <Dot size={16} color={colors.foregroundPrimary} />
-                  <Text className="text-pink-800 font-pmedium text-sm">
+                  <Text className="text-foreground-primary font-pmedium text-sm">
                     {visible[index] ? example : "*".repeat(example.length)}
                   </Text>
                 </View>

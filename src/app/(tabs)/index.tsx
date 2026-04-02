@@ -19,12 +19,12 @@ export default function Home() {
   const colors = useColors();
   const DATA = [
     {
-      name: "Przerobione pytania",
+      name: "Nauczone Pytania",
       value: 30,
       color: colors.primary,
     },
     {
-      name: "Do przerobienia",
+      name: "Do Nauczenia",
       value: 46,
       color: colors.secondary,
     },
@@ -100,11 +100,13 @@ export default function Home() {
                     labelValueStyle={{
                       fontSize: 24,
                       fontFamily: "Poppins-Regular, sans-serif",
+                      color: colors.primary,
                     }}
                     labelTitleStyle={{
                       fontSize: 10,
                       fontFamily: "Poppins-Regular, sans-serif",
                       textAlign: "center",
+                      color: colors.primary,
                     }}
                   />
                 )}

@@ -192,12 +192,12 @@ function CharactersSection({ characters }: { characters: Book["characters"] }) {
             key={i}
             className="bg-foreground/[0.03] rounded-2xl p-4 flex flex-col gap-2"
           >
-            <View className="flex flex-row justify-between items-center gap-2">
+            <View className="flex flex-row flex-wrap-reverse justify-between items-center gap-2">
               <Text className="text-foreground font-psemibold text-sm flex-1">
                 {char.name}
               </Text>
               <View className="bg-primary/10 px-2.5 py-0.5 rounded-full shrink-0">
-                <Text className="text-primary font-psemibold text-xs">
+                <Text className="text-primary font-psemibold text-xs text-center">
                   {char.role}
                 </Text>
               </View>

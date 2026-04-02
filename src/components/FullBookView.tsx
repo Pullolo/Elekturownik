@@ -4,6 +4,7 @@ import {
   BookOpen,
   ChevronDown,
   ChevronUp,
+  Languages,
   MessageSquareQuote,
   ScrollText,
   Sparkles,
@@ -40,6 +41,7 @@ export default function FullBookView({ book }: { book: Book }) {
       </Animated.View>
       {book.contexts.length > 0 && <ContextsSection contexts={book.contexts} />}
       {book.quotes.length > 0 && <QuotesSection quotes={book.quotes} />}
+      {book.terms.length > 0 && <TermsSection terms={book.terms} />}
       <ExamSection exam={book.exam} />
     </>
   );
@@ -317,6 +319,32 @@ function QuotesSection({ quotes }: { quotes: Book["quotes"] }) {
             </Text>
             <Text className="text-foreground/40 font-pregular text-xs leading-relaxed">
               {quote.explanation}
+            </Text>
+          </View>
+        ))}
+      </View>
+    </SectionCard>
+  );
+}
+
+function TermsSection({ terms }: { terms: Book["terms"] }) {
+  return (
+    <SectionCard>
+      <SectionLabel
+        text={pluralize(terms.length, "pojęcie", "pojęcia", "pojęć")}
+        Icon={Languages}
+      />
+      <View className="flex flex-col gap-3">
+        {terms.map((terms, i) => (
+          <View
+            key={i}
+            className="border-l-2 border-primary/30 pl-3 flex flex-col gap-1"
+          >
+            <Text className="text-foreground font-pmedium text-sm leading-relaxed italic">
+              {terms.name}
+            </Text>
+            <Text className="text-foreground/40 font-pregular text-xs leading-relaxed">
+              {terms.meaning}
             </Text>
           </View>
         ))}

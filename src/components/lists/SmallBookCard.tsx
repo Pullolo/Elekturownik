@@ -36,8 +36,8 @@ const SmallBookCard = memo(function SmallBookCard({
       </View>
 
       <View className="flex flex-row gap-3 items-center">
-        <View className="w-11 h-11 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
-          <Text className="text-primary font-psemibold text-base">
+        <View className="w-11 h-11 rounded-full bg-secondary/10 flex items-center justify-center shrink-0">
+          <Text className="text-secondary font-psemibold text-base">
             {book.id}
           </Text>
         </View>

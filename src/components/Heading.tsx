@@ -37,7 +37,7 @@ export default function Heading({
     <View className={cn("w-full", className)}>
       <View className="w-full flex flex-row justify-between items-center">
         <View className="flex flex-row gap-4 items-center">
-          <View className="h-16 w-16 bg-secondary rounded-full overflow-hidden flex items-center justify-center">
+          <View className="h-16 w-16 bg-secondary/25 rounded-full overflow-hidden flex items-center justify-center">
             <Image
               style={{ width: "80%", height: "80%" }}
               source={{

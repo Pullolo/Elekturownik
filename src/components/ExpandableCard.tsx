@@ -27,15 +27,15 @@ export default function ExpandableCard({
     <AnimatedTouchable
       layout={LinearTransition.springify()}
       activeOpacity={0.7}
-      className="w-full flex flex-col justify-center items-start bg-secondary rounded-3xl p-4 overflow-hidden"
+      className="w-full flex flex-col justify-center items-start bg-background-secondary rounded-3xl p-4 overflow-hidden"
       onPress={() => setExpanded(!expanded)}
     >
       <View className="w-full flex flex-row items-center justify-between">
         <View className="w-fit gap-2 flex flex-row items-center justify-start">
-          <LIcon size={32} color={color.primary} />
-          <Text className="text-primary font-pmedium text-lg">{text}</Text>
+          <LIcon size={32} color={color.secondary} />
+          <Text className="text-secondary font-pmedium text-lg">{text}</Text>
         </View>
-        <Text className="text-primary font-pmedium text-3xl">
+        <Text className="text-secondary font-pmedium text-3xl">
           {expanded ? "-" : "+"}
         </Text>
       </View>

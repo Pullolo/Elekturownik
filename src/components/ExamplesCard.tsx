@@ -13,11 +13,11 @@ export default function ExamplesCard({ examples }: { examples: string[] }) {
   return (
     <Animated.View
       layout={LinearTransition.springify()}
-      className="w-full flex flex-col gap-4 justify-center items-start bg-secondary rounded-3xl p-4"
+      className="w-full flex flex-col gap-4 justify-center items-start bg-background-secondary rounded-3xl p-4"
     >
       <View className="w-fit gap-2 flex flex-row items-center justify-start">
-        <LibraryBig size={32} color={colors.primary} />
-        <Text className="text-primary font-pmedium text-lg">
+        <LibraryBig size={32} color={colors.secondary} />
+        <Text className="text-secondary font-pmedium text-lg">
           {"Przykładowe konteksty"}
         </Text>
       </View>
@@ -41,15 +41,15 @@ export default function ExamplesCard({ examples }: { examples: string[] }) {
               )}
               <View className="w-full gap-2 flex flex-row items-center justify-between">
                 <View className="w-fit gap-2 flex flex-row items-center justify-start">
-                  <Dot size={16} color={colors.foregroundPrimary} />
-                  <Text className="text-foreground-primary font-pmedium text-sm">
+                  <Dot size={16} color={colors.secondary} />
+                  <Text className="text-foreground/60 font-pmedium text-sm">
                     {visible[index] ? example : "*".repeat(example.length)}
                   </Text>
                 </View>
                 {visible[index] ? (
-                  <Eye size={16} color={colors.foregroundPrimary} />
+                  <Eye size={16} color={colors.secondary} />
                 ) : (
-                  <EyeOff size={16} color={colors.foregroundPrimary} />
+                  <EyeOff size={16} color={colors.secondary} />
                 )}
               </View>
             </TouchableOpacity>

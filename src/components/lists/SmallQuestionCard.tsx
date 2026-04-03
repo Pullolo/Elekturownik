@@ -36,8 +36,8 @@ const SmallQuestionCard = memo(function SmallQuestionCard({
       </View>
 
       <View className="flex flex-row gap-3 items-center">
-        <View className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
-          <Text className="text-primary font-psemibold text-sm">
+        <View className="w-8 h-8 rounded-full bg-secondary/10 flex items-center justify-center shrink-0">
+          <Text className="text-secondary font-psemibold text-sm">
             {question.id}
           </Text>
         </View>

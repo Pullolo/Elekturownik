@@ -11,6 +11,7 @@ import {
 import { useState } from "react";
 import { Text, View } from "react-native";
 import { Question } from "../data/types";
+import useColors from "../hooks/useColors";
 import { pluralize } from "../lib/utils";
 import ExamplesCard from "./ExamplesCard";
 import ExpandableCard from "./ExpandableCard";
@@ -24,6 +25,7 @@ export default function QuestionCard({
   question?: Question;
 }) {
   const [showAnswer, setShowAnswer] = useState(false);
+  const colors = useColors();
 
   if (!question)
     return (
@@ -105,8 +107,8 @@ export default function QuestionCard({
           <ExpandableCard LIcon={ShieldQuestion} text="Objasnienie pytania">
             <View className="w-full gap-2 flex flex-row items-center justify-between">
               <View className="w-full pt-4 gap-2 flex flex-row items-start justify-start">
-                <Dot size={16} color={"#9d174d"} />
-                <Text className="text-foreground-primary font-pmedium text-sm text-wrap w-full pr-8">
+                <Dot size={16} color={colors.secondary} />
+                <Text className="text-secondary font-pmedium text-sm text-wrap w-full pr-8">
                   {question.question_explanation}
                 </Text>
               </View>
@@ -119,7 +121,7 @@ export default function QuestionCard({
                 return (
                   <Badge
                     key={`mapped-tip-${index}`}
-                    theme="primary"
+                    theme="secondary"
                     text={tip}
                     LIcon={index === 0 ? Stars : undefined}
                   />
@@ -145,12 +147,12 @@ export default function QuestionCard({
                     )}
                     <View className="w-full gap-2 flex flex-row items-center justify-between">
                       <View className="w-full gap-2 flex flex-row items-start justify-start">
-                        <Dot size={16} color={"#9d174d"} />
+                        <Dot size={16} color={colors.secondary} />
                         <View className="flex flex-col items-start justify-center gap-1 w-full pr-8">
-                          <Text className="text-foreground-primary font-psemibold text-base text-wrap w-full">
+                          <Text className="text-secondary font-pmedium text-base text-wrap w-full">
                             {`${scheme.rule}`}
                           </Text>
-                          <Text className="text-foreground-primary font-pmedium text-sm text-wrap w-full">
+                          <Text className="text-foreground/60 font-pregular text-xs text-wrap w-full">
                             {`${scheme.starter}`}
                           </Text>
                         </View>

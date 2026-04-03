@@ -76,7 +76,7 @@ export default function Home() {
             />
 
             <TouchableOpacity
-              className="flex-1 bg-white rounded-3xl py-4 px-6 flex-col items-start justify-start gap-6 shadow-sm"
+              className="flex-1 bg-background-secondary rounded-3xl py-4 px-6 flex-col items-start justify-start gap-6 shadow-sm"
               activeOpacity={0.7}
               onLayout={(e) => {
                 setChartWidth(Math.round(e.nativeEvent.layout.width - 20 * 2));
@@ -100,13 +100,13 @@ export default function Home() {
                     labelValueStyle={{
                       fontSize: 24,
                       fontFamily: "Poppins-Regular, sans-serif",
-                      color: colors.primary,
+                      color: colors.secondary,
                     }}
                     labelTitleStyle={{
                       fontSize: 10,
                       fontFamily: "Poppins-Regular, sans-serif",
                       textAlign: "center",
-                      color: colors.primary,
+                      color: colors.secondary,
                     }}
                   />
                 )}
@@ -138,7 +138,7 @@ export function GirdCard({
   return (
     <TouchableOpacity
       onPress={onPress}
-      className="flex-1 bg-white rounded-3xl py-4 px-6 flex-col items-start justify-between gap-5 shadow-sm"
+      className="flex-1 bg-background-secondary rounded-3xl py-4 px-6 flex-col items-start justify-between gap-5 shadow-sm"
       activeOpacity={0.7}
     >
       <Text className="text-primary font-pbold text-lg">{title}</Text>

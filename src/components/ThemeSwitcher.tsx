@@ -19,7 +19,7 @@ const MIXED_THEMES: { name: ThemeName; label: string; subtitle: string }[] = [
   { name: "dusk", label: "Zmierzch", subtitle: "fiolet · róż" },
   { name: "seafoam", label: "Morska piana", subtitle: "turkus · błękit" },
   { name: "ember", label: "Żar", subtitle: "bursztyn · koral" },
-  { name: "arctic", label: "Arktyk", subtitle: "niebo · indygo" },
+  { name: "arctic", label: "Arktyka", subtitle: "niebo · indygo" },
   { name: "bloom", label: "Rozkwit", subtitle: "róż · brzoskwinia" },
   { name: "meadow", label: "Łąka", subtitle: "limonka · szmaragd" },
   { name: "nova", label: "Nova", subtitle: "fiolet · fuksja" },

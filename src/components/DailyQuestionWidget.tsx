@@ -2,6 +2,7 @@ import { router } from "expo-router";
 import { Book, GlobeX, Timer } from "lucide-react-native";
 import { Text, View } from "react-native";
 import { Question } from "../data/types";
+import { clamp } from "../lib/utils";
 import Badge from "./ui/Badge";
 
 export default function DailyQuestionWidget({
@@ -26,10 +27,10 @@ export default function DailyQuestionWidget({
           onPress={() => {
             router.push(`/(notabs)/book/${question.book_id}`);
           }}
-          text={question.book}
+          text={clamp(question.book, 14)}
           LIcon={Book}
         />
-        <Badge text={question.time} LIcon={Timer} />
+        <Badge theme="white" text={question.time} LIcon={Timer} />
       </View>
       <View className="w-full flex p-4">
         <Text className="text-white font-psemibold text-lg text-pretty">

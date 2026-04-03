@@ -3,6 +3,7 @@ import { useState } from "react";
 import { Text, TouchableOpacity, View } from "react-native";
 import Animated, { LinearTransition } from "react-native-reanimated";
 import useColors from "../hooks/useColors";
+import { clamp } from "../lib/utils";
 
 export default function ExamplesCard({ examples }: { examples: string[] }) {
   const colors = useColors();
@@ -43,7 +44,9 @@ export default function ExamplesCard({ examples }: { examples: string[] }) {
                 <View className="w-fit gap-2 flex flex-row items-center justify-start">
                   <Dot size={16} color={colors.secondary} />
                   <Text className="text-foreground/60 font-pmedium text-sm">
-                    {visible[index] ? example : "*".repeat(example.length)}
+                    {visible[index]
+                      ? clamp(example, 38)
+                      : clamp("*".repeat(example.length), 38, "***")}
                   </Text>
                 </View>
                 {visible[index] ? (

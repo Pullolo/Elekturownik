@@ -57,7 +57,7 @@ export default function QuestionCard({
             onPress={() => {
               router.push(`/(notabs)/book/${question.book_id}`);
             }}
-            text={clamp(question.book, 17)}
+            text={clamp(question.book, 14)}
             LIcon={Book}
           />
           <Badge text={question.time} LIcon={Timer} />

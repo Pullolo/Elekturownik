@@ -8,7 +8,7 @@ import AsyncStorage from "@react-native-async-storage/async-storage";
 import { router } from "expo-router";
 import * as Updates from "expo-updates";
 import { ImageOff, Trash } from "lucide-react-native";
-import { DevSettings, ScrollView, View } from "react-native";
+import { DevSettings, ScrollView, Text, View } from "react-native";
 
 const resetApp = async () => {
   await AsyncStorage.clear();
@@ -50,6 +50,14 @@ export default function Settings() {
             icon={Trash}
             variant="error"
           />
+        </View>
+        <View className="w-full flex-col items-center justify-center gap-2">
+          <Text className="font-pregular text-xs text-foreground/25">
+            @Copyright 2026
+          </Text>
+          <Text className="font-pregular text-xs text-foreground/15">
+            Mikołaj Szlosowski | Aleksandra Polaczyk | Martyna Kamecka
+          </Text>
         </View>
       </ScrollView>
     </ScreenWrapper>

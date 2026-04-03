@@ -213,7 +213,7 @@ function CharactersSection({ characters }: { characters: Book["characters"] }) {
               <Text className="text-foreground font-psemibold text-sm flex-1">
                 {char.name}
               </Text>
-              <View className="bg-primary/10 px-2.5 py-0.5 rounded-full shrink-0">
+              <View className="bg-primary/10 px-2.5 py-0.5 rounded-full shrink-0 max-w-64">
                 <Text className="text-primary font-psemibold text-xs text-center">
                   {char.role}
                 </Text>

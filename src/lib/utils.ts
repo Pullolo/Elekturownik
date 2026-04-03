@@ -64,8 +64,8 @@ export function getDailyQuestion(questions: Question[]): Question {
   return shuffled[index];
 }
 
-export const clamp = (text: string, maxLength: number) =>
-  text.length > maxLength ? text.slice(0, maxLength - 3) + "..." : text;
+export const clamp = (text: string, maxLength: number, replacement = "...") =>
+  text.length > maxLength ? text.slice(0, maxLength - 3) + replacement : text;
 
 export function pluralize(
   count: number,

@@ -855,7 +855,7 @@ export const questions: Question[] = [
   {
     id: 13,
     book: "Makbet",
-    book_id: 11,
+    book_id: 13,
     time: "15 min",
     question:
       "Moralna odpowiedzialność za czyny. Omów zagadnienie na podstawie Makbeta Williama Szekspira. W swojej odpowiedzi uwzględnij również wybrany kontekst.",
@@ -926,7 +926,7 @@ export const questions: Question[] = [
   {
     id: 14,
     book: "Makbet",
-    book_id: 11,
+    book_id: 13,
     time: "15 min",
     question:
       "Czy człowiek decyduje o własnym losie? Omów zagadnienie na podstawie Makbeta Williama Szekspira. W swojej odpowiedzi uwzględnij również wybrany kontekst.",
@@ -997,7 +997,7 @@ export const questions: Question[] = [
   {
     id: 15,
     book: "Makbet",
-    book_id: 11,
+    book_id: 13,
     time: "15 min",
     question:
       "Jaki wpływ na człowieka ma sprawowanie przez niego władzy?. Omów zagadnienie na podstawie Makbeta Williama Szekspira. W swojej odpowiedzi uwzględnij również wybrany kontekst.",
@@ -1068,7 +1068,7 @@ export const questions: Question[] = [
   {
     id: 16,
     book: "Skąpiec",
-    book_id: 12,
+    book_id: 14,
     time: "15 min",
     question:
       "Czy dobra materialne czynią człowieka szczęśliwym? Omów zagadnienie na podstawie Skąpca Moliera. W swojej odpowiedzi uwzględnij również wybrany kontekst.",
@@ -1139,7 +1139,7 @@ export const questions: Question[] = [
   {
     id: 17,
     book: "Skąpiec",
-    book_id: 12,
+    book_id: 14,
     time: "15 min",
     question:
       "Przyczyny nieporozumień między rodzicami a dziećmi. Omów zagadnienie na podstawie Skąpca Moliera. W swojej odpowiedzi uwzględnij również wybrany kontekst.",
@@ -1209,7 +1209,7 @@ export const questions: Question[] = [
   {
     id: 18,
     book: "Żona Modna i Pijaństwo",
-    book_id: 13,
+    book_id: 15,
     time: "15 min",
     question:
       "Wady ludzkie w krzywym zwierciadle satyry. Omów zagadnienie na podstawie znanej Ci satyry Ignacego Krasickiego. W swojej odpowiedzi uwzględnij również wybrany kontekst.",
@@ -1280,7 +1280,7 @@ export const questions: Question[] = [
   {
     id: 19,
     book: "Romantyczność",
-    book_id: 14,
+    book_id: 16,
     time: "15 min",
     question:
       "Świat ducha a świat rozumu. Omów zagadnienie na podstawie Romantyczności Adama Mickiewicza. W swojej odpowiedzi uwzględnij również wybrany kontekst.",
@@ -1352,7 +1352,7 @@ export const questions: Question[] = [
   {
     id: 20,
     book: "Romantyczność",
-    book_id: 14,
+    book_id: 16,
     time: "15 min",
     question:
       "Na czym polega ludowa sprawiedliwość? Omów zagadnienie na podstawie znanych Ci ballad Adama Mickiewicza. W swojej odpowiedzi uwzględnij również wybrany kontekst.",
@@ -1424,7 +1424,7 @@ export const questions: Question[] = [
   {
     id: 21,
     book: "Dziady cz. III",
-    book_id: 15,
+    book_id: 17,
     time: "15 min",
     question:
       "Losy młodzieży polskiej pod zaborami. Omów zagadnienie na podstawie Dziadów części III Adama Mickiewicza. W swojej odpowiedzi uwzględnij również wybrany kontekst.",
@@ -1494,7 +1494,7 @@ export const questions: Question[] = [
   {
     id: 22,
     book: "Dziady cz. III",
-    book_id: 15,
+    book_id: 17,
     time: "15 min",
     question:
       "Mesjanizm jako romantyczna idea poświęcenia. Omów zagadnienie na podstawie Dziadów części III Adama Mickiewicza. W swojej odpowiedzi uwzględnij również wybrany kontekst.",
@@ -1565,7 +1565,7 @@ export const questions: Question[] = [
   {
     id: 23,
     book: "Dziady cz. III",
-    book_id: 15,
+    book_id: 17,
     time: "15 min",
     question:
       "Postawy społeczeństwa polskiego wobec zaborcy. Omów zagadnienie na podstawie Dziadów części III Adama Mickiewicza. W swojej odpowiedzi uwzględnij również wybrany kontekst.",
@@ -1636,7 +1636,7 @@ export const questions: Question[] = [
   {
     id: 24,
     book: "Dziady cz. III",
-    book_id: 15,
+    book_id: 17,
     time: "15 min",
     question:
       "Różne postawy człowieka wobec Boga. Omów zagadnienie na podstawie Dziadów części III Adama Mickiewicza. W swojej odpowiedzi uwzględnij również wybrany kontekst.",
@@ -1708,7 +1708,7 @@ export const questions: Question[] = [
   {
     id: 25,
     book: "Dziady cz. III",
-    book_id: 15,
+    book_id: 17,
     time: "15 min",
     question:
       "Jakie prawdy o człowieku ujawniają jego sny albo widzenia? Omów zagadnienie na podstawie Dziadów części III Adama Mickiewicza. W swojej odpowiedzi uwzględnij również wybrany kontekst.",
@@ -1779,7 +1779,7 @@ export const questions: Question[] = [
   {
     id: 26,
     book: "Dziady cz. III",
-    book_id: 15,
+    book_id: 17,
     time: "15 min",
     question:
       "W jakim celu twórca nawiązuje do motywów biblijnych. Omów zagadnienie na podstawie Dziadów części III Adama Mickiewicza. W swojej odpowiedzi uwzględnij również wybrany kontekst.",
@@ -1851,7 +1851,7 @@ export const questions: Question[] = [
   {
     id: 27,
     book: "Dziady cz. III",
-    book_id: 15,
+    book_id: 17,
     time: "15 min",
     question:
       "Walka dobra ze złem o duszę ludzką. Omów zagadnienie na podstawie Dziadów części III Adama Mickiewicza. W swojej odpowiedzi uwzględnij również wybrany kontekst.",
@@ -1922,7 +1922,7 @@ export const questions: Question[] = [
   {
     id: 28,
     book: "Dziady cz. III",
-    book_id: 15,
+    book_id: 17,
     time: "15 min",
     question:
       "Czym dla człowieka może być wolność? Omów zagadnienie na podstawie Dziadów części III Adama Mickiewicza. W swojej odpowiedzi uwzględnij również wybrany kontekst.",
@@ -1993,7 +1993,7 @@ export const questions: Question[] = [
   {
     id: 29,
     book: "Dziady cz. III",
-    book_id: 15,
+    book_id: 17,
     time: "15 min",
     question:
       "Motyw samotności. Omów zagadnienie na podstawie Dziadów części III Adama Mickiewicza. W swojej odpowiedzi uwzględnij również wybrany kontekst.",
@@ -2064,7 +2064,7 @@ export const questions: Question[] = [
   {
     id: 30,
     book: "Lalka",
-    book_id: 15,
+    book_id: 18,
     time: "15 min",
     question:
       "Miłość – siła destrukcyjna czy motywująca do działania. Omów zagadnienie na podstawie Lalki Bolesława Prusa. W swojej odpowiedzi uwzględnij również wybrany kontekst.",
@@ -2135,7 +2135,7 @@ export const questions: Question[] = [
   {
     id: 31,
     book: "Lalka",
-    book_id: 15,
+    book_id: 18,
     time: "15 min",
     question:
       "Praca jako pasja człowieka. Omów zagadnienie na podstawie Lalki Bolesława Prusa. W swojej odpowiedzi uwzględnij również wybrany kontekst.",
@@ -2206,7 +2206,7 @@ export const questions: Question[] = [
   {
     id: 32,
     book: "Lalka",
-    book_id: 15,
+    book_id: 18,
     time: "15 min",
     question:
       "Jaką rolę w relacjach międzyludzkich odgrywają majątek i pochodzenie. Omów zagadnienie na podstawie Lalki Bolesława Prusa. W swojej odpowiedzi uwzględnij również wybrany kontekst.",
@@ -2277,7 +2277,7 @@ export const questions: Question[] = [
   {
     id: 33,
     book: "Lalka",
-    book_id: 15,
+    book_id: 18,
     time: "15 min",
     question:
       "Konfrontacja marzeń z rzeczywistością. Omów zagadnienie na podstawie Lalki Bolesława Prusa. W swojej odpowiedzi uwzględnij również wybrany kontekst.",
@@ -2348,7 +2348,7 @@ export const questions: Question[] = [
   {
     id: 34,
     book: "Lalka",
-    book_id: 15,
+    book_id: 18,
     time: "15 min",
     question:
       "Miasto – przestrzeń przyjazna czy wroga człowiekowi. Omów zagadnienie na podstawie Lalki Bolesława Prusa. W swojej odpowiedzi uwzględnij również wybrany kontekst.",
@@ -2419,7 +2419,7 @@ export const questions: Question[] = [
   {
     id: 35,
     book: "Lalka",
-    book_id: 15,
+    book_id: 18,
     time: "15 min",
     question:
       "Czym dla człowieka mogą być wspomnienia? Omów zagadnienie na podstawie Lalki Bolesława Prusa. W swojej odpowiedzi uwzględnij również wybrany kontekst.",
@@ -2490,7 +2490,7 @@ export const questions: Question[] = [
   {
     id: 36,
     book: "Potop (fragmenty)",
-    book_id: 17,
+    book_id: 19,
     time: "15 min",
     question:
       "Postawy odwagi i tchórzostwa. Omów zagadnienie na podstawie znanych Ci fragmentów Potopu Henryka Sienkiewicza. W swojej odpowiedzi uwzględnij również wybrany kontekst.",
@@ -2561,7 +2561,7 @@ export const questions: Question[] = [
   {
     id: 37,
     book: "Zbrodnia i kara",
-    book_id: 18,
+    book_id: 20,
     time: "15 min",
     question:
       "Walka człowieka ze swoimi słabościami. Omów zagadnienie na podstawie Zbrodni i kary Fiodora Dostojewskiego. W swojej odpowiedzi uwzględnij również wybrany kontekst.",
@@ -2634,7 +2634,7 @@ export const questions: Question[] = [
   {
     id: 38,
     book: "Zbrodnia i kara",
-    book_id: 18,
+    book_id: 20,
     time: "15 min",
     question:
       "Motyw winy i kary. Omów zagadnienie na podstawie Zbrodni i kary Fiodora Dostojewskiego. W swojej odpowiedzi uwzględnij również wybrany kontekst.",
@@ -2705,7 +2705,7 @@ export const questions: Question[] = [
   {
     id: 39,
     book: "Zbrodnia i Kara",
-    book_id: 18,
+    book_id: 20,
     time: "15 min",
     question:
       "Ile człowiek jest gotów poświęcić dla innych. Omów zagadnienie na podstawie Zbrodni i kary Fiodora Dostojewskiego. W swojej odpowiedzi uwzględnij również wybrany kontekst.",
@@ -2776,7 +2776,7 @@ export const questions: Question[] = [
   {
     id: 40,
     book: "Zbrodnia i kara",
-    book_id: 18,
+    book_id: 20,
     time: "15 min",
     question:
       "Co może determinować ludzkie postępowanie. Omów zagadnienie na podstawie Zbrodni i kary Fiodora Dostojewskiego. W swojej odpowiedzi uwzględnij również wybrany kontekst.",
@@ -2848,7 +2848,7 @@ export const questions: Question[] = [
   {
     id: 41,
     book: "Zbrodnia i kara",
-    book_id: 18,
+    book_id: 20,
     time: "15 min",
     question:
       "Motyw przemiany bohatera. Omów zagadnienie na podstawie Zbrodni i kary Fiodora Dostojewskiego. W swojej odpowiedzi uwzględnij również wybrany kontekst.",
@@ -2920,7 +2920,7 @@ export const questions: Question[] = [
   {
     id: 42,
     book: "Wesele",
-    book_id: 19,
+    book_id: 21,
     time: "15 min",
     question:
       "Co utrudnia porozumienie między przedstawicielami różnych grup społecznych. Omów zagadnienie na podstawie Wesela Stanisława Wyspiańskiego. W swojej odpowiedzi uwzględnij również wybrany kontekst.",
@@ -2991,7 +2991,7 @@ export const questions: Question[] = [
   {
     id: 43,
     book: "Wesele",
-    book_id: 19,
+    book_id: 21,
     time: "15 min",
     question:
       "Rola chłopów i inteligencji w sprawie niepodległościowej. Omów zagadnienie na podstawie Wesela Stanisława Wyspiańskiego. W swojej odpowiedzi uwzględnij również wybrany kontekst.",
@@ -3063,7 +3063,7 @@ export const questions: Question[] = [
   {
     id: 44,
     book: "Wesele",
-    book_id: 19,
+    book_id: 21,
     time: "15 min",
     question:
       "Sen o Polsce czy sąd nad Polską. Omów zagadnienie na podstawie Wesela Stanisława Wyspiańskiego. W swojej odpowiedzi uwzględnij również wybrany kontekst.",
@@ -3134,7 +3134,7 @@ export const questions: Question[] = [
   {
     id: 45,
     book: "Wesele",
-    book_id: 19,
+    book_id: 21,
     time: "15 min",
     question:
       "Symboliczne znaczenie widm i zjaw. Omów zagadnienie na podstawie Wesela Stanisława Wyspiańskiego. W swojej odpowiedzi uwzględnij również wybrany kontekst.",
@@ -3206,7 +3206,7 @@ export const questions: Question[] = [
   {
     id: 46,
     book: "Wesele",
-    book_id: 19,
+    book_id: 21,
     time: "15 min",
     question:
       "Motyw tańca. Omów zagadnienie na podstawie Wesela Stanisława Wyspiańskiego. W swojej odpowiedzi uwzględnij również wybrany kontekst.",
@@ -3277,7 +3277,7 @@ export const questions: Question[] = [
   {
     id: 47,
     book: "Chłopi",
-    book_id: 20,
+    book_id: 22,
     time: "15 min",
     question:
       "Obyczaj i tradycja w życiu społeczeństwa. Omów zagadnienie na podstawie znanych Ci fragmentów Chłopów Władysława Stanisława Reymonta. W swojej odpowiedzi uwzględnij również wybrany kontekst.",
@@ -3347,7 +3347,7 @@ export const questions: Question[] = [
   {
     id: 48,
     book: "Przedwiośnie",
-    book_id: 21,
+    book_id: 23,
     time: "15 min",
     question:
       "Jakie znaczenie ma tytuł dla odczytania sensu utworu. Omów zagadnienie na podstawie Przedwiośnia Stefana Żeromskiego. W swojej odpowiedzi uwzględnij również wybrany kontekst.",
@@ -3418,7 +3418,7 @@ export const questions: Question[] = [
   {
     id: 49,
     book: "Przedwiośnie",
-    book_id: 21,
+    book_id: 23,
     time: "15 min",
     question:
       "Wojna i rewolucja jako źródła doświadczeń człowieka. Omów zagadnienie na podstawie Przedwiośnia Stefana Żeromskiego. W swojej odpowiedzi uwzględnij również wybrany kontekst.",
@@ -3491,7 +3491,7 @@ export const questions: Question[] = [
   {
     id: 50,
     book: "Przedwiośnie",
-    book_id: 21,
+    book_id: 23,
     time: "15 min",
     question:
       "Różne wizje odbudowy Polski po odzyskaniu niepodległości. Omów zagadnienie na podstawie Przedwiośnia Stefana Żeromskiego. W swojej odpowiedzi uwzględnij również wybrany kontekst.",
@@ -3563,7 +3563,7 @@ export const questions: Question[] = [
   {
     id: 51,
     book: "Przedwiośnie",
-    book_id: 21,
+    book_id: 23,
     time: "15 min",
     question:
       "Młodość jako czas kształtowania własnej tożsamości. Omów zagadnienie na podstawie Przedwiośnia Stefana Żeromskiego. W swojej odpowiedzi uwzględnij również wybrany kontekst.",
@@ -3634,7 +3634,7 @@ export const questions: Question[] = [
   {
     id: 52,
     book: "Przedwiośnie",
-    book_id: 21,
+    book_id: 23,
     time: "15 min",
     question:
       "Rola autorytetu w życiu człowieka. Omów zagadnienie na podstawie Przedwiośnia Stefana Żeromskiego. W swojej odpowiedzi uwzględnij również wybrany kontekst.",
@@ -3705,7 +3705,7 @@ export const questions: Question[] = [
   {
     id: 53,
     book: "Przedwiośnie",
-    book_id: 21,
+    book_id: 23,
     time: "15 min",
     question:
       "Utopijny i realny obraz rzeczywistości. Omów zagadnienie na podstawie Przedwiośnia Stefana Żeromskiego. W swojej odpowiedzi uwzględnij również wybrany kontekst.",
@@ -3776,7 +3776,7 @@ export const questions: Question[] = [
   {
     id: 54,
     book: "Ferdydurke (fragmenty)",
-    book_id: 22,
+    book_id: 24,
     time: "15 min",
     question:
       "Groteskowy obraz świata. Omów zagadnienie na podstawie znanych Ci fragmentów Ferdydurke Witolda Gombrowicza. W swojej odpowiedzi uwzględnij również wybrany kontekst.",
@@ -3848,7 +3848,7 @@ export const questions: Question[] = [
   {
     id: 55,
     book: "Ferdydurke (fragmenty)",
-    book_id: 22,
+    book_id: 24,
     time: "15 min",
     question:
       "Człowiek wobec presji otoczenia. Omów zagadnienie na podstawie znanych Ci fragmentów Ferdydurke Witolda Gombrowicza. W swojej odpowiedzi uwzględnij również wybrany kontekst.",
@@ -3919,7 +3919,7 @@ export const questions: Question[] = [
   {
     id: 56,
     book: "Proszę państwa do gazu",
-    book_id: 23,
+    book_id: 25,
     time: "15 min",
     question:
       "Człowiek zlagrowany jako ofiara zbrodniczego systemu. Omów zagadnienie na podstawie utworu Proszę państwa do gazu Tadeusza Borowskiego. W swojej odpowiedzi uwzględnij również wybrany kontekst.",
@@ -3990,7 +3990,7 @@ export const questions: Question[] = [
   {
     id: 57,
     book: "Inny świat",
-    book_id: 24,
+    book_id: 26,
     time: "15 min",
     question:
       "Jakie znaczenie ma tytuł dla odczytania sensu utworu. Omów zagadnienie na podstawie znanych Ci fragmentów Innego świata Gustawa Herlinga-Grudzińskiego. W swojej odpowiedzi uwzględnij również wybrany kontekst.",
@@ -4061,7 +4061,7 @@ export const questions: Question[] = [
   {
     id: 58,
     book: "Inny świat",
-    book_id: 24,
+    book_id: 26,
     time: "15 min",
     question:
       "Konsekwencje zniewolenia człowieka. Omów zagadnienie na podstawie znanych Ci fragmentów Innego świata Gustawa Herlinga-Grudzińskiego. W swojej odpowiedzi uwzględnij również wybrany kontekst.",
@@ -4131,222 +4131,224 @@ export const questions: Question[] = [
   },
   {
     id: 59,
-    book: "Inny świat",
-    book_id: 25,
+    book: "Zdążyć przed Panem Bogiem",
+    book_id: 27,
     time: "15 min",
     question:
-      "Czy możliwe jest zachowanie godności w skrajnych sytuacjach. Omów zagadnienie na podstawie Zdążyć przed Panem Bogiem Hanny Krall. W swojej odpowiedzi uwzględnij również wybrany kontekst.",
+      "Czy możliwe jest zachowanie godności w skrajnych sytuacjach? Omów zagadnienie na podstawie Zdążyć przed Panem Bogiem Hanny Krall. W swojej odpowiedzi uwzględnij również wybrany kontekst.",
     question_explanation:
-      "Masz się zastanowić, czy człowiek w ekstremalnych warunkach, takich jak wojna czy obóz, jest w stanie zachować godność. Czy da się pozostać człowiekiem, kiedy wszystko wokół zmusza do walki o przetrwanie. Na przykładzie rozmowy z Markiem Edelmanem pokaż, jak wyglądało to w rzeczywistości, i dorzuć jeszcze jeden kontekst, który pomoże ci to lepiej wyjaśnić.",
+      "Chodzi o to, żeby zastanowić się, czy człowiek w ekstremalnych warunkach, np. wojny czy zagłady, może nadal zachować godność. Masz pokazać na przykładach z książki, jak ludzie się zachowywali i czy ich wybory były godne. Potem dorzucasz jeszcze jeden kontekst, który pomoże ci lepiej to wyjaśnić.",
     tips: [
-      "godność człowieka",
-      "skrajne warunki wojny",
-      "getto warszawskie",
       "Marek Edelman",
-      "wybory moralne",
-      "poświęcenie i solidarność",
-      "odczłowieczenie",
-      "walka o człowieczeństwo",
+      "getto warszawskie",
+      "powstanie w getcie",
+      "ratowanie życia",
+      "śmierć i wybór",
+      "godność człowieka",
+      "dehumanizacja",
+      "moralne decyzje",
     ],
     contexts: [
       {
-        title: "Inny świat Gustawa Herlinga Grudzińskiego",
+        title: "Inny świat Gustaw Herling-Grudziński",
         description:
-          "Obraz życia w łagrze pokazuje, jak trudno zachować godność w systemie opresji, ale jednocześnie ukazuje jednostki, które mimo wszystko próbują zachować moralność i człowieczeństwo.",
+          "Obóz pracy jako miejsce skrajnego upodlenia człowieka, w którym więźniowie muszą podejmować trudne decyzje, aby przetrwać, często kosztem własnej moralności.",
       },
       {
-        title: "Medaliony Zofii Nałkowskiej",
+        title: "Dżuma Albert Camus",
         description:
-          "Zbiór opowiadań ukazuje dehumanizację w czasie wojny, ale także momenty, w których ludzie próbują ocalić resztki godności poprzez współczucie i pamięć o ofiarach.",
+          "Postawa doktora Rieux pokazuje, że nawet w obliczu epidemii i śmierci można zachować godność poprzez solidarność i walkę o życie innych.",
       },
     ],
     schema: [
       {
         rule: "Wstęp",
         starter:
-          "Skrajne sytuacje, takie jak wojna czy obozy koncentracyjne, wystawiają człowieka na najtrudniejsze próby, zmuszając go do walki o przetrwanie.",
+          "W sytuacjach skrajnych, takich jak wojna czy zagłada, człowiek zostaje poddany ogromnej próbie, która wystawia na sprawdzian jego wartości i człowieczeństwo.",
       },
       {
         rule: "Teza",
         starter:
-          "Uważam, że nawet w najbardziej ekstremalnych warunkach możliwe jest zachowanie godności, choć wymaga to ogromnej siły moralnej.",
-      },
-      {
-        rule: "Argument 1 - Zdążyć przed Panem Bogiem",
-        starter:
-          "Przykładem potwierdzającym tę tezę jest postawa Marka Edelmana opisana w reportażu Hanny Krall.",
-      },
-      {
-        rule: "Argument 2 - Inny świat",
-        starter:
-          "Podobny problem ukazuje Gustaw Herling Grudziński w Innym świecie, przedstawiając życie w łagrze.",
-      },
-      {
-        rule: "Konteksty",
-        starter:
-          "Motyw zachowania godności w nieludzkich warunkach pojawia się także w innych utworach literackich.",
-      },
-      {
-        rule: "Podsumowanie",
-        starter:
-          "Podsumowując, zachowanie godności w skrajnych sytuacjach jest możliwe, choć niezwykle trudne i wymaga heroizmu.",
-      },
-    ],
-    suggested_answer: [
-      "Skrajne sytuacje, takie jak wojna czy obozy koncentracyjne, wystawiają człowieka na najtrudniejsze próby, zmuszając go do walki o przetrwanie. W takich warunkach często dochodzi do załamania norm moralnych i dehumanizacji. Pojawia się więc pytanie, czy w takich realiach możliwe jest zachowanie godności.",
-      "Uważam, że nawet w najbardziej ekstremalnych warunkach możliwe jest zachowanie godności, choć wymaga to ogromnej siły moralnej i odwagi. Nie każdy jest w stanie sprostać takiemu wyzwaniu, ale istnieją przykłady ludzi, którzy potrafili zachować człowieczeństwo mimo wszystko.",
-      "Przykładem potwierdzającym tę tezę jest postawa Marka Edelmana opisana w reportażu Hanny Krall Zdążyć przed Panem Bogiem. Edelman jako uczestnik powstania w getcie warszawskim podejmował dramatyczne decyzje, wybierając, kogo można jeszcze uratować. Mimo tragicznych okoliczności starał się kierować współczuciem i poczuciem odpowiedzialności za innych. Jego działania świadczą o tym, że nawet w obliczu śmierci można zachować godność poprzez troskę o drugiego człowieka.",
-      "Podobny problem ukazuje Gustaw Herling Grudziński w Innym świecie, przedstawiając życie w łagrze. Więźniowie byli zmuszani do walki o przetrwanie kosztem innych, co często prowadziło do utraty godności. Jednak niektórzy bohaterowie starali się zachować człowieczeństwo, pomagając innym lub nie godząc się na moralne upadki. Pokazuje to, że nawet w systemie totalitarnego zniewolenia możliwe jest zachowanie wewnętrznej wolności.",
-      "Motyw zachowania godności w nieludzkich warunkach pojawia się także w Medalionach Zofii Nałkowskiej. Autorka ukazuje okrucieństwo wojny, ale jednocześnie podkreśla znaczenie pamięci i świadectwa jako formy ocalenia godności ofiar. Nawet w obliczu śmierci człowiek może zachować swoją wartość poprzez prawdę i pamięć.",
-      "Podsumowując, zachowanie godności w skrajnych sytuacjach jest możliwe, choć niezwykle trudne i wymaga heroizmu. Literatura pokazuje, że nawet w najgorszych warunkach człowiek może pozostać wierny swoim wartościom i zachować człowieczeństwo.",
-    ],
-  },
-  {
-    id: 60,
-    book: "Inny świat",
-    book_id: 25,
-    time: "15 min",
-    question:
-      "Zagłada z perspektywy świadka i uczestnika wydarzeń w getcie. Omów zagadnienie na podstawie Zdążyć przed Panem Bogiem Hanny Krall. W swojej odpowiedzi uwzględnij również wybrany kontekst.",
-    question_explanation:
-      "Masz pokazać, jak wyglądała Zagłada widziana oczami osoby, która ją przeżyła i brała w niej udział. Chodzi o to, żebyś opisał, jak Marek Edelman opowiada o getcie, powstaniu i śmierci ludzi. Pamiętaj też, żeby dodać drugi przykład z innego tekstu albo historii, który pomoże lepiej zrozumieć temat.",
-    tips: [
-      "Marek Edelman jako świadek i uczestnik",
-      "realizm i brak patosu",
-      "codzienność śmierci w getcie",
-      "decyzje o życiu i śmierci",
-      "powstanie w getcie warszawskim",
-      "rola pamięci i opowiadania historii",
-      "odczłowieczenie i walka o godność",
-    ],
-    contexts: [
-      {
-        title: "Medaliony Zofii Nałkowskiej",
-        description:
-          "Zbiór opowiadań ukazujących Zagładę z perspektywy świadków. Pokazuje, jak zwykli ludzie relacjonują okrucieństwo wojny i jak wpływa ono na psychikę człowieka.",
-      },
-      {
-        title: "Pamiętnik z powstania warszawskiego Mirona Białoszewskiego",
-        description:
-          "Relacja uczestnika wydarzeń wojennych widzianych z perspektywy cywila. Podobnie jak u Edelmana, dominuje codzienność, chaos i próba przetrwania.",
-      },
-    ],
-    schema: [
-      {
-        rule: "Wstęp",
-        starter:
-          "Zagłada była jednym z najbardziej tragicznych doświadczeń XX wieku, a jej obraz utrwalony został w licznych relacjach świadków i uczestników wydarzeń.",
-      },
-      {
-        rule: "Teza",
-        starter:
-          "Relacja Marka Edelmana pokazuje Zagładę w sposób odarty z patosu, jako brutalną codzienność, w której człowiek zmuszony jest do podejmowania dramatycznych decyzji.",
+          "Uważam, że nawet w najbardziej ekstremalnych warunkach możliwe jest zachowanie godności, choć wymaga to ogromnej siły wewnętrznej i odwagi.",
       },
       {
         rule: "Argument 1",
         starter:
-          "W Zdążyć przed Panem Bogiem Marek Edelman przedstawia życie w getcie jako nieustanną walkę o przetrwanie.",
+          "Przykładem potwierdzającym tę tezę jest postawa Marka Edelmana w reportażu Zdążyć przed Panem Bogiem Hanny Krall.",
       },
       {
         rule: "Argument 2",
         starter:
-          "Jako uczestnik powstania w getcie Edelman ukazuje także dramatyczne wybory dotyczące życia i śmierci innych ludzi.",
+          "Godność można dostrzec także w decyzjach podejmowanych przez ludzi w getcie, którzy mimo braku nadziei starali się zachować człowieczeństwo.",
       },
       {
         rule: "Konteksty",
         starter:
-          "Podobny obraz Zagłady odnajdujemy w Medalionach Zofii Nałkowskiej, gdzie również dominuje perspektywa świadka.",
+          "Podobny problem ukazuje również literatura obozowa, na przykład w Innym świecie Gustawa Herlinga-Grudzińskiego.",
       },
       {
         rule: "Podsumowanie",
         starter:
-          "Relacje świadków i uczestników Zagłady ukazują jej prawdziwy, wstrząsający wymiar oraz znaczenie pamięci o tych wydarzeniach.",
+          "Podsumowując, zachowanie godności w skrajnych sytuacjach jest możliwe, choć niezwykle trudne i wymagające heroizmu.",
       },
     ],
     suggested_answer: [
-      "Zagłada była jednym z najbardziej tragicznych doświadczeń XX wieku, a jej obraz utrwalony został w licznych relacjach świadków i uczestników wydarzeń. Szczególne znaczenie mają świadectwa osób, które nie tylko obserwowały, ale również brały udział w dramatycznych wydarzeniach.",
-      "Relacja Marka Edelmana pokazuje Zagładę w sposób odarty z patosu, jako brutalną codzienność, w której człowiek zmuszony jest do podejmowania dramatycznych decyzji. Bohater nie idealizuje rzeczywistości, lecz przedstawia ją w sposób surowy i realistyczny.",
-      "W Zdążyć przed Panem Bogiem Marek Edelman przedstawia życie w getcie jako nieustanną walkę o przetrwanie. Ludzie umierają masowo, a śmierć staje się czymś powszednim. Edelman opisuje selekcje, choroby i głód, które prowadzą do stopniowego wyniszczenia społeczności żydowskiej.",
-      "Jako uczestnik powstania w getcie Edelman ukazuje także dramatyczne wybory dotyczące życia i śmierci innych ludzi. Jako lekarz decyduje, komu można pomóc, a komu nie, co pokazuje ogrom moralnego ciężaru, jaki spoczywał na jednostce w tych ekstremalnych warunkach.",
-      "Podobny obraz Zagłady odnajdujemy w Medalionach Zofii Nałkowskiej, gdzie również dominuje perspektywa świadka. Bohaterowie opowiadań relacjonują wydarzenia w sposób rzeczowy, co jeszcze bardziej podkreśla grozę sytuacji i skalę okrucieństwa.",
-      "Relacje świadków i uczestników Zagłady ukazują jej prawdziwy, wstrząsający wymiar oraz znaczenie pamięci o tych wydarzeniach. Dzięki nim możliwe jest zachowanie prawdy o historii i refleksja nad granicami człowieczeństwa.",
+      "W sytuacjach skrajnych, takich jak wojna czy zagłada, człowiek zostaje poddany ogromnej próbie, która wystawia na sprawdzian jego wartości i człowieczeństwo. Warunki te często prowadzą do dehumanizacji, jednak nie zawsze odbierają ludziom możliwość zachowania godności.",
+      "Uważam, że nawet w najbardziej ekstremalnych warunkach możliwe jest zachowanie godności, choć wymaga to ogromnej siły wewnętrznej i odwagi. Człowiek może ją zachować poprzez swoje wybory, postawy i sposób traktowania innych.",
+      "Przykładem potwierdzającym tę tezę jest postawa Marka Edelmana w reportażu Zdążyć przed Panem Bogiem Hanny Krall. Jako uczestnik powstania w getcie warszawskim, Edelman podejmował dramatyczne decyzje dotyczące życia i śmierci innych ludzi. Mimo świadomości nieuchronnej klęski, walczył, aby umrzeć z godnością i zachować człowieczeństwo. Po wojnie jako lekarz nadal ratował życie, co pokazuje jego konsekwencję w działaniu zgodnym z wartościami.",
+      "Godność można dostrzec także w decyzjach podejmowanych przez ludzi w getcie, którzy mimo braku nadziei starali się zachować człowieczeństwo. Wybór walki zamiast biernego oczekiwania na śmierć był wyrazem sprzeciwu wobec odczłowieczenia i próbą zachowania własnej wartości jako człowieka.",
+      "Podobny problem ukazuje również literatura obozowa, na przykład w Innym świecie Gustawa Herlinga-Grudzińskiego. Więźniowie łagrów byli poddawani nieludzkim warunkom, które często prowadziły do utraty moralności. Jednak niektórzy bohaterowie potrafili zachować godność poprzez solidarność, pomoc innym czy wierność swoim zasadom, mimo że wiązało się to z ogromnym cierpieniem.",
+      "Podsumowując, zachowanie godności w skrajnych sytuacjach jest możliwe, choć niezwykle trudne i wymagające heroizmu. Przykłady z literatury pokazują, że nawet w obliczu śmierci człowiek może pozostać wierny swoim wartościom i zachować człowieczeństwo.",
     ],
   },
   {
-    id: 61,
-    book: "Inny świat",
-    book_id: 25,
+    id: 60,
+    book: "Zdążyć przed Panem Bogiem",
+    book_id: 27,
     time: "15 min",
     question:
-      "Walka o życie z perspektywy wojennej i powojennej. Omów zagadnienie na podstawie Zdążyć przed Panem Bogiem Hanny Krall. W swojej odpowiedzi uwzględnij również wybrany kontekst.",
+      "Zagłada z perspektywy świadka i uczestnika wydarzeń w getcie. Omów zagadnienie na podstawie Zdążyć przed Panem Bogiem Hanny Krall. W swojej odpowiedzi uwzględnij również wybrany kontekst.",
     question_explanation:
-      "Masz pokazać, jak wyglądała walka o życie w czasie wojny i po jej zakończeniu. Chodzi o to, żeby porównać, czy ta walka się zmienia, jakie ma formy i co znaczy dla człowieka. Wykorzystujesz przykład z książki Krall i dokładasz jeszcze jeden kontekst, który pomoże to lepiej zrozumieć.",
+      "Masz pokazać, jak wyglądała Zagłada oczami kogoś, kto nie tylko ją widział, ale też w niej uczestniczył. Chodzi o Marka Edelmana, który był w getcie i opowiada o tym z własnej perspektywy. Masz pokazać, co czuł, jak podejmował decyzje i jak rozumiał to, co się działo. Do tego dodaj jeszcze jeden kontekst, który pomoże lepiej zrozumieć temat, np. inną książkę o Holokauście.",
     tips: [
-      "Marek Edelman jako bohater",
-      "getto warszawskie i powstanie",
-      "ratowanie życia jako wartość",
-      "walka lekarza po wojnie",
-      "etyka wyborów",
-      "ciągłość doświadczenia wojny",
-      "kontekst np. Inny świat lub literatura obozowa",
+      "Marek Edelman",
+      "świadek i uczestnik",
+      "getto warszawskie",
+      "powstanie w getcie",
+      "decyzje moralne",
+      "śmierć i ratowanie życia",
+      "reportaż",
+      "perspektywa indywidualna",
     ],
     contexts: [
       {
         title: "Inny świat Gustawa Herlinga-Grudzińskiego",
         description:
-          "Pokazuje walkę o przetrwanie w łagrze, gdzie życie jest sprowadzone do biologicznego minimum. Uzupełnia obraz wojennej walki o życie o realia sowieckiego systemu represji.",
+          "Ukazuje doświadczenie obozu z perspektywy więźnia, który jest jednocześnie świadkiem i uczestnikiem systemu totalitarnego. Pozwala porównać różne doświadczenia graniczne i sposoby ich opisywania.",
       },
       {
         title: "Medaliony Zofii Nałkowskiej",
         description:
-          "Ukazują brutalność wojny i dehumanizację człowieka, co podkreśla dramatyczne warunki walki o życie oraz moralne konsekwencje tych doświadczeń.",
+          "Zbiór opowiadań opartych na relacjach świadków Zagłady. Pokazuje, jak różne osoby relacjonują traumatyczne wydarzenia i jak język próbuje oddać niewyobrażalne doświadczenie.",
       },
     ],
     schema: [
       {
         rule: "Wstęp",
         starter:
-          "Wojna i jej następstwa zmuszają człowieka do nieustannej walki o życie, która przybiera różne formy w zależności od okoliczności.",
+          "Zagłada Żydów podczas II wojny światowej była jednym z najbardziej tragicznych doświadczeń w historii ludzkości, które na zawsze zmieniło sposób postrzegania człowieka i moralności.",
       },
       {
         rule: "Teza",
         starter:
-          "Walka o życie w czasie wojny i po jej zakończeniu ma różny charakter, jednak zawsze wiąże się z koniecznością podejmowania trudnych, często moralnie skomplikowanych decyzji.",
+          "Relacja świadka i jednocześnie uczestnika wydarzeń, jak w reportażu Hanny Krall, pozwala ukazać Zagładę w sposób najbardziej autentyczny i przejmujący.",
       },
       {
         rule: "Argument 1",
         starter:
-          "W czasie wojny walka o życie ma wymiar bezpośredni i dramatyczny, co ukazuje postać Marka Edelmana w reportażu Krall.",
+          "Marek Edelman jako uczestnik powstania w getcie warszawskim przedstawia rzeczywistość Zagłady z perspektywy osoby zaangażowanej w walkę i codzienne przetrwanie.",
       },
       {
         rule: "Argument 2",
         starter:
-          "Po wojnie walka o życie nie znika, lecz zmienia swój charakter, co widoczne jest w pracy Edelmana jako lekarza.",
+          "Jako świadek wydarzeń Edelman opisuje nie tylko fakty, ale także emocje, dylematy moralne i trudne wybory, które musieli podejmować mieszkańcy getta.",
       },
       {
         rule: "Konteksty",
         starter:
-          "Podobne doświadczenia odnajdujemy również w innych utworach literackich, takich jak Inny świat Gustawa Herlinga-Grudzińskiego.",
+          "Podobny sposób ukazywania doświadczenia granicznego można zauważyć w innym utworze literackim, który również przedstawia perspektywę świadka i uczestnika.",
       },
       {
         rule: "Podsumowanie",
         starter:
-          "Podsumowując, walka o życie pozostaje jednym z najważniejszych doświadczeń człowieka zarówno w czasie wojny, jak i po jej zakończeniu.",
+          "Perspektywa świadka i uczestnika pozwala lepiej zrozumieć dramatyzm Zagłady oraz indywidualne doświadczenia ludzi uwikłanych w historię.",
       },
     ],
     suggested_answer: [
-      "Wojna i jej następstwa zmuszają człowieka do nieustannej walki o życie, która przybiera różne formy w zależności od okoliczności. Ekstremalne warunki sprawiają, że życie staje się najwyższą wartością, a jego ocalenie wymaga odwagi, determinacji i często trudnych wyborów.",
-      "Walka o życie w czasie wojny i po jej zakończeniu ma różny charakter, jednak zawsze wiąże się z koniecznością podejmowania trudnych, często moralnie skomplikowanych decyzji.",
-      "W czasie wojny walka o życie ma wymiar bezpośredni i dramatyczny, co ukazuje postać Marka Edelmana w reportażu Hanny Krall Zdążyć przed Panem Bogiem. Jako uczestnik powstania w getcie warszawskim Edelman codziennie stykał się ze śmiercią i musiał podejmować decyzje, kto ma szansę przeżyć. Walka o życie oznaczała nie tylko fizyczne przetrwanie, ale także zachowanie godności w obliczu nieuchronnej zagłady. Bohater podkreśla, że ratowanie choćby jednego człowieka było formą sprzeciwu wobec śmierci i systemu eksterminacji.",
-      "Po wojnie walka o życie nie znika, lecz zmienia swój charakter, co widoczne jest w pracy Edelmana jako lekarza. Zamiast walki z wrogiem podejmuje on walkę z chorobą i śmiercią w szpitalu. Nadal jednak towarzyszy mu poczucie odpowiedzialności za ludzkie życie i świadomość jego kruchości. Doświadczenia wojenne wpływają na jego postawę, czyniąc z niego człowieka, który nie godzi się na śmierć i stara się jej przeciwdziałać w każdy możliwy sposób.",
-      "Podobne doświadczenia odnajdujemy również w Innym świecie Gustawa Herlinga-Grudzińskiego, gdzie więźniowie łagru walczą o przetrwanie w nieludzkich warunkach. Ich życie sprowadza się do biologicznej egzystencji, a codzienność wymaga podejmowania decyzji, które często stoją w sprzeczności z moralnością. Pokazuje to, że walka o życie w systemach totalitarnych ma charakter skrajny i odczłowieczający.",
-      "Podsumowując, walka o życie pozostaje jednym z najważniejszych doświadczeń człowieka zarówno w czasie wojny, jak i po jej zakończeniu. Choć zmieniają się jej formy, niezmienne pozostaje jej znaczenie oraz wpływ na psychikę i postawy ludzi, którzy jej doświadczyli.",
+      "Zagłada Żydów podczas II wojny światowej była jednym z najbardziej tragicznych doświadczeń w historii ludzkości, które na zawsze zmieniło sposób postrzegania człowieka i moralności. Literatura podejmująca ten temat często opiera się na relacjach świadków, jednak szczególną wartość mają świadectwa osób, które były nie tylko obserwatorami, ale i uczestnikami wydarzeń.",
+      "Relacja świadka i jednocześnie uczestnika wydarzeń, jak w reportażu Hanny Krall, pozwala ukazać Zagładę w sposób najbardziej autentyczny i przejmujący. Dzięki temu czytelnik ma dostęp nie tylko do faktów, ale również do emocji i osobistych przeżyć.",
+      "Marek Edelman jako uczestnik powstania w getcie warszawskim przedstawia rzeczywistość Zagłady z perspektywy osoby zaangażowanej w walkę i codzienne przetrwanie. Opowiada o organizacji powstania, o wyborach dotyczących życia i śmierci oraz o próbach zachowania godności w nieludzkich warunkach. Jego relacja jest konkretna, pozbawiona patosu, co dodatkowo wzmacnia jej autentyczność.",
+      "Jako świadek wydarzeń Edelman opisuje nie tylko fakty, ale także emocje, dylematy moralne i trudne wybory, które musieli podejmować mieszkańcy getta. Szczególnie poruszające są fragmenty dotyczące selekcji i decyzji o tym, kogo można uratować. Pokazuje to tragizm sytuacji, w której człowiek zmuszony jest decydować o życiu innych.",
+      "Podobny sposób ukazywania doświadczenia granicznego można zauważyć w Medalionach Zofii Nałkowskiej. Tam również pojawiają się relacje świadków, które ukazują okrucieństwo Zagłady i próbę zrozumienia tego, co się wydarzyło. Różne głosy świadków tworzą obraz rzeczywistości przekraczającej ludzkie wyobrażenie.",
+      "Perspektywa świadka i uczestnika pozwala lepiej zrozumieć dramatyzm Zagłady oraz indywidualne doświadczenia ludzi uwikłanych w historię. Dzięki takim relacjom pamięć o tych wydarzeniach pozostaje żywa, a czytelnik może głębiej przeżyć i zrozumieć tragedię tamtych czasów.",
+    ],
+  },
+  {
+    id: 61,
+    book: "Zdążyć przed Panem Bogiem, Hanna Krall",
+    book_id: 27,
+    time: "15 min",
+    question:
+      "Walka o życie z perspektywy wojennej i powojennej. Omów zagadnienie na podstawie Zdążyć przed Panem Bogiem Hanny Krall. W swojej odpowiedzi uwzględnij również wybrany kontekst.",
+    question_explanation:
+      "Masz pokazać, jak wyglądała walka o życie w czasie wojny oraz po jej zakończeniu. Chodzi o porównanie tych dwóch sytuacji na podstawie historii Marka Edelmana. W czasie wojny walczyło się o przetrwanie w getcie, a po wojnie o ratowanie życia jako lekarz. Masz też dodać inny przykład z literatury lub historii, który pomoże lepiej wyjaśnić temat.",
+    tips: [
+      "getto warszawskie",
+      "powstanie w getcie",
+      "Marek Edelman",
+      "ratowanie życia",
+      "lekarz kardiolog",
+      "wartość życia",
+      "heroizm codzienności",
+      "kontrast wojna pokój",
+    ],
+    contexts: [
+      {
+        title: "Medaliony Zofii Nałkowskiej",
+        description:
+          "Ukazują brutalną walkę o przetrwanie w czasie wojny i odczłowieczenie ofiar, co pozwala porównać różne formy walki o życie w ekstremalnych warunkach.",
+      },
+      {
+        title: "Dżuma Alberta Camusa",
+        description:
+          "Pokazuje walkę o życie w czasie epidemii, gdzie bohaterowie ratują innych mimo zagrożenia, co stanowi uniwersalny kontekst dla postawy lekarza Edelmana po wojnie.",
+      },
+    ],
+    schema: [
+      {
+        rule: "Wstęp",
+        starter:
+          "Walka o życie to jedno z najbardziej podstawowych doświadczeń człowieka, które w różnych okolicznościach przybiera odmienne formy.",
+      },
+      {
+        rule: "Teza",
+        starter:
+          "W Zdążyć przed Panem Bogiem Hanny Krall walka o życie ukazana jest zarówno w realiach wojennych, jak i powojennych, a jej sens zmienia się wraz z kontekstem historycznym.",
+      },
+      {
+        rule: "Argument 1",
+        starter:
+          "W czasie wojny walka o życie w getcie warszawskim miała dramatyczny i zbiorowy charakter.",
+      },
+      {
+        rule: "Argument 2",
+        starter:
+          "Po wojnie walka o życie przybiera zupełnie inny wymiar, co widać w pracy Marka Edelmana jako lekarza.",
+      },
+      {
+        rule: "Konteksty",
+        starter:
+          "Podobne rozumienie walki o życie można dostrzec również w innych utworach literackich.",
+      },
+      {
+        rule: "Podsumowanie",
+        starter:
+          "Podsumowując, walka o życie w czasie wojny i po jej zakończeniu różni się formą, ale zachowuje wspólny sens.",
+      },
+    ],
+    suggested_answer: [
+      "Walka o życie to jedno z najbardziej podstawowych doświadczeń człowieka, które w różnych okolicznościach przybiera odmienne formy. Szczególnie wyraźnie widać to w sytuacjach granicznych, takich jak wojna czy choroba, kiedy życie staje się najwyższą wartością.",
+      "W Zdążyć przed Panem Bogiem Hanny Krall walka o życie ukazana jest zarówno w realiach wojennych, jak i powojennych, a jej sens zmienia się wraz z kontekstem historycznym. Bohater reportażu, Marek Edelman, doświadcza obu tych rzeczywistości i nadaje im głębokie znaczenie.",
+      "W czasie wojny walka o życie w getcie warszawskim miała dramatyczny i zbiorowy charakter. Ludzie walczyli o każdy dzień, o jedzenie, o uniknięcie deportacji do obozu śmierci. Edelman jako uczestnik powstania w getcie podejmuje walkę, która z góry skazana jest na porażkę, ale ma wymiar moralny. Chodzi nie tylko o przetrwanie, lecz także o zachowanie godności i wybór sposobu umierania.",
+      "Po wojnie walka o życie przybiera zupełnie inny wymiar, co widać w pracy Marka Edelmana jako lekarza kardiologa. Teraz jego zadaniem jest ratowanie pojedynczych istnień ludzkich. Edelman staje się kimś, kto próbuje oszukać śmierć, działając szybko i zdecydowanie. W przeciwieństwie do wojny, tutaj walka ma charakter indywidualny i daje realną szansę na zwycięstwo.",
+      "Podobne rozumienie walki o życie można dostrzec również w Dżumie Alberta Camusa. Doktor Rieux, podobnie jak Edelman, walczy o życie ludzi, mimo że często jest to walka nierówna. Obaj bohaterowie kierują się poczuciem obowiązku i przekonaniem, że każde życie ma wartość, niezależnie od okoliczności.",
+      "Podsumowując, walka o życie w czasie wojny i po jej zakończeniu różni się formą, ale zachowuje wspólny sens. W obu przypadkach jest wyrazem człowieczeństwa i sprzeciwu wobec śmierci. Zarówno w getcie, jak i w szpitalu, człowiek stara się zrobić wszystko, by ocalić życie, nawet jeśli szanse są niewielkie.",
     ],
   },
   {
     id: 62,
     book: "Dżuma",
-    book_id: 26,
+    book_id: 28,
     time: "15 min",
     question:
       "Co skłania człowieka do poświęceń. Omów zagadnienie na podstawie Dżumy Alberta Camusa. W swojej odpowiedzi uwzględnij również wybrany kontekst.",
@@ -4417,7 +4419,7 @@ export const questions: Question[] = [
   {
     id: 63,
     book: "Dżuma",
-    book_id: 26,
+    book_id: 28,
     time: "15 min",
     question:
       "Człowiek wobec cierpienia i śmierci. Omów zagadnienie na podstawie Dżumy Alberta Camusa. W swojej odpowiedzi uwzględnij również wybrany kontekst.",
@@ -4488,7 +4490,7 @@ export const questions: Question[] = [
   {
     id: 64,
     book: "Dżuma",
-    book_id: 26,
+    book_id: 28,
     time: "15 min",
     question:
       "Czy możliwa jest przyjaźń w sytuacjach skrajnych. Omów zagadnienie na podstawie Dżumy Alberta Camusa. W swojej odpowiedzi uwzględnij również wybrany kontekst.",
@@ -4559,7 +4561,7 @@ export const questions: Question[] = [
   {
     id: 65,
     book: "Dżuma",
-    book_id: 26,
+    book_id: 28,
     time: "15 min",
     question:
       "Jakie postawy przyjmuje człowiek wobec zła? Omów zagadnienie na podstawie Dżumy Alberta Camusa. W swojej odpowiedzi uwzględnij również wybrany kontekst.",
@@ -4630,7 +4632,7 @@ export const questions: Question[] = [
   {
     id: 66,
     book: "Rok 1984",
-    book_id: 27,
+    book_id: 29,
     time: "15 min",
     question:
       "Czy możliwe jest zbudowanie doskonałego państwa? Omów zagadnienie na podstawie utworu Rok 1984 George’a Orwella. W swojej odpowiedzi uwzględnij również wybrany kontekst.",
@@ -4701,7 +4703,7 @@ export const questions: Question[] = [
   {
     id: 67,
     book: "Rok 1984",
-    book_id: 27,
+    book_id: 29,
     time: "15 min",
     question:
       "Jak zachować wolność w państwie totalitarnym. Omów zagadnienie na podstawie utworu Rok 1984 George’a Orwella. W swojej odpowiedzi uwzględnij również wybrany kontekst.",
@@ -4772,7 +4774,7 @@ export const questions: Question[] = [
   {
     id: 68,
     book: "Rok 1984",
-    book_id: 27,
+    book_id: 29,
     time: "15 min",
     question:
       "Znaczenie propagandy w państwie totalitarnym. Omów zagadnienie na podstawie utworu Rok 1984 George’a Orwella. W swojej odpowiedzi uwzględnij również wybrany kontekst.",
@@ -4843,7 +4845,7 @@ export const questions: Question[] = [
   {
     id: 69,
     book: "Rok 1984",
-    book_id: 27,
+    book_id: 29,
     time: "15 min",
     question:
       "Nowomowa jako sposób na ograniczenie wolności człowieka. Omów zagadnienie na podstawie utworu Rok 1984 George’a Orwella. W swojej odpowiedzi uwzględnij również wybrany kontekst.",
@@ -4920,7 +4922,7 @@ export const questions: Question[] = [
   {
     id: 70,
     book: "Tango",
-    book_id: 28,
+    book_id: 30,
     time: "15 min",
     question:
       "Bunt przeciwko porządkowi społecznemu. Omów zagadnienie na podstawie Tanga Sławomira Mrożka. W swojej odpowiedzi uwzględnij również wybrany kontekst.",
@@ -4991,7 +4993,7 @@ export const questions: Question[] = [
   {
     id: 71,
     book: "Tango",
-    book_id: 28,
+    book_id: 30,
     time: "15 min",
     question:
       "Konflikt pokoleń. Omów zagadnienie na podstawie Tanga Sławomira Mrożka. W swojej odpowiedzi uwzględnij również wybrany kontekst.",
@@ -5062,7 +5064,7 @@ export const questions: Question[] = [
   {
     id: 72,
     book: "Tango",
-    book_id: 28,
+    book_id: 30,
     time: "15 min",
     question:
       "Normy społeczne – ograniczają człowieka czy porządkują życie. Omów zagadnienie na podstawie Tanga Sławomira Mrożka. W swojej odpowiedzi uwzględnij również wybrany kontekst.",
@@ -5133,7 +5135,7 @@ export const questions: Question[] = [
   {
     id: 73,
     book: "Górą Edek (z tomu Prawo prerii)",
-    book_id: 29,
+    book_id: 31,
     time: "15 min",
     question:
       "W jakim celu autor nawiązuje w swoim tekście do innego tekstu. Omów zagadnienie na podstawie utworu Górą Edek Marka Nowakowskiego. W swojej odpowiedzi uwzględnij również wybrany kontekst.",
@@ -5203,8 +5205,8 @@ export const questions: Question[] = [
   },
   {
     id: 74,
-    book: "Miejsce (z tomu Opowieści galicyjskie)",
-    book_id: 30,
+    book: "Miejsce",
+    book_id: 33,
     time: "15 min",
     question:
       "Miejsca ważne w życiu człowieka. Omów zagadnienie na podstawie Miejsca Andrzeja Stasiuka. W swojej odpowiedzi uwzględnij również wybrany kontekst.",
@@ -5273,7 +5275,7 @@ export const questions: Question[] = [
   {
     id: 75,
     book: "Profesor Andrews w Warszawie (z tomu Gra na wielu bębenkach)",
-    book_id: 31,
+    book_id: 32,
     time: "15 min",
     question:
       "Stan wojenny z perspektywy obcokrajowca. Omów zagadnienie na podstawie utworu Profesor Andrews w Warszawie Olgi Tokarczuk. W swojej odpowiedzi uwzględnij również wybrany kontekst.",
@@ -5344,7 +5346,7 @@ export const questions: Question[] = [
   {
     id: 76,
     book: "Podróże z Herodotem (fragmenty)",
-    book_id: 32,
+    book_id: 34,
     time: "15 min",
     question:
       "Czym dla człowieka może być podróżowanie. Omów zagadnienie na podstawie znanych Ci fragmentów Podróży z Herodotem Ryszarda Kapuścińskiego. W swojej odpowiedzi uwzględnij również wybrany kontekst.",

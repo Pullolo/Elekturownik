@@ -24,7 +24,7 @@ const TabBar = ({ state, descriptors, navigation }: BottomTabBarProps) => {
       }
     >
       <BlurView
-        intensity={60}
+        intensity={80}
         tint="systemChromeMaterial"
         className="flex-row justify-around items-center"
       >

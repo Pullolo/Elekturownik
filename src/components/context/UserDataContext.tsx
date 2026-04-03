@@ -11,6 +11,7 @@ const DEFAULT_AVATAR = "https://api.dicebear.com/9.x/rings/svg";
 type UserDataContextType = {
   avatar: string;
   pickAvatar: () => Promise<void>;
+  restoreDefaultAvatar: () => Promise<void>;
 };
 
 const UserDataContext = createContext<UserDataContextType | null>(null);
@@ -20,6 +21,13 @@ const colorDefaultAvatar = (colors: ColorScheme) =>
 export function UserDataProvider({ children }: { children: React.ReactNode }) {
   const colors = useColors();
   const [avatar, setAvatar] = useState<string>(colorDefaultAvatar(colors));
+
+  const restoreDefaultAvatar = async () => {
+    const defaultAvatar = colorDefaultAvatar(colors);
+
+    setAvatar(defaultAvatar); // update UI immediately
+    await AsyncStorage.setItem(AVATAR_KEY, defaultAvatar);
+  };
 
   useEffect(() => {
     setAvatar((prev) => {
@@ -103,7 +111,9 @@ export function UserDataProvider({ children }: { children: React.ReactNode }) {
   };
 
   return (
-    <UserDataContext.Provider value={{ avatar, pickAvatar }}>
+    <UserDataContext.Provider
+      value={{ avatar, pickAvatar, restoreDefaultAvatar }}
+    >
       {children}
     </UserDataContext.Provider>
   );

@@ -2,21 +2,106 @@ import { useLearnedItemsContext } from "@/src/components/context/LearnedItemsCon
 import SmallBookCard from "@/src/components/lists/SmallBookCard";
 import ScreenWrapper from "@/src/components/ScreenWrapper";
 import BackButton from "@/src/components/ui/BackButton";
+import FilterChip from "@/src/components/ui/FilterChip";
+import SearchBar from "@/src/components/ui/SearchBar";
 import { books } from "@/src/data/books";
 import { Book } from "@/src/data/types";
 import { useTabBar } from "@/src/hooks/TabBarContext";
-import { useCallback } from "react";
-import { FlatList, View } from "react-native";
+import { useDebounce } from "@/src/hooks/useDebounce";
+import { pluralize } from "@/src/lib/utils";
+import { useCallback, useMemo, useState } from "react";
+import { FlatList, ScrollView, Text, View } from "react-native";
+
+type EpochFilter = Book["epoch"] | "Wszystkie";
+type LearnedFilter = "Wszystkie" | "Nauczone" | "Nienauczone";
+
+const EPOCHS: EpochFilter[] = [
+  "Wszystkie",
+  "Antyk",
+  "Średniowiecze",
+  "Renesans",
+  "Barok",
+  "Oświecenie",
+  "Romantyzm",
+  "Pozytywizm",
+  "Młoda Polska",
+  "XX-lecie międzywojenne",
+  "Współczesność",
+];
+
+const LEARNED_FILTERS: LearnedFilter[] = [
+  "Wszystkie",
+  "Nauczone",
+  "Nienauczone",
+];
 
 export default function Books() {
   const { tabBarHeight } = useTabBar();
   const { isBookLearned } = useLearnedItemsContext();
+
+  const [query, setQuery] = useState("");
+  const debouncedQuery = useDebounce(query, 500);
+  const [epochFilter, setEpochFilter] = useState<EpochFilter>("Wszystkie");
+  const [learnedFilter, setLearnedFilter] =
+    useState<LearnedFilter>("Wszystkie");
+
+  const filteredBooks = useMemo(() => {
+    const q = debouncedQuery.toLowerCase().trim();
+    return books.filter((book) => {
+      // Epoch filter
+      if (epochFilter !== "Wszystkie" && book.epoch !== epochFilter)
+        return false;
+
+      // Learned filter
+      const learned = isBookLearned(book.id.toString());
+      if (learnedFilter === "Nauczone" && !learned) return false;
+      if (learnedFilter === "Nienauczone" && learned) return false;
+
+      // Search query — title, author, keywords, themes, motifs
+      if (q) {
+        const keywords = book.exam.keywords.join(" ").toLowerCase();
+        const themes = book.themes
+          .map((t) => t.name)
+          .join(" ")
+          .toLowerCase();
+        const motifs = book.motifs
+          .map((m) => m.name)
+          .join(" ")
+          .toLowerCase();
+        const searchable = [
+          book.title,
+          book.author,
+          book.epoch,
+          keywords,
+          themes,
+          motifs,
+        ]
+          .join(" ")
+          .toLowerCase();
+        if (!searchable.includes(q)) return false;
+      }
+
+      return true;
+    });
+  }, [debouncedQuery, epochFilter, learnedFilter, isBookLearned]);
 
   const renderItem = useCallback(
     ({ item }: { item: Book }) => (
       <SmallBookCard book={item} learned={isBookLearned(item.id.toString())} />
     ),
     [isBookLearned],
+  );
+
+  const header = (
+    <TopOfTheBooks
+      query={query}
+      onQueryChange={setQuery}
+      epochFilter={epochFilter}
+      onEpochChange={setEpochFilter}
+      learnedFilter={learnedFilter}
+      onLearnedChange={setLearnedFilter}
+      resultCount={filteredBooks.length}
+    />
   );
 
   return (
@@ -26,19 +111,84 @@ export default function Books() {
         contentContainerStyle={{ paddingBottom: tabBarHeight }}
         showsVerticalScrollIndicator={false}
         contentContainerClassName="flex w-full flex-col gap-2 justify-center pb-4"
-        data={books}
+        data={filteredBooks}
         keyExtractor={(item) => `rendered-book-flat-list-${item.id.toString()}`}
         renderItem={renderItem}
-        ListHeaderComponent={TopOfTheBooks}
+        ListHeaderComponent={header}
+        ListEmptyComponent={
+          <View className="flex items-center justify-center py-16">
+            <Text className="text-gray-400 text-base">Brak wyników</Text>
+          </View>
+        }
       />
     </ScreenWrapper>
   );
 }
 
-function TopOfTheBooks() {
+type HeaderProps = {
+  query: string;
+  onQueryChange: (v: string) => void;
+  epochFilter: EpochFilter;
+  onEpochChange: (v: EpochFilter) => void;
+  learnedFilter: LearnedFilter;
+  onLearnedChange: (v: LearnedFilter) => void;
+  resultCount: number;
+};
+
+function TopOfTheBooks({
+  query,
+  onQueryChange,
+  epochFilter,
+  onEpochChange,
+  learnedFilter,
+  onLearnedChange,
+  resultCount,
+}: HeaderProps) {
   return (
-    <View className="w-full flex flex-col gap-6 pb-6">
+    <View className="w-full flex flex-col gap-4 pb-4">
       <BackButton text="Wszystkie lektury" />
+
+      {/* Search bar */}
+      <SearchBar
+        placeholder="Szukaj tytułu, autora, motywu…"
+        query={query}
+        onQueryChange={onQueryChange}
+      />
+
+      <View className="w-full flex flex-col gap-2">
+        {/* Learned filter chips */}
+        <View className="flex-row gap-2">
+          {LEARNED_FILTERS.map((f) => (
+            <FilterChip
+              key={f}
+              label={f}
+              active={learnedFilter === f}
+              onPress={() => onLearnedChange(f)}
+            />
+          ))}
+        </View>
+
+        {/* Epoch filter — horizontal scroll */}
+        <ScrollView
+          horizontal
+          showsHorizontalScrollIndicator={false}
+          contentContainerClassName="flex-row gap-2 pr-4"
+        >
+          {EPOCHS.map((e) => (
+            <FilterChip
+              key={e}
+              label={e}
+              active={epochFilter === e}
+              onPress={() => onEpochChange(e)}
+            />
+          ))}
+        </ScrollView>
+      </View>
+
+      {/* Result count */}
+      <Text className="text-xs text-gray-400 px-1">
+        {`${resultCount} / ${pluralize(books.length, "lektura", "lektury", "lektur")}`}
+      </Text>
     </View>
   );
 }

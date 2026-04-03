@@ -97,6 +97,7 @@ export default function Home() {
             <TouchableOpacity
               className="flex-1 bg-background-secondary rounded-3xl py-4 px-6 flex-col items-start justify-start gap-6 shadow-sm"
               activeOpacity={0.7}
+              onPress={() => router.push("/(notabs)/progress")}
               onLayout={(e) => {
                 setChartWidth(Math.round(e.nativeEvent.layout.width - 20 * 2));
               }}

@@ -30,6 +30,23 @@ function shuffleWithSeed<T>(arr: T[], seed: number): T[] {
   return shuffled;
 }
 
+export function getDailyBook(books: Book[]): Book {
+  const today = new Date();
+  const year = today.getFullYear();
+
+  // Day of year (0-indexed)
+  const start = new Date(year, 0, 0);
+  const diff = today.getTime() - start.getTime();
+  const dayOfYear = Math.floor(diff / (1000 * 60 * 60 * 24)) - 1;
+
+  // Shuffle using year as seed — resets every year
+  const shuffled = shuffleWithSeed(books, year);
+
+  // Cycle through if list < 365
+  const index = dayOfYear % shuffled.length;
+  return shuffled[index];
+}
+
 export function getDailyQuestion(questions: Question[]): Question {
   const today = new Date();
   const year = today.getFullYear();

@@ -2,6 +2,7 @@ import colors, { ThemeName } from "@/src/constants/colors";
 import { cn } from "@/src/lib/utils";
 import { Text, TouchableOpacity, View } from "react-native";
 import { useThemeContext } from "./context/ThemeContext";
+import Divider from "./ui/Divider";
 
 const SOLID_THEMES: { name: ThemeName; label: string }[] = [
   { name: "pink", label: "Różowy" },
@@ -153,7 +154,7 @@ export default function ThemeSwitcher() {
       </View>
 
       {/* Divider */}
-      <View className="h-px bg-foreground/10" />
+      <Divider />
 
       {/* Mixed themes */}
       <View className="flex flex-col gap-2">

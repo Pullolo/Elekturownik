@@ -9,8 +9,9 @@ import { useTabBar } from "@/src/hooks/TabBarContext";
 import { useBooks } from "@/src/hooks/useBooks";
 import useColors from "@/src/hooks/useColors";
 import { useQuestions } from "@/src/hooks/useQuestions";
-import { getDailyQuestion, getRandomPath } from "@/src/lib/utils";
+import { getDailyBook, getDailyQuestion, getRandomPath } from "@/src/lib/utils";
 import { router } from "expo-router";
+import { Languages } from "lucide-react-native";
 import React, { useEffect, useState } from "react";
 import { ScrollView, Text, TouchableOpacity, View } from "react-native";
 import { DonutChart } from "react-native-circular-chart";
@@ -53,6 +54,7 @@ export default function Home() {
   const [chartWidth, setChartWidth] = useState(0);
 
   const question = getDailyQuestion([...questions]);
+  const book = getDailyBook([...books]);
   const { tabBarHeight } = useTabBar();
 
   return (
@@ -62,9 +64,8 @@ export default function Home() {
         showsVerticalScrollIndicator={false}
         contentContainerClassName="flex flex-col gap-6 items-start justify-center pb-4"
       >
-        <Heading text="Witaj" />
+        <Heading text="Hejka" />
         <DailyQuestionWidget question={question} />
-
         <View className="flex flex-col w-full gap-4">
           <View className="w-full flex flex-row gap-4">
             <GirdCard
@@ -136,6 +137,33 @@ export default function Home() {
             </TouchableOpacity>
           </View>
         </View>
+        {book.terms.length > 0 && (
+          <View
+            className={`bg-background-secondary rounded-3xl p-5 flex flex-col gap-5 w-full self-start`}
+          >
+            <View className="flex flex-row items-center justify-start gap-2">
+              <Languages size={24} color={colors.primary} />
+              <Text className="text-primary font-pbold text-lg">
+                {`Dzisiejsze pojęcia - ${book.title}`}
+              </Text>
+            </View>
+            <View className="flex flex-col gap-3">
+              {book.terms.map((terms, i) => (
+                <View
+                  key={i}
+                  className="border-l-2 border-secondary/30 pl-3 flex flex-col gap-1"
+                >
+                  <Text className="text-foreground font-pmedium text-sm leading-relaxed italic">
+                    {terms.name}
+                  </Text>
+                  <Text className="text-foreground/40 font-pregular text-xs leading-relaxed">
+                    {terms.meaning}
+                  </Text>
+                </View>
+              ))}
+            </View>
+          </View>
+        )}
       </ScrollView>
     </ScreenWrapper>
   );

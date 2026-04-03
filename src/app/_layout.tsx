@@ -6,6 +6,7 @@ import { View } from "react-native";
 import "react-native-reanimated";
 import { LearnedItemsProvider } from "../components/context/LearnedItemsContext";
 import { ThemeProvider } from "../components/context/ThemeContext";
+import { UserDataProvider } from "../components/context/UserDataContext";
 import "../global.css";
 import { TabBarProvider } from "../hooks/TabBarContext";
 
@@ -37,20 +38,22 @@ export default function RootLayout() {
   return (
     <ThemeProvider>
       <LearnedItemsProvider>
-        <View className="flex-1 w-full h-full bg-background">
-          <TabBarProvider>
-            <Stack
-              screenOptions={{
-                headerShown: false,
-              }}
-              initialRouteName="index"
-            >
-              <Stack.Screen name="(tabs)" />
-              <Stack.Screen name="(notabs)" />
-            </Stack>
-            <StatusBar style="auto" />
-          </TabBarProvider>
-        </View>
+        <UserDataProvider>
+          <View className="flex-1 w-full h-full bg-background">
+            <TabBarProvider>
+              <Stack
+                screenOptions={{
+                  headerShown: false,
+                }}
+                initialRouteName="index"
+              >
+                <Stack.Screen name="(tabs)" />
+                <Stack.Screen name="(notabs)" />
+              </Stack>
+              <StatusBar style="auto" />
+            </TabBarProvider>
+          </View>
+        </UserDataProvider>
       </LearnedItemsProvider>
     </ThemeProvider>
   );

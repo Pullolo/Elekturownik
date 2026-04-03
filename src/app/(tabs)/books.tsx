@@ -1,3 +1,4 @@
+import { useLearnedItemsContext } from "@/src/components/context/LearnedItemsContext";
 import SmallBookCard from "@/src/components/lists/SmallBookCard";
 import ScreenWrapper from "@/src/components/ScreenWrapper";
 import BackButton from "@/src/components/ui/BackButton";
@@ -9,10 +10,13 @@ import { FlatList, View } from "react-native";
 
 export default function Books() {
   const { tabBarHeight } = useTabBar();
+  const { isBookLearned } = useLearnedItemsContext();
 
   const renderItem = useCallback(
-    ({ item }: { item: Book }) => <SmallBookCard book={item} learned={false} />,
-    [],
+    ({ item }: { item: Book }) => (
+      <SmallBookCard book={item} learned={isBookLearned(item.id.toString())} />
+    ),
+    [isBookLearned],
   );
 
   return (

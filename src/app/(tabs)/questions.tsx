@@ -1,3 +1,4 @@
+import { useLearnedItemsContext } from "@/src/components/context/LearnedItemsContext";
 import SmallQuestionCard from "@/src/components/lists/SmallQuestionCard";
 import ScreenWrapper from "@/src/components/ScreenWrapper";
 import BackButton from "@/src/components/ui/BackButton";
@@ -9,12 +10,16 @@ import { FlatList, View } from "react-native";
 
 export default function Questions() {
   const { tabBarHeight } = useTabBar();
+  const { isQuestionLearned } = useLearnedItemsContext();
 
   const renderItem = useCallback(
     ({ item }: { item: Question }) => (
-      <SmallQuestionCard question={item} learned={false} />
+      <SmallQuestionCard
+        question={item}
+        learned={isQuestionLearned(item.id.toString())}
+      />
     ),
-    [],
+    [isQuestionLearned],
   );
 
   return (

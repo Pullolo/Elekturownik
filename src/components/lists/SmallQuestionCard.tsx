@@ -27,7 +27,11 @@ const SmallQuestionCard = memo(function SmallQuestionCard({
     >
       <View className="flex flex-row justify-between items-center gap-2">
         <View className="flex flex-row gap-2 flex-wrap flex-1">
-          <Badge text={clamp(question.book, 24)} LIcon={Book} theme="primary" />
+          <Badge
+            text={clamp(question.book, learned ? 16 : 28)}
+            LIcon={Book}
+            theme="primary"
+          />
           {learned && <Badge text="Nauczone" theme="success" LIcon={Check} />}
         </View>
         <View className="shrink-0">
@@ -89,7 +93,7 @@ function StatPill({
   return (
     <View className="flex flex-row gap-1 items-center">
       <Icon size={12} color={colors.foreground} />
-      <Text className="text-foreground/75 font-pregular text-xs">{label}</Text>
+      <Text className="text-foreground/60 font-pregular text-xs">{label}</Text>
     </View>
   );
 }

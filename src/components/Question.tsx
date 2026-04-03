@@ -1,5 +1,7 @@
+import { router } from "expo-router";
 import {
   Book,
+  Check,
   Dot,
   GlobeX,
   Lightbulb,
@@ -7,15 +9,18 @@ import {
   ShieldQuestion,
   Stars,
   Timer,
+  X,
 } from "lucide-react-native";
 import { useState } from "react";
 import { Text, View } from "react-native";
 import { Question } from "../data/types";
 import useColors from "../hooks/useColors";
-import { pluralize } from "../lib/utils";
+import { clamp, pluralize } from "../lib/utils";
+import { useLearnedItemsContext } from "./context/LearnedItemsContext";
 import ExamplesCard from "./ExamplesCard";
 import ExpandableCard from "./ExpandableCard";
 import Badge from "./ui/Badge";
+import Button from "./ui/Button";
 
 export default function QuestionCard({
   scrollToTop,
@@ -26,6 +31,7 @@ export default function QuestionCard({
 }) {
   const [showAnswer, setShowAnswer] = useState(false);
   const colors = useColors();
+  const { isQuestionLearned, toggleLearned } = useLearnedItemsContext();
 
   if (!question)
     return (
@@ -47,7 +53,13 @@ export default function QuestionCard({
       <View className="w-full flex flex-col justify-center items-start h-fit bg-primary rounded-3xl p-4">
         <View className="w-full flex flex-row gap-2">
           <Badge text={`Pytanie nr ${question.id}`} />
-          <Badge text={question.book} LIcon={Book} />
+          <Badge
+            onPress={() => {
+              router.push(`/(notabs)/book/${question.book_id}`);
+            }}
+            text={clamp(question.book, 17)}
+            LIcon={Book}
+          />
           <Badge text={question.time} LIcon={Timer} />
         </View>
         <View className="w-full flex p-4">
@@ -165,6 +177,19 @@ export default function QuestionCard({
           </ExpandableCard>
         </>
       )}
+      <Button
+        className="w-full"
+        icon={isQuestionLearned(question.id.toString()) ? X : Check}
+        text={
+          isQuestionLearned(question.id.toString())
+            ? "Cofnij oznaczenie"
+            : "Oznacz jako nauczone"
+        }
+        variant={
+          isQuestionLearned(question.id.toString()) ? "error" : "success"
+        }
+        onPress={() => toggleLearned("questions", question.id.toString())}
+      />
     </View>
   );
 }

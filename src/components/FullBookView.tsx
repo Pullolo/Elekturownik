@@ -2,6 +2,7 @@ import { Book } from "@/src/data/types";
 import { cn, pluralize } from "@/src/lib/utils";
 import {
   BookOpen,
+  Check,
   ChevronDown,
   ChevronUp,
   Languages,
@@ -9,6 +10,7 @@ import {
   ScrollText,
   Sparkles,
   Users,
+  X,
 } from "lucide-react-native";
 import { useState } from "react";
 import { Text, TouchableOpacity, View } from "react-native";
@@ -18,9 +20,13 @@ import Animated, {
   LinearTransition,
 } from "react-native-reanimated";
 import useColors from "../hooks/useColors";
+import { useLearnedItemsContext } from "./context/LearnedItemsContext";
 import Badge from "./ui/Badge";
+import Button from "./ui/Button";
 
 export default function FullBookView({ book }: { book: Book }) {
+  const { isBookLearned, toggleLearned } = useLearnedItemsContext();
+
   return (
     <>
       <HeaderSection book={book} />
@@ -43,6 +49,17 @@ export default function FullBookView({ book }: { book: Book }) {
       {book.quotes.length > 0 && <QuotesSection quotes={book.quotes} />}
       {book.terms.length > 0 && <TermsSection terms={book.terms} />}
       <ExamSection exam={book.exam} />
+      <Button
+        className="w-full"
+        icon={isBookLearned(book.id.toString()) ? X : Check}
+        text={
+          isBookLearned(book.id.toString())
+            ? "Cofnij oznaczenie"
+            : "Oznacz jako nauczone"
+        }
+        variant={isBookLearned(book.id.toString()) ? "error" : "success"}
+        onPress={() => toggleLearned("books", book.id.toString())}
+      />
     </>
   );
 }

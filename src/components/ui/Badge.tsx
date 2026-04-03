@@ -1,12 +1,13 @@
 import useColors from "@/src/hooks/useColors";
 import { cn } from "@/src/lib/utils";
 import { LucideProps } from "lucide-react-native";
-import { Text, View } from "react-native";
+import { Text, TouchableOpacity } from "react-native";
 
 export default function Badge({
   text,
   theme,
   LIcon,
+  onPress,
 }: {
   text: string;
   theme?:
@@ -17,6 +18,7 @@ export default function Badge({
     | "success"
     | "error";
   LIcon?: React.FC<LucideProps>;
+  onPress?: () => void;
 }) {
   const colors = useColors();
 
@@ -37,7 +39,9 @@ export default function Badge({
   };
 
   return (
-    <View
+    <TouchableOpacity
+      activeOpacity={0.7}
+      onPress={onPress}
       className={cn(
         "flex flex-row items-center justify-center gap-1 px-4 py-2 rounded-full",
         theme === "primary"
@@ -70,6 +74,6 @@ export default function Badge({
       >
         {text}
       </Text>
-    </View>
+    </TouchableOpacity>
   );
 }

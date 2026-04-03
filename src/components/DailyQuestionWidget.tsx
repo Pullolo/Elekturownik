@@ -22,7 +22,13 @@ export default function DailyQuestionWidget({
     <View className="w-full flex flex-col justify-center items-start h-fit bg-primary rounded-3xl p-4">
       <View className="w-full flex flex-row flex-wrap gap-2">
         <Badge text={`Pytanie dnia`} />
-        <Badge text={question.book} LIcon={Book} />
+        <Badge
+          onPress={() => {
+            router.push(`/(notabs)/book/${question.book_id}`);
+          }}
+          text={question.book}
+          LIcon={Book}
+        />
         <Badge text={question.time} LIcon={Timer} />
       </View>
       <View className="w-full flex p-4">

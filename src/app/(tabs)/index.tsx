@@ -1,3 +1,4 @@
+import { useLearnedItemsContext } from "@/src/components/context/LearnedItemsContext";
 import DailyQuestionWidget from "@/src/components/DailyQuestionWidget";
 import Heading from "@/src/components/Heading";
 import BooksIconographySvg from "@/src/components/icons/BooksIconographySvg";
@@ -10,30 +11,47 @@ import useColors from "@/src/hooks/useColors";
 import { useQuestions } from "@/src/hooks/useQuestions";
 import { getDailyQuestion, getRandomPath } from "@/src/lib/utils";
 import { router } from "expo-router";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { ScrollView, Text, TouchableOpacity, View } from "react-native";
 import { DonutChart } from "react-native-circular-chart";
 import { SvgProps } from "react-native-svg";
 
+type DonutChartData = {
+  name: string;
+  value: number;
+  color: string;
+};
+
 export default function Home() {
   const colors = useColors();
-  const DATA = [
-    {
-      name: "Nauczone Pytania",
-      value: 30,
-      color: colors.primary,
-    },
-    {
-      name: "Do Nauczenia",
-      value: 46,
-      color: colors.secondary,
-    },
-  ];
+  const { questions } = useQuestions();
+  const { books } = useBooks();
+  const { counts } = useLearnedItemsContext();
+
+  useEffect(() => {
+    setData([
+      {
+        name: "Nauczone Pytania",
+        value: counts.questions,
+        color: colors.primary,
+      },
+      {
+        name: "Nauczone Książki",
+        value: counts.books,
+        color: colors.foregroundPrimary,
+      },
+      {
+        name: "Do Nauczenia",
+        value: books.length + questions.length - counts.total,
+        color: colors.secondary,
+      },
+    ]);
+  }, [counts, books.length, questions.length, colors]);
+
+  const [data, setData] = useState<DonutChartData[] | undefined>(undefined);
 
   const [chartWidth, setChartWidth] = useState(0);
 
-  const { questions } = useQuestions();
-  const { books } = useBooks();
   const question = getDailyQuestion([...questions]);
   const { tabBarHeight } = useTabBar();
 
@@ -86,9 +104,10 @@ export default function Home() {
                 {"Postępy"}
               </Text>
               <View className="w-full items-center justify-center">
-                {chartWidth > 0 && (
+                {chartWidth > 0 && data && (
                   <DonutChart
-                    data={DATA}
+                    key={`DonutChart-${JSON.stringify(data)}`}
+                    data={data}
                     strokeWidth={14}
                     radius={chartWidth / 2 - 8}
                     containerWidth={chartWidth}

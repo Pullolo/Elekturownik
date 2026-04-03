@@ -4,6 +4,7 @@ import { StatusBar } from "expo-status-bar";
 import { useEffect } from "react";
 import { View } from "react-native";
 import "react-native-reanimated";
+import { LearnedItemsProvider } from "../components/context/LearnedItemsContext";
 import { ThemeProvider } from "../components/context/ThemeContext";
 import "../global.css";
 import { TabBarProvider } from "../hooks/TabBarContext";
@@ -35,20 +36,22 @@ export default function RootLayout() {
 
   return (
     <ThemeProvider>
-      <View className="flex-1 w-full h-full bg-background">
-        <TabBarProvider>
-          <Stack
-            screenOptions={{
-              headerShown: false,
-            }}
-            initialRouteName="index"
-          >
-            <Stack.Screen name="(tabs)" />
-            <Stack.Screen name="(notabs)" />
-          </Stack>
-          <StatusBar style="auto" />
-        </TabBarProvider>
-      </View>
+      <LearnedItemsProvider>
+        <View className="flex-1 w-full h-full bg-background">
+          <TabBarProvider>
+            <Stack
+              screenOptions={{
+                headerShown: false,
+              }}
+              initialRouteName="index"
+            >
+              <Stack.Screen name="(tabs)" />
+              <Stack.Screen name="(notabs)" />
+            </Stack>
+            <StatusBar style="auto" />
+          </TabBarProvider>
+        </View>
+      </LearnedItemsProvider>
     </ThemeProvider>
   );
 }

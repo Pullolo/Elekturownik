@@ -1987,6 +1987,415 @@ export const books: Book[] = [
   },
   {
     id: 11,
+    title: "Treny",
+    author: "Jan Kochanowski",
+    year: "1580",
+    epoch: "Renesans",
+    summary: {
+      short:
+        "Cykl dziewiętnastu trenów poświęconych zmarłej córce Urszuli, ukazujący kryzys światopoglądowy poety i jego drogę od rozpaczy do odzyskania wewnętrznej równowagi.",
+      detailed:
+        "„Treny” Jana Kochanowskiego to cykl dziewiętnastu utworów żałobnych napisanych po śmierci jego kilkuletniej córki Urszuli. Poeta łamie tradycyjne zasady gatunku, poświęcając tren dziecku, a nie wybitnej postaci.\n\nPoczątkowe utwory (Treny I–IV) wyrażają ogromny ból i poczucie straty. Podmiot liryczny nie potrafi pogodzić się ze śmiercią córki, przywołuje jej zalety i niewinność, podkreślając niesprawiedliwość losu.\n\nW Trenach V–VIII żal przybiera bardziej osobisty charakter – poeta wspomina codzienne sytuacje związane z Urszulą, szczególnie przejmujący jest Tren VIII, ukazujący pustkę w domu po jej śmierci.\n\nTreny IX–XI stanowią punkt kulminacyjny kryzysu. Kochanowski poddaje w wątpliwość wartości filozofii stoickiej i humanistycznej, które wcześniej wyznawał. W Tren XI pojawia się słynne stwierdzenie o „fraszce cnota”, świadczące o załamaniu dotychczasowego systemu wartości.\n\nW Trenach XII–XVIII poeta stopniowo próbuje odbudować sens życia, jednak wciąż zmaga się z bólem i pytaniami o sprawiedliwość boską oraz sens cierpienia.\n\nKulminacją i rozwiązaniem jest Tren XIX (Sen), w którym matka poety ukazuje mu się we śnie, przynosząc pocieszenie i przypominając o konieczności zachowania umiaru. Przekazuje mu, że Urszula znajduje się w lepszym świecie, a cierpienie jest częścią ludzkiego losu.\n\nCykl kończy się odzyskaniem równowagi i pogodzeniem się z losem, choć nie oznacza to całkowitego zaniku bólu.",
+      timeline: [
+        {
+          title: "Śmierć Urszuli",
+          description:
+            "Bezpośredni impuls do powstania cyklu trenów i początek żałoby poety.",
+        },
+        {
+          title: "Faza rozpaczy",
+          description:
+            "Pierwsze treny ukazują intensywny ból i brak akceptacji straty.",
+        },
+        {
+          title: "Wspomnienia dziecka",
+          description: "Poeta przywołuje obraz Urszuli i jej obecność w domu.",
+        },
+        {
+          title: "Kryzys światopoglądowy",
+          description:
+            "Załamanie wiary w stoicyzm i humanizm, zwątpienie w sens cnoty.",
+        },
+        {
+          title: "Próba odbudowy ładu",
+          description:
+            "Stopniowe poszukiwanie sensu cierpienia i próba pogodzenia się z losem.",
+        },
+        {
+          title: "Sen i ukojenie",
+          description:
+            "Symboliczne pocieszenie i odzyskanie równowagi duchowej.",
+        },
+      ],
+    },
+    characters: [
+      {
+        name: "Podmiot liryczny (ojciec)",
+        description:
+          "Ojciec Urszuli, utożsamiany z Janem Kochanowskim, przeżywający głęboki kryzys emocjonalny i filozoficzny.",
+        traits: ["cierpiący", "refleksyjny", "wątpiący", "uczuciowy"],
+        role: "Zrozpaczony ojciec",
+      },
+      {
+        name: "Urszula Kochanowska",
+        description:
+          "Zmarła córka poety, przedstawiana jako dziecko wyjątkowe, utalentowane i niewinne.",
+        traits: ["niewinna", "utalentowana", "radosna", "ukochana"],
+        role: "Utracone dziecko",
+      },
+      {
+        name: "Matka poety",
+        description:
+          "Postać pojawiająca się w śnie w Tren XIX, przynosząca pocieszenie i mądrość życiową.",
+        traits: ["spokojna", "mądra", "opiekuńcza"],
+        role: "Symbol pocieszenia",
+      },
+    ],
+    themes: [
+      {
+        name: "Żałoba i cierpienie",
+        description:
+          "Ukazanie bólu po stracie bliskiej osoby i jego różnych etapów.",
+      },
+      {
+        name: "Kryzys światopoglądowy",
+        description:
+          "Załamanie dotychczasowych przekonań filozoficznych i religijnych.",
+      },
+      {
+        name: "Miłość rodzicielska",
+        description: "Silna więź emocjonalna między ojcem a dzieckiem.",
+      },
+      {
+        name: "Sens życia i cierpienia",
+        description:
+          "Poszukiwanie odpowiedzi na pytanie o sens ludzkiego losu.",
+      },
+      {
+        name: "Relacja człowieka z Bogiem",
+        description:
+          "Refleksja nad sprawiedliwością boską i miejscem człowieka w świecie.",
+      },
+    ],
+    motifs: [
+      {
+        name: "Śmierć",
+        meaning:
+          "Nieunikniony element ludzkiego losu, źródło bólu i refleksji.",
+      },
+      {
+        name: "Dziecko",
+        meaning: "Symbol niewinności i niesprawiedliwie przerwanego życia.",
+      },
+      {
+        name: "Sen",
+        meaning:
+          "Przestrzeń kontaktu ze światem duchowym i źródło pocieszenia.",
+      },
+      {
+        name: "Pustka",
+        meaning: "Brak po zmarłej osobie odczuwany w codziennym życiu.",
+      },
+      {
+        name: "Cnota",
+        meaning:
+          "Wartość poddana kryzysowi i zakwestionowana przez doświadczenie cierpienia.",
+      },
+    ],
+    contexts: [
+      {
+        title: "Biblia",
+        description:
+          "Motywy cierpienia, próby wiary i pocieszenia, np. Księga Hioba.",
+      },
+      {
+        title: "Filozofia stoicka",
+        description:
+          "Idea zachowania równowagi emocjonalnej, która zostaje zakwestionowana w trenach.",
+      },
+      {
+        title: "Humanizm renesansowy",
+        description:
+          "Wiara w rozum i harmonię świata, podważona przez doświadczenie osobistej tragedii.",
+      },
+      {
+        title: "Tradycja antyczna",
+        description:
+          "Nawiązania do klasycznych trenów i elegii, które Kochanowski przekształca.",
+      },
+    ],
+    quotes: [
+      {
+        text: "Wielkieś mi uczyniła pustki w domu moim",
+        explanation:
+          "Wyrażenie bólu po stracie córki i odczucia pustki po jej śmierci.",
+      },
+      {
+        text: "Fraszka cnota!",
+        explanation: "Wyraz kryzysu wartości i zwątpienia w sens moralności.",
+      },
+      {
+        text: "Ludzkie przygody ludzkie noś",
+        explanation:
+          "Przesłanie o konieczności akceptacji cierpienia jako części życia.",
+      },
+    ],
+    terms: [
+      {
+        name: "tren",
+        meaning: "Utwór poetycki wyrażający żal po śmierci bliskiej osoby.",
+      },
+      {
+        name: "humanizm",
+        meaning:
+          "Renesansowy nurt podkreślający wartość człowieka i jego rozumu.",
+      },
+      {
+        name: "stoicyzm",
+        meaning:
+          "Filozofia zalecająca zachowanie spokoju wobec przeciwności losu.",
+      },
+      {
+        name: "topos",
+        meaning: "Utrwalony motyw literacki, np. motyw vanitas.",
+      },
+    ],
+    exam: {
+      possibleQuestions: [
+        "Jak Jan Kochanowski przedstawia proces żałoby w „Trenach”?",
+        "Na czym polega kryzys światopoglądowy podmiotu lirycznego?",
+        "W jaki sposób „Treny” łamią konwencję gatunku?",
+        "Jaką rolę pełni Tren XIX w całym cyklu?",
+        "Jakie wartości zostają zakwestionowane w „Trenach”?",
+      ],
+      keywords: [
+        "żałoba",
+        "kryzys światopoglądowy",
+        "stoicyzm",
+        "humanizm",
+        "cierpienie",
+        "pocieszenie",
+      ],
+      commonMistakes: [
+        "Traktowanie „Trenów” jako jednolitego emocjonalnie utworu bez zauważenia ewolucji uczuć.",
+        "Pomijanie znaczenia kryzysu filozoficznego.",
+        "Brak odniesienia do kontekstu renesansowego.",
+        "Nieinterpretowanie Tren XIX jako rozwiązania cyklu.",
+      ],
+      introStarters: [
+        "„Treny” Jana Kochanowskiego to wyjątkowy cykl poetycki, który ukazuje...",
+        "Jednym z najważniejszych tematów „Trenów” jest doświadczenie żałoby, które...",
+        "Jan Kochanowski w „Trenach” przedstawia nie tylko ból po stracie dziecka, ale również...",
+        "Analizując „Treny”, warto zwrócić uwagę na przemianę światopoglądową podmiotu lirycznego...",
+      ],
+    },
+  },
+  {
+    id: 12,
+    title: "Pieśni i Fraszki",
+    author: "Jan Kochanowski",
+    year: "XVI wiek",
+    epoch: "Renesans",
+    summary: {
+      short:
+        "Zbiory liryków Jana Kochanowskiego ukazujące renesansową wizję świata opartą na harmonii, umiarze i refleksji nad życiem, łączące filozofię stoicką i epikurejską z doświadczeniem codzienności.",
+      detailed:
+        "„Pieśni” i „Fraszki” Jana Kochanowskiego to dwa fundamentalne zbiory poezji renesansowej, które prezentują różnorodne aspekty życia człowieka. „Pieśni” mają charakter bardziej refleksyjny i filozoficzny – poeta podejmuje w nich kwestie przemijania, cnoty, harmonii życia, relacji człowieka z Bogiem i naturą. Inspiruje się filozofią antyczną, szczególnie stoicyzmem i epikureizmem, propagując postawę umiaru (złotego środka) oraz wewnętrznego spokoju. W utworach takich jak „Pieśń IX” („Chcemy sobie być radzi”) czy „Pieśń XIX” („Czego chcesz od nas, Panie”) widoczna jest afirmacja życia oraz pochwała boskiego ładu świata.\n\n„Fraszki” natomiast to krótkie utwory o różnorodnej tematyce – od humorystycznych i satyrycznych, przez obyczajowe, aż po refleksyjne. Poeta przedstawia w nich scenki z życia dworskiego, relacje międzyludzkie, a także własne doświadczenia i obserwacje. Fraszki często mają charakter moralizatorski, ale podane są w lekkiej, ironicznej formie. Przykładem jest „Na zdrowie”, gdzie poeta wskazuje na fundamentalną wartość zdrowia, czy „O żywocie ludzkim”, ukazująca marność ludzkiego życia.\n\nOba zbiory ukazują człowieka renesansu – świadomego swojej wartości, poszukującego harmonii, czerpiącego z tradycji antycznej i chrześcijańskiej. Kochanowski buduje obraz świata uporządkowanego, choć niepozbawionego niepewności i przemijania.",
+      timeline: [
+        {
+          title: "Powstanie fraszek",
+          description:
+            "Kochanowski tworzy krótkie utwory inspirowane życiem dworskim i codziennością, często o charakterze humorystycznym lub refleksyjnym.",
+        },
+        {
+          title: "Tworzenie pieśni",
+          description:
+            "Poeta komponuje utwory o bardziej podniosłym charakterze, inspirowane filozofią antyczną i refleksją nad losem człowieka.",
+        },
+        {
+          title: "Publikacja zbiorów",
+          description:
+            "Zbiory zostają wydane, stając się wzorcem renesansowej liryki polskiej.",
+        },
+      ],
+    },
+    characters: [
+      {
+        name: "Podmiot liryczny",
+        description:
+          "Głos poety wyrażający refleksje filozoficzne, moralne i osobiste doświadczenia.",
+        traits: ["refleksyjny", "świadomy", "ironiczny", "humanistyczny"],
+        role: "Głos refleksji",
+      },
+      {
+        name: "Człowiek renesansu",
+        description:
+          "Uogólniona postać reprezentująca ideały epoki – harmonię, rozum i umiarkowanie.",
+        traits: ["rozumny", "umiarkowany", "świadomy przemijania"],
+        role: "Symbol epoki",
+      },
+      {
+        name: "Bóg",
+        description:
+          "Stwórca świata obecny szczególnie w pieśniach, gwarant ładu i harmonii.",
+        traits: ["wszechmocny", "dobry", "sprawiedliwy"],
+        role: "Gwarant ładu świata",
+      },
+    ],
+    themes: [
+      {
+        name: "Przemijanie",
+        description: "Refleksja nad nietrwałością życia i zmiennością losu.",
+      },
+      {
+        name: "Cnota",
+        description:
+          "Najwyższa wartość moralna, dająca człowiekowi szczęście i spokój.",
+      },
+      {
+        name: "Harmonia świata",
+        description: "Świat jako uporządkowana całość stworzona przez Boga.",
+      },
+      {
+        name: "Radość życia",
+        description:
+          "Epikurejska pochwała korzystania z życia w umiarkowany sposób.",
+      },
+      {
+        name: "Codzienność",
+        description:
+          "Obraz życia codziennego ukazany w sposób realistyczny i często humorystyczny.",
+      },
+    ],
+    motifs: [
+      {
+        name: "Vanitas",
+        meaning: "Motyw marności życia i przemijania wszystkiego, co doczesne.",
+      },
+      {
+        name: "Złoty środek",
+        meaning: "Idea umiarkowania jako drogi do szczęścia.",
+      },
+      {
+        name: "Fortuna",
+        meaning: "Los jako zmienna siła wpływająca na życie człowieka.",
+      },
+      {
+        name: "Natura",
+        meaning: "Źródło harmonii i wzór dla życia człowieka.",
+      },
+      {
+        name: "Zdrowie",
+        meaning: "Najwyższe dobro, doceniane dopiero po utracie.",
+      },
+    ],
+    contexts: [
+      {
+        title: "Filozofia stoicka",
+        description:
+          "Postawa zachowania równowagi wobec zmienności losu, widoczna w pieśniach Kochanowskiego.",
+      },
+      {
+        title: "Filozofia epikurejska",
+        description:
+          "Pochwała życia i czerpania radości z chwili, przy zachowaniu umiaru.",
+      },
+      {
+        title: "Antyk",
+        description:
+          "Inspiracja twórczością Horacego – szczególnie w formie i tematyce pieśni.",
+      },
+      {
+        title: "Biblia",
+        description: "Obraz Boga jako stwórcy i źródła ładu świata.",
+      },
+      {
+        title: "Renesansowy humanizm",
+        description:
+          "Przekonanie o wartości człowieka i jego zdolności poznawczych.",
+      },
+    ],
+    quotes: [
+      {
+        text: "Szlachetne zdrowie, nikt się nie dowie, jako smakujesz, aż się zepsujesz.",
+        explanation:
+          "Podkreślenie wartości zdrowia jako najważniejszego dobra w życiu człowieka.",
+      },
+      {
+        text: "Nie porzucaj nadzieje, jakoć się kolwiek dzieje.",
+        explanation: "Zachęta do zachowania optymizmu mimo przeciwności losu.",
+      },
+      {
+        text: "Czego chcesz od nas, Panie, za Twe hojne dary?",
+        explanation: "Wyraz wdzięczności wobec Boga za stworzenie świata.",
+      },
+      {
+        text: "Fraszki to wszystko, cokolwiek myślimy.",
+        explanation: "Refleksja nad ulotnością i błahością ludzkich spraw.",
+      },
+    ],
+    terms: [
+      {
+        name: "Fraszka",
+        meaning:
+          "Krótki utwór poetycki, często o charakterze humorystycznym lub refleksyjnym.",
+      },
+      {
+        name: "Pieśń",
+        meaning:
+          "Utwór liryczny o podniosłym charakterze, często o tematyce filozoficznej.",
+      },
+      {
+        name: "Humanizm",
+        meaning:
+          "Prąd umysłowy renesansu stawiający człowieka w centrum zainteresowania.",
+      },
+      {
+        name: "Stoicyzm",
+        meaning: "Filozofia zalecająca zachowanie spokoju wobec losu.",
+      },
+      {
+        name: "Epikureizm",
+        meaning:
+          "Filozofia głosząca osiąganie szczęścia poprzez umiarkowane korzystanie z życia.",
+      },
+    ],
+    exam: {
+      possibleQuestions: [
+        "Jakie ideały renesansowe realizuje Jan Kochanowski w pieśniach?",
+        "W jaki sposób fraszki ukazują codzienność człowieka?",
+        "Jakie znaczenie ma filozofia antyczna w twórczości Kochanowskiego?",
+        "Jak poeta przedstawia relację człowieka z Bogiem?",
+        "Czy fraszki mają wyłącznie charakter humorystyczny?",
+      ],
+      keywords: [
+        "renesans",
+        "humanizm",
+        "stoicyzm",
+        "epikureizm",
+        "fraszka",
+        "pieśń",
+        "vanitas",
+        "harmonia",
+        "cnota",
+      ],
+      commonMistakes: [
+        "Traktowanie fraszek wyłącznie jako utworów humorystycznych",
+        "Pomijanie filozoficznego wymiaru pieśni",
+        "Brak odniesień do antyku",
+        "Niezauważanie roli Boga w pieśniach",
+        "Uproszczone interpretowanie motywu przemijania",
+      ],
+      introStarters: [
+        "Twórczość Jana Kochanowskiego stanowi jeden z najważniejszych przejawów renesansowego humanizmu w literaturze polskiej.",
+        "„Pieśni” i „Fraszki” to zbiory ukazujące pełnię doświadczeń człowieka epoki odrodzenia.",
+        "Jan Kochanowski w swojej liryce łączy refleksję filozoficzną z obserwacją codziennego życia.",
+        "Analiza pieśni i fraszek pozwala dostrzec wpływ filozofii antycznej na światopogląd renesansowy.",
+      ],
+    },
+  },
+  {
+    id: 13,
     title: "Makbet",
     author: "William Szekspir",
     year: "ok. 1606",
@@ -2219,7 +2628,7 @@ export const books: Book[] = [
     },
   },
   {
-    id: 12,
+    id: 14,
     title: "Skąpiec",
     author: "Molier",
     year: 1668,
@@ -2434,7 +2843,7 @@ export const books: Book[] = [
     },
   },
   {
-    id: 13,
+    id: 15,
     title: "Żona modna i Pijaństwo",
     author: "Ignacy Krasicki",
     year: 1779,
@@ -2628,7 +3037,7 @@ export const books: Book[] = [
     },
   },
   {
-    id: 14,
+    id: 16,
     title: "Romantyczność",
     author: "Adam Mickiewicz",
     year: 1822,
@@ -2835,7 +3244,7 @@ export const books: Book[] = [
     },
   },
   {
-    id: 15,
+    id: 17,
     title: "Dziady cz. III",
     author: "Adam Mickiewicz",
     year: "1832",
@@ -3028,7 +3437,7 @@ export const books: Book[] = [
     },
   },
   {
-    id: 16,
+    id: 18,
     title: "Lalka",
     author: "Bolesław Prus",
     year: "1887–1889",
@@ -3260,7 +3669,7 @@ export const books: Book[] = [
     },
   },
   {
-    id: 17,
+    id: 19,
     title: "Potop (fragmenty)",
     author: "Henryk Sienkiewicz",
     year: "1886",
@@ -3446,7 +3855,7 @@ export const books: Book[] = [
     },
   },
   {
-    id: 18,
+    id: 20,
     title: "Zbrodnia i kara",
     author: "Fiodor Dostojewski",
     year: 1866,
@@ -3648,7 +4057,7 @@ export const books: Book[] = [
     },
   },
   {
-    id: 19,
+    id: 21,
     title: "Wesele",
     author: "Stanisław Wyspiański",
     year: 1901,
@@ -3869,7 +4278,7 @@ export const books: Book[] = [
     },
   },
   {
-    id: 20,
+    id: 22,
     title: "Chłopi (fragmenty)",
     author: "Władysław Stanisław Reymont",
     year: "1904–1909",
@@ -4067,7 +4476,7 @@ export const books: Book[] = [
     },
   },
   {
-    id: 21,
+    id: 23,
     title: "Przedwiośnie",
     author: "Stefan Żeromski",
     year: 1924,
@@ -4265,7 +4674,7 @@ export const books: Book[] = [
     },
   },
   {
-    id: 22,
+    id: 24,
     title: "Ferdydurke (fragmenty)",
     author: "Witold Gombrowicz",
     year: 1937,
@@ -4484,7 +4893,7 @@ export const books: Book[] = [
     },
   },
   {
-    id: 23,
+    id: 25,
     title: "Proszę państwa do gazu",
     author: "Tadeusz Borowski",
     year: 1946,
@@ -4671,7 +5080,7 @@ export const books: Book[] = [
     },
   },
   {
-    id: 24,
+    id: 26,
     title: "Inny świat",
     author: "Gustaw Herling-Grudziński",
     year: 1951,
@@ -4870,7 +5279,7 @@ export const books: Book[] = [
     },
   },
   {
-    id: 25,
+    id: 27,
     title: "Zdążyć przed Panem Bogiem",
     author: "Hanna Krall",
     year: 1977,
@@ -5097,7 +5506,7 @@ export const books: Book[] = [
     },
   },
   {
-    id: 26,
+    id: 28,
     title: "Dżuma",
     author: "Albert Camus",
     year: 1947,
@@ -5295,7 +5704,7 @@ export const books: Book[] = [
     },
   },
   {
-    id: 27,
+    id: 29,
     title: "Rok 1984",
     author: "George Orwell",
     year: 1949,
@@ -5511,7 +5920,7 @@ export const books: Book[] = [
     },
   },
   {
-    id: 28,
+    id: 30,
     title: "Tango",
     author: "Sławomir Mrożek",
     year: 1964,
@@ -5723,7 +6132,7 @@ export const books: Book[] = [
     },
   },
   {
-    id: 29,
+    id: 31,
     title: "Górą „Edek”",
     author: "Marek Nowakowski",
     year: "1970 (tom „Prawo prerii”)",
@@ -5914,7 +6323,7 @@ export const books: Book[] = [
     },
   },
   {
-    id: 30,
+    id: 32,
     title: "Profesor Andrews w Warszawie",
     author: "Olga Tokarczuk",
     year: 2001,
@@ -6104,7 +6513,7 @@ export const books: Book[] = [
     },
   },
   {
-    id: 31,
+    id: 33,
     title: "Miejsce",
     author: "Andrzej Stasiuk",
     year: "1995",
@@ -6310,7 +6719,7 @@ export const books: Book[] = [
     },
   },
   {
-    id: 32,
+    id: 34,
     title: "Podróże z Herodotem (fragmenty)",
     author: "Ryszard Kapuściński",
     year: 2004,
@@ -6529,7 +6938,7 @@ export const books: Book[] = [
     },
   },
   {
-    id: 33,
+    id: 35,
     title: "Balladyna",
     author: "Juliusz Słowacki",
     year: 1839,
@@ -6751,7 +7160,7 @@ export const books: Book[] = [
     },
   },
   {
-    id: 34,
+    id: 36,
     title: "Bajki",
     author: "Ignacy Krasicki",
     year: "1779",
@@ -6941,7 +7350,7 @@ export const books: Book[] = [
     },
   },
   {
-    id: 35,
+    id: 37,
     title: "Dziady cz. II",
     author: "Adam Mickiewicz",
     year: "1823",
@@ -7157,7 +7566,7 @@ export const books: Book[] = [
     },
   },
   {
-    id: 36,
+    id: 38,
     title: "Pan Tadeusz",
     author: "Adam Mickiewicz",
     year: "1834",
@@ -7367,7 +7776,7 @@ export const books: Book[] = [
     },
   },
   {
-    id: 37,
+    id: 39,
     title: "Zemsta",
     author: "Aleksander Fredro",
     year: 1834,

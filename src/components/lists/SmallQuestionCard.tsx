@@ -28,6 +28,10 @@ const SmallQuestionCard = memo(function SmallQuestionCard({
       <View className="flex flex-row justify-between items-center gap-2">
         <View className="flex flex-row gap-2 flex-wrap flex-1">
           <Badge
+            onPress={() => {
+              //@ts-ignore
+              router.push(`/(notabs)/book/${question.book_id}`);
+            }}
             text={clamp(question.book, learned ? 16 : 28)}
             LIcon={Book}
             theme="primary"

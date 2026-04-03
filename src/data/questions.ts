@@ -2487,4 +2487,2929 @@ export const questions: Question[] = [
       "Podsumowując, wspomnienia odgrywają bardzo ważną rolę w życiu człowieka. Mogą dodawać sił i budować tożsamość, ale też prowadzić do zatrzymania się w przeszłości i cierpienia. Kluczowe jest umiejętne korzystanie z nich, tak aby nie przesłaniały teraźniejszości i przyszłości.",
     ],
   },
+  {
+    id: 36,
+    book: "Potop (fragmenty)",
+    book_id: 17,
+    time: "15 min",
+    question:
+      "Postawy odwagi i tchórzostwa. Omów zagadnienie na podstawie znanych Ci fragmentów Potopu Henryka Sienkiewicza. W swojej odpowiedzi uwzględnij również wybrany kontekst.",
+    question_explanation:
+      "Masz pokazać, czym różni się odwaga od tchórzostwa na przykładach z Potopu. Chodzi o konkretne postacie i sytuacje, gdzie ktoś zachowuje się bohatersko albo przeciwnie – ucieka, zdradza czy działa ze strachu. Na końcu dorzuć jeszcze jeden kontekst z innego utworu lub historii, żeby poszerzyć temat.",
+    tips: [
+      "Andrzej Kmicic jako przykład przemiany",
+      "Obrona Jasnej Góry",
+      "Zdrada i lojalność wobec ojczyzny",
+      "Strach jako motyw działania",
+      "Honor i odpowiedzialność",
+      "Postacie negatywne jako przykład tchórzostwa",
+      "Kontrast bohaterów",
+    ],
+    contexts: [
+      {
+        title: "Kamienie na szaniec Aleksandra Kamińskiego",
+        description:
+          "Bohaterowie wykazują się ogromną odwagą w walce z okupantem, mimo świadomości zagrożenia życia. Można zestawić ich postawę z bohaterami Potopu.",
+      },
+      {
+        title: "Historia – obrona kraju w czasie wojen",
+        description:
+          "Rzeczywiste przykłady odwagi żołnierzy i obywateli, np. podczas II wojny światowej, pokazują uniwersalność tematu odwagi i tchórzostwa.",
+      },
+    ],
+    schema: [
+      {
+        rule: "Wstęp – wprowadzenie do tematu odwagi i tchórzostwa",
+        starter:
+          "Odwaga i tchórzostwo to postawy, które od wieków towarzyszą ludziom, szczególnie w sytuacjach zagrożenia.",
+      },
+      {
+        rule: "Teza – jasno określone stanowisko",
+        starter:
+          "W Potopie Henryka Sienkiewicza bohaterowie prezentują zarówno postawy odwagi, jak i tchórzostwa, które wpływają na ich losy i ocenę moralną.",
+      },
+      {
+        rule: "Argument 1 – przykład odwagi",
+        starter:
+          "Przykładem odwagi jest postawa Andrzeja Kmicica, który przechodzi wewnętrzną przemianę i zaczyna walczyć w obronie ojczyzny.",
+      },
+      {
+        rule: "Argument 2 – przykład tchórzostwa",
+        starter:
+          "Z kolei tchórzostwo można zauważyć u postaci, które zdradzają ojczyznę lub kierują się własnym interesem.",
+      },
+      {
+        rule: "Kontekst – odniesienie do innego utworu lub historii",
+        starter:
+          "Podobne postawy można zauważyć w Kamieniach na szaniec, gdzie młodzi bohaterowie wykazują się niezwykłą odwagą.",
+      },
+      {
+        rule: "Podsumowanie – wnioski",
+        starter:
+          "Podsumowując, odwaga i tchórzostwo to cechy, które ujawniają prawdziwy charakter człowieka.",
+      },
+    ],
+    suggested_answer: [
+      "Odwaga i tchórzostwo to postawy, które od wieków towarzyszą ludziom, szczególnie w sytuacjach zagrożenia. Literatura często ukazuje je poprzez losy bohaterów, którzy muszą podejmować trudne decyzje.",
+      "W Potopie Henryka Sienkiewicza bohaterowie prezentują zarówno postawy odwagi, jak i tchórzostwa, które wpływają na ich losy i ocenę moralną. Autor pokazuje, że człowiek może się zmienić i odkupić swoje winy.",
+      "Przykładem odwagi jest postawa Andrzeja Kmicica, który początkowo działa lekkomyślnie, ale z czasem przechodzi przemianę. Jego udział w obronie Jasnej Góry oraz walka w imię ojczyzny świadczą o wielkiej odwadze i gotowości do poświęceń.",
+      "Z kolei tchórzostwo można zauważyć u postaci, które zdradzają ojczyznę lub kierują się własnym interesem. Ich działania wynikają ze strachu lub chęci osiągnięcia korzyści, co prowadzi do moralnego upadku.",
+      "Podobne postawy można zauważyć w Kamieniach na szaniec, gdzie młodzi bohaterowie wykazują się niezwykłą odwagą, ryzykując życie dla ojczyzny. Ich zachowanie kontrastuje z postawami ludzi, którzy wybierają bierność lub współpracę z wrogiem.",
+      "Podsumowując, odwaga i tchórzostwo to cechy, które ujawniają prawdziwy charakter człowieka. Potop pokazuje, że nawet osoby popełniające błędy mogą stać się bohaterami, jeśli zdobędą się na odwagę i odpowiedzialność.",
+    ],
+  },
+  {
+    id: 37,
+    book: "Zbrodnia i kara",
+    book_id: 18,
+    time: "15 min",
+    question:
+      "Walka człowieka ze swoimi słabościami. Omów zagadnienie na podstawie Zbrodni i kary Fiodora Dostojewskiego. W swojej odpowiedzi uwzględnij również wybrany kontekst.",
+    question_explanation:
+      "Masz pokazać, jak człowiek zmaga się ze swoimi wadami, słabościami psychicznymi i moralnymi. Na przykładzie Raskolnikowa trzeba wyjaśnić, co go osłabiało, jak próbował sobie z tym radzić i czy ostatecznie wygrał tę walkę.",
+    tips: [
+      "Raskolnikow jako bohater wewnętrznie rozdarty",
+      "pycha i przekonanie o własnej wyjątkowości",
+      "zbrodnia jako próba udowodnienia teorii",
+      "wyrzuty sumienia i psychiczne cierpienie",
+      "rola Soni jako moralnego wsparcia",
+      "przemiana bohatera",
+      "motyw winy i kary",
+      "wewnętrzna walka dobra ze złem",
+    ],
+    contexts: [
+      {
+        title: "Makbet Williama Szekspira",
+        description:
+          "Makbet po dokonaniu zbrodni również zmaga się z wyrzutami sumienia i psychicznie się rozpada. Pokazuje to, że człowiek nie jest w stanie uciec od własnego sumienia.",
+      },
+      {
+        title: "Psychologia – teoria dysonansu poznawczego",
+        description:
+          "Człowiek odczuwa silny dyskomfort, gdy jego czyny są sprzeczne z przekonaniami. Raskolnikow uważa się za jednostkę wybitną, ale jego sumienie nie pozwala mu zaakceptować popełnionej zbrodni.",
+      },
+    ],
+    schema: [
+      {
+        rule: "Wstęp",
+        starter:
+          "Walka człowieka ze swoimi słabościami to jeden z najważniejszych tematów literatury, ponieważ pokazuje złożoność ludzkiej natury.",
+      },
+      {
+        rule: "Teza",
+        starter:
+          "Człowiek, mimo prób usprawiedliwienia własnych czynów, nie jest w stanie uciec od swoich słabości, co prowadzi do wewnętrznego konfliktu.",
+      },
+      {
+        rule: "Argument 1 – Zbrodnia i kara",
+        starter:
+          "Dobrym przykładem jest Rodion Raskolnikow, bohater powieści Dostojewskiego, który postanawia udowodnić swoją wyjątkowość poprzez popełnienie zbrodni.",
+      },
+      {
+        rule: "Argument 2 – konsekwencje psychiczne",
+        starter:
+          "Po dokonaniu morderstwa bohater zaczyna odczuwać silne wyrzuty sumienia, które stopniowo niszczą jego psychikę.",
+      },
+      {
+        rule: "Kontekst",
+        starter:
+          "Podobny motyw można zauważyć w Makbecie Szekspira, gdzie bohater również nie radzi sobie z ciężarem własnych czynów.",
+      },
+      {
+        rule: "Podsumowanie",
+        starter:
+          "Walka ze słabościami okazuje się trudna i często prowadzi do cierpienia, ale może też stać się początkiem przemiany.",
+      },
+    ],
+    suggested_answer: [
+      "Walka człowieka ze swoimi słabościami to jeden z najważniejszych tematów literatury, ponieważ ukazuje złożoność ludzkiej psychiki oraz moralności. Bohaterowie często próbują przekroczyć własne ograniczenia, jednak ich wewnętrzne konflikty prowadzą do dramatycznych konsekwencji.",
+      "Człowiek, mimo prób usprawiedliwienia swoich czynów, nie jest w stanie całkowicie uciec od swoich słabości. Nawet jeśli próbuje zagłuszyć sumienie, wewnętrzny konflikt prędzej czy później daje o sobie znać.",
+      "Dobrym przykładem jest Rodion Raskolnikow z powieści Zbrodnia i kara. Bohater uważa się za jednostkę wyjątkową, stojącą ponad moralnością. Postanawia udowodnić swoją teorię, dokonując morderstwa lichwiarki. W jego przekonaniu zbrodnia ma wyższy cel i jest usprawiedliwiona.",
+      "Jednak po dokonaniu czynu Raskolnikow zaczyna zmagać się z własnymi słabościami. Pojawiają się wyrzuty sumienia, lęk oraz poczucie winy. Bohater popada w rozdarcie psychiczne i nie potrafi odnaleźć spokoju. Jego teoria okazuje się błędna, ponieważ nie jest w stanie zagłuszyć własnego sumienia.",
+      "Ważną rolę w jego przemianie odgrywa Sonia, która symbolizuje dobro i moralność. Dzięki niej Raskolnikow zaczyna rozumieć swoje błędy i decyduje się na przyznanie do winy. To pokazuje, że człowiek może pokonać swoje słabości, ale wymaga to odwagi i konfrontacji z prawdą.",
+      "Podobny motyw można dostrzec w Makbecie Szekspira. Bohater po dokonaniu zbrodni również zmaga się z wyrzutami sumienia i stopniowo popada w obłęd. To dowodzi, że człowiek nie jest w stanie uciec od własnej moralności.",
+      "Walka ze słabościami jest trudnym i bolesnym procesem, jednak może prowadzić do przemiany i odkupienia. Przykład Raskolnikowa pokazuje, że nawet po popełnieniu zła człowiek ma szansę na zmianę, jeśli potrafi zmierzyć się z własnym sumieniem.",
+    ],
+  },
+  {
+    id: 38,
+    book: "Zbrodnia i kara",
+    book_id: 18,
+    time: "15 min",
+    question:
+      "Motyw winy i kary. Omów zagadnienie na podstawie Zbrodni i kary Fiodora Dostojewskiego. W swojej odpowiedzi uwzględnij również wybrany kontekst.",
+    question_explanation:
+      "Masz pokazać, czym jest wina i kara w tej powieści. Nie chodzi tylko o karę prawną, ale też o to, co dzieje się w psychice bohatera. Warto zauważyć, że Raskolnikow bardziej cierpi przez wyrzuty sumienia niż przez sam wyrok. Trzeba też dodać kontekst, który pomoże lepiej zrozumieć ten motyw.",
+    tips: [
+      "Raskolnikow jako sprawca zbrodni",
+      "teoria nadczłowieka",
+      "wyrzuty sumienia i rozpad psychiki",
+      "kara wewnętrzna vs kara sądowa",
+      "rola Soni jako moralnego przewodnika",
+      "motyw odkupienia",
+      "znaczenie przyznania się do winy",
+    ],
+    contexts: [
+      {
+        title: "Biblia",
+        description:
+          "Motyw winy i kary oraz odkupienia, np. historia syna marnotrawnego czy Kaina i Abla, pomaga zrozumieć moralny wymiar czynów Raskolnikowa i jego drogę do skruchy.",
+      },
+      {
+        title: "Makbet Williama Szekspira",
+        description:
+          "Podobnie jak Raskolnikow, Makbet popełnia zbrodnię i zmaga się z wyrzutami sumienia, które stają się dla niego największą karą.",
+      },
+    ],
+    schema: [
+      {
+        rule: "Wstęp",
+        starter:
+          "Motyw winy i kary to jeden z najważniejszych tematów literatury, który ukazuje konsekwencje ludzkich czynów.",
+      },
+      {
+        rule: "Teza",
+        starter:
+          "W Zbrodni i karze Fiodora Dostojewskiego wina prowadzi do nieuniknionej kary, która ma przede wszystkim wymiar psychiczny i moralny.",
+      },
+      {
+        rule: "Argument 1",
+        starter:
+          "Raskolnikow popełnia zbrodnię, wierząc, że jako jednostka wyjątkowa ma do tego prawo.",
+      },
+      {
+        rule: "Argument 2",
+        starter:
+          "Największą karą bohatera okazują się jednak wyrzuty sumienia, które stopniowo niszczą jego psychikę.",
+      },
+      {
+        rule: "Konteksty",
+        starter:
+          "Podobny motyw można zauważyć w innych dziełach literackich, na przykład w Biblii oraz tragedii Makbet.",
+      },
+      {
+        rule: "Podsumowanie",
+        starter:
+          "Podsumowując, wina zawsze pociąga za sobą karę, która często jest bardziej dotkliwa w sferze psychicznej niż fizycznej.",
+      },
+    ],
+    suggested_answer: [
+      "Motyw winy i kary to jeden z najważniejszych tematów literatury, który ukazuje konsekwencje ludzkich czynów. Pisarze często pokazują, że każde przewinienie prowadzi do cierpienia i wymaga poniesienia odpowiedzialności.",
+      "W Zbrodni i karze Fiodora Dostojewskiego wina prowadzi do nieuniknionej kary, która ma przede wszystkim wymiar psychiczny i moralny. Autor ukazuje, że człowiek nie jest w stanie uciec przed własnym sumieniem.",
+      "Raskolnikow popełnia zbrodnię, wierząc, że jako jednostka wyjątkowa ma prawo przekraczać normy moralne. Zabija lichwiarkę, tłumacząc sobie, że jego czyn przyniesie większe dobro. Jednak jego teoria szybko okazuje się błędna.",
+      "Największą karą bohatera okazują się wyrzuty sumienia, które stopniowo niszczą jego psychikę. Raskolnikow popada w chorobę, izoluje się od ludzi i nie potrafi znaleźć spokoju. Ostatecznie decyduje się przyznać do winy, co staje się początkiem jego moralnego odrodzenia.",
+      "Podobny motyw można zauważyć w Biblii oraz tragedii Makbet. W Biblii człowiek po grzechu doświadcza kary, ale może też liczyć na przebaczenie. Z kolei Makbet, podobnie jak Raskolnikow, po dokonaniu zbrodni zostaje dręczony przez wyrzuty sumienia, które stają się dla niego największą karą.",
+      "Podsumowując, wina zawsze pociąga za sobą karę, która często jest bardziej dotkliwa w sferze psychicznej niż fizycznej. Dostojewski pokazuje, że prawdziwe oczyszczenie możliwe jest dopiero poprzez przyznanie się do winy i wewnętrzną przemianę.",
+    ],
+  },
+  {
+    id: 39,
+    book: "Zbrodnia i Kara",
+    book_id: 18,
+    time: "15 min",
+    question:
+      "Ile człowiek jest gotów poświęcić dla innych. Omów zagadnienie na podstawie Zbrodni i kary Fiodora Dostojewskiego. W swojej odpowiedzi uwzględnij również wybrany kontekst.",
+    question_explanation:
+      "Masz pokazać, do jakich poświęceń zdolny jest człowiek dla innych ludzi. Chodzi o to, żeby przeanalizować postawy bohaterów i zastanowić się, czy ich decyzje były słuszne oraz gdzie leży granica poświęcenia. Warto pokazać różne przykłady - zarówno pozytywne, jak i budzące wątpliwości.",
+    tips: [
+      "Sonia jako przykład skrajnego poświęcenia",
+      "Raskolnikow i jego motywacje",
+      "poświęcenie a moralność",
+      "czy cel uświęca środki",
+      "rola miłości i empatii",
+      "granice poświęcenia",
+      "poświęcenie a cierpienie",
+    ],
+    contexts: [
+      {
+        title: "Biblia - ofiara Chrystusa",
+        description:
+          "Jezus poświęca swoje życie dla zbawienia ludzi, co stanowi najwyższy przykład bezinteresownego poświęcenia i miłości do innych.",
+      },
+      {
+        title: "Kamienie na szaniec",
+        description:
+          "Bohaterowie oddają życie za ojczyznę i przyjaciół, pokazując, że poświęcenie może mieć wymiar patriotyczny i wspólnotowy.",
+      },
+    ],
+    schema: [
+      {
+        rule: "Wstęp",
+        starter:
+          "Poświęcenie dla innych jest jednym z najważniejszych przejawów człowieczeństwa, jednak jego granice nie zawsze są oczywiste.",
+      },
+      {
+        rule: "Teza",
+        starter:
+          "Człowiek jest zdolny do bardzo daleko idących poświęceń dla innych, lecz nie każde z nich można uznać za moralnie słuszne.",
+      },
+      {
+        rule: "Argument 1",
+        starter:
+          "Przykładem szlachetnego poświęcenia jest postawa Soni Marmieładowej, która decyduje się na życie w poniżeniu, aby utrzymać rodzinę.",
+      },
+      {
+        rule: "Argument 2",
+        starter:
+          "Z kolei Raskolnikow uważa, że jego zbrodnia jest formą poświęcenia dla dobra innych, co pokazuje, jak łatwo usprawiedliwić niemoralne czyny.",
+      },
+      {
+        rule: "Konteksty",
+        starter:
+          "Motyw poświęcenia pojawia się również w innych tekstach kultury, na przykład w Biblii oraz literaturze wojennej.",
+      },
+      {
+        rule: "Podsumowanie",
+        starter:
+          "Podsumowując, poświęcenie może mieć zarówno wymiar heroiczny, jak i tragiczny, a jego wartość zależy od motywacji i skutków.",
+      },
+    ],
+    suggested_answer: [
+      "Poświęcenie dla innych jest jednym z najważniejszych przejawów człowieczeństwa, jednak jego granice nie zawsze są oczywiste. Ludzie często podejmują trudne decyzje, kierując się miłością, współczuciem lub poczuciem obowiązku, ale nie każde poświęcenie można uznać za moralnie właściwe.",
+      "Człowiek jest zdolny do bardzo daleko idących poświęceń dla innych, lecz nie każde z nich można uznać za moralnie słuszne. Wiele zależy od motywacji oraz konsekwencji podejmowanych działań.",
+      "Przykładem szlachetnego poświęcenia jest postawa Soni Marmieładowej. Dziewczyna decyduje się na prostytucję, aby utrzymać swoją rodzinę. Jej czyn jest dramatyczny, ale wynika z bezinteresownej miłości i poczucia odpowiedzialności za bliskich. Sonia nie traci przy tym swojej moralności i zachowuje wiarę, co czyni jej poświęcenie wyjątkowo wartościowym.",
+      "Z kolei Raskolnikow uważa, że jego zbrodnia jest formą poświęcenia dla dobra innych. Zabijając lichwiarkę, chce zdobyć środki na pomoc potrzebującym. Jednak jego działanie jest oparte na błędnej idei, że jednostka może decydować o życiu innych ludzi. Pokazuje to, że poświęcenie może być niebezpieczne, jeśli prowadzi do usprawiedliwiania zła.",
+      "Motyw poświęcenia pojawia się również w innych tekstach kultury. W Biblii Jezus oddaje życie za ludzi, co stanowi najwyższy przykład bezinteresownej miłości. Z kolei w Kamieniach na szaniec młodzi bohaterowie poświęcają życie dla ojczyzny i przyjaciół, pokazując, że poświęcenie może mieć także wymiar patriotyczny.",
+      "Podsumowując, poświęcenie może mieć zarówno wymiar heroiczny, jak i tragiczny. Człowiek jest w stanie wiele oddać dla innych, ale kluczowe znaczenie ma to, czy jego działania są zgodne z moralnością i przynoszą rzeczywiste dobro.",
+    ],
+  },
+  {
+    id: 40,
+    book: "Zbrodnia i kara",
+    book_id: 18,
+    time: "15 min",
+    question:
+      "Co może determinować ludzkie postępowanie. Omów zagadnienie na podstawie Zbrodni i kary Fiodora Dostojewskiego. W swojej odpowiedzi uwzględnij również wybrany kontekst.",
+    question_explanation:
+      "Masz pokazać, co wpływa na to, jak człowiek się zachowuje. Czy decydują o tym przekonania, emocje, sytuacja życiowa, a może inni ludzie. Na przykładzie Raskolnikowa pokaż, co go popchnęło do zbrodni i co później wpływało na jego decyzje.",
+    tips: [
+      "Raskolnikow i jego teoria jednostki wybitnej",
+      "bieda i trudna sytuacja życiowa",
+      "wpływ emocji i psychiki",
+      "wyrzuty sumienia",
+      "rola Soni",
+      "konflikt wewnętrzny bohatera",
+      "determinacja przez ideologię",
+      "przemiana bohatera",
+    ],
+    contexts: [
+      {
+        title: "Makbet Williama Szekspira",
+        description:
+          "Makbet zostaje zdeterminowany przez proroctwo czarownic i ambicję oraz wpływ żony. Pokazuje to, jak presja i żądza władzy mogą kierować człowiekiem.",
+      },
+      {
+        title: "Psychologia - teoria potrzeb Maslowa",
+        description:
+          "Człowiek działa pod wpływem niezaspokojonych potrzeb, np. bezpieczeństwa czy uznania. Raskolnikow działa m.in. z powodu biedy i potrzeby znaczenia.",
+      },
+    ],
+    schema: [
+      {
+        rule: "Wstęp",
+        starter:
+          "Ludzkie postępowanie jest wynikiem wielu różnych czynników, które wpływają na decyzje i wybory jednostki.",
+      },
+      {
+        rule: "Teza",
+        starter:
+          "Na zachowanie człowieka mogą wpływać zarówno jego przekonania, jak i sytuacja życiowa oraz emocje.",
+      },
+      {
+        rule: "Argument 1",
+        starter:
+          "W powieści Zbrodnia i kara Raskolnikow dopuszcza się zbrodni pod wpływem własnej teorii o jednostkach wybitnych.",
+      },
+      {
+        rule: "Argument 2",
+        starter:
+          "Na jego postępowanie wpływa również trudna sytuacja materialna oraz silne emocje i wewnętrzny konflikt.",
+      },
+      {
+        rule: "Konteksty",
+        starter:
+          "Podobny mechanizm można zauważyć w Makbecie oraz w teoriach psychologicznych dotyczących potrzeb człowieka.",
+      },
+      {
+        rule: "Podsumowanie",
+        starter:
+          "Postępowanie człowieka jest więc efektem złożonego działania różnych czynników wewnętrznych i zewnętrznych.",
+      },
+    ],
+    suggested_answer: [
+      "Ludzkie postępowanie jest wynikiem wielu różnych czynników, które wpływają na decyzje i wybory jednostki. Człowiek nie działa w próżni, lecz pod wpływem swoich przekonań, emocji oraz sytuacji życiowej.",
+      "Na zachowanie człowieka mogą wpływać zarówno jego przekonania, jak i sytuacja życiowa oraz emocje. Często decyzje są wynikiem konfliktu między rozumem a sumieniem.",
+      "W powieści Zbrodnia i kara Raskolnikow dopuszcza się zbrodni pod wpływem własnej teorii o jednostkach wybitnych. Uważa, że niektórzy ludzie mają prawo łamać normy moralne dla wyższego celu. To właśnie ta ideologia popycha go do zamordowania lichwiarki.",
+      "Na jego postępowanie wpływa również trudna sytuacja materialna oraz silne emocje i wewnętrzny konflikt. Raskolnikow żyje w biedzie, czuje się wyobcowany i zagubiony. Po dokonaniu zbrodni zaczynają nim rządzić wyrzuty sumienia, które ostatecznie prowadzą do jego przemiany.",
+      "Podobny mechanizm można zauwać w Makbecie, który pod wpływem przepowiedni i ambicji decyduje się na zbrodnię. Również psychologia wskazuje, że niezaspokojone potrzeby mogą determinować ludzkie działania, co widać w przypadku Raskolnikowa.",
+      "Postępowanie człowieka jest więc efektem złożonego działania różnych czynników wewnętrznych i zewnętrznych. Przekonania, emocje i sytuacja życiowa wspólnie wpływają na decyzje jednostki, co doskonale ukazuje przykład Raskolnikowa.",
+    ],
+  },
+  {
+    id: 41,
+    book: "Zbrodnia i kara",
+    book_id: 18,
+    time: "15 min",
+    question:
+      "Motyw przemiany bohatera. Omów zagadnienie na podstawie Zbrodni i kary Fiodora Dostojewskiego. W swojej odpowiedzi uwzględnij również wybrany kontekst.",
+    question_explanation:
+      "Masz pokazać, jak i dlaczego główny bohater się zmienia. Chodzi o to, co było na początku, co go do tej zmiany doprowadziło i jaki jest na końcu. Ważne, żebyś pokazał cały proces, a nie tylko efekt.",
+    tips: [
+      "Raskolnikow przed zbrodnią",
+      "teoria nadczłowieka",
+      "zbrodnia jako punkt zwrotny",
+      "wyrzuty sumienia i cierpienie",
+      "rola Soni",
+      "przyznanie się do winy",
+      "duchowa przemiana",
+      "motyw odkupienia",
+    ],
+    contexts: [
+      {
+        title: "Biblia - przypowieść o synu marnotrawnym",
+        description:
+          "Historia człowieka, który odchodzi od dobra, popełnia błędy, ale ostatecznie wraca i zostaje przebaczony. Pokazuje sens przemiany i odkupienia.",
+      },
+      {
+        title: "Dziady cz. III Adama Mickiewicza",
+        description:
+          "Przemiana Gustawa w Konrada jako przykład wewnętrznej metamorfozy bohatera, który zmienia swoją tożsamość i sposób myślenia.",
+      },
+    ],
+    schema: [
+      {
+        rule: "Wstęp",
+        starter:
+          "Motyw przemiany bohatera to jeden z najważniejszych tematów literatury, ukazujący rozwój wewnętrzny postaci pod wpływem doświadczeń.",
+      },
+      {
+        rule: "Teza",
+        starter:
+          "W Zbrodni i karze Fiodora Dostojewskiego przemiana Rodiona Raskolnikowa dokonuje się stopniowo i prowadzi od pychy do pokory oraz od zbrodni do moralnego odrodzenia.",
+      },
+      {
+        rule: "Argument 1",
+        starter:
+          "Na początku utworu Raskolnikow jest przekonany o swojej wyjątkowości i tworzy teorię nadczłowieka, która usprawiedliwia jego zbrodnię.",
+      },
+      {
+        rule: "Argument 2",
+        starter:
+          "Po dokonaniu morderstwa bohater zaczyna odczuwać wyrzuty sumienia, a jego psychika ulega rozkładowi, co prowadzi do wewnętrznego kryzysu.",
+      },
+      {
+        rule: "Konteksty",
+        starter:
+          "Motyw przemiany bohatera można również dostrzec w innych utworach literackich, takich jak przypowieść o synu marnotrawnym z Biblii.",
+      },
+      {
+        rule: "Podsumowanie",
+        starter:
+          "Przemiana Raskolnikowa pokazuje, że nawet największy upadek moralny może prowadzić do odkupienia i odrodzenia.",
+      },
+    ],
+    suggested_answer: [
+      "Motyw przemiany bohatera to jeden z najważniejszych tematów literatury, ukazujący rozwój wewnętrzny postaci pod wpływem doświadczeń. Bohaterowie często przechodzą długą drogę od błędu do zrozumienia, co czyni ich bardziej wiarygodnymi i głębokimi.",
+      "W Zbrodni i karze Fiodora Dostojewskiego przemiana Rodiona Raskolnikowa dokonuje się stopniowo i prowadzi od pychy do pokory oraz od zbrodni do moralnego odrodzenia. Jest to proces trudny i bolesny, ale ostatecznie prowadzi do duchowego oczyszczenia.",
+      "Na początku utworu Raskolnikow jest przekonany o swojej wyjątkowości. Tworzy teorię nadczłowieka, według której jednostki wybitne mogą łamać zasady moralne dla wyższego dobra. Właśnie ta idea prowadzi go do zamordowania lichwiarki, co traktuje jako eksperyment potwierdzający jego przekonania.",
+      "Po dokonaniu zbrodni bohater zaczyna jednak odczuwać silne wyrzuty sumienia. Jego psychika ulega rozkładowi, popada w chorobę i izolację. Stopniowo uświadamia sobie, że nie jest ponad moralnością, a jego czyn był błędem. Kluczową rolę w jego przemianie odgrywa Sonia, która poprzez swoją wiarę i dobroć skłania go do refleksji i przyznania się do winy.",
+      "Motyw przemiany bohatera można również dostrzec w przypowieści o synu marnotrawnym z Biblii. Podobnie jak Raskolnikow, bohater tej historii popełnia błędy, ale ostatecznie wraca na właściwą drogę i doświadcza przebaczenia. Oba przykłady pokazują, że przemiana jest możliwa dzięki refleksji i skrusze.",
+      "Przemiana Raskolnikowa pokazuje, że nawet największy upadek moralny może prowadzić do odkupienia. Bohater przechodzi długą drogę od pychy do pokory, co czyni jego historię uniwersalnym przykładem wewnętrznej metamorfozy człowieka.",
+    ],
+  },
+  {
+    id: 42,
+    book: "Wesele",
+    book_id: 19,
+    time: "15 min",
+    question:
+      "Co utrudnia porozumienie między przedstawicielami różnych grup społecznych. Omów zagadnienie na podstawie Wesela Stanisława Wyspiańskiego. W swojej odpowiedzi uwzględnij również wybrany kontekst.",
+    question_explanation:
+      "Masz pokazać, dlaczego ludzie z różnych warstw społecznych nie potrafią się dogadać. W Weselu chodzi głównie o relacje inteligencji i chłopów. Trzeba wskazać konkretne bariery, np. uprzedzenia czy brak zrozumienia, i poprzeć to przykładami z dramatu oraz innym kontekstem.",
+    tips: [
+      "inteligencja vs chłopi",
+      "stereotypy i uprzedzenia",
+      "brak wspólnego języka",
+      "pozorna jedność",
+      "symbolika postaci fantastycznych",
+      "chocholi taniec jako znak marazmu",
+      "różnice mentalności i doświadczeń",
+    ],
+    contexts: [
+      {
+        title: "Lalka Bolesława Prusa",
+        description:
+          "Relacje między arystokracją a mieszczaństwem pokazują bariery społeczne, pogardę i brak porozumienia wynikający z uprzedzeń i różnic klasowych.",
+      },
+      {
+        title: "Chłopi Władysława Reymonta",
+        description:
+          "Obraz społeczności wiejskiej pozwala zrozumieć mentalność chłopów, ich przywiązanie do tradycji i odmienność od inteligencji, co utrudnia dialog między warstwami.",
+      },
+    ],
+    schema: [
+      {
+        rule: "Wstęp",
+        starter:
+          "Porozumienie między różnymi grupami społecznymi często napotyka liczne trudności, wynikające z odmiennych doświadczeń i sposobu myślenia.",
+      },
+      {
+        rule: "Teza",
+        starter:
+          "W Weselu Stanisława Wyspiańskiego brak porozumienia między inteligencją a chłopami wynika przede wszystkim ze stereotypów, różnic mentalnych oraz pozornej jedności.",
+      },
+      {
+        rule: "Argument 1",
+        starter:
+          "Pierwszą przyczyną braku porozumienia są wzajemne uprzedzenia i stereotypy, które widoczne są w relacjach bohaterów dramatu.",
+      },
+      {
+        rule: "Argument 2",
+        starter:
+          "Drugim istotnym czynnikiem jest brak wspólnego celu i realnego zrozumienia, co symbolicznie ukazują postacie fantastyczne oraz chocholi taniec.",
+      },
+      {
+        rule: "Konteksty",
+        starter:
+          "Podobny problem braku porozumienia między warstwami społecznymi można dostrzec również w innych utworach literackich, na przykład w Lalce Bolesława Prusa.",
+      },
+      {
+        rule: "Podsumowanie",
+        starter:
+          "Podsumowując, brak porozumienia między grupami społecznymi wynika z głęboko zakorzenionych różnic i uprzedzeń, które trudno przezwyciężyć.",
+      },
+    ],
+    suggested_answer: [
+      "Porozumienie między różnymi grupami społecznymi często napotyka liczne trudności, wynikające z odmiennych doświadczeń i sposobu myślenia. Różnice te mogą prowadzić do konfliktów, nieporozumień oraz braku wspólnego działania.",
+      "W Weselu Stanisława Wyspiańskiego brak porozumienia między inteligencją a chłopami wynika przede wszystkim ze stereotypów, różnic mentalnych oraz pozornej jedności. Autor pokazuje, że mimo wspólnej zabawy bohaterowie nie są w stanie się naprawdę zrozumieć.",
+      "Pierwszą przyczyną braku porozumienia są wzajemne uprzedzenia i stereotypy. Inteligencja idealizuje chłopów, traktując ich powierzchownie jako symbol siły narodowej, natomiast chłopi patrzą na inteligencję z dystansem i nieufnością. Przykładem może być rozmowa Dziennikarza z Czepcem, która ujawnia brak rzeczywistego zainteresowania sprawami chłopów.",
+      "Drugim istotnym czynnikiem jest brak wspólnego celu i realnego zrozumienia. Postacie fantastyczne, takie jak Wernyhora, ukazują niespełnione marzenia o wspólnym działaniu narodowym. Symboliczny chocholi taniec pokazuje, że społeczeństwo pozostaje bierne i niezdolne do podjęcia wspólnego wysiłku.",
+      "Podobny problem braku porozumienia między warstwami społecznymi można dostrzec w Lalce Bolesława Prusa. Arystokracja i mieszczaństwo nie potrafią się porozumieć z powodu uprzedzeń i pogardy, co prowadzi do izolacji jednostek takich jak Wokulski. Różnice klasowe uniemożliwiają budowanie autentycznych relacji.",
+      "Podsumowując, brak porozumienia między grupami społecznymi wynika z głęboko zakorzenionych różnic mentalnych, stereotypów oraz braku wspólnego celu. Wesele pokazuje, że bez wzajemnego zrozumienia i współpracy niemożliwe jest osiągnięcie jedności społecznej.",
+    ],
+  },
+  {
+    id: 43,
+    book: "Wesele",
+    book_id: 19,
+    time: "15 min",
+    question:
+      "Rola chłopów i inteligencji w sprawie niepodległościowej. Omów zagadnienie na podstawie Wesela Stanisława Wyspiańskiego. W swojej odpowiedzi uwzględnij również wybrany kontekst.",
+    question_explanation:
+      "Musisz pokazać, jak w Weselu przedstawione są dwie grupy społeczne: chłopi i inteligencja, i czy są oni zdolni wspólnie walczyć o niepodległość. Chodzi o to, żeby ocenić ich postawy, możliwości i ograniczenia oraz odpowiedzieć na pytanie, dlaczego nie dochodzi do realnego działania.",
+    tips: [
+      "chłopi jako siła fizyczna i potencjał do walki",
+      "inteligencja jako warstwa przywódcza",
+      "brak porozumienia między warstwami",
+      "symbolika chocholego tańca",
+      "postawa Gospodarza i Czepca",
+      "rola Wernyhory",
+      "bierność i marazm społeczeństwa",
+    ],
+    contexts: [
+      {
+        title: "Historia Polski pod zaborami",
+        description:
+          "Społeczeństwo polskie było podzielone na warstwy, które nie zawsze potrafiły współpracować. Brak jedności narodowej był jedną z przyczyn niepowodzeń powstań narodowych.",
+      },
+      {
+        title: "Chłopi w literaturze Młodej Polski",
+        description:
+          "W epoce Młodej Polski chłopi byli idealizowani jako siła narodu, ale często ukazywano też ich ograniczenia, takie jak brak świadomości politycznej.",
+      },
+    ],
+    schema: [
+      {
+        rule: "Wstęp",
+        starter:
+          "Walka o niepodległość Polski była jednym z najważniejszych wyzwań dla społeczeństwa pod zaborami.",
+      },
+      {
+        rule: "Teza",
+        starter:
+          "W Weselu Stanisława Wyspiańskiego zarówno chłopi, jak i inteligencja nie są w stanie skutecznie podjąć wspólnej walki o niepodległość.",
+      },
+      {
+        rule: "Argument 1",
+        starter:
+          "Chłopi zostają przedstawieni jako grupa posiadająca potencjał do walki, ale ograniczona przez brak świadomości politycznej.",
+      },
+      {
+        rule: "Argument 2",
+        starter:
+          "Z kolei inteligencja, mimo swojej wiedzy i pozycji społecznej, okazuje się bierna i niezdolna do działania.",
+      },
+      {
+        rule: "Konteksty",
+        starter:
+          "Podobny problem braku jedności społecznej można zauważyć w historii Polski pod zaborami.",
+      },
+      {
+        rule: "Podsumowanie",
+        starter:
+          "Podsumowując, Wyspiański ukazuje, że brak współpracy między chłopami a inteligencją uniemożliwia odzyskanie niepodległości.",
+      },
+    ],
+    suggested_answer: [
+      "Walka o niepodległość Polski była jednym z najważniejszych wyzwań dla społeczeństwa pod zaborami. Wymagała ona jedności i współpracy różnych warstw społecznych, jednak nie zawsze było to możliwe.",
+      "W Weselu Stanisława Wyspiańskiego zarówno chłopi, jak i inteligencja nie są w stanie skutecznie podjąć wspólnej walki o niepodległość. Autor ukazuje ich wzajemne niezrozumienie oraz brak realnej gotowości do działania.",
+      "Chłopi zostają przedstawieni jako grupa posiadająca potencjał do walki, ale ograniczona przez brak świadomości politycznej. Postać Czepca pokazuje zainteresowanie sprawami narodowymi, jednak jest ono powierzchowne. Chłopi są gotowi do działania, ale potrzebują przywództwa, którego nie otrzymują.",
+      "Z kolei inteligencja, mimo swojej wiedzy i pozycji społecznej, okazuje się bierna i niezdolna do działania. Gospodarz otrzymuje od Wernyhory złoty róg, symbol wezwania do walki, ale nie potrafi wykorzystać tej szansy. Inteligenci pogrążeni są w marzeniach i rozmowach, zamiast podejmować konkretne działania.",
+      "Symbolicznym obrazem tej sytuacji jest chocholi taniec, który oznacza marazm i bezczynność całego społeczeństwa. Zarówno chłopi, jak i inteligencja tracą szansę na wspólne działanie i pogrążają się w stagnacji.",
+      "Podobny problem braku jedności społecznej można zauważyć w historii Polski pod zaborami. Niezdolność do współpracy między różnymi warstwami społecznymi była jedną z przyczyn niepowodzeń powstań narodowych.",
+      "Podsumowując, Wyspiański ukazuje, że brak współpracy między chłopami a inteligencją uniemożliwia odzyskanie niepodległości. Społeczeństwo polskie jest podzielone i nieprzygotowane do wspólnej walki, co prowadzi do utraty kolejnej szansy na wolność.",
+    ],
+  },
+  {
+    id: 44,
+    book: "Wesele",
+    book_id: 19,
+    time: "15 min",
+    question:
+      "Sen o Polsce czy sąd nad Polską. Omów zagadnienie na podstawie Wesela Stanisława Wyspiańskiego. W swojej odpowiedzi uwzględnij również wybrany kontekst.",
+    question_explanation:
+      "Masz odpowiedzieć, czy Wesele pokazuje raczej marzenie o odrodzeniu Polski i wspólnocie narodowej, czy raczej krytykę Polaków i ich wad. Innymi słowy: czy to bardziej optymistyczna wizja, czy gorzka ocena społeczeństwa. Trzeba to poprzeć przykładami z dramatu i dodać kontekst, który pomoże lepiej to zrozumieć.",
+    tips: [
+      "inteligencja i chłopi",
+      "brak porozumienia",
+      "chocholi taniec",
+      "symbolika widm",
+      "Wernyhora i złoty róg",
+      "marazm społeczeństwa",
+      "pozorna jedność",
+    ],
+    contexts: [
+      {
+        title: "Romantyzm i idea powstańcza",
+        description:
+          "Romantyzm promował wizję Polski jako narodu wybranego i gotowego do walki o wolność. Wesele konfrontuje ten mit z rzeczywistością, pokazując, że Polacy nie są zdolni do wspólnego działania.",
+      },
+      {
+        title: "Pozytywizm i praca u podstaw",
+        description:
+          "Pozytywizm kładł nacisk na edukację i współpracę między warstwami społecznymi. Wesele pokazuje, że brak realnego porozumienia między inteligencją a chłopami uniemożliwia realizację tych idei.",
+      },
+    ],
+    schema: [
+      {
+        rule: "Wstęp",
+        starter:
+          "Wesele Stanisława Wyspiańskiego to dramat, który podejmuje refleksję nad kondycją narodu polskiego i jego zdolnością do odzyskania niepodległości.",
+      },
+      {
+        rule: "Teza",
+        starter:
+          "Uważam, że utwór jest przede wszystkim sądem nad Polską, choć zawiera także elementy snu o jej odrodzeniu.",
+      },
+      {
+        rule: "Argument 1",
+        starter:
+          "Pierwszym argumentem potwierdzającym tę tezę jest ukazanie pozornej jedności między inteligencją a chłopami.",
+      },
+      {
+        rule: "Argument 2",
+        starter:
+          "Drugim ważnym elementem jest symbolika widm i wydarzeń, które obnażają słabości społeczeństwa.",
+      },
+      {
+        rule: "Konteksty",
+        starter:
+          "Zagadnienie to można lepiej zrozumieć, odwołując się do kontekstu romantyzmu oraz pozytywizmu.",
+      },
+      {
+        rule: "Podsumowanie",
+        starter:
+          "Podsumowując, Wesele to przede wszystkim gorzka diagnoza narodu polskiego, który nie potrafi wykorzystać szansy na wolność.",
+      },
+    ],
+    suggested_answer: [
+      "Wesele Stanisława Wyspiańskiego to dramat, który podejmuje refleksję nad kondycją narodu polskiego i jego zdolnością do odzyskania niepodległości. Autor ukazuje społeczeństwo w momencie pozornego zjednoczenia, które jednak szybko okazuje się iluzją.",
+      "Uważam, że utwór jest przede wszystkim sądem nad Polską, choć zawiera także elementy snu o jej odrodzeniu. Wyspiański pokazuje marzenia o wolności, ale jednocześnie demaskuje słabości narodowe, które uniemożliwiają ich realizację.",
+      "Pierwszym argumentem potwierdzającym tę tezę jest ukazanie pozornej jedności między inteligencją a chłopami. Wesele miało symbolizować połączenie dwóch warstw społecznych, jednak rozmowy bohaterów ujawniają wzajemne uprzedzenia i brak prawdziwego zrozumienia. Inteligencja idealizuje chłopów, a chłopi nie ufają inteligencji, co uniemożliwia wspólne działanie.",
+      "Drugim ważnym elementem jest symbolika widm i wydarzeń, które obnażają słabości społeczeństwa. Postać Wernyhory przynosi wizję powstania, ale złoty róg zostaje zgubiony, co symbolizuje zaprzepaszczenie szansy na wolność. Z kolei chocholi taniec ukazuje marazm i bezwład narodu, który nie potrafi podjąć działania.",
+      "Zagadnienie to można lepiej zrozumieć, odwołując się do kontekstu romantyzmu oraz pozytywizmu. Romantyzm budował mit narodu gotowego do walki, natomiast Wesele pokazuje, że jest to jedynie złudzenie. Z kolei pozytywistyczna idea współpracy między warstwami społecznymi również okazuje się niespełniona, ponieważ brak rzeczywistego porozumienia uniemożliwia rozwój kraju.",
+      "Podsumowując, Wesele to przede wszystkim gorzka diagnoza narodu polskiego, który nie potrafi wykorzystać szansy na wolność. Choć w dramacie pojawia się sen o Polsce niepodległej, zostaje on zdominowany przez krytykę społeczeństwa i jego niezdolności do działania.",
+    ],
+  },
+  {
+    id: 45,
+    book: "Wesele",
+    book_id: 19,
+    time: "15 min",
+    question:
+      "Symboliczne znaczenie widm i zjaw. Omów zagadnienie na podstawie Wesela Stanisława Wyspiańskiego. W swojej odpowiedzi uwzględnij również wybrany kontekst.",
+    question_explanation:
+      "Chodzi o to, żebyś wyjaśnił, po co w Weselu pojawiają się duchy i zjawy. Nie są tam przypadkowo – każda coś symbolizuje i coś mówi o bohaterach albo o Polsce. Masz pokazać, co oznaczają konkretne widma i jaki mają sens dla całego utworu. Na koniec dodaj też inny przykład z literatury lub historii, który pomoże lepiej zrozumieć ten temat.",
+    tips: [
+      "widma jako symbole przeszłości",
+      "rozrachunek z historią",
+      "sumienie bohaterów",
+      "Stańczyk, Wernyhora, Rycerz, Hetman",
+      "chocholi taniec jako efekt",
+      "brak jedności narodowej",
+      "symbolika narodowa",
+      "funkcja ostrzeżenia",
+    ],
+    contexts: [
+      {
+        title: "Dziady cz. II Adama Mickiewicza",
+        description:
+          "W utworze pojawiają się duchy, które symbolizują moralne prawdy i konsekwencje ludzkich czynów. Pomaga to pokazać, że zjawy często pełnią funkcję nauczycieli i przypominają o wartościach.",
+      },
+      {
+        title: "Historia Polski XIX wieku",
+        description:
+          "Rozbiory i brak niepodległości sprawiają, że przeszłość ciągle wraca i wpływa na teraźniejszość. Widma w Weselu można odczytać jako symbol nierozwiązanych problemów narodowych.",
+      },
+    ],
+    schema: [
+      {
+        rule: "Wstęp",
+        starter:
+          "Motyw widm i zjaw często pojawia się w literaturze jako sposób ukazania tego, co niewidzialne, ale ważne dla człowieka.",
+      },
+      {
+        rule: "Teza",
+        starter:
+          "Widma w Weselu Stanisława Wyspiańskiego mają znaczenie symboliczne i ukazują problemy bohaterów oraz całego narodu.",
+      },
+      {
+        rule: "Argument 1",
+        starter:
+          "Pierwszym przykładem jest zjawa Stańczyka, która ukazuje się Dziennikarzowi i symbolizuje mądrość polityczną oraz krytykę bierności elit.",
+      },
+      {
+        rule: "Argument 2",
+        starter:
+          "Kolejnym ważnym widmem jest Wernyhora, który przynosi wizję powstania, ale jego misja zostaje zaprzepaszczona, co pokazuje brak odpowiedzialności społeczeństwa.",
+      },
+      {
+        rule: "Konteksty",
+        starter:
+          "Podobną funkcję pełnią zjawy w Dziadach cz. II Adama Mickiewicza, gdzie duchy uczą żywych zasad moralnych.",
+      },
+      {
+        rule: "Podsumowanie",
+        starter:
+          "Podsumowując, widma w Weselu nie są tylko elementem fantastycznym, lecz pełnią ważną funkcję symboliczną.",
+      },
+    ],
+    suggested_answer: [
+      "Motyw widm i zjaw często pojawia się w literaturze jako sposób ukazania tego, co niewidzialne, ale ważne dla człowieka. Dzięki nim autorzy mogą przedstawić emocje, wyrzuty sumienia czy problemy społeczne. W Weselu Stanisława Wyspiańskiego pełnią one szczególnie istotną rolę.",
+      "Widma w Weselu Stanisława Wyspiańskiego mają znaczenie symboliczne i ukazują problemy bohaterów oraz całego narodu. Każda zjawa reprezentuje określone wartości, lęki lub błędy, z którymi bohaterowie nie potrafią się zmierzyć.",
+      "Pierwszym przykładem jest zjawa Stańczyka, która ukazuje się Dziennikarzowi. Symbolizuje ona mądrość polityczną i troskę o losy kraju. Jednocześnie krytykuje bierność inteligencji i jej brak działania. Spotkanie to ujawnia, że bohaterowie są świadomi problemów, ale nie podejmują realnych kroków.",
+      "Kolejnym ważnym widmem jest Wernyhora, który przynosi wizję powstania narodowego. Przekazuje gospodarzowi złoty róg jako symbol szansy na odzyskanie niepodległości. Jednak misja zostaje zaprzepaszczona, co pokazuje niezdolność społeczeństwa do działania i brak jedności.",
+      "Podobną funkcję pełnią zjawy w Dziadach cz. II Adama Mickiewicza, gdzie duchy uczą żywych zasad moralnych i przypominają o konsekwencjach czynów. W obu utworach obecność zjaw służy przekazaniu ważnych prawd i ostrzeżeń.",
+      "Podsumowując, widma w Weselu nie są tylko elementem fantastycznym, lecz pełnią ważną funkcję symboliczną. Ukazują słabości bohaterów i problemy narodu, a także przypominają o konieczności działania. Ich obecność prowadzi jednak do gorzkiego wniosku o niemożności zmiany, co symbolizuje chocholi taniec.",
+    ],
+  },
+  {
+    id: 46,
+    book: "Wesele",
+    book_id: 19,
+    time: "15 min",
+    question:
+      "Motyw tańca. Omów zagadnienie na podstawie Wesela Stanisława Wyspiańskiego. W swojej odpowiedzi uwzględnij również wybrany kontekst.",
+    question_explanation:
+      "Chodzi o to, żebyś pokazał, jaką rolę pełni taniec w Weselu. Nie tylko jako zabawa, ale jako symbol czegoś ważniejszego – np. stanu społeczeństwa. Musisz wyjaśnić, co oznacza taniec (zwłaszcza chocholi taniec) i co mówi o Polakach. Potem dodajesz drugi przykład z innego tekstu kultury, który pomoże ci lepiej to wyjaśnić.",
+    tips: [
+      "chocholi taniec jako symbol",
+      "uśpienie społeczeństwa",
+      "brak działania mimo szansy",
+      "rola Chochoła",
+      "kontrast między zabawą a marazmem",
+      "symbolika kręgu i powtarzalności",
+      "wesele jako metafora Polski",
+    ],
+    contexts: [
+      {
+        title: "Tango Sławomira Mrożka",
+        description:
+          "W finale dramatu pojawia się taniec Edka i Eugeniusza, który symbolizuje zwycięstwo prymitywizmu i chaosu nad wartościami. Podobnie jak w Weselu, taniec nie jest tylko zabawą, ale znakiem upadku i bezradności społeczeństwa.",
+      },
+      {
+        title: "Pan Tadeusz Adama Mickiewicza",
+        description:
+          "Polonez w finale epopei symbolizuje jedność narodową i nadzieję na odzyskanie niepodległości. W zestawieniu z chocholim tańcem pokazuje kontrast między aktywną wspólnotą a biernym społeczeństwem pogrążonym w marazmie.",
+      },
+    ],
+    schema: [
+      {
+        rule: "Wstęp",
+        starter:
+          "Motyw tańca w literaturze często wykracza poza funkcję rozrywkową i staje się nośnikiem głębszych znaczeń symbolicznych.",
+      },
+      {
+        rule: "Teza",
+        starter:
+          "W Weselu Stanisława Wyspiańskiego taniec pełni funkcję symboliczną i ukazuje marazm oraz bezsilność społeczeństwa polskiego.",
+      },
+      {
+        rule: "Argument 1",
+        starter:
+          "Najważniejszym przykładem jest chocholi taniec, który pojawia się w finale dramatu.",
+      },
+      {
+        rule: "Argument 2",
+        starter:
+          "Taniec obecny w całym Weselu ma także znaczenie jako element integrujący, ale jednocześnie demaskujący pozorność jedności.",
+      },
+      {
+        rule: "Konteksty",
+        starter:
+          "Podobną funkcję motyw tańca pełni w innym utworze literackim.",
+      },
+      {
+        rule: "Podsumowanie",
+        starter:
+          "Motyw tańca w Weselu ukazuje głęboką diagnozę społeczeństwa i jego niemoc wobec historii.",
+      },
+    ],
+    suggested_answer: [
+      "Motyw tańca w literaturze często wykracza poza funkcję rozrywkową i staje się nośnikiem głębszych znaczeń symbolicznych. Może wyrażać emocje zbiorowe, stan społeczeństwa lub jego kondycję moralną.",
+      "W Weselu Stanisława Wyspiańskiego taniec pełni funkcję symboliczną i ukazuje marazm oraz bezsilność społeczeństwa polskiego. Jest on jednym z kluczowych elementów budujących przesłanie dramatu.",
+      "Najważniejszym przykładem jest chocholi taniec, który pojawia się w finale dramatu. Bohaterowie, zahipnotyzowani przez Chochoła, zaczynają tańczyć w sposób mechaniczny i bezrefleksyjny. Taniec ten symbolizuje uśpienie narodu, jego bierność i brak zdolności do podjęcia działania, mimo wcześniejszych zapowiedzi powstania. Zgubienie złotego rogu dodatkowo podkreśla zmarnowaną szansę na odzyskanie niepodległości.",
+      "Taniec obecny w całym Weselu ma także znaczenie jako element integrujący, ale jednocześnie demaskujący pozorność jedności. Choć chłopi i inteligencja wspólnie się bawią, ich relacje są powierzchowne i pełne nieporozumień. Wspólny taniec nie prowadzi do prawdziwego porozumienia, a jedynie maskuje istniejące podziały społeczne.",
+      "Podobną funkcję motyw tańca pełni w Tango Sławomira Mrożka. W finale dramatu taniec Edka i Eugeniusza symbolizuje triumf chaosu i prymitywizmu nad wartościami. Podobnie jak w Weselu, taniec nie jest wyrazem radości, lecz znakiem upadku i bezsilności społeczeństwa wobec negatywnych przemian.",
+      "Motyw tańca w Weselu ukazuje głęboką diagnozę społeczeństwa i jego niemoc wobec historii. Chocholi taniec staje się symbolem narodowego marazmu, który uniemożliwia podjęcie skutecznego działania i prowadzi do kolejnych zmarnowanych szans.",
+    ],
+  },
+  {
+    id: 47,
+    book: "Chłopi",
+    book_id: 20,
+    time: "15 min",
+    question:
+      "Obyczaj i tradycja w życiu społeczeństwa. Omów zagadnienie na podstawie znanych Ci fragmentów Chłopów Władysława Stanisława Reymonta. W swojej odpowiedzi uwzględnij również wybrany kontekst.",
+    question_explanation:
+      "Masz pokazać, jak ważne są zwyczaje i tradycje dla ludzi w Chłopach. Chodzi o to, jak wpływają one na życie bohaterów, ich decyzje i relacje. Pamiętaj też, żeby dodać kontekst, czyli przykład z innego utworu albo z życia, który pomoże lepiej to wyjaśnić.",
+    tips: [
+      "cykl pór roku i obrzędy",
+      "wesele Boryny i Jagny",
+      "religijność i święta",
+      "tradycja jako prawo społeczne",
+      "rola wspólnoty wiejskiej",
+      "hierarchia społeczna",
+      "konflikt jednostki z tradycją",
+    ],
+    contexts: [
+      {
+        title: "Pan Tadeusz Adama Mickiewicza",
+        description:
+          "Opis staropolskich obyczajów i tradycji, takich jak uczty, polowania czy grzybobranie, pokazuje ich rolę w budowaniu wspólnoty i tożsamości narodowej.",
+      },
+      {
+        title: "Kultura ludowa i tradycje wiejskie",
+        description:
+          "Tradycje przekazywane z pokolenia na pokolenie regulują życie społeczności, wyznaczają normy zachowań i wzmacniają więzi między ludźmi.",
+      },
+    ],
+    schema: [
+      {
+        rule: "Wstęp",
+        starter:
+          "Obyczaje i tradycje odgrywają istotną rolę w życiu każdej społeczności, ponieważ...",
+      },
+      {
+        rule: "Teza",
+        starter:
+          "W powieści Chłopi Władysława Stanisława Reymonta tradycja stanowi fundament życia społecznego i wpływa na postępowanie bohaterów.",
+      },
+      {
+        rule: "Argument 1",
+        starter:
+          "Przede wszystkim tradycja organizuje życie codzienne mieszkańców Lipiec, co widać na przykładzie...",
+      },
+      {
+        rule: "Argument 2",
+        starter:
+          "Ponadto obyczaje pełnią funkcję norm społecznych, które regulują relacje między ludźmi...",
+      },
+      {
+        rule: "Konteksty",
+        starter: "Podobną rolę tradycja odgrywa w...",
+      },
+      {
+        rule: "Podsumowanie",
+        starter:
+          "Podsumowując, obyczaje i tradycje mają ogromne znaczenie w życiu społeczeństwa, ponieważ...",
+      },
+    ],
+    suggested_answer: [
+      "Obyczaje i tradycje odgrywają istotną rolę w życiu każdej społeczności, ponieważ kształtują jej tożsamość, porządkują codzienność oraz wpływają na relacje międzyludzkie. Są one przekazywane z pokolenia na pokolenie i stanowią ważny element kultury.",
+      "W powieści Chłopi Władysława Stanisława Reymonta tradycja stanowi fundament życia społecznego i wpływa na postępowanie bohaterów. Społeczność Lipiec funkcjonuje według ustalonych zwyczajów, które wyznaczają rytm życia mieszkańców.",
+      "Przede wszystkim tradycja organizuje życie codzienne mieszkańców Lipiec, co widać na przykładzie cyklu pór roku i związanych z nim prac polowych oraz świąt religijnych. Obrzędy takie jak dożynki czy święta kościelne są ważnymi momentami integrującymi społeczność i nadającymi sens ich pracy.",
+      "Ponadto obyczaje pełnią funkcję norm społecznych, które regulują relacje między ludźmi. Przykładem może być wesele Boryny i Jagny, które odbywa się zgodnie z tradycyjnymi zwyczajami. Jednocześnie widać, że złamanie norm, jak w przypadku romansu Jagny, spotyka się z ostracyzmem społecznym.",
+      "Podobną rolę tradycja odgrywa w Panu Tadeuszu Adama Mickiewicza, gdzie staropolskie obyczaje budują poczucie wspólnoty i tożsamości narodowej. Również w kulturze ludowej tradycje regulują życie społeczne i wzmacniają więzi międzyludzkie.",
+      "Podsumowując, obyczaje i tradycje mają ogromne znaczenie w życiu społeczeństwa, ponieważ porządkują jego funkcjonowanie, integrują ludzi oraz wyznaczają normy postępowania. W Chłopach Reymonta są one nieodłącznym elementem życia bohaterów i decydują o ich losach.",
+    ],
+  },
+  {
+    id: 48,
+    book: "Przedwiośnie",
+    book_id: 21,
+    time: "15 min",
+    question:
+      "Jakie znaczenie ma tytuł dla odczytania sensu utworu. Omów zagadnienie na podstawie Przedwiośnia Stefana Żeromskiego. W swojej odpowiedzi uwzględnij również wybrany kontekst.",
+    question_explanation:
+      "Chodzi o to, żebyś pokazał, co właściwie oznacza tytuł Przedwiośnie i jak pomaga zrozumieć cały utwór. Innymi słowy: dlaczego Żeromski wybrał właśnie taki tytuł i co on mówi o Polsce, bohaterze i sytuacji historycznej. Masz też odwołać się do innego tekstu lub zjawiska, które pomoże lepiej to wyjaśnić.",
+    tips: [
+      "symbolika przedwiośnia jako czasu przejściowego",
+      "Polska po odzyskaniu niepodległości",
+      "niedojrzałość państwa i społeczeństwa",
+      "Cezary Baryka jako człowiek poszukujący",
+      "rozczarowanie rzeczywistością",
+      "kontrast marzeń i rzeczywistości",
+      "proces dojrzewania jednostki i narodu",
+    ],
+    contexts: [
+      {
+        title: "Lalka Bolesława Prusa",
+        description:
+          "Tytuł odnosi się do przedmiotowego traktowania ludzi i iluzji społecznych, podobnie jak w Przedwiośniu tytuł sygnalizuje głębszy sens utworu i pomaga odczytać jego przesłanie.",
+      },
+      {
+        title: "Sytuacja Polski po 1918 roku",
+        description:
+          "Odrodzone państwo było w fazie kształtowania, pełne problemów i napięć społecznych, co dobrze oddaje metafora przedwiośnia jako czasu przejściowego i niepewnego.",
+      },
+    ],
+    schema: [
+      {
+        rule: "Wstęp",
+        starter:
+          "Tytuł utworu często stanowi ważną wskazówkę interpretacyjną, ponieważ może naprowadzać czytelnika na główne idee i sens dzieła.",
+      },
+      {
+        rule: "Teza",
+        starter:
+          "Tytuł Przedwiośnie Stefana Żeromskiego ma znaczenie symboliczne i pozwala lepiej zrozumieć sytuację Polski oraz wewnętrzne rozterki bohatera.",
+      },
+      {
+        rule: "Argument 1",
+        starter:
+          "Przede wszystkim przedwiośnie jako pora roku symbolizuje stan przejściowy między zimą a wiosną, co można odnieść do sytuacji Polski po odzyskaniu niepodległości.",
+      },
+      {
+        rule: "Argument 2",
+        starter:
+          "Tytuł odnosi się również do losów Cezarego Baryki, który znajduje się w fazie dojrzewania i poszukiwania własnej tożsamości.",
+      },
+      {
+        rule: "Konteksty",
+        starter:
+          "Podobną funkcję pełni tytuł w innych utworach literackich oraz w kontekście historycznym, co pozwala lepiej zrozumieć jego znaczenie.",
+      },
+      {
+        rule: "Podsumowanie",
+        starter:
+          "Podsumowując, tytuł Przedwiośnie odgrywa kluczową rolę w interpretacji utworu, ponieważ wskazuje na jego główne problemy i przesłanie.",
+      },
+    ],
+    suggested_answer: [
+      "Tytuł utworu często stanowi ważną wskazówkę interpretacyjną, ponieważ może naprowadzać czytelnika na główne idee i sens dzieła. Nie jest on przypadkowy, lecz stanowi integralną część przekazu literackiego.",
+      "Tytuł Przedwiośnie Stefana Żeromskiego ma znaczenie symboliczne i pozwala lepiej zrozumieć zarówno sytuację Polski po odzyskaniu niepodległości, jak i wewnętrzne rozterki głównego bohatera. Jest kluczem do odczytania przesłania utworu.",
+      "Przede wszystkim przedwiośnie jako pora roku symbolizuje stan przejściowy między zimą a wiosną. Jest to czas niepewności, błota i braku stabilizacji. Podobnie przedstawiona jest Polska po 1918 roku – formalnie wolna, ale wciąż zmagająca się z wieloma problemami społecznymi, gospodarczymi i politycznymi. Wizja szklanych domów okazuje się złudzeniem, a rzeczywistość daleka jest od ideału.",
+      "Tytuł odnosi się również do losów Cezarego Baryki, który przechodzi proces dojrzewania. Bohater poszukuje swojego miejsca w świecie i nie potrafi jednoznacznie określić swoich poglądów. Jego życie przypomina właśnie przedwiośnie – etap przejściowy, pełen niepewności i poszukiwań.",
+      "Podobną funkcję pełni tytuł w Lalce Bolesława Prusa, gdzie również ma on znaczenie symboliczne i pomaga zrozumieć głębszy sens utworu. Z kolei kontekst historyczny odrodzenia Polski pokazuje, że rzeczywistość była daleka od oczekiwań, co dodatkowo podkreśla trafność metafory przedwiośnia.",
+      "Podsumowując, tytuł Przedwiośnie odgrywa kluczową rolę w interpretacji utworu. Symbolizuje on stan przejściowy, niedojrzałość i poszukiwanie – zarówno w wymiarze jednostkowym, jak i narodowym. Dzięki temu czytelnik lepiej rozumie przesłanie powieści Żeromskiego.",
+    ],
+  },
+  {
+    id: 49,
+    book: "Przedwiośnie",
+    book_id: 21,
+    time: "15 min",
+    question:
+      "Wojna i rewolucja jako źródła doświadczeń człowieka. Omów zagadnienie na podstawie Przedwiośnia Stefana Żeromskiego. W swojej odpowiedzi uwzględnij również wybrany kontekst.",
+    question_explanation:
+      "Chodzi o to, żeby pokazać, jak wojna i rewolucja wpływają na człowieka - co zmieniają w jego myśleniu, emocjach i wartościach. Masz pokazać to na przykładzie losów Cezarego Baryki i dodać jeszcze jeden kontekst z innego utworu lub historii.",
+    tips: [
+      "Cezary Baryka - młodość w Baku",
+      "rewolucja i jej brutalność",
+      "śmierć matki jako doświadczenie graniczne",
+      "wojna polsko-bolszewicka",
+      "utrata złudzeń",
+      "dojrzewanie bohatera",
+      "kontrast między ideą a rzeczywistością",
+    ],
+    contexts: [
+      {
+        title:
+          "Inny utwór literacki - Inny świat Gustawa Herlinga-Grudzińskiego",
+        description:
+          "Pokazuje, jak ekstremalne doświadczenia historyczne wpływają na psychikę człowieka i jego moralność. Można porównać z doświadczeniami Cezarego, który również konfrontuje się z okrucieństwem systemu.",
+      },
+      {
+        title:
+          "Kontekst historyczny - rewolucja rosyjska i wojna polsko-bolszewicka",
+        description:
+          "Znajomość realiów historycznych pozwala lepiej zrozumieć, dlaczego wydarzenia w życiu bohatera były tak dramatyczne i jak wpływały na jego światopogląd.",
+      },
+    ],
+    schema: [
+      {
+        rule: "Wstęp",
+        starter:
+          "Wojna i rewolucja to wydarzenia historyczne, które w szczególny sposób wpływają na życie jednostki, kształtując jej osobowość i system wartości.",
+      },
+      {
+        rule: "Teza",
+        starter:
+          "Doświadczenia związane z wojną i rewolucją prowadzą do utraty złudzeń oraz przyspieszonego dojrzewania człowieka.",
+      },
+      {
+        rule: "Argument 1 - Przedwiośnie",
+        starter:
+          "Przykładem tego jest los Cezarego Baryki, który jako młody człowiek doświadcza rewolucji w Baku.",
+      },
+      {
+        rule: "Argument 2 - dalsze losy bohatera",
+        starter:
+          "Kolejnym ważnym doświadczeniem bohatera jest udział w wojnie polsko-bolszewickiej.",
+      },
+      {
+        rule: "Kontekst",
+        starter:
+          "Podobne doświadczenia ukazuje literatura łagrowa, na przykład w Innym świecie Gustawa Herlinga-Grudzińskiego.",
+      },
+      {
+        rule: "Podsumowanie",
+        starter:
+          "Podsumowując, wojna i rewolucja to wydarzenia, które głęboko zmieniają człowieka, często odbierając mu złudzenia i zmuszając do konfrontacji z rzeczywistością.",
+      },
+    ],
+    suggested_answer: [
+      "Wojna i rewolucja to wydarzenia historyczne, które w szczególny sposób wpływają na życie jednostki, kształtując jej osobowość i system wartości. Są to doświadczenia graniczne, które często prowadzą do zmiany sposobu myślenia oraz postrzegania świata.",
+      "Doświadczenia związane z wojną i rewolucją prowadzą do utraty złudzeń oraz przyspieszonego dojrzewania człowieka. Bohaterowie, którzy ich doświadczają, często muszą zmierzyć się z brutalną rzeczywistością i zweryfikować swoje wcześniejsze przekonania.",
+      "Przykładem tego jest los Cezarego Baryki, który jako młody człowiek doświadcza rewolucji w Baku. Początkowo fascynuje się jej hasłami, wierząc w równość i sprawiedliwość społeczną. Jednak szybko przekonuje się o jej brutalności - widzi śmierć, chaos i cierpienie ludzi. Najbardziej traumatycznym przeżyciem jest dla niego śmierć matki, która ginie w wyniku trudów życia w rewolucyjnej rzeczywistości. To wydarzenie powoduje u bohatera głęboką przemianę i utratę złudzeń.",
+      "Kolejnym ważnym doświadczeniem bohatera jest udział w wojnie polsko-bolszewickiej. Cezary styka się tam z realnym zagrożeniem życia oraz obserwuje dramatyczne losy innych ludzi. Wojna uczy go odpowiedzialności i zmusza do refleksji nad sensem walki oraz patriotyzmu.",
+      "Podobne doświadczenia ukazuje literatura łagrowa, na przykład w Innym świecie Gustawa Herlinga-Grudzińskiego. Bohaterowie tego utworu również zostają poddani ekstremalnym warunkom, które wpływają na ich psychikę i moralność. Tak jak Cezary, muszą zmierzyć się z cierpieniem i okrucieństwem systemu.",
+      "Podsumowując, wojna i rewolucja to wydarzenia, które głęboko zmieniają człowieka, często odbierając mu złudzenia i zmuszając do konfrontacji z rzeczywistością. W Przedwiośniu Stefana Żeromskiego doświadczenia te kształtują Cezarego Barykę, czyniąc go bardziej świadomym, ale także pełnym wątpliwości młodym człowiekiem.",
+    ],
+  },
+  {
+    id: 50,
+    book: "Przedwiośnie",
+    book_id: 21,
+    time: "15 min",
+    question:
+      "Różne wizje odbudowy Polski po odzyskaniu niepodległości. Omów zagadnienie na podstawie Przedwiośnia Stefana Żeromskiego. W swojej odpowiedzi uwzględnij również wybrany kontekst.",
+    question_explanation:
+      "Chodzi o to, żebyś pokazał, jakie pomysły na Polskę po 1918 roku pojawiają się w powieści i czym się różnią. Masz porównać np. wizję idealistyczną z bardziej realistycznymi czy rewolucyjnymi koncepcjami. Potem dorzucasz kontekst, który pomoże lepiej zrozumieć te pomysły.",
+    tips: [
+      "szklane domy jako utopia",
+      "Gajowiec i ewolucyjne reformy",
+      "Lulek i rewolucja",
+      "rozczarowanie Cezarego",
+      "realizm vs idealizm",
+      "problemy młodego państwa",
+      "krytyka społeczna",
+    ],
+    contexts: [
+      {
+        title: "Historyczny kontekst odbudowy Polski po 1918 roku",
+        description:
+          "Polska po odzyskaniu niepodległości zmagała się z ogromnymi problemami gospodarczymi, społecznymi i politycznymi. Różne wizje naprawy państwa wynikały z realnych trudności i sporów ideologicznych.",
+      },
+      {
+        title: "Lalka Bolesława Prusa",
+        description:
+          "W Lalce także pojawia się temat naprawy społeczeństwa i różne postawy wobec zmian. Można porównać idealizm Wokulskiego z bardziej realistycznymi lub biernymi postawami innych bohaterów.",
+      },
+    ],
+    schema: [
+      {
+        rule: "Wstęp",
+        starter:
+          "Po odzyskaniu niepodległości Polska stanęła przed ogromnym wyzwaniem odbudowy państwa, co znalazło odzwierciedlenie w literaturze.",
+      },
+      {
+        rule: "Teza",
+        starter:
+          "W Przedwiośniu Stefana Żeromskiego ukazane są różne, często sprzeczne wizje odbudowy Polski, które odzwierciedlają dylematy społeczeństwa tamtych czasów.",
+      },
+      {
+        rule: "Argument 1",
+        starter:
+          "Pierwszą z wizji jest utopijna koncepcja szklanych domów, przedstawiona przez Seweryna Barykę.",
+      },
+      {
+        rule: "Argument 2",
+        starter:
+          "Z kolei bardziej realistyczne podejście reprezentuje Gajowiec, który proponuje stopniowe reformy państwa.",
+      },
+      {
+        rule: "Konteksty",
+        starter:
+          "Podobne rozważania dotyczące naprawy społeczeństwa pojawiają się również w innych utworach literackich oraz w realiach historycznych epoki.",
+      },
+      {
+        rule: "Podsumowanie",
+        starter:
+          "Różnorodność wizji przedstawionych w powieści pokazuje, jak trudne i złożone było zadanie odbudowy państwa polskiego.",
+      },
+    ],
+    suggested_answer: [
+      "Po odzyskaniu niepodległości Polska stanęła przed ogromnym wyzwaniem odbudowy państwa, co znalazło odzwierciedlenie w literaturze. Twórcy podejmowali refleksję nad kierunkiem rozwoju kraju oraz najlepszymi metodami jego naprawy.",
+      "W Przedwiośniu Stefana Żeromskiego ukazane są różne, często sprzeczne wizje odbudowy Polski, które odzwierciedlają dylematy społeczeństwa tamtych czasów. Autor nie daje jednoznacznej odpowiedzi, lecz pokazuje złożoność problemu.",
+      "Pierwszą z wizji jest utopijna koncepcja szklanych domów, przedstawiona przez Seweryna Barykę. Symbolizuje ona nowoczesne, sprawiedliwe państwo, w którym wszyscy żyją w dobrobycie. Wizja ta działa na wyobraźnię młodego Cezarego, jednak okazuje się nierealna w zderzeniu z rzeczywistością Polski.",
+      "Z kolei bardziej realistyczne podejście reprezentuje Gajowiec, który proponuje stopniowe reformy państwa. Wierzy on w pracę organiczną i rozwój instytucji. Jego wizja jest rozsądna, ale powolna, przez co nie zaspokaja oczekiwań wszystkich obywateli.",
+      "Inną koncepcję przedstawia Lulek, zwolennik rewolucji. Postuluje on radykalne zmiany społeczne i wzoruje się na ideach komunistycznych. Ta wizja jest dynamiczna, ale niesie ze sobą ryzyko chaosu i przemocy.",
+      "Podobne rozważania dotyczące naprawy społeczeństwa pojawiają się również w kontekście historycznym odbudowy Polski po 1918 roku, kiedy ścierały się różne koncepcje polityczne. Również w Lalce Bolesława Prusa widoczny jest konflikt między idealizmem a realizmem w podejściu do zmian społecznych.",
+      "Różnorodność wizji przedstawionych w powieści pokazuje, jak trudne i złożone było zadanie odbudowy państwa polskiego. Żeromski ukazuje, że żadna z koncepcji nie jest doskonała, a przyszłość kraju zależy od znalezienia równowagi między nimi.",
+    ],
+  },
+  {
+    id: 51,
+    book: "Przedwiośnie",
+    book_id: 21,
+    time: "15 min",
+    question:
+      "Młodość jako czas kształtowania własnej tożsamości. Omów zagadnienie na podstawie Przedwiośnia Stefana Żeromskiego. W swojej odpowiedzi uwzględnij również wybrany kontekst.",
+    question_explanation:
+      "Masz pokazać, że młodość to moment, w którym człowiek dopiero szuka siebie, swoich poglądów i miejsca w świecie. Na przykładzie Cezarego Baryki wyjaśnij, jak doświadczenia życiowe wpływają na jego tożsamość. Do tego dodaj jeszcze jeden kontekst z innego utworu albo z historii czy filozofii.",
+    tips: [
+      "Cezary Baryka jako bohater dojrzewający",
+      "wpływ rewolucji w Baku",
+      "relacja z ojcem i jego wizja Polski",
+      "zderzenie marzeń ze szklaną rzeczywistością",
+      "poszukiwanie własnych poglądów politycznych",
+      "rozczarowanie rzeczywistością II RP",
+      "kontekst literacki lub historyczny dotyczący dojrzewania",
+    ],
+    contexts: [
+      {
+        title: "Syzyfowe prace Stefana Żeromskiego",
+        description:
+          "Marcin Borowicz również przechodzi proces dojrzewania i kształtowania tożsamości, szczególnie pod wpływem edukacji i kontaktu z kulturą narodową. To dobry przykład, jak młodość wiąże się z poszukiwaniem własnych wartości.",
+      },
+      {
+        title: "Okres dojrzewania jako temat w literaturze",
+        description:
+          "W wielu utworach młodość przedstawiana jest jako czas buntu, poszukiwań i zmiany poglądów. Można odwołać się do ogólnego motywu bohatera dojrzewającego, który musi sam określić swoją tożsamość.",
+      },
+    ],
+    schema: [
+      {
+        rule: "Wstęp",
+        starter:
+          "Młodość to szczególny etap w życiu człowieka, w którym kształtuje się jego tożsamość oraz system wartości.",
+      },
+      {
+        rule: "Teza",
+        starter:
+          "Młodość jest czasem intensywnego poszukiwania własnej tożsamości, co doskonale ukazuje los Cezarego Baryki w Przedwiośniu Stefana Żeromskiego.",
+      },
+      {
+        rule: "Argument 1",
+        starter:
+          "Cezary Baryka dorasta w trudnych warunkach rewolucji w Baku, co znacząco wpływa na jego sposób postrzegania świata.",
+      },
+      {
+        rule: "Argument 2",
+        starter:
+          "Po przyjeździe do Polski bohater konfrontuje swoje wyobrażenia o ojczyźnie z rzeczywistością, co prowadzi do kolejnych rozczarowań i poszukiwań własnej drogi.",
+      },
+      {
+        rule: "Konteksty",
+        starter:
+          "Podobny proces kształtowania tożsamości można zauważyć w innych utworach literackich, na przykład w Syzyfowych pracach Stefana Żeromskiego.",
+      },
+      {
+        rule: "Podsumowanie",
+        starter:
+          "Podsumowując, młodość to czas dynamicznych przemian, które mają kluczowy wpływ na ukształtowanie tożsamości człowieka.",
+      },
+    ],
+    suggested_answer: [
+      "Młodość to szczególny etap w życiu człowieka, w którym kształtuje się jego tożsamość oraz system wartości. Jest to czas poszukiwań, wątpliwości i podejmowania pierwszych samodzielnych decyzji, które wpływają na dalsze życie jednostki.",
+      "Młodość jest czasem intensywnego poszukiwania własnej tożsamości, co doskonale ukazuje los Cezarego Baryki w Przedwiośniu Stefana Żeromskiego. Bohater ten przechodzi długą drogę od bezrefleksyjnego chłopca do młodego człowieka próbującego zrozumieć świat i swoje miejsce w nim.",
+      "Cezary Baryka dorasta w trudnych warunkach rewolucji w Baku, co znacząco wpływa na jego sposób postrzegania świata. Początkowo fascynuje się rewolucją, jednak szybko dostrzega jej brutalność i chaos. Doświadczenia te powodują, że zaczyna kwestionować dotychczasowe przekonania i szukać własnej drogi.",
+      "Po przyjeździe do Polski bohater konfrontuje swoje wyobrażenia o ojczyźnie, ukształtowane przez opowieści ojca o szklanych domach, z rzeczywistością pełną biedy i niesprawiedliwości. To zderzenie marzeń z rzeczywistością pogłębia jego kryzys tożsamości i skłania do dalszych poszukiwań ideowych.",
+      "Podobny proces kształtowania tożsamości można zauważyć w Syzyfowych pracach Stefana Żeromskiego. Marcin Borowicz również dojrzewa, stopniowo odkrywając swoją narodową tożsamość i odrzucając narzucone mu poglądy. Obaj bohaterowie pokazują, że młodość to czas intensywnych przemian i poszukiwań.",
+      "Podsumowując, młodość to czas dynamicznych przemian, które mają kluczowy wpływ na ukształtowanie tożsamości człowieka. Na przykładzie Cezarego Baryki widać, że doświadczenia życiowe, rozczarowania i refleksja prowadzą do stopniowego dojrzewania i budowania własnego systemu wartości.",
+    ],
+  },
+  {
+    id: 52,
+    book: "Przedwiośnie",
+    book_id: 21,
+    time: "15 min",
+    question:
+      "Rola autorytetu w życiu człowieka. Omów zagadnienie na podstawie Przedwiośnia Stefana Żeromskiego. W swojej odpowiedzi uwzględnij również wybrany kontekst.",
+    question_explanation:
+      "Chodzi o to, żeby pokazać, kim jest autorytet i dlaczego jest ważny w życiu człowieka. Masz na przykładzie Cezarego Baryki wyjaśnić, jakie postacie były dla niego autorytetami, jak na niego wpływały i czy zawsze prowadziły go w dobrą stronę.",
+    tips: [
+      "Cezary Baryka jako bohater poszukujący",
+      "Seweryn Baryka jako autorytet ojcowski",
+      "Szymon Gajowiec jako autorytet państwowy i moralny",
+      "Antoni Lulek jako fałszywy autorytet",
+      "wpływ autorytetów na wybory bohatera",
+      "kryzys autorytetów",
+      "samodzielne kształtowanie poglądów",
+    ],
+    contexts: [
+      {
+        title: "Biblia – postać Boga jako autorytetu",
+        description:
+          "Bóg jako najwyższy autorytet moralny wyznaczający zasady postępowania. Pokazuje, jak ważne jest posiadanie trwałych wartości i przewodników w życiu.",
+      },
+      {
+        title: "Kamienie na szaniec Aleksandra Kamińskiego",
+        description:
+          "Rudy, Zośka i Alek kierują się autorytetem nauczycieli, harcerstwa i wartości patriotycznych. Pokazuje to pozytywną rolę autorytetów w kształtowaniu postaw.",
+      },
+    ],
+    schema: [
+      {
+        rule: "Wstęp",
+        starter:
+          "Autorytet to osoba lub idea, która stanowi dla człowieka wzór do naśladowania i wpływa na jego decyzje oraz system wartości.",
+      },
+      {
+        rule: "Teza",
+        starter:
+          "Autorytety odgrywają kluczową rolę w życiu człowieka, jednak ich wpływ może być zarówno pozytywny, jak i negatywny.",
+      },
+      {
+        rule: "Argument 1 – Przedwiośnie",
+        starter:
+          "W Przedwiośniu Stefana Żeromskiego główny bohater Cezary Baryka poszukuje autorytetów, które pomogłyby mu odnaleźć sens życia.",
+      },
+      {
+        rule: "Argument 2 – różne typy autorytetów",
+        starter:
+          "Na drodze Cezarego pojawiają się różne postacie, które próbują wpłynąć na jego światopogląd, reprezentując odmienne wizje świata.",
+      },
+      {
+        rule: "Kontekst",
+        starter:
+          "Podobną rolę autorytetów można zauważyć w innym utworze literackim, gdzie bohaterowie również kierują się określonymi wzorcami.",
+      },
+      {
+        rule: "Podsumowanie",
+        starter:
+          "Podsumowując, autorytety są niezwykle ważne w życiu człowieka, ponieważ pomagają mu podejmować decyzje i kształtować własną tożsamość.",
+      },
+    ],
+    suggested_answer: [
+      "Autorytet to osoba lub idea, która stanowi dla człowieka wzór do naśladowania i wpływa na jego decyzje oraz system wartości. W życiu każdego człowieka pojawiają się różne autorytety, które pomagają mu odnaleźć właściwą drogę. Ich rola jest szczególnie istotna w momentach kryzysu i poszukiwania sensu życia.",
+      "Autorytety odgrywają kluczową rolę w życiu człowieka, jednak ich wpływ może być zarówno pozytywny, jak i negatywny. Mogą inspirować do rozwoju, ale też wprowadzać w błąd, jeśli reprezentują niewłaściwe wartości.",
+      "W Przedwiośniu Stefana Żeromskiego główny bohater Cezary Baryka poszukuje autorytetów, które pomogłyby mu odnaleźć sens życia. Jedną z najważniejszych postaci jest jego ojciec, Seweryn Baryka, który przekazuje mu wizję szklanych domów jako symbolu idealnej Polski. Choć ta wizja okazuje się utopijna, wpływa na młodego bohatera i kształtuje jego wyobrażenie o ojczyźnie.",
+      "Na drodze Cezarego pojawiają się także inne autorytety. Szymon Gajowiec reprezentuje stopniowe reformy i pracę u podstaw, natomiast Antoni Lulek propaguje idee rewolucyjne. Cezary konfrontuje różne poglądy, ale nie przyjmuje ich bezkrytycznie. To pokazuje, że dojrzewanie polega także na weryfikowaniu autorytetów i samodzielnym myśleniu.",
+      "Podobną rolę autorytetów można zauważyć w Kamieniach na szaniec Aleksandra Kamińskiego. Bohaterowie kierują się wartościami przekazanymi przez nauczycieli i harcerstwo. Dzięki temu podejmują odważne i odpowiedzialne decyzje, co pokazuje pozytywny wpływ autorytetów na ich postawy.",
+      "Podsumowując, autorytety są niezwykle ważne w życiu człowieka, ponieważ pomagają mu podejmować decyzje i kształtować własną tożsamość. Jednak kluczowe jest, aby podchodzić do nich świadomie i nie rezygnować z własnego myślenia.",
+    ],
+  },
+  {
+    id: 53,
+    book: "Przedwiośnie",
+    book_id: 21,
+    time: "15 min",
+    question:
+      "Utopijny i realny obraz rzeczywistości. Omów zagadnienie na podstawie Przedwiośnia Stefana Żeromskiego. W swojej odpowiedzi uwzględnij również wybrany kontekst.",
+    question_explanation:
+      "Masz pokazać różnicę między wizją idealnego świata a tym, jak wygląda rzeczywistość naprawdę. W Przedwiośniu chodzi głównie o zestawienie marzeń o Polsce ze szklaną wizją Seweryna Baryki z brutalną prawdą, którą poznaje Cezary. Masz też dodać inny przykład z literatury albo historii, który pomoże to lepiej wyjaśnić.",
+    tips: [
+      "szklane domy jako symbol utopii",
+      "zderzenie marzeń z rzeczywistością",
+      "obraz Polski po odzyskaniu niepodległości",
+      "Cezary jako obserwator i krytyk",
+      "bieda i chaos społeczny",
+      "rozczarowanie ideami",
+      "funkcja utopii w literaturze",
+    ],
+    contexts: [
+      {
+        title: "Lalka Bolesława Prusa",
+        description:
+          "Idealistyczne wizje Wokulskiego zderzają się z rzeczywistością społeczną Warszawy, co pokazuje podobny mechanizm rozczarowania.",
+      },
+      {
+        title: "Folwark zwierzęcy Georgea Orwella",
+        description:
+          "Utopia równości zwierząt szybko przekształca się w system pełen niesprawiedliwości, co pokazuje, jak ideały mogą zostać wypaczone.",
+      },
+    ],
+    schema: [
+      {
+        rule: "Wstęp",
+        starter:
+          "Od zawsze ludzie tworzyli wizje idealnego świata, które często zderzają się z rzeczywistością.",
+      },
+      {
+        rule: "Teza",
+        starter:
+          "W Przedwiośniu Stefana Żeromskiego utopijny obraz rzeczywistości zostaje skonfrontowany z jej brutalną prawdą.",
+      },
+      {
+        rule: "Argument 1",
+        starter:
+          "Przykładem utopijnej wizji są szklane domy, które Seweryn Baryka przedstawia jako symbol nowoczesnej i sprawiedliwej Polski.",
+      },
+      {
+        rule: "Argument 2",
+        starter:
+          "Po przyjeździe do Polski Cezary dostrzega jednak zupełnie inną rzeczywistość, pełną biedy, chaosu i nierówności społecznych.",
+      },
+      {
+        rule: "Konteksty",
+        starter:
+          "Podobny motyw można zauważyć w innych utworach literackich, na przykład w Lalce Bolesława Prusa.",
+      },
+      {
+        rule: "Podsumowanie",
+        starter:
+          "Zestawienie utopii i rzeczywistości pokazuje, że idealne wizje często nie wytrzymują konfrontacji z realnym światem.",
+      },
+    ],
+    suggested_answer: [
+      "Od zawsze ludzie tworzyli wizje idealnego świata, które często zderzają się z rzeczywistością. Literatura chętnie podejmuje ten temat, ukazując różnice między marzeniami a realnym życiem.",
+      "W Przedwiośniu Stefana Żeromskiego utopijny obraz rzeczywistości zostaje skonfrontowany z jej brutalną prawdą. Autor pokazuje, jak wielkie nadzieje mogą prowadzić do rozczarowania, gdy rzeczywistość nie spełnia oczekiwań.",
+      "Przykładem utopijnej wizji są szklane domy, które Seweryn Baryka przedstawia jako symbol nowoczesnej i sprawiedliwej Polski. W jego opowieści kraj ten jest miejscem dobrobytu, równości i postępu technologicznego. Wizja ta działa na wyobraźnię Cezarego i budzi w nim nadzieję na lepszą przyszłość.",
+      "Po przyjeździe do Polski Cezary dostrzega jednak zupełnie inną rzeczywistość, pełną biedy, chaosu i nierówności społecznych. Zamiast nowoczesnego państwa widzi kraj zniszczony przez wojnę, w którym ludzie żyją w trudnych warunkach. To zderzenie marzeń z rzeczywistością prowadzi do jego rozczarowania i krytycznego spojrzenia na otaczający świat.",
+      "Podobny motyw można zauważyć w Lalce Bolesława Prusa. Wokulski marzy o idealnym społeczeństwie i szczęśliwej miłości, jednak rzeczywistość okazuje się znacznie bardziej skomplikowana i pełna barier społecznych. Jego idealizm zostaje skonfrontowany z realiami epoki.",
+      "Zestawienie utopii i rzeczywistości pokazuje, że idealne wizje często nie wytrzymują konfrontacji z realnym światem. Przedwiośnie uczy, że choć marzenia są ważne, należy je weryfikować i dostosowywać do rzeczywistych warunków.",
+    ],
+  },
+  {
+    id: 54,
+    book: "Ferdydurke (fragmenty)",
+    book_id: 22,
+    time: "15 min",
+    question:
+      "Groteskowy obraz świata. Omów zagadnienie na podstawie znanych Ci fragmentów Ferdydurke Witolda Gombrowicza. W swojej odpowiedzi uwzględnij również wybrany kontekst.",
+    question_explanation:
+      "Masz pokazać, czym jest groteska i jak działa w Ferdydurke. Czyli: gdzie świat jest dziwny, przerysowany, śmieszny, ale jednocześnie trochę straszny. Wskaż konkretne sceny i wyjaśnij, po co autor tak przedstawia rzeczywistość. Na końcu dodaj kontekst, który pomoże lepiej to zrozumieć.",
+    tips: [
+      "groteska jako połączenie komizmu i grozy",
+      "motyw upupienia",
+      "forma narzucona człowiekowi",
+      "szkoła jako karykatura systemu",
+      "pojedynki na miny i łydkę",
+      "absurd i przerysowanie",
+      "krytyka społeczeństwa",
+      "rola narratora Józia",
+    ],
+    contexts: [
+      {
+        title: "Proces Franza Kafki",
+        description:
+          "Świat przedstawiony jako absurdalny i niezrozumiały, w którym bohater nie ma kontroli nad własnym losem. Pomaga pokazać podobieństwo do groteskowego ujęcia rzeczywistości u Gombrowicza.",
+      },
+      {
+        title: "Sklepy cynamonowe Brunona Schulza",
+        description:
+          "Rzeczywistość przekształcona przez wyobraźnię, pełna deformacji i niezwykłości. Ułatwia zrozumienie, jak literatura może odrealniać świat, tworząc efekt groteski.",
+      },
+    ],
+    schema: [
+      {
+        rule: "Wstęp",
+        starter:
+          "Groteska to sposób przedstawiania świata, który łączy elementy śmieszne i przerażające, ukazując rzeczywistość w sposób zdeformowany.",
+      },
+      {
+        rule: "Teza",
+        starter:
+          "W Ferdydurke Witold Gombrowicz kreuje groteskowy obraz świata, aby pokazać, że człowiek jest uwikłany w narzucone mu formy i nie może być w pełni sobą.",
+      },
+      {
+        rule: "Argument 1",
+        starter:
+          "Pierwszym przykładem groteski jest obraz szkoły, w której dorośli zachowują się jak dzieci, a uczniowie są traktowani w sposób absurdalny.",
+      },
+      {
+        rule: "Argument 2",
+        starter:
+          "Kolejnym przejawem groteski są relacje międzyludzkie, np. pojedynek na miny czy fascynacja łydką, które ukazują sztuczność zachowań.",
+      },
+      {
+        rule: "Konteksty",
+        starter:
+          "Podobne ujęcie rzeczywistości można zauważyć w innych utworach, takich jak Proces Kafki, gdzie świat również wydaje się absurdalny i nielogiczny.",
+      },
+      {
+        rule: "Podsumowanie",
+        starter:
+          "Groteskowy obraz świata w Ferdydurke służy krytyce społeczeństwa i ukazaniu ograniczeń, jakie narzuca człowiekowi kultura.",
+      },
+    ],
+    suggested_answer: [
+      "Groteska to sposób przedstawiania świata, który łączy elementy śmieszne i przerażające, ukazując rzeczywistość w sposób zdeformowany. Dzięki temu autor może zwrócić uwagę na absurdy życia i mechanizmy rządzące ludzkim zachowaniem.",
+      "W Ferdydurke Witold Gombrowicz kreuje groteskowy obraz świata, aby pokazać, że człowiek jest uwikłany w narzucone mu formy i nie może być w pełni sobą. Rzeczywistość przedstawiona w utworze jest nienaturalna, przerysowana i pełna absurdów.",
+      "Pierwszym przykładem groteski jest obraz szkoły. Bohater, mimo że jest dorosły, zostaje cofnięty do roli ucznia. Nauczyciele zachowują się w sposób sztuczny, a uczniowie są zmuszani do przyjmowania narzuconych schematów. Cała sytuacja jest jednocześnie komiczna i niepokojąca, ponieważ pokazuje brak wolności jednostki.",
+      "Kolejnym przejawem groteski są relacje między bohaterami. Pojedynek na miny czy obsesja na punkcie łydki ukazują, jak bardzo ludzkie zachowania mogą być sztuczne i podporządkowane społecznym oczekiwaniom. Te sceny są absurdalne, ale jednocześnie demaskują prawdę o człowieku.",
+      "Podobny sposób przedstawienia rzeczywistości można zauważyć w Procesie Franza Kafki. Tam również świat jest niezrozumiały i rządzi się dziwnymi zasadami, a bohater nie ma nad nim kontroli. Oba utwory pokazują bezradność jednostki wobec systemu.",
+      "Groteskowy obraz świata w Ferdydurke służy krytyce społeczeństwa i ukazaniu, że człowiek jest stale formowany przez innych. Gombrowicz pokazuje, że autentyczność jest trudna do osiągnięcia, ponieważ zawsze podlegamy narzuconym schematom.",
+    ],
+  },
+  {
+    id: 55,
+    book: "Ferdydurke (fragmenty)",
+    book_id: 22,
+    time: "15 min",
+    question:
+      "Człowiek wobec presji otoczenia. Omów zagadnienie na podstawie znanych Ci fragmentów Ferdydurke Witolda Gombrowicza. W swojej odpowiedzi uwzględnij również wybrany kontekst.",
+    question_explanation:
+      "Chodzi o to, żeby pokazać, jak inni ludzie wpływają na jednostkę i zmuszają ją do przyjmowania określonych ról czy zachowań. Masz wyjaśnić, czy człowiek może być sobą, czy raczej zawsze ulega temu, co narzuca mu otoczenie.",
+    tips: [
+      "forma i upupienie",
+      "narzucanie ról społecznych",
+      "szkoła jako miejsce presji",
+      "relacje międzyludzkie jako mechanizm kontroli",
+      "brak autentyczności",
+      "bunt jednostki",
+      "groteska jako sposób ukazania problemu",
+    ],
+    contexts: [
+      {
+        title: "Rok 1984 George Orwella",
+        description:
+          "Społeczeństwo totalitarne pokazuje skrajną presję otoczenia, gdzie jednostka jest stale kontrolowana i zmuszana do określonego sposobu myślenia.",
+      },
+      {
+        title: "Proces Franza Kafki",
+        description:
+          "Bohater zostaje uwikłany w absurdalny system, który narzuca mu role i odbiera poczucie sprawczości, co ukazuje bezsilność jednostki wobec otoczenia.",
+      },
+    ],
+    schema: [
+      {
+        rule: "Wstęp",
+        starter:
+          "Człowiek funkcjonuje w społeczeństwie, które wywiera na niego różnorodne naciski i wpływa na jego zachowanie.",
+      },
+      {
+        rule: "Teza",
+        starter:
+          "Uważam, że człowiek często ulega presji otoczenia, co prowadzi do utraty jego autentyczności i podporządkowania się narzuconym formom.",
+      },
+      {
+        rule: "Argument 1",
+        starter:
+          "W Ferdydurke Witolda Gombrowicza presja otoczenia ukazana jest poprzez mechanizm narzucania formy, szczególnie widoczny w szkole.",
+      },
+      {
+        rule: "Argument 2",
+        starter:
+          "Kolejnym przykładem jest relacja bohatera z innymi postaciami, które nieustannie próbują go 'upupić' i wtłoczyć w określone schematy.",
+      },
+      {
+        rule: "Konteksty",
+        starter:
+          "Podobny problem ukazany jest w innych utworach literackich, na przykład w Roku 1984 George Orwella.",
+      },
+      {
+        rule: "Podsumowanie",
+        starter:
+          "Podsumowując, presja otoczenia znacząco wpływa na człowieka i często uniemożliwia mu bycie sobą.",
+      },
+    ],
+    suggested_answer: [
+      "Człowiek funkcjonuje w społeczeństwie, które wywiera na niego różnorodne naciski i wpływa na jego zachowanie. Relacje międzyludzkie, normy społeczne oraz oczekiwania innych sprawiają, że jednostka nie zawsze może być w pełni sobą. Problem ten szczególnie wyraźnie ukazany jest w literaturze XX wieku.",
+      "Uważam, że człowiek często ulega presji otoczenia, co prowadzi do utraty jego autentyczności i podporządkowania się narzuconym formom. Społeczeństwo nieustannie kształtuje jednostkę, ograniczając jej wolność i spontaniczność.",
+      "W Ferdydurke Witolda Gombrowicza presja otoczenia ukazana jest poprzez mechanizm narzucania formy. Główny bohater, Józio, zostaje cofnięty do szkoły, gdzie musi podporządkować się zasadom i oczekiwaniom nauczycieli oraz rówieśników. Szkoła staje się symbolem systemu, który infantylizuje jednostkę i narzuca jej określone zachowania. Bohater nie ma możliwości bycia sobą, ponieważ każda jego reakcja zostaje oceniona i wpisana w określoną formę.",
+      "Kolejnym przykładem jest relacja bohatera z innymi postaciami, które nieustannie próbują go upupić, czyli sprowadzić do roli niedojrzałego i zależnego człowieka. Proces ten pokazuje, że ludzie wzajemnie narzucają sobie role i ograniczają swoją wolność. Józio, mimo prób buntu, nie jest w stanie całkowicie uwolnić się od wpływu otoczenia.",
+      "Podobny problem ukazany jest w Roku 1984 George Orwella, gdzie jednostka poddana jest totalnej kontroli systemu. Winston Smith żyje w świecie, w którym nawet myśli są nadzorowane, a wszelkie przejawy indywidualizmu są tłumione. Pokazuje to skrajną formę presji otoczenia, która prowadzi do całkowitego zniewolenia człowieka.",
+      "Podsumowując, presja otoczenia znacząco wpływa na człowieka i często uniemożliwia mu bycie sobą. Zarówno w Ferdydurke, jak i w innych utworach literackich, widzimy, że jednostka zmaga się z narzuconymi formami i oczekiwaniami społecznymi, które ograniczają jej wolność i autentyczność.",
+    ],
+  },
+  {
+    id: 56,
+    book: "Proszę państwa do gazu",
+    book_id: 23,
+    time: "15 min",
+    question:
+      "Człowiek zlagrowany jako ofiara zbrodniczego systemu. Omów zagadnienie na podstawie utworu Proszę państwa do gazu Tadeusza Borowskiego. W swojej odpowiedzi uwzględnij również wybrany kontekst.",
+    question_explanation:
+      "Masz pokazać, kim jest człowiek zlagrowany i jak działa na niego obóz. Chodzi o to, żeby udowodnić, że system obozowy niszczy człowieka psychicznie i moralnie. Musisz oprzeć się na opowiadaniu Borowskiego i dorzucić jeszcze jeden kontekst, który pomoże lepiej to wyjaśnić.",
+    tips: [
+      "człowiek zlagrowany definicja",
+      "dehumanizacja",
+      "walka o przetrwanie",
+      "zanik moralności",
+      "system obozowy jako mechanizm",
+      "narrator Tadek",
+      "odczłowieczenie więźniów",
+    ],
+    contexts: [
+      {
+        title: "Inny świat Gustawa Herlinga-Grudzińskiego",
+        description:
+          "Pokazuje podobne mechanizmy niszczenia człowieka przez system totalitarny, ale z większym naciskiem na zachowanie moralności.",
+      },
+      {
+        title: "Totalitaryzm",
+        description:
+          "System polityczny, który podporządkowuje jednostkę całkowicie władzy i prowadzi do jej uprzedmiotowienia oraz degradacji.",
+      },
+    ],
+    schema: [
+      {
+        rule: "Wstęp",
+        starter:
+          "Człowiek w sytuacji skrajnej, takiej jak życie w obozie koncentracyjnym, poddawany jest ogromnej próbie...",
+      },
+      {
+        rule: "Teza",
+        starter:
+          "Człowiek zlagrowany jest ofiarą zbrodniczego systemu, który niszczy jego moralność i zmusza do nieludzkich zachowań.",
+      },
+      {
+        rule: "Argument 1",
+        starter:
+          "W opowiadaniu Proszę państwa do gazu widać, że więźniowie tracą swoje człowieczeństwo...",
+      },
+      {
+        rule: "Argument 2",
+        starter:
+          "System obozowy zmusza ludzi do walki o przetrwanie kosztem innych...",
+      },
+      {
+        rule: "Konteksty",
+        starter:
+          "Podobne zjawisko można zauważyć w Innym świecie, gdzie również ukazano degradację człowieka...",
+      },
+      {
+        rule: "Podsumowanie",
+        starter:
+          "Podsumowując, człowiek zlagrowany jest przede wszystkim ofiarą systemu...",
+      },
+    ],
+    suggested_answer: [
+      "Człowiek w sytuacji skrajnej, takiej jak życie w obozie koncentracyjnym, poddawany jest ogromnej próbie psychicznej i moralnej. Warunki obozowe sprawiają, że musi dostosować się do brutalnych zasad, które często stoją w sprzeczności z podstawowymi wartościami.",
+      "Człowiek zlagrowany jest ofiarą zbrodniczego systemu, który niszczy jego moralność i zmusza do nieludzkich zachowań. System obozowy nie tylko odbiera wolność, ale także stopniowo pozbawia jednostkę człowieczeństwa.",
+      "W opowiadaniu Proszę państwa do gazu widać, że więźniowie tracą swoje człowieczeństwo. Narrator, Tadek, opisuje sytuacje, w których ludzie traktowani są jak przedmioty. Transporty Żydów kierowane są prosto do komór gazowych, a więźniowie pracują przy ich rozładunku bez większych emocji. Pokazuje to zobojętnienie i przystosowanie do okrucieństwa.",
+      "System obozowy zmusza ludzi do walki o przetrwanie kosztem innych. Więźniowie często wykorzystują nowo przybyłych, aby zdobyć dla siebie jedzenie lub lepsze warunki. Moralność zostaje zastąpiona instynktem przetrwania, co jest wynikiem działania systemu, a nie cechą charakteru jednostki.",
+      "Podobne zjawisko można zauważyć w Innym świecie Gustawa Herlinga-Grudzińskiego, gdzie również ukazano degradację człowieka w warunkach obozowych. Tam jednak autor częściej podkreśla możliwość zachowania godności, co kontrastuje z bardziej pesymistyczną wizją Borowskiego.",
+      "Podsumowując, człowiek zlagrowany jest przede wszystkim ofiarą systemu totalitarnego, który zmusza go do porzucenia wartości i dostosowania się do nieludzkich warunków. To system odpowiada za jego przemianę i moralny upadek.",
+    ],
+  },
+  {
+    id: 57,
+    book: "Inny świat",
+    book_id: 24,
+    time: "15 min",
+    question:
+      "Jakie znaczenie ma tytuł dla odczytania sensu utworu. Omów zagadnienie na podstawie znanych Ci fragmentów Innego świata Gustawa Herlinga-Grudzińskiego. W swojej odpowiedzi uwzględnij również wybrany kontekst.",
+    question_explanation:
+      "Masz pokazać, że tytuł Inny świat nie jest przypadkowy, tylko pomaga zrozumieć, o czym naprawdę jest książka. Chodzi o to, żeby wyjaśnić, dlaczego autor nazywa łagier innym światem i co to mówi o życiu więźniów. Potem dodajesz drugi przykład z innego utworu albo historii, który pomaga lepiej to zrozumieć.",
+    tips: [
+      "wyjaśnij znaczenie metafory innego świata",
+      "łagier jako rzeczywistość rządząca się innymi zasadami",
+      "dehumanizacja i zanik moralności",
+      "przykłady z życia więźniów",
+      "kontrast z normalnym światem",
+      "rola tytułu jako klucza interpretacyjnego",
+      "dobierz kontekst np. literatura łagrowa lub obozowa",
+    ],
+    contexts: [
+      {
+        title: "Medaliony Zofii Nałkowskiej",
+        description:
+          "Utwór pokazuje rzeczywistość obozów i zbrodni wojennych jako świat pozbawiony zasad moralnych, co pomaga zrozumieć, że ekstremalne warunki tworzą zupełnie inną rzeczywistość niż normalne życie.",
+      },
+      {
+        title: "Rok 1984 George'a Orwella",
+        description:
+          "Totalitarny system tworzy alternatywną rzeczywistość, w której prawda i moralność są podporządkowane władzy, co podobnie jak w Innym świecie ukazuje oderwanie od normalnych zasad funkcjonowania społeczeństwa.",
+      },
+    ],
+    schema: [
+      {
+        rule: "Wstęp",
+        starter:
+          "Tytuł utworu literackiego często pełni ważną funkcję interpretacyjną, ponieważ może wskazywać na główny problem lub sens dzieła.",
+      },
+      {
+        rule: "Teza",
+        starter:
+          "Tytuł Inny świat Gustawa Herlinga-Grudzińskiego ma kluczowe znaczenie dla zrozumienia utworu, ponieważ podkreśla odmienność rzeczywistości łagrowej od normalnego życia.",
+      },
+      {
+        rule: "Argument 1",
+        starter:
+          "Przede wszystkim tytuł odnosi się do realiów życia w łagrze, które rządzą się zupełnie innymi zasadami niż świat wolnych ludzi.",
+      },
+      {
+        rule: "Argument 2",
+        starter:
+          "Ponadto tytuł wskazuje na moralne i psychiczne przemiany człowieka, który musi dostosować się do nieludzkich warunków.",
+      },
+      {
+        rule: "Konteksty",
+        starter:
+          "Podobny obraz zdeformowanej rzeczywistości można odnaleźć w innym utworze literackim.",
+      },
+      {
+        rule: "Podsumowanie",
+        starter:
+          "Podsumowując, tytuł Inny świat stanowi klucz do interpretacji całego utworu.",
+      },
+    ],
+    suggested_answer: [
+      "Tytuł utworu literackiego często pełni ważną funkcję interpretacyjną, ponieważ może wskazywać na główny problem lub sens dzieła. Dzięki niemu czytelnik już na początku otrzymuje wskazówkę, jak odczytywać przedstawioną rzeczywistość.",
+      "Tytuł Inny świat Gustawa Herlinga-Grudzińskiego ma kluczowe znaczenie dla zrozumienia utworu, ponieważ podkreśla odmienność rzeczywistości łagrowej od normalnego życia. Autor pokazuje, że obóz pracy nie jest tylko trudnym miejscem, ale zupełnie innym systemem, w którym obowiązują odmienne prawa.",
+      "Przede wszystkim tytuł odnosi się do realiów życia w łagrze, które rządzą się zupełnie innymi zasadami niż świat wolnych ludzi. W obozie nie liczy się moralność ani solidarność, lecz siła, spryt i zdolność przetrwania. Więźniowie są zmuszeni do ciężkiej pracy, głodują i często tracą godność. Przykłady opisane przez autora pokazują, że człowiek w takich warunkach zaczyna funkcjonować inaczej niż w normalnym społeczeństwie.",
+      "Ponadto tytuł wskazuje na moralne i psychiczne przemiany człowieka, który musi dostosować się do nieludzkich warunków. W łagrze dochodzi do dehumanizacji, czyli utraty człowieczeństwa. Ludzie stają się obojętni na cierpienie innych, a nawet są gotowi do okrucieństwa, aby przeżyć. To pokazuje, że jest to świat całkowicie odmienny od znanej rzeczywistości.",
+      "Podobny obraz zdeformowanej rzeczywistości można odnaleźć w Medalionach Zofii Nałkowskiej. Autorka również przedstawia świat, w którym normalne zasady moralne przestają obowiązywać, a człowiek zostaje sprowadzony do roli ofiary systemu. W obu utworach widzimy, że ekstremalne warunki tworzą rzeczywistość oderwaną od norm znanych z codziennego życia.",
+      "Podsumowując, tytuł Inny świat stanowi klucz do interpretacji całego utworu. Podkreśla on odmienność rzeczywistości łagrowej oraz pomaga zrozumieć, jak bardzo warunki obozowe wpływają na człowieka i jego moralność.",
+    ],
+  },
+  {
+    id: 58,
+    book: "Inny świat",
+    book_id: 24,
+    time: "15 min",
+    question:
+      "Konsekwencje zniewolenia człowieka. Omów zagadnienie na podstawie znanych Ci fragmentów Innego świata Gustawa Herlinga-Grudzińskiego. W swojej odpowiedzi uwzględnij również wybrany kontekst.",
+    question_explanation:
+      "Chodzi o to, żeby pokazać, co dzieje się z człowiekiem, kiedy zostaje całkowicie pozbawiony wolności – fizycznej i psychicznej. Masz na przykładzie łagru wyjaśnić, jak zmienia się jego zachowanie, moralność i sposób myślenia. Do tego dorzuć jeszcze jeden kontekst, który pomoże lepiej to zrozumieć.",
+    tips: [
+      "dehumanizacja",
+      "walka o przetrwanie",
+      "zanik moralności",
+      "system totalitarny",
+      "psychiczne wyniszczenie",
+      "relacje międzyludzkie",
+      "instynkt vs wartości",
+    ],
+    contexts: [
+      {
+        title: "Medaliony Zofii Nałkowskiej",
+        description:
+          "Ukazują wpływ systemu totalitarnego i obozowego na psychikę człowieka oraz proces odczłowieczenia ofiar i sprawców.",
+      },
+      {
+        title: "Rok 1984 George'a Orwella",
+        description:
+          "Przedstawia mechanizmy zniewolenia psychicznego i manipulacji jednostką przez władzę totalitarną.",
+      },
+    ],
+    schema: [
+      {
+        rule: "Wstęp",
+        starter:
+          "Zniewolenie człowieka to jedno z najbardziej dramatycznych doświadczeń, jakie może spotkać jednostkę.",
+      },
+      {
+        rule: "Teza",
+        starter:
+          "Zniewolenie prowadzi do głębokiej degradacji psychicznej i moralnej człowieka, zmieniając jego sposób myślenia i działania.",
+      },
+      {
+        rule: "Argument 1",
+        starter:
+          "W Inym świecie Gustaw Herling-Grudziński ukazuje, że życie w łagrze prowadzi do całkowitej dehumanizacji więźniów.",
+      },
+      {
+        rule: "Argument 2",
+        starter:
+          "Kolejną konsekwencją zniewolenia jest rozpad relacji międzyludzkich oraz dominacja instynktu przetrwania nad wartościami.",
+      },
+      {
+        rule: "Konteksty",
+        starter:
+          "Podobne mechanizmy można dostrzec w innych utworach literackich, na przykład w Medalionach Zofii Nałkowskiej.",
+      },
+      {
+        rule: "Podsumowanie",
+        starter:
+          "Podsumowując, zniewolenie człowieka prowadzi do jego głębokiego upadku, zarówno moralnego, jak i psychicznego.",
+      },
+    ],
+    suggested_answer: [
+      "Zniewolenie człowieka to jedno z najbardziej dramatycznych doświadczeń, jakie może spotkać jednostkę. Odbiera ono nie tylko wolność fizyczną, ale także wpływa na psychikę, moralność i sposób postrzegania świata. Literatura wielokrotnie podejmuje ten temat, ukazując jego tragiczne konsekwencje.",
+      "Zniewolenie prowadzi do głębokiej degradacji psychicznej i moralnej człowieka, zmieniając jego sposób myślenia i działania. Człowiek pozbawiony wolności często traci poczucie własnej godności, a jego zachowania podporządkowane są jedynie przetrwaniu.",
+      "W Inym świecie Gustaw Herling-Grudziński ukazuje, że życie w łagrze prowadzi do całkowitej dehumanizacji więźniów. Osadzeni są zmuszeni do niewolniczej pracy, głodują i żyją w ciągłym strachu. W takich warunkach tracą indywidualność i stają się częścią bezdusznego systemu. Autor pokazuje, że człowiek może zostać sprowadzony do poziomu istoty walczącej jedynie o biologiczne przetrwanie.",
+      "Kolejną konsekwencją zniewolenia jest rozpad relacji międzyludzkich oraz dominacja instynktu przetrwania nad wartościami. Więźniowie często przestają sobie pomagać, a nawet działają na szkodę innych, by zwiększyć swoje szanse na przeżycie. Moralność ulega zatarciu, a solidarność zostaje zastąpiona egoizmem i obojętnością.",
+      "Podobne mechanizmy można dostrzec w Medalionach Zofii Nałkowskiej, gdzie również ukazano, jak ekstremalne warunki prowadzą do odczłowieczenia zarówno ofiar, jak i sprawców. System totalitarny niszczy jednostkę i zmienia jej sposób myślenia, co pokazuje uniwersalność problemu zniewolenia.",
+      "Podsumowując, zniewolenie człowieka prowadzi do jego głębokiego upadku, zarówno moralnego, jak i psychicznego. Literatura pokazuje, że w skrajnych warunkach człowiek może utracić swoje człowieczeństwo, co stanowi przestrogę przed skutkami systemów totalitarnych.",
+    ],
+  },
+  {
+    id: 59,
+    book: "Inny świat",
+    book_id: 25,
+    time: "15 min",
+    question:
+      "Czy możliwe jest zachowanie godności w skrajnych sytuacjach. Omów zagadnienie na podstawie Zdążyć przed Panem Bogiem Hanny Krall. W swojej odpowiedzi uwzględnij również wybrany kontekst.",
+    question_explanation:
+      "Masz się zastanowić, czy człowiek w ekstremalnych warunkach, takich jak wojna czy obóz, jest w stanie zachować godność. Czy da się pozostać człowiekiem, kiedy wszystko wokół zmusza do walki o przetrwanie. Na przykładzie rozmowy z Markiem Edelmanem pokaż, jak wyglądało to w rzeczywistości, i dorzuć jeszcze jeden kontekst, który pomoże ci to lepiej wyjaśnić.",
+    tips: [
+      "godność człowieka",
+      "skrajne warunki wojny",
+      "getto warszawskie",
+      "Marek Edelman",
+      "wybory moralne",
+      "poświęcenie i solidarność",
+      "odczłowieczenie",
+      "walka o człowieczeństwo",
+    ],
+    contexts: [
+      {
+        title: "Inny świat Gustawa Herlinga Grudzińskiego",
+        description:
+          "Obraz życia w łagrze pokazuje, jak trudno zachować godność w systemie opresji, ale jednocześnie ukazuje jednostki, które mimo wszystko próbują zachować moralność i człowieczeństwo.",
+      },
+      {
+        title: "Medaliony Zofii Nałkowskiej",
+        description:
+          "Zbiór opowiadań ukazuje dehumanizację w czasie wojny, ale także momenty, w których ludzie próbują ocalić resztki godności poprzez współczucie i pamięć o ofiarach.",
+      },
+    ],
+    schema: [
+      {
+        rule: "Wstęp",
+        starter:
+          "Skrajne sytuacje, takie jak wojna czy obozy koncentracyjne, wystawiają człowieka na najtrudniejsze próby, zmuszając go do walki o przetrwanie.",
+      },
+      {
+        rule: "Teza",
+        starter:
+          "Uważam, że nawet w najbardziej ekstremalnych warunkach możliwe jest zachowanie godności, choć wymaga to ogromnej siły moralnej.",
+      },
+      {
+        rule: "Argument 1 - Zdążyć przed Panem Bogiem",
+        starter:
+          "Przykładem potwierdzającym tę tezę jest postawa Marka Edelmana opisana w reportażu Hanny Krall.",
+      },
+      {
+        rule: "Argument 2 - Inny świat",
+        starter:
+          "Podobny problem ukazuje Gustaw Herling Grudziński w Innym świecie, przedstawiając życie w łagrze.",
+      },
+      {
+        rule: "Konteksty",
+        starter:
+          "Motyw zachowania godności w nieludzkich warunkach pojawia się także w innych utworach literackich.",
+      },
+      {
+        rule: "Podsumowanie",
+        starter:
+          "Podsumowując, zachowanie godności w skrajnych sytuacjach jest możliwe, choć niezwykle trudne i wymaga heroizmu.",
+      },
+    ],
+    suggested_answer: [
+      "Skrajne sytuacje, takie jak wojna czy obozy koncentracyjne, wystawiają człowieka na najtrudniejsze próby, zmuszając go do walki o przetrwanie. W takich warunkach często dochodzi do załamania norm moralnych i dehumanizacji. Pojawia się więc pytanie, czy w takich realiach możliwe jest zachowanie godności.",
+      "Uważam, że nawet w najbardziej ekstremalnych warunkach możliwe jest zachowanie godności, choć wymaga to ogromnej siły moralnej i odwagi. Nie każdy jest w stanie sprostać takiemu wyzwaniu, ale istnieją przykłady ludzi, którzy potrafili zachować człowieczeństwo mimo wszystko.",
+      "Przykładem potwierdzającym tę tezę jest postawa Marka Edelmana opisana w reportażu Hanny Krall Zdążyć przed Panem Bogiem. Edelman jako uczestnik powstania w getcie warszawskim podejmował dramatyczne decyzje, wybierając, kogo można jeszcze uratować. Mimo tragicznych okoliczności starał się kierować współczuciem i poczuciem odpowiedzialności za innych. Jego działania świadczą o tym, że nawet w obliczu śmierci można zachować godność poprzez troskę o drugiego człowieka.",
+      "Podobny problem ukazuje Gustaw Herling Grudziński w Innym świecie, przedstawiając życie w łagrze. Więźniowie byli zmuszani do walki o przetrwanie kosztem innych, co często prowadziło do utraty godności. Jednak niektórzy bohaterowie starali się zachować człowieczeństwo, pomagając innym lub nie godząc się na moralne upadki. Pokazuje to, że nawet w systemie totalitarnego zniewolenia możliwe jest zachowanie wewnętrznej wolności.",
+      "Motyw zachowania godności w nieludzkich warunkach pojawia się także w Medalionach Zofii Nałkowskiej. Autorka ukazuje okrucieństwo wojny, ale jednocześnie podkreśla znaczenie pamięci i świadectwa jako formy ocalenia godności ofiar. Nawet w obliczu śmierci człowiek może zachować swoją wartość poprzez prawdę i pamięć.",
+      "Podsumowując, zachowanie godności w skrajnych sytuacjach jest możliwe, choć niezwykle trudne i wymaga heroizmu. Literatura pokazuje, że nawet w najgorszych warunkach człowiek może pozostać wierny swoim wartościom i zachować człowieczeństwo.",
+    ],
+  },
+  {
+    id: 60,
+    book: "Inny świat",
+    book_id: 25,
+    time: "15 min",
+    question:
+      "Zagłada z perspektywy świadka i uczestnika wydarzeń w getcie. Omów zagadnienie na podstawie Zdążyć przed Panem Bogiem Hanny Krall. W swojej odpowiedzi uwzględnij również wybrany kontekst.",
+    question_explanation:
+      "Masz pokazać, jak wyglądała Zagłada widziana oczami osoby, która ją przeżyła i brała w niej udział. Chodzi o to, żebyś opisał, jak Marek Edelman opowiada o getcie, powstaniu i śmierci ludzi. Pamiętaj też, żeby dodać drugi przykład z innego tekstu albo historii, który pomoże lepiej zrozumieć temat.",
+    tips: [
+      "Marek Edelman jako świadek i uczestnik",
+      "realizm i brak patosu",
+      "codzienność śmierci w getcie",
+      "decyzje o życiu i śmierci",
+      "powstanie w getcie warszawskim",
+      "rola pamięci i opowiadania historii",
+      "odczłowieczenie i walka o godność",
+    ],
+    contexts: [
+      {
+        title: "Medaliony Zofii Nałkowskiej",
+        description:
+          "Zbiór opowiadań ukazujących Zagładę z perspektywy świadków. Pokazuje, jak zwykli ludzie relacjonują okrucieństwo wojny i jak wpływa ono na psychikę człowieka.",
+      },
+      {
+        title: "Pamiętnik z powstania warszawskiego Mirona Białoszewskiego",
+        description:
+          "Relacja uczestnika wydarzeń wojennych widzianych z perspektywy cywila. Podobnie jak u Edelmana, dominuje codzienność, chaos i próba przetrwania.",
+      },
+    ],
+    schema: [
+      {
+        rule: "Wstęp",
+        starter:
+          "Zagłada była jednym z najbardziej tragicznych doświadczeń XX wieku, a jej obraz utrwalony został w licznych relacjach świadków i uczestników wydarzeń.",
+      },
+      {
+        rule: "Teza",
+        starter:
+          "Relacja Marka Edelmana pokazuje Zagładę w sposób odarty z patosu, jako brutalną codzienność, w której człowiek zmuszony jest do podejmowania dramatycznych decyzji.",
+      },
+      {
+        rule: "Argument 1",
+        starter:
+          "W Zdążyć przed Panem Bogiem Marek Edelman przedstawia życie w getcie jako nieustanną walkę o przetrwanie.",
+      },
+      {
+        rule: "Argument 2",
+        starter:
+          "Jako uczestnik powstania w getcie Edelman ukazuje także dramatyczne wybory dotyczące życia i śmierci innych ludzi.",
+      },
+      {
+        rule: "Konteksty",
+        starter:
+          "Podobny obraz Zagłady odnajdujemy w Medalionach Zofii Nałkowskiej, gdzie również dominuje perspektywa świadka.",
+      },
+      {
+        rule: "Podsumowanie",
+        starter:
+          "Relacje świadków i uczestników Zagłady ukazują jej prawdziwy, wstrząsający wymiar oraz znaczenie pamięci o tych wydarzeniach.",
+      },
+    ],
+    suggested_answer: [
+      "Zagłada była jednym z najbardziej tragicznych doświadczeń XX wieku, a jej obraz utrwalony został w licznych relacjach świadków i uczestników wydarzeń. Szczególne znaczenie mają świadectwa osób, które nie tylko obserwowały, ale również brały udział w dramatycznych wydarzeniach.",
+      "Relacja Marka Edelmana pokazuje Zagładę w sposób odarty z patosu, jako brutalną codzienność, w której człowiek zmuszony jest do podejmowania dramatycznych decyzji. Bohater nie idealizuje rzeczywistości, lecz przedstawia ją w sposób surowy i realistyczny.",
+      "W Zdążyć przed Panem Bogiem Marek Edelman przedstawia życie w getcie jako nieustanną walkę o przetrwanie. Ludzie umierają masowo, a śmierć staje się czymś powszednim. Edelman opisuje selekcje, choroby i głód, które prowadzą do stopniowego wyniszczenia społeczności żydowskiej.",
+      "Jako uczestnik powstania w getcie Edelman ukazuje także dramatyczne wybory dotyczące życia i śmierci innych ludzi. Jako lekarz decyduje, komu można pomóc, a komu nie, co pokazuje ogrom moralnego ciężaru, jaki spoczywał na jednostce w tych ekstremalnych warunkach.",
+      "Podobny obraz Zagłady odnajdujemy w Medalionach Zofii Nałkowskiej, gdzie również dominuje perspektywa świadka. Bohaterowie opowiadań relacjonują wydarzenia w sposób rzeczowy, co jeszcze bardziej podkreśla grozę sytuacji i skalę okrucieństwa.",
+      "Relacje świadków i uczestników Zagłady ukazują jej prawdziwy, wstrząsający wymiar oraz znaczenie pamięci o tych wydarzeniach. Dzięki nim możliwe jest zachowanie prawdy o historii i refleksja nad granicami człowieczeństwa.",
+    ],
+  },
+  {
+    id: 61,
+    book: "Inny świat",
+    book_id: 25,
+    time: "15 min",
+    question:
+      "Walka o życie z perspektywy wojennej i powojennej. Omów zagadnienie na podstawie Zdążyć przed Panem Bogiem Hanny Krall. W swojej odpowiedzi uwzględnij również wybrany kontekst.",
+    question_explanation:
+      "Masz pokazać, jak wyglądała walka o życie w czasie wojny i po jej zakończeniu. Chodzi o to, żeby porównać, czy ta walka się zmienia, jakie ma formy i co znaczy dla człowieka. Wykorzystujesz przykład z książki Krall i dokładasz jeszcze jeden kontekst, który pomoże to lepiej zrozumieć.",
+    tips: [
+      "Marek Edelman jako bohater",
+      "getto warszawskie i powstanie",
+      "ratowanie życia jako wartość",
+      "walka lekarza po wojnie",
+      "etyka wyborów",
+      "ciągłość doświadczenia wojny",
+      "kontekst np. Inny świat lub literatura obozowa",
+    ],
+    contexts: [
+      {
+        title: "Inny świat Gustawa Herlinga-Grudzińskiego",
+        description:
+          "Pokazuje walkę o przetrwanie w łagrze, gdzie życie jest sprowadzone do biologicznego minimum. Uzupełnia obraz wojennej walki o życie o realia sowieckiego systemu represji.",
+      },
+      {
+        title: "Medaliony Zofii Nałkowskiej",
+        description:
+          "Ukazują brutalność wojny i dehumanizację człowieka, co podkreśla dramatyczne warunki walki o życie oraz moralne konsekwencje tych doświadczeń.",
+      },
+    ],
+    schema: [
+      {
+        rule: "Wstęp",
+        starter:
+          "Wojna i jej następstwa zmuszają człowieka do nieustannej walki o życie, która przybiera różne formy w zależności od okoliczności.",
+      },
+      {
+        rule: "Teza",
+        starter:
+          "Walka o życie w czasie wojny i po jej zakończeniu ma różny charakter, jednak zawsze wiąże się z koniecznością podejmowania trudnych, często moralnie skomplikowanych decyzji.",
+      },
+      {
+        rule: "Argument 1",
+        starter:
+          "W czasie wojny walka o życie ma wymiar bezpośredni i dramatyczny, co ukazuje postać Marka Edelmana w reportażu Krall.",
+      },
+      {
+        rule: "Argument 2",
+        starter:
+          "Po wojnie walka o życie nie znika, lecz zmienia swój charakter, co widoczne jest w pracy Edelmana jako lekarza.",
+      },
+      {
+        rule: "Konteksty",
+        starter:
+          "Podobne doświadczenia odnajdujemy również w innych utworach literackich, takich jak Inny świat Gustawa Herlinga-Grudzińskiego.",
+      },
+      {
+        rule: "Podsumowanie",
+        starter:
+          "Podsumowując, walka o życie pozostaje jednym z najważniejszych doświadczeń człowieka zarówno w czasie wojny, jak i po jej zakończeniu.",
+      },
+    ],
+    suggested_answer: [
+      "Wojna i jej następstwa zmuszają człowieka do nieustannej walki o życie, która przybiera różne formy w zależności od okoliczności. Ekstremalne warunki sprawiają, że życie staje się najwyższą wartością, a jego ocalenie wymaga odwagi, determinacji i często trudnych wyborów.",
+      "Walka o życie w czasie wojny i po jej zakończeniu ma różny charakter, jednak zawsze wiąże się z koniecznością podejmowania trudnych, często moralnie skomplikowanych decyzji.",
+      "W czasie wojny walka o życie ma wymiar bezpośredni i dramatyczny, co ukazuje postać Marka Edelmana w reportażu Hanny Krall Zdążyć przed Panem Bogiem. Jako uczestnik powstania w getcie warszawskim Edelman codziennie stykał się ze śmiercią i musiał podejmować decyzje, kto ma szansę przeżyć. Walka o życie oznaczała nie tylko fizyczne przetrwanie, ale także zachowanie godności w obliczu nieuchronnej zagłady. Bohater podkreśla, że ratowanie choćby jednego człowieka było formą sprzeciwu wobec śmierci i systemu eksterminacji.",
+      "Po wojnie walka o życie nie znika, lecz zmienia swój charakter, co widoczne jest w pracy Edelmana jako lekarza. Zamiast walki z wrogiem podejmuje on walkę z chorobą i śmiercią w szpitalu. Nadal jednak towarzyszy mu poczucie odpowiedzialności za ludzkie życie i świadomość jego kruchości. Doświadczenia wojenne wpływają na jego postawę, czyniąc z niego człowieka, który nie godzi się na śmierć i stara się jej przeciwdziałać w każdy możliwy sposób.",
+      "Podobne doświadczenia odnajdujemy również w Innym świecie Gustawa Herlinga-Grudzińskiego, gdzie więźniowie łagru walczą o przetrwanie w nieludzkich warunkach. Ich życie sprowadza się do biologicznej egzystencji, a codzienność wymaga podejmowania decyzji, które często stoją w sprzeczności z moralnością. Pokazuje to, że walka o życie w systemach totalitarnych ma charakter skrajny i odczłowieczający.",
+      "Podsumowując, walka o życie pozostaje jednym z najważniejszych doświadczeń człowieka zarówno w czasie wojny, jak i po jej zakończeniu. Choć zmieniają się jej formy, niezmienne pozostaje jej znaczenie oraz wpływ na psychikę i postawy ludzi, którzy jej doświadczyli.",
+    ],
+  },
+  {
+    id: 62,
+    book: "Dżuma",
+    book_id: 26,
+    time: "15 min",
+    question:
+      "Co skłania człowieka do poświęceń. Omów zagadnienie na podstawie Dżumy Alberta Camusa. W swojej odpowiedzi uwzględnij również wybrany kontekst.",
+    question_explanation:
+      "Masz pokazać, dlaczego ludzie są gotowi poświęcać siebie dla innych. Chodzi o to, co ich motywuje: wartości, emocje, poczucie obowiązku czy coś jeszcze. Najpierw analizujesz to na przykładzie bohaterów Dżumy, a potem dodajesz podobny przykład z innego utworu albo rzeczywistości.",
+    tips: [
+      "postawa doktora Rieux",
+      "solidarność międzyludzka",
+      "walka z absurdem",
+      "poczucie obowiązku",
+      "empatia i współczucie",
+      "bohaterstwo codzienności",
+      "wybrany kontekst literacki lub historyczny",
+    ],
+    contexts: [
+      {
+        title: "Kamienie na szaniec Aleksandra Kamińskiego",
+        description:
+          "Bohaterowie poświęcają życie dla ojczyzny i przyjaciół. Ich działania wynikają z patriotyzmu, lojalności i potrzeby walki ze złem.",
+      },
+      {
+        title: "Biblia, przypowieść o miłosiernym Samarytaninie",
+        description:
+          "Samarytanin pomaga obcemu człowiekowi bez oczekiwania nagrody. Motywacją jest czysta dobroć i współczucie.",
+      },
+    ],
+    schema: [
+      {
+        rule: "Wstęp",
+        starter:
+          "Poświęcenie to jedna z najważniejszych postaw moralnych, która polega na rezygnacji z własnych korzyści dla dobra innych.",
+      },
+      {
+        rule: "Teza",
+        starter:
+          "Człowieka do poświęceń skłaniają przede wszystkim wartości moralne, empatia oraz poczucie odpowiedzialności za innych.",
+      },
+      {
+        rule: "Argument 1",
+        starter:
+          "W Dżumie Alberta Camusa przykładem takiej postawy jest doktor Rieux, który mimo zagrożenia życia pomaga chorym.",
+      },
+      {
+        rule: "Argument 2",
+        starter:
+          "Podobną postawę reprezentuje Tarrou, który angażuje się w walkę z epidemią, kierując się sprzeciwem wobec zła i cierpienia.",
+      },
+      {
+        rule: "Konteksty",
+        starter:
+          "Motyw poświęcenia widoczny jest również w innych utworach, na przykład w Kamieniach na szaniec, gdzie bohaterowie oddają życie za ojczyznę.",
+      },
+      {
+        rule: "Podsumowanie",
+        starter:
+          "Podsumowując, poświęcenie wynika z głęboko zakorzenionych wartości i potrzeby działania na rzecz innych ludzi.",
+      },
+    ],
+    suggested_answer: [
+      "Poświęcenie to jedna z najważniejszych postaw moralnych, która polega na rezygnacji z własnych korzyści dla dobra innych. W literaturze często ukazywane jest jako dowód człowieczeństwa i wewnętrznej siły jednostki.",
+      "Człowieka do poświęceń skłaniają przede wszystkim wartości moralne, empatia oraz poczucie odpowiedzialności za innych. W obliczu zagrożenia lub cierpienia innych ludzi jednostka może odkryć w sobie gotowość do działania nawet kosztem własnego bezpieczeństwa.",
+      "W Dżumie Alberta Camusa przykładem takiej postawy jest doktor Rieux, który mimo ogromnego ryzyka i zmęczenia nie przestaje leczyć chorych. Nie kieruje się chęcią sławy ani nagrody, lecz poczuciem obowiązku i solidarności z innymi ludźmi. Jego działania pokazują, że poświęcenie może wynikać z prostego przekonania, że należy robić to, co słuszne.",
+      "Podobną postawę reprezentuje Tarrou, który angażuje się w organizację oddziałów sanitarnych. Jego motywacją jest sprzeciw wobec zła i cierpienia, a także chęć bycia człowiekiem uczciwym wobec własnych przekonań. Pokazuje to, że poświęcenie może wynikać z refleksji nad światem i własnym sumieniem.",
+      "Motyw poświęcenia widoczny jest również w Kamieniach na szaniec Aleksandra Kamińskiego. Bohaterowie, tacy jak Rudy czy Zośka, ryzykują życie dla ojczyzny i przyjaciół. Ich działania wynikają z patriotyzmu, lojalności i silnych więzi międzyludzkich.",
+      "Podsumowując, poświęcenie wynika z głęboko zakorzenionych wartości, empatii oraz potrzeby działania na rzecz innych ludzi. Literatura pokazuje, że nawet w obliczu zagrożenia człowiek potrafi przekroczyć własne ograniczenia i działać dla dobra wspólnego.",
+    ],
+  },
+  {
+    id: 63,
+    book: "Dżuma",
+    book_id: 26,
+    time: "15 min",
+    question:
+      "Człowiek wobec cierpienia i śmierci. Omów zagadnienie na podstawie Dżumy Alberta Camusa. W swojej odpowiedzi uwzględnij również wybrany kontekst.",
+    question_explanation:
+      "To pytanie dotyczy tego, jak ludzie reagują na cierpienie i śmierć. Masz pokazać różne postawy bohaterów wobec tragedii, która ich spotyka, i zastanowić się, co te reakcje mówią o człowieku. Chodzi też o to, żebyś odniósł się do innego utworu lub kontekstu, który pomoże lepiej zrozumieć temat.",
+    tips: [
+      "postawy bohaterów wobec epidemii",
+      "Rieux jako symbol walki",
+      "Tarrou i jego refleksje",
+      "absurd i bunt",
+      "śmierć niewinnych",
+      "solidarność międzyludzka",
+      "egzystencjalizm",
+    ],
+    contexts: [
+      {
+        title: "Inny świat Gustawa Herlinga-Grudzińskiego",
+        description:
+          "Pokazuje, jak człowiek radzi sobie z cierpieniem i śmiercią w realiach łagru. Można porównać postawy ludzi w sytuacjach granicznych.",
+      },
+      {
+        title: "Biblia Księga Hioba",
+        description:
+          "Historia człowieka dotkniętego cierpieniem, który próbuje zrozumieć jego sens. Dobry kontekst do refleksji nad niewinnością i losem człowieka.",
+      },
+    ],
+    schema: [
+      {
+        rule: "Wstęp",
+        starter:
+          "Cierpienie i śmierć to nieodłączne elementy ludzkiego życia, które od zawsze skłaniają do refleksji nad sensem istnienia.",
+      },
+      {
+        rule: "Teza",
+        starter:
+          "W obliczu cierpienia i śmierci człowiek może przyjmować różne postawy, jednak najważniejsze okazują się solidarność i bunt wobec zła.",
+      },
+      {
+        rule: "Argument 1",
+        starter:
+          "W Dżumie Alberta Camusa postać doktora Rieux ukazuje postawę aktywnego sprzeciwu wobec cierpienia.",
+      },
+      {
+        rule: "Argument 2",
+        starter:
+          "Z kolei Tarrou reprezentuje refleksyjne podejście do cierpienia, próbując zrozumieć jego źródła i sens.",
+      },
+      {
+        rule: "Konteksty",
+        starter:
+          "Podobne rozważania nad cierpieniem odnaleźć można w innym utworze literackim, takim jak...",
+      },
+      {
+        rule: "Podsumowanie",
+        starter:
+          "Podsumowując, człowiek wobec cierpienia i śmierci staje przed wyborem postawy, która definiuje jego człowieczeństwo.",
+      },
+    ],
+    suggested_answer: [
+      "Cierpienie i śmierć to nieodłączne elementy ludzkiego życia, które od zawsze skłaniają do refleksji nad sensem istnienia. Literatura często podejmuje ten temat, ukazując różne postawy ludzi w sytuacjach granicznych.",
+      "W obliczu cierpienia i śmierci człowiek może przyjmować różne postawy, jednak najważniejsze okazują się solidarność i bunt wobec zła. To właśnie te cechy pozwalają zachować człowieczeństwo nawet w najtrudniejszych warunkach.",
+      "W Dżumie Alberta Camusa postać doktora Rieux ukazuje postawę aktywnego sprzeciwu wobec cierpienia. Bohater nie szuka sensu epidemii, lecz skupia się na pomocy chorym. Jego działanie wynika z poczucia obowiązku i empatii. Rieux pokazuje, że nawet jeśli nie da się pokonać śmierci, warto walczyć o życie innych.",
+      "Z kolei Tarrou reprezentuje refleksyjne podejście do cierpienia, próbując zrozumieć jego źródła i sens. Dochodzi do wniosku, że każdy człowiek nosi w sobie zarazę, czyli skłonność do zła. Jego postawa to próba moralnego oczyszczenia i życia w zgodzie z własnym sumieniem.",
+      "Podobne rozważania nad cierpieniem odnaleźć można w Księdze Hioba. Bohater doświadcza ogromnego bólu, mimo że jest niewinny. Jego historia pokazuje, że cierpienie nie zawsze ma logiczne wytłumaczenie, a człowiek musi nauczyć się je przyjmować i szukać w nim sensu.",
+      "Podsumowując, człowiek wobec cierpienia i śmierci staje przed wyborem postawy, która definiuje jego człowieczeństwo. Dżuma ukazuje, że najważniejsze jest działanie na rzecz innych oraz zachowanie moralnej postawy mimo wszechobecnego zła.",
+    ],
+  },
+  {
+    id: 64,
+    book: "Dżuma",
+    book_id: 26,
+    time: "15 min",
+    question:
+      "Czy możliwa jest przyjaźń w sytuacjach skrajnych. Omów zagadnienie na podstawie Dżumy Alberta Camusa. W swojej odpowiedzi uwzględnij również wybrany kontekst.",
+    question_explanation:
+      "Masz pokazać, czy w ekstremalnych warunkach, takich jak epidemia, wojna czy zagrożenie życia, ludzie są w stanie budować prawdziwe relacje i przyjaźnie. Chodzi o to, żebyś przeanalizował relacje między bohaterami Dżumy i zastanowił się, czy trudne warunki niszczą więzi, czy może je wzmacniają.",
+    tips: [
+      "relacja Rieux i Tarrou",
+      "wspólna walka z epidemią",
+      "solidarność międzyludzka",
+      "przyjaźń jako wybór moralny",
+      "wpływ cierpienia na relacje",
+      "czy zagrożenie zbliża ludzi",
+      "Camus i filozofia absurdu",
+    ],
+    contexts: [
+      {
+        title: "Inny świat Gustawa Herlinga-Grudzińskiego",
+        description:
+          "Obozowa rzeczywistość pokazuje, że w skrajnych warunkach przyjaźń jest trudna, ale możliwa i często staje się sposobem na przetrwanie psychiczne.",
+      },
+      {
+        title: "Kamienie na szaniec Aleksandra Kamińskiego",
+        description:
+          "Przyjaźń Alka, Rudego i Zośki rozwija się w warunkach wojny i zagrożenia życia, pokazując, że ekstremalne sytuacje mogą wzmacniać więzi między ludźmi.",
+      },
+    ],
+    schema: [
+      {
+        rule: "Wstęp",
+        starter:
+          "Przyjaźń jest jedną z najważniejszych wartości w życiu człowieka, jednak jej prawdziwa siła ujawnia się dopiero w sytuacjach skrajnych.",
+      },
+      {
+        rule: "Teza",
+        starter:
+          "Uważam, że przyjaźń jest możliwa w sytuacjach ekstremalnych, a nawet może się w nich pogłębiać.",
+      },
+      {
+        rule: "Argument 1 - Dżuma",
+        starter:
+          "W powieści Dżuma Alberta Camusa relacja między doktorem Rieux a Tarrou pokazuje, że wspólna walka z zagrożeniem sprzyja budowaniu silnej przyjaźni.",
+      },
+      {
+        rule: "Argument 2 - rozwinięcie",
+        starter:
+          "Bohaterowie, mimo strachu i cierpienia, wspierają się i działają razem, co prowadzi do powstania głębokiej więzi opartej na zaufaniu i wspólnych wartościach.",
+      },
+      {
+        rule: "Kontekst",
+        starter:
+          "Podobny motyw można zauważyć w Kamieniach na szaniec, gdzie przyjaźń bohaterów rozwija się w warunkach wojennych.",
+      },
+      {
+        rule: "Podsumowanie",
+        starter:
+          "Podsumowując, sytuacje skrajne nie tylko nie wykluczają przyjaźni, ale często ją umacniają i nadają jej szczególną wartość.",
+      },
+    ],
+    suggested_answer: [
+      "Przyjaźń jest jedną z najważniejszych wartości w życiu człowieka, jednak jej prawdziwa siła ujawnia się dopiero w sytuacjach skrajnych. To właśnie w obliczu zagrożenia, cierpienia i niepewności można sprawdzić, czy relacje międzyludzkie są autentyczne i trwałe.",
+      "Uważam, że przyjaźń jest możliwa w sytuacjach ekstremalnych, a nawet może się w nich pogłębiać. Trudne doświadczenia często zbliżają ludzi, ponieważ wymagają współpracy, zaufania i wzajemnego wsparcia.",
+      "W powieści Dżuma Alberta Camusa relacja między doktorem Rieux a Tarrou jest doskonałym przykładem przyjaźni rodzącej się w obliczu zagrożenia. Bohaterowie wspólnie walczą z epidemią, podejmując ryzyko i poświęcając własne bezpieczeństwo dla dobra innych. Ich więź nie opiera się na emocjonalnych deklaracjach, lecz na wspólnym działaniu i podobnym systemie wartości.",
+      "Mimo wszechobecnego strachu i śmierci, Rieux i Tarrou potrafią się wspierać i rozumieć bez słów. Ich przyjaźń staje się źródłem siły i motywacji do dalszej walki. Pokazuje to, że w sytuacjach skrajnych ludzie mogą odnaleźć głębokie porozumienie i solidarność.",
+      "Podobny motyw można zauważyć w Kamieniach na szaniec Aleksandra Kamińskiego. Przyjaźń Alka, Rudego i Zośki rozwija się w warunkach wojny i okupacji. Wspólne przeżycia, ryzyko i poświęcenie sprawiają, że ich relacja staje się niezwykle silna i trwała, a nawet prowadzi do gotowości oddania życia za przyjaciela.",
+      "Podsumowując, sytuacje skrajne nie tylko nie wykluczają przyjaźni, ale często ją wzmacniają. W obliczu zagrożenia ludzie odkrywają, jak ważne są relacje z innymi, a prawdziwa przyjaźń staje się jednym z najcenniejszych wsparć w trudnych chwilach.",
+    ],
+  },
+  {
+    id: 65,
+    book: "Dżuma",
+    book_id: 26,
+    time: "15 min",
+    question:
+      "Jakie postawy przyjmuje człowiek wobec zła? Omów zagadnienie na podstawie Dżumy Alberta Camusa. W swojej odpowiedzi uwzględnij również wybrany kontekst.",
+    question_explanation:
+      "Chodzi o to, żeby pokazać, jak różni ludzie reagują na zło – czy z nim walczą, uciekają, godzą się na nie, czy je wykorzystują. Na przykładach z Dżumy masz pokazać różne postawy i je ocenić. Potem dorzucasz jeszcze jeden kontekst z innego tekstu kultury, który pomoże lepiej zrozumieć temat.",
+    tips: [
+      "postawy wobec zła",
+      "Rieux jako symbol walki",
+      "Tarrou i moralna odpowiedzialność",
+      "Rambert i przemiana bohatera",
+      "Cottard jako przykład korzystania ze zła",
+      "obojętność vs działanie",
+      "zło jako próba człowieczeństwa",
+    ],
+    contexts: [
+      {
+        title: "Inny świat Gustawa Herlinga-Grudzińskiego",
+        description:
+          "Pokazuje różne postawy wobec zła w łagrze – od heroizmu i solidarności po egoizm i moralne upadki. Pomaga porównać reakcje ludzi w sytuacjach ekstremalnych.",
+      },
+      {
+        title: "Zdążyć przed Panem Bogiem Hanny Krall",
+        description:
+          "Rozmowa z Markiem Edelmanem ukazuje walkę ze złem w czasie powstania w getcie. Podkreśla znaczenie wyboru i odpowiedzialności nawet w beznadziejnych sytuacjach.",
+      },
+    ],
+    schema: [
+      {
+        rule: "Wstęp – wprowadzenie do problemu zła i reakcji człowieka",
+        starter:
+          "Zło jest nieodłącznym elementem ludzkiego świata i od wieków prowokuje pytania o to, jak człowiek powinien na nie reagować.",
+      },
+      {
+        rule: "Teza – różnorodność postaw wobec zła",
+        starter:
+          "Człowiek wobec zła może przyjmować różne postawy – od heroicznej walki, przez obojętność, aż po wykorzystywanie sytuacji dla własnych korzyści.",
+      },
+      {
+        rule: "Argument 1 – postawy pozytywne na przykładzie Dżumy",
+        starter:
+          "W Dżumie Alberta Camusa jedną z najważniejszych postaw jest aktywna walka ze złem, którą reprezentuje doktor Rieux.",
+      },
+      {
+        rule: "Argument 2 – postawy negatywne i ambiwalentne",
+        starter:
+          "Obok bohaterów walczących ze złem pojawiają się również postacie, które reagują inaczej – na przykład Cottard.",
+      },
+      {
+        rule: "Kontekst – porównanie z innym utworem",
+        starter:
+          "Podobne zróżnicowanie postaw wobec zła można dostrzec w Innym świecie Gustawa Herlinga-Grudzińskiego.",
+      },
+      {
+        rule: "Podsumowanie – wnioski",
+        starter:
+          "Analiza różnych postaw wobec zła pokazuje, że to właśnie wybory człowieka decydują o jego moralnej wartości.",
+      },
+    ],
+    suggested_answer: [
+      "Zło jest nieodłącznym elementem ludzkiego świata i od wieków prowokuje pytania o to, jak człowiek powinien na nie reagować. Sytuacje graniczne, takie jak epidemia czy wojna, szczególnie wyraźnie ujawniają ludzkie postawy i systemy wartości.",
+      "Człowiek wobec zła może przyjmować różne postawy – od heroicznej walki, przez obojętność, aż po wykorzystywanie sytuacji dla własnych korzyści. To, jak reaguje, często definiuje jego człowieczeństwo.",
+      "W Dżumie Alberta Camusa jedną z najważniejszych postaw jest aktywna walka ze złem, którą reprezentuje doktor Rieux. Bohater nie poddaje się rozpaczy ani nie szuka sensu w cierpieniu – po prostu działa, pomagając chorym. Podobnie Tarrou angażuje się w walkę z epidemią, traktując ją jako moralny obowiązek. Ich postawa pokazuje, że nawet w obliczu bezsensownego zła można zachować godność poprzez działanie i solidarność z innymi.",
+      "Obok bohaterów walczących ze złem pojawiają się również postacie, które reagują inaczej – na przykład Cottard. W przeciwieństwie do innych, czuje się dobrze w czasie epidemii, ponieważ chaos sprzyja jego ukrywaniu się przed wymiarem sprawiedliwości. Reprezentuje on postawę egoistyczną i moralnie wątpliwą, polegającą na wykorzystywaniu zła dla własnych korzyści. Z kolei Rambert początkowo chce uciec z miasta, jednak z czasem decyduje się zostać i pomagać, co pokazuje, że postawa człowieka może się zmieniać.",
+      "Podobne zróżnicowanie postaw wobec zła można dostrzec w Innym świecie Gustawa Herlinga-Grudzińskiego. W łagrze jedni więźniowie zachowują solidarność i człowieczeństwo, inni zaś ulegają demoralizacji i walczą wyłącznie o własne przetrwanie. Pokazuje to, że ekstremalne warunki są próbą charakteru, która ujawnia prawdziwą naturę człowieka.",
+      "Analiza różnych postaw wobec zła pokazuje, że to właśnie wybory człowieka decydują o jego moralnej wartości. Nawet w najtrudniejszych sytuacjach możliwe jest zachowanie człowieczeństwa, choć wymaga to odwagi i odpowiedzialności. Literatura uczy, że zło jest nieuniknione, ale sposób reakcji na nie zależy od każdego z nas.",
+    ],
+  },
+  {
+    id: 66,
+    book: "Rok 1984",
+    book_id: 27,
+    time: "15 min",
+    question:
+      "Czy możliwe jest zbudowanie doskonałego państwa? Omów zagadnienie na podstawie utworu Rok 1984 George’a Orwella. W swojej odpowiedzi uwzględnij również wybrany kontekst.",
+    question_explanation:
+      "Masz się zastanowić, czy da się stworzyć idealne państwo, w którym wszystko działa perfekcyjnie. Orwell pokazuje świat, który miał być uporządkowany i kontrolowany, ale w praktyce jest koszmarem. Twoim zadaniem jest ocenić, czy taka doskonałość w ogóle jest możliwa i co się dzieje, gdy ktoś próbuje ją narzucić ludziom.",
+    tips: [
+      "totalitaryzm jako próba stworzenia idealnego porządku",
+      "kontrola społeczeństwa i jednostki",
+      "brak wolności a idea doskonałości",
+      "manipulacja językiem i prawdą",
+      "rola władzy absolutnej",
+      "człowiek jako jednostka vs system",
+      "utopia czy dystopia",
+    ],
+    contexts: [
+      {
+        title: "Nowy wspaniały świat Aldousa Huxleya",
+        description:
+          "Społeczeństwo stworzone jako idealne, stabilne i szczęśliwe, ale kosztem wolności i indywidualności. Pokazuje, że dążenie do doskonałości może prowadzić do dehumanizacji.",
+      },
+      {
+        title: "Totalitaryzm XX wieku",
+        description:
+          "Systemy takie jak stalinizm czy nazizm próbowały stworzyć idealne społeczeństwo poprzez kontrolę, propagandę i terror, co w rzeczywistości prowadziło do cierpienia i zniewolenia ludzi.",
+      },
+    ],
+    schema: [
+      {
+        rule: "Wstęp",
+        starter:
+          "Od wieków ludzie marzą o stworzeniu idealnego państwa, które zapewniłoby porządek, bezpieczeństwo i szczęście wszystkim obywatelom.",
+      },
+      {
+        rule: "Teza",
+        starter:
+          "Moim zdaniem stworzenie doskonałego państwa nie jest możliwe, ponieważ próby jego budowy prowadzą do ograniczenia wolności i dehumanizacji człowieka.",
+      },
+      {
+        rule: "Argument 1",
+        starter:
+          "W powieści Rok 1984 George Orwell ukazuje państwo totalitarne jako przykład systemu, który miał być doskonały, ale w rzeczywistości opiera się na terrorze i kontroli.",
+      },
+      {
+        rule: "Argument 2",
+        starter:
+          "Dodatkowo, system przedstawiony w utworze niszczy indywidualność człowieka, co pokazuje los głównego bohatera, który zostaje całkowicie podporządkowany władzy.",
+      },
+      {
+        rule: "Konteksty",
+        starter:
+          "Podobne wnioski można wyciągnąć, analizując inne dzieła oraz wydarzenia historyczne, takie jak...",
+      },
+      {
+        rule: "Podsumowanie",
+        starter:
+          "Podsumowując, próby stworzenia idealnego państwa kończą się zazwyczaj tragedią, ponieważ wymagają podporządkowania jednostki systemowi.",
+      },
+    ],
+    suggested_answer: [
+      "Od wieków ludzie marzą o stworzeniu idealnego państwa, które zapewniłoby porządek, bezpieczeństwo i szczęście wszystkim obywatelom. Wizja ta pojawia się zarówno w filozofii, jak i literaturze. Jednak pytanie, czy takie państwo jest w ogóle możliwe do zrealizowania, pozostaje aktualne.",
+      "Moim zdaniem stworzenie doskonałego państwa nie jest możliwe, ponieważ próby jego budowy prowadzą do ograniczenia wolności i dehumanizacji człowieka.",
+      "W powieści Rok 1984 George Orwell ukazuje państwo totalitarne jako przykład systemu, który miał być doskonały, ale w rzeczywistości opiera się na terrorze i kontroli. Władza dąży do pełnej dominacji nad obywatelami, kontrolując ich myśli, język i zachowanie. Partia manipuluje prawdą, zmienia historię i eliminuje wszelkie przejawy sprzeciwu. Taki system, choć z pozoru uporządkowany, w rzeczywistości niszczy podstawowe wartości ludzkie.",
+      "Dodatkowo, system przedstawiony w utworze niszczy indywidualność człowieka, co pokazuje los Winstona Smitha. Bohater próbuje zachować niezależność myślenia, jednak zostaje złamany przez aparat władzy. Ostatecznie traci swoją tożsamość i podporządkowuje się systemowi. To dowodzi, że dążenie do idealnego porządku odbywa się kosztem człowieczeństwa.",
+      "Podobne wnioski można wyciągnąć z Nowego wspaniałego świata Aldousa Huxleya, gdzie społeczeństwo jest stabilne i pozornie szczęśliwe, ale pozbawione wolności i głębszych emocji. Również systemy totalitarne XX wieku, takie jak stalinizm, pokazały, że próby stworzenia idealnego społeczeństwa prowadzą do przemocy i cierpienia.",
+      "Podsumowując, próby stworzenia idealnego państwa kończą się zazwyczaj tragedią, ponieważ wymagają podporządkowania jednostki systemowi. Człowiek traci wtedy wolność i godność, co sprawia, że taka doskonałość staje się jedynie iluzją.",
+    ],
+  },
+  {
+    id: 67,
+    book: "Rok 1984",
+    book_id: 27,
+    time: "15 min",
+    question:
+      "Jak zachować wolność w państwie totalitarnym. Omów zagadnienie na podstawie utworu Rok 1984 George’a Orwella. W swojej odpowiedzi uwzględnij również wybrany kontekst.",
+    question_explanation:
+      "Chodzi o to, żebyś zastanowił się, czy i jak człowiek może pozostać wolny w systemie, który kontroluje wszystko – myśli, język, życie prywatne. Masz pokazać to na przykładzie bohatera i świata z Rok 1984 oraz dorzucić jeszcze jeden kontekst, który pomoże lepiej to zrozumieć.",
+    tips: [
+      "totalitaryzm i jego mechanizmy kontroli",
+      "wolność wewnętrzna vs zewnętrzna",
+      "rola języka i propagandy",
+      "bunt jednostki",
+      "miłość jako forma oporu",
+      "inwigilacja i strach",
+      "czy możliwa jest prawdziwa wolność",
+    ],
+    contexts: [
+      {
+        title: "Inny świat Gustawa Herlinga-Grudzińskiego",
+        description:
+          "Pokazuje życie w łagrze sowieckim, gdzie system niszczy jednostkę, ale niektórzy bohaterowie próbują zachować godność i wewnętrzną wolność.",
+      },
+      {
+        title: "Folwark zwierzęcy George’a Orwella",
+        description:
+          "Ukazuje mechanizmy manipulacji i zniewolenia społeczeństwa poprzez język i propagandę, co pomaga lepiej zrozumieć działanie systemu totalitarnego.",
+      },
+    ],
+    schema: [
+      {
+        rule: "Wstęp – wprowadzenie do tematu wolności i totalitaryzmu",
+        starter:
+          "Wolność jest jedną z najważniejszych wartości w życiu człowieka, jednak w systemach totalitarnych zostaje ona niemal całkowicie odebrana.",
+      },
+      {
+        rule: "Teza – stanowisko wobec pytania",
+        starter:
+          "W państwie totalitarnym zachowanie wolności jest niezwykle trudne, ale możliwe na poziomie wewnętrznym, choć często kończy się to klęską jednostki.",
+      },
+      {
+        rule: "Argument 1 – przykład z Rok 1984",
+        starter:
+          "W powieści Rok 1984 George’a Orwella główny bohater Winston Smith próbuje zachować swoją wolność poprzez bunt wobec systemu.",
+      },
+      {
+        rule: "Argument 2 – rozwinięcie i pogłębienie",
+        starter:
+          "Jednak system totalitarny okazuje się silniejszy, ponieważ kontroluje nie tylko działania, ale także myśli i emocje jednostki.",
+      },
+      {
+        rule: "Kontekst – odniesienie do innego utworu",
+        starter:
+          "Podobny problem ukazuje Gustaw Herling-Grudziński w Innym świecie, gdzie bohaterowie próbują zachować godność w nieludzkich warunkach.",
+      },
+      {
+        rule: "Podsumowanie – wnioski",
+        starter:
+          "Podsumowując, zachowanie wolności w państwie totalitarnym jest niemal niemożliwe w wymiarze zewnętrznym, ale może istnieć jako wewnętrzny opór jednostki.",
+      },
+    ],
+    suggested_answer: [
+      "Wolność jest jedną z najważniejszych wartości w życiu człowieka, jednak w systemach totalitarnych zostaje ona niemal całkowicie odebrana. Państwa tego typu dążą do pełnej kontroli nad jednostką, ograniczając jej myśli, słowa i działania.",
+      "W państwie totalitarnym zachowanie wolności jest niezwykle trudne, ale możliwe na poziomie wewnętrznym, choć często kończy się to klęską jednostki. Człowiek może próbować opierać się systemowi, jednak jego możliwości są ograniczone.",
+      "W powieści Rok 1984 George’a Orwella główny bohater Winston Smith próbuje zachować swoją wolność poprzez bunt wobec systemu. Prowadzi dziennik, zakochuje się w Julii i kwestionuje oficjalną wersję rzeczywistości. Są to formy oporu, które pozwalają mu choć na chwilę poczuć się wolnym.",
+      "Jednak system totalitarny okazuje się silniejszy, ponieważ kontroluje nie tylko działania, ale także myśli i emocje jednostki. Winston zostaje złamany psychicznie i zmuszony do porzucenia swoich przekonań. Ostatecznie traci nawet wolność wewnętrzną, co pokazuje potęgę systemu.",
+      "Podobny problem ukazuje Gustaw Herling-Grudziński w Innym świecie, gdzie bohaterowie próbują zachować godność w nieludzkich warunkach łagru. Mimo cierpienia niektórzy z nich starają się nie zatracić człowieczeństwa, co można uznać za formę wewnętrznej wolności.",
+      "Podsumowując, zachowanie wolności w państwie totalitarnym jest niemal niemożliwe w wymiarze zewnętrznym, ale może istnieć jako wewnętrzny opór jednostki. Jednak nawet on bywa zagrożony, gdy system sięga do ludzkiej psychiki i próbuje ją całkowicie podporządkować.",
+    ],
+  },
+  {
+    id: 68,
+    book: "Rok 1984",
+    book_id: 27,
+    time: "15 min",
+    question:
+      "Znaczenie propagandy w państwie totalitarnym. Omów zagadnienie na podstawie utworu Rok 1984 George’a Orwella. W swojej odpowiedzi uwzględnij również wybrany kontekst.",
+    question_explanation:
+      "Chodzi o to, żeby pokazać, jak propaganda działa w państwie totalitarnym i po co w ogóle jest używana. Masz na przykładzie powieści pokazać, jak władza manipuluje ludźmi, a potem dorzucić jeszcze jeden kontekst, który pomoże lepiej to zrozumieć.",
+    tips: [
+      "propaganda jako narzędzie kontroli",
+      "manipulacja językiem nowomowa",
+      "Ministerstwo Prawdy i fałszowanie historii",
+      "Wielki Brat jako symbol władzy",
+      "kontrola myślenia obywateli",
+      "strach i dezinformacja",
+      "brak dostępu do prawdy",
+    ],
+    contexts: [
+      {
+        title: "Inny utwór literacki - Folwark zwierzęcy",
+        description:
+          "Pokazuje, jak propaganda zmienia rzeczywistość i manipulacje językowe pozwalają władzy utrzymać kontrolę nad społeczeństwem.",
+      },
+      {
+        title: "Kontekst historyczny - systemy totalitarne XX wieku",
+        description:
+          "Propaganda w ZSRR czy III Rzeszy była kluczowym narzędziem kontroli społeczeństwa poprzez media, edukację i kulturę.",
+      },
+    ],
+    schema: [
+      {
+        rule: "Wstęp",
+        starter:
+          "Propaganda odgrywa kluczową rolę w funkcjonowaniu państw totalitarnych, ponieważ pozwala władzy kontrolować sposób myślenia obywateli.",
+      },
+      {
+        rule: "Teza",
+        starter:
+          "W państwie totalitarnym propaganda jest podstawowym narzędziem utrzymywania władzy i manipulowania społeczeństwem.",
+      },
+      {
+        rule: "Argument 1 - Rok 1984",
+        starter:
+          "W powieści Rok 1984 propaganda jest wszechobecna i kontroluje wszystkie aspekty życia obywateli.",
+      },
+      {
+        rule: "Argument 2 - mechanizmy propagandy",
+        starter:
+          "Szczególną rolę w propagandzie odgrywa manipulacja językiem oraz fałszowanie historii.",
+      },
+      {
+        rule: "Kontekst",
+        starter:
+          "Podobne mechanizmy propagandy można zauważyć w innych utworach lub w historii.",
+      },
+      {
+        rule: "Podsumowanie",
+        starter:
+          "Podsumowując, propaganda w państwie totalitarnym służy całkowitej kontroli nad jednostką i rzeczywistością.",
+      },
+    ],
+    suggested_answer: [
+      "Propaganda odgrywa kluczową rolę w funkcjonowaniu państw totalitarnych, ponieważ umożliwia władzy kontrolowanie nie tylko działań obywateli, ale także ich myśli i przekonań. Jest to jedno z najważniejszych narzędzi utrzymywania systemu opartego na manipulacji i strachu.",
+      "W państwie totalitarnym propaganda jest podstawowym narzędziem utrzymywania władzy i manipulowania społeczeństwem. Dzięki niej możliwe jest kreowanie fałszywego obrazu rzeczywistości, który obywatele przyjmują jako prawdziwy.",
+      "W powieści Rok 1984 propaganda jest wszechobecna i kontroluje wszystkie aspekty życia obywateli. Ministerstwo Prawdy nieustannie zmienia przeszłość, dostosowując ją do aktualnej linii partii. W ten sposób ludzie tracą możliwość odróżnienia prawdy od kłamstwa. Postać Wielkiego Brata jest symbolem wszechobecnej propagandy, która wzbudza zarówno strach, jak i lojalność.",
+      "Szczególną rolę w propagandzie odgrywa manipulacja językiem oraz fałszowanie historii. Nowomowa ogranicza zdolność ludzi do wyrażania myśli, a tym samym uniemożliwia krytykę systemu. Jednocześnie ciągłe zmienianie faktów sprawia, że obywatele tracą punkt odniesienia i stają się całkowicie zależni od władzy.",
+      "Podobne mechanizmy propagandy można zauważyć w innych utworach, na przykład w Folwarku zwierzęcym, gdzie władza manipuluje językiem i faktami, aby utrzymać kontrolę nad społeczeństwem. Również w historii, w systemach totalitarnych XX wieku, propaganda była wykorzystywana do kształtowania opinii publicznej i eliminowania sprzeciwu.",
+      "Podsumowując, propaganda w państwie totalitarnym służy całkowitej kontroli nad jednostką i rzeczywistością. Dzięki niej władza może manipulować prawdą, ograniczać wolność myślenia i utrzymywać społeczeństwo w stanie podporządkowania.",
+    ],
+  },
+  {
+    id: 69,
+    book: "Rok 1984",
+    book_id: 27,
+    time: "15 min",
+    question:
+      "Nowomowa jako sposób na ograniczenie wolności człowieka. Omów zagadnienie na podstawie utworu Rok 1984 George’a Orwella. W swojej odpowiedzi uwzględnij również wybrany kontekst.",
+    question_explanation:
+      "Chodzi o to, żebyś pokazał, jak język może wpływać na nasze myślenie i wolność. W tej książce władza specjalnie zmienia język, żeby ludzie nie mogli nawet pomyśleć o buncie. Masz wyjaśnić, jak to działa i dlaczego jest groźne, a potem dorzucić przykład z innego tekstu albo rzeczywistości.",
+    tips: [
+      "nowomowa upraszczanie języka",
+      "kontrola myślenia przez język",
+      "brak słów brak możliwości myślenia",
+      "rola Partii i Ministerstwa Prawdy",
+      "Winston i jego próby zachowania języka",
+      "związek języka z wolnością",
+      "propaganda i manipulacja",
+      "kontekst język jako narzędzie władzy",
+    ],
+    contexts: [
+      {
+        title: "Język propagandy w systemach totalitarnych",
+        description:
+          "W państwach totalitarnych język często jest uproszczony i pełen sloganów, co ogranicza zdolność ludzi do krytycznego myślenia i sprzyja manipulacji społeczeństwem.",
+      },
+      {
+        title: "Biblia wieża Babel",
+        description:
+          "Motyw pomieszania języków pokazuje, jak język wpływa na możliwość komunikacji i działania ludzi. Brak wspólnego języka uniemożliwia współpracę i realizację wspólnych celów.",
+      },
+      {
+        title: "Język jako narzędzie poznania filozofia",
+        description:
+          "Według niektórych filozofów granice języka są granicami naszego świata. Jeśli brakuje słów na pewne pojęcia, trudniej je zrozumieć lub nawet sobie wyobrazić.",
+      },
+    ],
+    schema: [
+      {
+        rule: "Wstęp",
+        starter:
+          "Język odgrywa kluczową rolę w życiu człowieka, ponieważ nie tylko umożliwia komunikację, ale także kształtuje sposób myślenia.",
+      },
+      {
+        rule: "Teza",
+        starter:
+          "Nowomowa przedstawiona w powieści Rok 1984 jest narzędziem władzy, które skutecznie ogranicza wolność człowieka poprzez kontrolę jego myśli.",
+      },
+      {
+        rule: "Argument 1",
+        starter:
+          "W świecie wykreowanym przez Orwella nowomowa polega na systematycznym upraszczaniu języka i eliminowaniu słów niewygodnych dla władzy.",
+      },
+      {
+        rule: "Argument 2",
+        starter:
+          "Ograniczenie języka prowadzi do ograniczenia myślenia, co widać na przykładzie bohatera, który próbuje zachować zdolność samodzielnego rozumowania.",
+      },
+      {
+        rule: "Konteksty",
+        starter:
+          "Podobne mechanizmy można dostrzec również w innych kontekstach, na przykład w systemach totalitarnych oraz rozważaniach filozoficznych nad rolą języka.",
+      },
+      {
+        rule: "Podsumowanie",
+        starter:
+          "Podsumowując, kontrola języka jest jednym z najskuteczniejszych sposobów ograniczania wolności człowieka.",
+      },
+    ],
+    suggested_answer: [
+      "Język odgrywa kluczową rolę w życiu człowieka, ponieważ nie tylko umożliwia komunikację, ale także kształtuje sposób myślenia. To, jak nazywamy rzeczywistość, wpływa na to, jak ją postrzegamy i rozumiemy. Z tego powodu kontrola języka może prowadzić do kontroli ludzkiej świadomości.",
+      "Nowomowa przedstawiona w powieści Rok 1984 jest narzędziem władzy, które skutecznie ogranicza wolność człowieka poprzez kontrolę jego myśli. Partia dąży do całkowitego podporządkowania jednostki, a jednym ze sposobów osiągnięcia tego celu jest manipulacja językiem.",
+      "W świecie wykreowanym przez Orwella nowomowa polega na systematycznym upraszczaniu języka i eliminowaniu słów niewygodnych dla władzy. Usuwane są pojęcia związane z wolnością, buntem czy indywidualizmem. W efekcie ludzie tracą możliwość wyrażania krytycznych opinii, ponieważ brakuje im odpowiednich słów.",
+      "Ograniczenie języka prowadzi do ograniczenia myślenia, co widać na przykładzie Winstona Smitha. Bohater próbuje zachować zdolność samodzielnego myślenia, jednak zdaje sobie sprawę, że wraz z zanikiem języka znika także możliwość buntu. Jeśli nie istnieje słowo wolność, trudniej jest nawet pomyśleć o jej istnieniu.",
+      "Podobne mechanizmy można dostrzec również w systemach totalitarnych, gdzie język propagandy pełen jest uproszczeń i sloganów. Taki język nie sprzyja refleksji, lecz narzuca gotowe schematy myślenia. Z kolei filozoficzne rozważania wskazują, że granice języka są granicami naszego poznania, co potwierdza wizję Orwella.",
+      "Podsumowując, kontrola języka jest jednym z najskuteczniejszych sposobów ograniczania wolności człowieka. Nowomowa w Rok 1984 pokazuje, że manipulacja słowami prowadzi do manipulacji myślami, a w konsekwencji do całkowitego zniewolenia jednostki.",
+    ],
+  },
+  {
+    id: 70,
+    book: "Tango",
+    book_id: 28,
+    time: "15 min",
+    question:
+      "Bunt przeciwko porządkowi społecznemu. Omów zagadnienie na podstawie Tanga Sławomira Mrożka. W swojej odpowiedzi uwzględnij również wybrany kontekst.",
+    question_explanation:
+      "Chodzi o to, żeby pokazać, czym jest bunt wobec zasad i norm społecznych oraz jakie może mieć skutki. W Tangu masz odwróconą sytuację – to młody bohater buntuje się nie przeciw rygorowi, ale przeciw chaosowi i braku zasad. Masz wyjaśnić, dlaczego się buntuje i co z tego wynika.",
+    tips: [
+      "Artur jako buntownik",
+      "chaos zamiast porządku",
+      "kryzys wartości",
+      "rola Edka",
+      "bunt a władza",
+      "odwrócenie tradycyjnych ról",
+      "skutki buntu",
+    ],
+    contexts: [
+      {
+        title: "Rok 1984 George Orwella",
+        description:
+          "W tej powieści bunt jednostki skierowany jest przeciw totalitarnemu porządkowi. Dla kontrastu w Tangu bunt dotyczy braku zasad, co pozwala pokazać różne oblicza sprzeciwu wobec rzeczywistości.",
+      },
+      {
+        title: "Ferdydurke Witolda Gombrowicza",
+        description:
+          "Utwór ukazuje bunt wobec form narzucanych przez społeczeństwo. Podobnie jak w Tangu, pojawia się problem niedojrzałości i chaosu norm, co pomaga zrozumieć motyw buntu.",
+      },
+    ],
+    schema: [
+      {
+        rule: "Wstęp",
+        starter:
+          "Bunt wobec porządku społecznego jest jednym z najczęstszych motywów w literaturze i może przybierać różne formy.",
+      },
+      {
+        rule: "Teza",
+        starter:
+          "W Tangu Sławomira Mrożka bunt ukazany jest jako sprzeciw wobec braku zasad, co prowadzi do tragicznych konsekwencji.",
+      },
+      {
+        rule: "Argument 1",
+        starter:
+          "Głównym bohaterem dramatu jest Artur, który nie akceptuje chaosu panującego w jego rodzinie.",
+      },
+      {
+        rule: "Argument 2",
+        starter:
+          "Bunt Artura kończy się niepowodzeniem, ponieważ przegrywa on z prymitywną siłą reprezentowaną przez Edka.",
+      },
+      {
+        rule: "Konteksty",
+        starter:
+          "Podobny motyw buntu można odnaleźć w innych utworach literackich, na przykład w Roku 1984 George Orwella.",
+      },
+      {
+        rule: "Podsumowanie",
+        starter:
+          "Bunt przeciwko porządkowi społecznemu może prowadzić zarówno do zmian, jak i do upadku wartości.",
+      },
+    ],
+    suggested_answer: [
+      "Bunt wobec porządku społecznego jest jednym z najczęstszych motywów w literaturze i może przybierać różne formy. Czasem oznacza sprzeciw wobec nadmiaru zasad, a innym razem wobec ich całkowitego braku.",
+      "W Tangu Sławomira Mrożka bunt ukazany jest jako sprzeciw wobec chaosu i braku norm. Główny bohater, Artur, dostrzega, że jego rodzina funkcjonuje bez żadnych zasad, co prowadzi do moralnego rozkładu. W przeciwieństwie do typowych buntowników, Artur chce przywrócić porządek, tradycję i jasno określone reguły.",
+      "Artur próbuje narzucić rodzinie określony system wartości, między innymi poprzez planowany ślub z Alą. Jego działania mają przywrócić sens i strukturę życia. Jednak jego bunt okazuje się nieskuteczny, ponieważ nie potrafi przeciwstawić się brutalnej sile Edka, który symbolizuje prostactwo i prymitywizm.",
+      "Ostatecznie to Edek przejmuje władzę, co pokazuje, że bunt intelektualny przegrywa z siłą fizyczną. Zamiast powrotu do wartości następuje jeszcze większy upadek porządku społecznego.",
+      "Podobny motyw buntu można odnaleźć w Roku 1984 George Orwella, gdzie bohater buntuje się przeciwko totalitarnemu systemowi. W obu przypadkach bunt kończy się porażką jednostki, choć jego przyczyny są odmienne.",
+      "Bunt przeciwko porządkowi społecznemu może prowadzić zarówno do zmian, jak i do pogłębienia kryzysu wartości. Tango pokazuje, że brak równowagi między wolnością a zasadami może mieć destrukcyjne skutki.",
+    ],
+  },
+  {
+    id: 71,
+    book: "Tango",
+    book_id: 28,
+    time: "15 min",
+    question:
+      "Konflikt pokoleń. Omów zagadnienie na podstawie Tanga Sławomira Mrożka. W swojej odpowiedzi uwzględnij również wybrany kontekst.",
+    question_explanation:
+      "Masz pokazać, na czym polega konflikt między starszym i młodszym pokoleniem w Tangu. Chodzi o różnice w wartościach, stylu życia i podejściu do świata. Warto też odnieść to do innego tekstu kultury albo epoki, żeby pokazać, że to problem szerszy.",
+    tips: [
+      "Artur kontra rodzina",
+      "brak zasad u starszego pokolenia",
+      "potrzeba porządku i tradycji",
+      "rewolucja obyczajowa",
+      "rola Edka",
+      "upadek autorytetów",
+      "konflikt wartości",
+    ],
+    contexts: [
+      {
+        title: "Przedwiośnie Stefana Żeromskiego",
+        description:
+          "Cezary Baryka reprezentuje młode pokolenie, które kwestionuje poglądy starszych i szuka własnej drogi. Konflikt dotyczy wizji państwa i wartości społecznych.",
+      },
+      {
+        title: "Romantyzm kontra pozytywizm",
+        description:
+          "Spór między pokoleniami widoczny w zmianie epok literackich. Romantycy kierowali się uczuciem i indywidualizmem, a pozytywiści stawiali na pracę i rozum.",
+      },
+    ],
+    schema: [
+      {
+        rule: "Wstęp",
+        starter:
+          "Konflikt pokoleń to zjawisko obecne w wielu epokach i tekstach kultury, wynikające z różnic w wartościach i doświadczeniach życiowych.",
+      },
+      {
+        rule: "Teza",
+        starter:
+          "W Tangu Sławomira Mrożka konflikt pokoleń ukazany jest jako starcie potrzeby porządku młodych z chaosem i brakiem zasad starszych.",
+      },
+      {
+        rule: "Argument 1",
+        starter:
+          "Artur, reprezentant młodego pokolenia, sprzeciwia się anarchii panującej w jego rodzinie i próbuje przywrócić tradycyjne normy.",
+      },
+      {
+        rule: "Argument 2",
+        starter:
+          "Starsze pokolenie, w tym Stomil i Eleonora, odrzuciło wszelkie konwenanse, co prowadzi do chaosu i braku autorytetów, a ostatecznie do przejęcia władzy przez Edka.",
+      },
+      {
+        rule: "Konteksty",
+        starter:
+          "Podobny konflikt pokoleń można zauważyć w Przedwiośniu Stefana Żeromskiego, gdzie młody bohater kwestionuje poglądy starszych.",
+      },
+      {
+        rule: "Podsumowanie",
+        starter:
+          "Konflikt pokoleń w Tangu pokazuje, że brak równowagi między tradycją a nowoczesnością może prowadzić do kryzysu wartości i upadku porządku społecznego.",
+      },
+    ],
+    suggested_answer: [
+      "Konflikt pokoleń to zjawisko obecne w wielu epokach i tekstach kultury, wynikające z różnic w wartościach, doświadczeniach oraz podejściu do życia. Często prowadzi do napięć, ale bywa też siłą napędową zmian społecznych.",
+      "W Tangu Sławomira Mrożka konflikt pokoleń ukazany jest jako odwrócenie tradycyjnego porządku. Młode pokolenie, reprezentowane przez Artura, dąży do przywrócenia zasad i norm, podczas gdy starsze pokolenie całkowicie je odrzuciło. To nietypowa sytuacja, ponieważ zazwyczaj to młodzi buntują się przeciw tradycji.",
+      "Artur sprzeciwia się chaosowi panującemu w jego rodzinie. Próbuje wprowadzić porządek poprzez powrót do tradycyjnych wartości, takich jak ślub czy hierarchia społeczna. Jego działania pokazują, że brak zasad prowadzi do poczucia zagubienia i potrzeby stabilizacji.",
+      "Z kolei starsze pokolenie, reprezentowane przez Stomila i Eleonorę, odrzuciło wszelkie normy społeczne w imię wolności. Ich bunt doprowadził jednak do anarchii i braku autorytetów. W efekcie władzę przejmuje Edek, który symbolizuje siłę i prymitywizm, co prowadzi do triumfu brutalności nad wartościami.",
+      "Podobny konflikt pokoleń można zauważyć w Przedwiośniu Stefana Żeromskiego. Cezary Baryka jako młody człowiek nie zgadza się z poglądami starszego pokolenia i poszukuje własnej drogi. Jego bunt wynika z potrzeby znalezienia sensu i sprawiedliwości społecznej.",
+      "Konflikt pokoleń w Tangu pokazuje, że zarówno skrajne odrzucenie tradycji, jak i jej bezrefleksyjne przyjmowanie mogą prowadzić do kryzysu. Najważniejsze jest znalezienie równowagi między przeszłością a teraźniejszością, co pozwala uniknąć chaosu i zachować stabilność społeczną.",
+    ],
+  },
+  {
+    id: 72,
+    book: "Tango",
+    book_id: 28,
+    time: "15 min",
+    question:
+      "Normy społeczne – ograniczają człowieka czy porządkują życie. Omów zagadnienie na podstawie Tanga Sławomira Mrożka. W swojej odpowiedzi uwzględnij również wybrany kontekst.",
+    question_explanation:
+      "Masz się zastanowić, czy zasady i normy w społeczeństwie bardziej nas ograniczają, czy raczej pomagają utrzymać porządek. Na przykładzie Tanga pokaż, co się dzieje, gdy norm brakuje albo gdy ktoś próbuje je przywrócić. Dorzuć też inny przykład z literatury lub historii.",
+    tips: [
+      "Artur jako obrońca norm",
+      "Chaos w rodzinie Stomila",
+      "Brak zasad prowadzi do anarchii",
+      "Edek jako symbol siły zamiast zasad",
+      "Upadek wartości tradycyjnych",
+      "Porządek vs wolność",
+      "Skutki odrzucenia norm",
+    ],
+    contexts: [
+      {
+        title: "Rok 1984 George Orwell",
+        description:
+          "Świat totalitarny pokazuje, że nadmiar norm i kontroli może całkowicie zniewolić człowieka, co stanowi kontrast wobec chaosu w Tangu.",
+      },
+      {
+        title: "Folwark zwierzęcy George Orwell",
+        description:
+          "Początkowa równość i brak sztywnych zasad prowadzą do przejęcia władzy przez silniejszych, podobnie jak Edek przejmuje kontrolę w Tangu.",
+      },
+    ],
+    schema: [
+      {
+        rule: "Wstęp",
+        starter:
+          "Normy społeczne to zbiór zasad regulujących życie jednostki i społeczeństwa. Od zawsze budzą one spór, ponieważ mogą zarówno ograniczać wolność, jak i zapewniać ład.",
+      },
+      {
+        rule: "Teza",
+        starter:
+          "Normy społeczne są niezbędne do utrzymania porządku, a ich brak prowadzi do chaosu i dominacji siły nad wartościami.",
+      },
+      {
+        rule: "Argument 1",
+        starter:
+          "W dramacie Tango Sławomira Mrożka ukazany jest świat pozbawiony norm, w którym panuje całkowita dowolność zachowań.",
+      },
+      {
+        rule: "Argument 2",
+        starter:
+          "Próba przywrócenia zasad przez Artura pokazuje, że człowiek potrzebuje norm, aby nadać sens rzeczywistości.",
+      },
+      {
+        rule: "Konteksty",
+        starter:
+          "Podobny problem można zauważyć w innych utworach literackich, na przykład w Folwarku zwierzęcym Georgea Orwella.",
+      },
+      {
+        rule: "Podsumowanie",
+        starter:
+          "Podsumowując, normy społeczne, mimo że mogą ograniczać jednostkę, są konieczne dla zachowania ładu i bezpieczeństwa.",
+      },
+    ],
+    suggested_answer: [
+      "Normy społeczne to zbiór zasad regulujących życie jednostki i społeczeństwa. Od zawsze budzą one spór, ponieważ mogą zarówno ograniczać wolność, jak i zapewniać ład. W literaturze często ukazuje się ich znaczenie poprzez przedstawienie świata, w którym zostają one zachwiane lub całkowicie odrzucone.",
+      "Normy społeczne są niezbędne do utrzymania porządku, a ich brak prowadzi do chaosu i dominacji siły nad wartościami. Choć mogą ograniczać jednostkę, pełnią ważną funkcję organizującą życie społeczne.",
+      "W dramacie Tango Sławomira Mrożka ukazany jest świat pozbawiony norm, w którym panuje całkowita dowolność zachowań. Rodzina Artura odrzuciła tradycję, zasady i autorytety, co doprowadziło do chaosu. Każdy robi to, co chce, a relacje między bohaterami są zaburzone. Brak norm nie przynosi wolności, lecz dezorientację i brak sensu.",
+      "Próba przywrócenia zasad przez Artura pokazuje, że człowiek potrzebuje norm, aby nadać sens rzeczywistości. Bohater chce przywrócić porządek poprzez tradycyjne wartości, jednak jego działania kończą się porażką. Władzę przejmuje Edek, który reprezentuje siłę i prostotę. Ostatecznie brak norm prowadzi do triumfu prymitywizmu.",
+      "Podobny problem można zauważyć w Folwarku zwierzęcym Georgea Orwella. Początkowo zwierzęta tworzą system oparty na równości i braku wyraźnych zasad, jednak szybko dochodzi do przejęcia władzy przez silniejszych. Brak stabilnych norm umożliwia manipulację i prowadzi do tyranii.",
+      "Podsumowując, normy społeczne, mimo że mogą ograniczać jednostkę, są konieczne dla zachowania ładu i bezpieczeństwa. Ich brak prowadzi do chaosu, a w konsekwencji do dominacji siły nad wartościami, co wyraźnie pokazuje dramat Mrożka.",
+    ],
+  },
+  {
+    id: 73,
+    book: "Górą Edek (z tomu Prawo prerii)",
+    book_id: 29,
+    time: "15 min",
+    question:
+      "W jakim celu autor nawiązuje w swoim tekście do innego tekstu. Omów zagadnienie na podstawie utworu Górą Edek Marka Nowakowskiego. W swojej odpowiedzi uwzględnij również wybrany kontekst.",
+    question_explanation:
+      "Chodzi o to, żebyś pokazał, po co autor odwołuje się do innego dzieła albo motywu znanego z literatury. Masz wyjaśnić, co to daje – czy pomaga coś lepiej zrozumieć, ośmieszyć, podkreślić albo porównać. Na przykładzie opowiadania pokaż, jak takie nawiązanie działa i dorzuć jeszcze jeden kontekst z innego utworu.",
+    tips: [
+      "nawiązanie do Tanga Mrożka",
+      "postać Edka jako symbol",
+      "upadek wartości",
+      "ironia i demaskacja rzeczywistości",
+      "rola aluzji literackiej",
+      "kontrast między porządkiem a chaosem",
+      "funkcja porównawcza i krytyczna",
+    ],
+    contexts: [
+      {
+        title: "Tango Sławomira Mrożka",
+        description:
+          "Postać Edka jako symbol prymitywnej siły, która przejmuje władzę w świecie pozbawionym zasad. Kontekst pomaga zrozumieć, że Nowakowski świadomie nawiązuje do tego motywu, by pokazać podobny mechanizm w rzeczywistości społecznej.",
+      },
+      {
+        title: "Rok 1984 George'a Orwella",
+        description:
+          "Motyw manipulacji i przejmowania kontroli przez jednostki lub systemy. Pokazuje, że odwołania do innych tekstów mogą służyć ostrzeżeniu przed zagrożeniami społecznymi i politycznymi.",
+      },
+    ],
+    schema: [
+      {
+        rule: "Wstęp",
+        starter:
+          "Nawiązania do innych tekstów kultury są częstym zabiegiem literackim, który pozwala autorowi pogłębić znaczenie utworu.",
+      },
+      {
+        rule: "Teza",
+        starter:
+          "Autor odwołuje się do innych tekstów, aby podkreślić sens swojej wypowiedzi, uwypuklić problem oraz nadać mu uniwersalny charakter.",
+      },
+      {
+        rule: "Argument 1",
+        starter:
+          "W opowiadaniu Górą Edek nawiązanie do znanej postaci literackiej służy ukazaniu mechanizmu przejmowania władzy przez jednostki prymitywne.",
+      },
+      {
+        rule: "Argument 2",
+        starter:
+          "Dzięki temu zabiegowi autor tworzy także ironiczny komentarz do rzeczywistości, pokazując upadek wartości i norm społecznych.",
+      },
+      {
+        rule: "Konteksty",
+        starter:
+          "Podobny motyw można zauważyć w innych utworach literackich, na przykład w Tangu Mrożka oraz w Roku 1984 Orwella.",
+      },
+      {
+        rule: "Podsumowanie",
+        starter:
+          "Nawiązania literackie pełnią więc ważną funkcję interpretacyjną i wzbogacają sens utworu.",
+      },
+    ],
+    suggested_answer: [
+      "Nawiązania do innych tekstów kultury są częstym zabiegiem literackim, który pozwala autorowi pogłębić znaczenie utworu. Dzięki nim czytelnik może lepiej zrozumieć przesłanie oraz dostrzec szerszy kontekst przedstawionych wydarzeń.",
+      "Autor odwołuje się do innych tekstów, aby podkreślić sens swojej wypowiedzi, uwypuklić problem oraz nadać mu uniwersalny charakter. Takie nawiązania często służą także krytyce rzeczywistości lub ukazaniu pewnych mechanizmów społecznych.",
+      "W opowiadaniu Górą Edek nawiązanie do znanej postaci literackiej służy ukazaniu mechanizmu przejmowania władzy przez jednostki prymitywne. Edek symbolizuje siłę pozbawioną zasad, która w świecie chaosu i braku norm zaczyna dominować nad innymi. Autor pokazuje, że w takiej rzeczywistości to nie wartości czy intelekt decydują o pozycji człowieka, lecz brutalność i spryt.",
+      "Dzięki temu zabiegowi autor tworzy także ironiczny komentarz do rzeczywistości, pokazując upadek wartości i norm społecznych. Nawiązanie wzmacnia przekaz, ponieważ czytelnik rozpoznaje znany schemat i dostrzega jego powtórzenie w innym kontekście.",
+      "Podobny motyw można zauważyć w Tangu Mrożka, gdzie postać Edka również symbolizuje zwycięstwo prymitywizmu nad kulturą i tradycją. Z kolei w Roku 1984 Orwella widzimy, jak jednostki lub systemy przejmują kontrolę nad społeczeństwem, co także ukazuje niebezpieczeństwo utraty wartości i wolności.",
+      "Nawiązania literackie pełnią więc ważną funkcję interpretacyjną i wzbogacają sens utworu. Dzięki nim autor może skuteczniej przekazać swoją myśl oraz skłonić czytelnika do refleksji nad rzeczywistością.",
+    ],
+  },
+  {
+    id: 74,
+    book: "Miejsce (z tomu Opowieści galicyjskie)",
+    book_id: 30,
+    time: "15 min",
+    question:
+      "Miejsca ważne w życiu człowieka. Omów zagadnienie na podstawie Miejsca Andrzeja Stasiuka. W swojej odpowiedzi uwzględnij również wybrany kontekst.",
+    question_explanation:
+      "Chodzi o to, żeby pokazać, że miejsca, w których żyjemy albo które odwiedzamy, mają wpływ na naszą tożsamość i sposób patrzenia na świat. Masz odwołać się do opowiadania Stasiuka i pokazać, dlaczego dane miejsce jest ważne dla bohatera, a potem dorzucić jeszcze jeden przykład z innego tekstu kultury.",
+    tips: [
+      "znaczenie miejsca dla tożsamości człowieka",
+      "przywiązanie do przestrzeni",
+      "mała ojczyzna",
+      "pamięć i wspomnienia",
+      "symbolika miejsca",
+      "relacja człowiek przestrzeń",
+      "kontrast centrum i peryferii",
+    ],
+    contexts: [
+      {
+        title: "Pan Tadeusz Adama Mickiewicza",
+        description:
+          "Soplicowo jako symbol utraconej ojczyzny i przestrzeń budująca tożsamość bohaterów oraz ich system wartości.",
+      },
+      {
+        title: "Mała ojczyzna jako pojęcie kulturowe",
+        description:
+          "Koncepcja miejsca bliskiego człowiekowi, które kształtuje jego tożsamość, emocje i sposób postrzegania świata.",
+      },
+    ],
+    schema: [
+      {
+        rule: "Wstęp",
+        starter:
+          "Miejsca odgrywają w życiu człowieka niezwykle istotną rolę, ponieważ...",
+      },
+      {
+        rule: "Teza",
+        starter:
+          "Można więc uznać, że miejsca mają ogromny wpływ na człowieka, gdyż...",
+      },
+      {
+        rule: "Argument 1 - Miejsce Stasiuka",
+        starter:
+          "W opowiadaniu Miejsce Andrzeja Stasiuka widzimy, że przestrzeń...",
+      },
+      {
+        rule: "Argument 2 - znaczenie miejsca szerzej",
+        starter:
+          "Znaczenie miejsc w życiu człowieka można dostrzec także w tym, że...",
+      },
+      {
+        rule: "Konteksty",
+        starter: "Podobny motyw odnajdujemy w...",
+      },
+      {
+        rule: "Podsumowanie",
+        starter: "Podsumowując, miejsca w życiu człowieka...",
+      },
+    ],
+    suggested_answer: [
+      "Miejsca odgrywają w życiu człowieka niezwykle istotną rolę, ponieważ wpływają na jego tożsamość, wspomnienia oraz sposób postrzegania świata. To właśnie przestrzeń, w której żyjemy, często kształtuje nasze wartości i emocje.",
+      "Można więc uznać, że miejsca mają ogromny wpływ na człowieka, gdyż stają się nośnikiem pamięci, doświadczeń i poczucia przynależności.",
+      "W opowiadaniu Miejsce Andrzeja Stasiuka widzimy, że przestrzeń ma charakter niemal symboliczny. Opisywana wieś, opuszczona i zapomniana, staje się dla bohatera czymś więcej niż tylko punktem na mapie. To miejsce przechowuje ślady dawnych ludzi i ich życia, przez co nabiera szczególnego znaczenia. Bohater odczuwa z nim więź, mimo że nie jest ono już zamieszkane. Pokazuje to, że nawet opuszczone miejsca mogą być ważne, ponieważ niosą ze sobą pamięć i historię.",
+      "Znaczenie miejsc w życiu człowieka można dostrzec także w tym, że wpływają one na jego emocje i sposób myślenia. Miejsca związane z dzieciństwem lub ważnymi wydarzeniami często pozostają w pamięci na całe życie i stają się częścią tożsamości człowieka.",
+      "Podobny motyw odnajdujemy w Panu Tadeuszu Adama Mickiewicza. Soplicowo jest tam symbolem ojczyzny i przestrzenią, do której bohaterowie czują ogromne przywiązanie. Dla emigrantów miejsce to staje się idealizowanym wspomnieniem, które kształtuje ich tożsamość narodową. Pokazuje to, że miejsca mogą mieć znaczenie nie tylko osobiste, ale także zbiorowe.",
+      "Podsumowując, miejsca w życiu człowieka pełnią bardzo ważną funkcję, ponieważ kształtują jego tożsamość, przechowują wspomnienia i budują poczucie przynależności. Nawet pozornie nieistotne przestrzenie mogą mieć ogromne znaczenie emocjonalne i symboliczne.",
+    ],
+  },
+  {
+    id: 75,
+    book: "Profesor Andrews w Warszawie (z tomu Gra na wielu bębenkach)",
+    book_id: 31,
+    time: "15 min",
+    question:
+      "Stan wojenny z perspektywy obcokrajowca. Omów zagadnienie na podstawie utworu Profesor Andrews w Warszawie Olgi Tokarczuk. W swojej odpowiedzi uwzględnij również wybrany kontekst.",
+    question_explanation:
+      "Masz pokazać, jak wygląda stan wojenny oczami kogoś z zewnątrz, kto nie zna realiów Polski. Chodzi o to, żeby zauważyć zdziwienie, dezorientację i inne spojrzenie na rzeczy, które dla Polaków były codziennością. Potem dodajesz kontekst, który pomoże lepiej to wyjaśnić.",
+    tips: [
+      "perspektywa cudzoziemca",
+      "dezorientacja i zagubienie",
+      "realność stanu wojennego",
+      "kontrast między Wschodem a Zachodem",
+      "absurd sytuacji",
+      "brak komunikacji i informacji",
+      "rola szczegółów codzienności",
+    ],
+    contexts: [
+      {
+        title: "Inny jako obserwator rzeczywistości",
+        description:
+          "Motyw obcego pozwala zobaczyć znaną rzeczywistość w nowy sposób. Cudzoziemiec zauważa absurdy i szczegóły, które dla mieszkańców są już normalne.",
+      },
+      {
+        title: "Rok 1984 George Orwella",
+        description:
+          "Totalitarna rzeczywistość widziana oczami jednostki pokazuje ograniczenia wolności, kontrolę i dezorientację człowieka w opresyjnym systemie.",
+      },
+    ],
+    schema: [
+      {
+        rule: "Wstęp",
+        starter:
+          "Stan wojenny był jednym z najbardziej dramatycznych okresów w historii Polski, a jego obraz może się różnić w zależności od punktu widzenia.",
+      },
+      {
+        rule: "Teza",
+        starter:
+          "Perspektywa obcokrajowca pozwala dostrzec absurd, chaos i niezrozumiałość realiów stanu wojennego.",
+      },
+      {
+        rule: "Argument 1",
+        starter:
+          "W opowiadaniu Profesor Andrews w Warszawie główny bohater doświadcza dezorientacji wynikającej z nagłej zmiany rzeczywistości.",
+      },
+      {
+        rule: "Argument 2",
+        starter:
+          "Jego spojrzenie uwypukla absurd codziennych sytuacji, które dla mieszkańców były już oswojone.",
+      },
+      {
+        rule: "Konteksty",
+        starter:
+          "Podobny mechanizm można zauważyć w innych utworach, na przykład w Roku 1984, gdzie jednostka mierzy się z niezrozumiałym systemem.",
+      },
+      {
+        rule: "Podsumowanie",
+        starter:
+          "Perspektywa obcego pozwala lepiej zrozumieć realia stanu wojennego i ukazuje ich nielogiczność oraz opresyjność.",
+      },
+    ],
+    suggested_answer: [
+      "Stan wojenny był jednym z najbardziej dramatycznych okresów w historii Polski, a jego obraz może się różnić w zależności od punktu widzenia. Szczególnie interesujące jest spojrzenie obcokrajowca, który nie zna lokalnych realiów i musi odnaleźć się w nagle zmienionej rzeczywistości.",
+      "Perspektywa obcokrajowca pozwala dostrzec absurd, chaos i niezrozumiałość realiów stanu wojennego. Osoba z zewnątrz nie jest przyzwyczajona do ograniczeń, przez co silniej odczuwa ich nielogiczność i opresyjność.",
+      "W opowiadaniu Profesor Andrews w Warszawie główny bohater przybywa do Polski i niespodziewanie trafia w sam środek wydarzeń związanych ze stanem wojennym. Nie rozumie sytuacji, w której się znalazł, ma trudności z komunikacją i nie potrafi zinterpretować zachowań ludzi wokół siebie. Jego zagubienie podkreśla chaos panujący w kraju.",
+      "Spojrzenie profesora uwypukla także absurd codziennych sytuacji. Brak informacji, ograniczenia w przemieszczaniu się czy napięta atmosfera stają się dla niego czymś niezrozumiałym i budzącym niepokój. To, co dla Polaków było codziennością, dla niego jawi się jako coś irracjonalnego.",
+      "Podobny mechanizm można zauważyć w Roku 1984 George Orwella, gdzie jednostka funkcjonuje w systemie totalitarnym. Bohater doświadcza kontroli i ograniczenia wolności, co prowadzi do poczucia zagubienia i braku wpływu na własne życie. W obu przypadkach rzeczywistość wydaje się nielogiczna i opresyjna.",
+      "Perspektywa obcego pozwala więc lepiej zrozumieć realia stanu wojennego. Dzięki niej widzimy nie tylko fakty historyczne, ale także absurd i trudności życia codziennego, które dla osób z zewnątrz są szczególnie widoczne.",
+    ],
+  },
+  {
+    id: 76,
+    book: "Podróże z Herodotem (fragmenty)",
+    book_id: 32,
+    time: "15 min",
+    question:
+      "Czym dla człowieka może być podróżowanie. Omów zagadnienie na podstawie znanych Ci fragmentów Podróży z Herodotem Ryszarda Kapuścińskiego. W swojej odpowiedzi uwzględnij również wybrany kontekst.",
+    question_explanation:
+      "Masz pokazać, jakie znaczenie może mieć podróżowanie dla człowieka. Nie chodzi tylko o przemieszczanie się, ale o to, co daje podróż: rozwój, poznanie świata, samego siebie. Na przykładzie Kapuścińskiego pokaż, jak podróże wpływały na jego myślenie i życie. Do tego dodaj jeszcze jeden kontekst, który pomoże Ci poszerzyć temat.",
+    tips: [
+      "podróż jako poznawanie świata",
+      "podróż jako sposób rozwoju",
+      "spotkanie z inną kulturą",
+      "rola Herodota jako inspiracji",
+      "zmiana perspektywy",
+      "doświadczenie i refleksja",
+      "podróż jako metafora życia",
+    ],
+    contexts: [
+      {
+        title: "Odyseja Homera",
+        description:
+          "Podróż Odyseusza jako droga do domu, ale też proces dojrzewania, zdobywania doświadczenia i poznawania siebie.",
+      },
+      {
+        title: "Mały Książę Antoine de Saint-Exupéry",
+        description:
+          "Podróż bohatera po różnych planetach jako sposób poznania świata i ludzi oraz odkrycia wartości takich jak przyjaźń i odpowiedzialność.",
+      },
+    ],
+    schema: [
+      {
+        rule: "Wstęp",
+        starter:
+          "Podróżowanie od wieków stanowi ważny element ludzkiego doświadczenia, pozwalając nie tylko poznawać świat, ale również samego siebie.",
+      },
+      {
+        rule: "Teza",
+        starter:
+          "Podróż może być dla człowieka źródłem wiedzy, sposobem rozwoju oraz okazją do refleksji nad własnym życiem.",
+      },
+      {
+        rule: "Argument 1",
+        starter:
+          "W Podróżach z Herodotem Ryszarda Kapuścińskiego podróżowanie ukazane jest jako droga do poznania innych kultur i ludzi.",
+      },
+      {
+        rule: "Argument 2",
+        starter:
+          "Podróżowanie w utworze ma również wymiar osobisty, ponieważ wpływa na rozwój wewnętrzny bohatera i jego sposób postrzegania świata.",
+      },
+      {
+        rule: "Konteksty",
+        starter:
+          "Podobne znaczenie podróży można dostrzec w innych utworach literackich, takich jak Odyseja Homera czy Mały Książę Antoine de Saint-Exupéry.",
+      },
+      {
+        rule: "Podsumowanie",
+        starter:
+          "Podsumowując, podróżowanie może pełnić w życiu człowieka wiele istotnych funkcji, wykraczających poza samo przemieszczanie się.",
+      },
+    ],
+    suggested_answer: [
+      "Podróżowanie od wieków stanowi ważny element ludzkiego doświadczenia, pozwalając nie tylko poznawać świat, ale również samego siebie. Dla wielu ludzi podróż jest czymś więcej niż przemieszczaniem się z miejsca na miejsce.",
+      "Podróż może być dla człowieka źródłem wiedzy, sposobem rozwoju oraz okazją do refleksji nad własnym życiem. Dzięki niej człowiek zdobywa doświadczenia, które kształtują jego światopogląd.",
+      "W Podróżach z Herodotem Ryszarda Kapuścińskiego podróżowanie ukazane jest jako droga do poznania innych kultur i ludzi. Autor, podróżując po różnych krajach, obserwuje ich mieszkańców, zwyczaje i historię. Inspiruje się także Herodotem, który również był podróżnikiem i opisywał poznane światy. Dzięki temu Kapuściński pokazuje, że podróż pozwala lepiej zrozumieć różnorodność świata.",
+      "Podróżowanie w utworze ma również wymiar osobisty, ponieważ wpływa na rozwój wewnętrzny bohatera i jego sposób postrzegania świata. Każda podróż jest dla niego lekcją pokory, uczy go otwartości i zmienia jego spojrzenie na rzeczywistość. Dzięki doświadczeniom zdobytym w drodze autor dojrzewa i lepiej rozumie siebie.",
+      "Podobne znaczenie podróży można dostrzec w Odysei Homera, gdzie wędrówka Odyseusza jest nie tylko powrotem do domu, ale także procesem zdobywania doświadczenia i dojrzewania. Z kolei w Małym Księciu podróż bohatera po różnych planetach pozwala mu zrozumieć sens relacji międzyludzkich i wartość przyjaźni.",
+      "Podsumowując, podróżowanie może pełnić w życiu człowieka wiele istotnych funkcji. Jest nie tylko sposobem poznawania świata, ale także drogą do rozwoju i odkrywania samego siebie. Dzięki podróżom człowiek staje się bardziej świadomy i otwarty na innych.",
+    ],
+  },
 ];

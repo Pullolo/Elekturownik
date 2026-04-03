@@ -58,9 +58,9 @@ const SmallQuestionCard = memo(function SmallQuestionCard({
           icon={Lightbulb}
           label={pluralize(
             question.tips.length,
-            "wskazówka",
-            "wskazówki",
-            "wskazówek",
+            "podpowiedź",
+            "podpowiedzi",
+            "podpowiedzi",
           )}
         />
         <StatPill

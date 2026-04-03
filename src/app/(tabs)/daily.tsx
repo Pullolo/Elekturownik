@@ -22,7 +22,7 @@ export default function Daily() {
         contentContainerStyle={{ paddingBottom: tabBarHeight }}
         ref={scrollRef}
         showsVerticalScrollIndicator={false}
-        contentContainerClassName="flex flex-col gap-8 items-start justify-center pb-4"
+        contentContainerClassName="flex flex-col gap-8 items-start justify-center"
       >
         <DailyQuestionCard question={question} scrollToTop={scrollToTop} />
       </ScrollView>

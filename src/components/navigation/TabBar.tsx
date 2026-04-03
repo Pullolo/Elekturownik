@@ -1,20 +1,26 @@
 import { useTabBar } from "@/src/hooks/TabBarContext";
 import { BottomTabBarProps } from "@react-navigation/bottom-tabs";
 import { BlurView } from "expo-blur";
-import { View } from "react-native";
+import { Dimensions, View } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import TabBarIcon from "./TabBarIcon";
 
 const TabBar = ({ state, descriptors, navigation }: BottomTabBarProps) => {
   const insets = useSafeAreaInsets();
   const { setTabBarHeight } = useTabBar();
+  const { height } = Dimensions.get("window");
+  const extraPadding = height * 0.04;
 
   return (
     <View
       className="absolute left-4 right-4 rounded-[32px] overflow-hidden"
       style={{ bottom: insets.bottom + 16 }}
       onLayout={(e) =>
-        setTabBarHeight(e.nativeEvent.layout.height + insets.bottom)
+        setTabBarHeight(
+          e.nativeEvent.layout.height +
+            insets.bottom +
+            (insets.bottom < 1 ? extraPadding : 0),
+        )
       }
     >
       <BlurView

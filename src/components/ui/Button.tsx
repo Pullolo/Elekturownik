@@ -1,7 +1,9 @@
 import useColors from "@/src/hooks/useColors";
 import { cn } from "@/src/lib/utils";
 import { LucideProps } from "lucide-react-native";
-import { Text, TouchableOpacity } from "react-native";
+import { Text } from "react-native";
+import { LinearTransition } from "react-native-reanimated";
+import { AnimatedTouchable } from "../ExpandableCard";
 
 export default function Button({
   text,
@@ -53,8 +55,9 @@ export default function Button({
   const styles = getVariantStyles();
 
   return (
-    <TouchableOpacity
+    <AnimatedTouchable
       activeOpacity={0.7}
+      layout={LinearTransition.springify()}
       onPress={onPress}
       disabled={disabled}
       className={cn(
@@ -66,6 +69,6 @@ export default function Button({
     >
       {Icon ? <Icon size={24} color={styles.iconColor} /> : null}
       <Text className={cn("text-lg font-psemibold", styles.text)}>{text}</Text>
-    </TouchableOpacity>
+    </AnimatedTouchable>
   );
 }

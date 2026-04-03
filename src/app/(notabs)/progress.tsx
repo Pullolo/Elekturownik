@@ -225,10 +225,10 @@ function MotivationCard({ progress }: { progress: number }) {
     [...messages].reverse().find((m) => progress >= m.min) ?? messages[0];
 
   return (
-    <View className="w-full rounded-3xl p-6 bg-foreground-primary/10 flex flex-row items-center gap-4">
-      <Text className="text-4xl mb-2 flex-1">{msg.emoji}</Text>
-      <Text className="text-primary font-psemibold text-base leading-6 shrink-0">
-        {msg.text}
+    <View className="w-full rounded-3xl px-5 py-6 bg-foreground-primary/10 flex flex-row items-center gap-4">
+      <Text className="text-4xl mb-2 shrink-0">{msg.emoji}</Text>
+      <Text className="text-primary font-psemibold text-base leading-6 flex-1">
+        {`„${msg.text}”`}
       </Text>
     </View>
   );
@@ -307,7 +307,16 @@ function ProgressCard({
         <View
           className={`p-3 rounded-full items-center justify-center ${v.bg}`}
         >
-          <Icon size={32} color={colors.primary} />
+          <Icon
+            size={32}
+            color={
+              variant === "primary"
+                ? colors.primary
+                : variant === "dark"
+                  ? colors.foregroundPrimary
+                  : colors.secondary
+            }
+          />
         </View>
       </View>
 

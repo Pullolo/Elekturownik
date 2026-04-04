@@ -12,15 +12,15 @@ interface ThemeContextType {
 }
 
 const ThemeContext = createContext<ThemeContextType>({
-  theme: "pink",
-  colors: colors.pink,
+  theme: "blue",
+  colors: colors.blue,
   setTheme: () => {},
 });
 
 const STORAGE_KEY = "app-theme";
 
 export function ThemeProvider({ children }: { children: React.ReactNode }) {
-  const [theme, setThemeState] = useState<ThemeName>("pink");
+  const [theme, setThemeState] = useState<ThemeName>("blue");
 
   // Load on mount
   useEffect(() => {

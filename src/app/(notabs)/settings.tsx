@@ -5,6 +5,7 @@ import BackButton from "@/src/components/ui/BackButton";
 import Button from "@/src/components/ui/Button";
 import Divider from "@/src/components/ui/Divider";
 import AsyncStorage from "@react-native-async-storage/async-storage";
+import { format } from "date-fns";
 import { router } from "expo-router";
 import * as Updates from "expo-updates";
 import { ImageOff, Trash } from "lucide-react-native";
@@ -53,7 +54,7 @@ export default function Settings() {
         </View>
         <View className="w-full flex-col items-center justify-center gap-2">
           <Text className="font-pregular text-xs text-foreground/25">
-            @Copyright 2026
+            {`@Copyright ${format(new Date(), "yyyy")}`}
           </Text>
           <Text className="font-pregular text-xs text-foreground/15">
             Mikołaj Szlosowski | Aleksandra Polaczyk | Martyna Kamecka

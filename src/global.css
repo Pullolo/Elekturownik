@@ -3,16 +3,11 @@
 @tailwind utilities;
 
 :root {
-  /* colors */
-  --primary: 335.66 83.73% 59.02%; /* arbitrary #ee3f86  */
-  --secondary: 342 69% 86%; /* pink-100 #F4C0D1 */
-
-  /* Typography */
-  --foreground: 40 2% 26%; /* gray-800 #444441 */
-  --foreground-secondary: 42 2% 53%; /* gray-400 #888780 */
-  --foreground-primary: 335.82 74.44% 35.29% /* arbitrary #9d174d */;
-
-  /* Backgrounds */
-  --background: 342 71% 95%; /* pink-50  #FBEAF0 */
-  --background-secondary: 43 14% 94%; /* gray-50  #F1EFE8 */
+  --primary: 217 91% 60%;
+  --secondary: 213 97% 69%;
+  --foreground: 213 51% 24%;
+  --foreground-secondary: 213 97% 69%;
+  --foreground-primary: 221 83% 53%;
+  --background: 214 100% 97%;
+  --background-secondary: 0 0% 100%;
 }

@@ -143,8 +143,12 @@ export default function Home() {
             className={`bg-background-secondary rounded-3xl p-5 flex flex-col gap-5 w-full self-start`}
           >
             <View className="flex flex-row items-center justify-start gap-2">
-              <Languages size={24} color={colors.primary} />
-              <Text className="text-primary font-pbold text-lg">
+              <Languages
+                size={24}
+                color={colors.primary}
+                className="shrink-0"
+              />
+              <Text className="text-primary font-pbold text-lg flex-1">
                 {`Dzisiejsze pojęcia - ${book.title}`}
               </Text>
             </View>

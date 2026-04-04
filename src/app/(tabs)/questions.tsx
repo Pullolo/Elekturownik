@@ -111,7 +111,7 @@ function TopOfTheQuestions({
 }: HeaderProps) {
   return (
     <View className="w-full flex flex-col gap-4 pb-4">
-      <BackButton text="Wszystkie pytania" />
+      <BackButton text={`Wszystkie pytania 2026`} />
 
       <SearchBar
         placeholder="Szukaj pytania..."

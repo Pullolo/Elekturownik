@@ -5,9 +5,9 @@ import { useThemeContext } from "./context/ThemeContext";
 import Divider from "./ui/Divider";
 
 const SOLID_THEMES: { name: ThemeName; label: string }[] = [
+  { name: "blue", label: "Niebieski" },
   { name: "pink", label: "Różowy" },
   { name: "green", label: "Zielony" },
-  { name: "blue", label: "Niebieski" },
   { name: "purple", label: "Fioletowy" },
   { name: "red", label: "Czerwony" },
   { name: "orange", label: "Pomarańczowy" },

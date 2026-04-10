@@ -71,11 +71,14 @@ function SectionCard({
   children: React.ReactNode;
   className?: string;
 }) {
+  const colors = useColors();
+
   return (
     <Animated.View
       layout={LinearTransition.springify()}
       className={cn(
-        `bg-white rounded-3xl p-5 flex flex-col gap-3 w-full self-start`,
+        `rounded-3xl p-5 flex flex-col gap-3 w-full self-start`,
+        colors.dark ? "bg-gray-950" : "bg-white",
         className,
       )}
     >
@@ -192,6 +195,8 @@ function TimelineSection({
 }
 
 function CharactersSection({ characters }: { characters: Book["characters"] }) {
+  const colors = useColors();
+
   return (
     <SectionCard>
       <SectionLabel
@@ -227,7 +232,10 @@ function CharactersSection({ characters }: { characters: Book["characters"] }) {
                 {char.traits.map((trait, j) => (
                   <View
                     key={j}
-                    className="bg-white border border-foreground/10 rounded-lg px-2 py-0.5"
+                    className={cn(
+                      "border border-foreground/10 rounded-lg px-2 py-0.5",
+                      colors.dark ? "bg-gray-950" : "bg-white",
+                    )}
                   >
                     <Text className="text-foreground/40 font-pregular text-xs">
                       {trait}

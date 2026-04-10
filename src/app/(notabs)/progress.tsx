@@ -3,66 +3,11 @@ import ScreenWrapper from "@/src/components/ScreenWrapper";
 import BackButton from "@/src/components/ui/BackButton";
 import { useBooks } from "@/src/hooks/useBooks";
 import useColors from "@/src/hooks/useColors";
+import { useVariantClasses, Variant } from "@/src/hooks/useProgressVariants";
 import { useQuestions } from "@/src/hooks/useQuestions";
 import { BadgeQuestionMark, BookOpen, LucideProps } from "lucide-react-native";
 import React, { useEffect, useRef } from "react";
 import { Animated, Easing, ScrollView, Text, View } from "react-native";
-
-// ─── Variant maps ─────────────────────────────────────────────────────────────
-// "primary"  → --primary  (pink #ee3f86)
-// "dark"     → --foreground-primary (dark rose #9d174d)
-// "secondary"→ --secondary (light pink #F4C0D1)
-
-type Variant = "primary" | "dark" | "secondary";
-
-const variantClasses: Record<
-  Variant,
-  {
-    text: string;
-    textMuted: string;
-    bg: string;
-    dot: string;
-    dotMuted: string;
-    badge: string;
-    badgeText: string;
-    track: string;
-    fill: string;
-  }
-> = {
-  primary: {
-    text: "text-primary",
-    textMuted: "text-primary/50",
-    bg: "bg-primary/10",
-    dot: "bg-primary",
-    dotMuted: "bg-primary/20",
-    badge: "bg-primary",
-    badgeText: "text-white",
-    track: "bg-primary/15",
-    fill: "bg-primary",
-  },
-  dark: {
-    text: "text-foreground-primary",
-    textMuted: "text-foreground-primary/50",
-    bg: "bg-foreground-primary/10",
-    dot: "bg-foreground-primary",
-    dotMuted: "bg-foreground-primary/20",
-    badge: "bg-foreground-primary",
-    badgeText: "text-white",
-    track: "bg-foreground-primary/15",
-    fill: "bg-foreground-primary",
-  },
-  secondary: {
-    text: "text-secondary",
-    textMuted: "text-secondary/50",
-    bg: "bg-secondary/30",
-    dot: "bg-secondary",
-    dotMuted: "bg-secondary/30",
-    badge: "bg-secondary",
-    badgeText: "text-foreground",
-    track: "bg-secondary/40",
-    fill: "bg-secondary",
-  },
-};
 
 // ─── Animated Progress Bar ────────────────────────────────────────────────────
 
@@ -75,7 +20,7 @@ function ProgressBar({
   variant: Variant;
   delay?: number;
 }) {
-  const v = variantClasses[variant];
+  const v = useVariantClasses()[variant];
   const anim = useRef(new Animated.Value(0)).current;
 
   useEffect(() => {
@@ -135,7 +80,7 @@ function MilestoneDots({
   variant: Variant;
   milestones?: number[];
 }) {
-  const v = variantClasses[variant];
+  const v = useVariantClasses()[variant];
 
   return (
     <View className="flex-row justify-between mt-2">
@@ -169,7 +114,7 @@ function StatPill({
   value: string | number;
   variant: Variant;
 }) {
-  const v = variantClasses[variant];
+  const v = useVariantClasses()[variant];
 
   return (
     <View
@@ -247,7 +192,7 @@ function CategoryRow({
   total: number;
   variant: Variant;
 }) {
-  const v = variantClasses[variant];
+  const v = useVariantClasses()[variant];
   const pct = total > 0 ? Math.round((learned / total) * 100) : 0;
 
   return (
@@ -287,7 +232,7 @@ function ProgressCard({
   variant: Variant;
   delay?: number;
 }) {
-  const v = variantClasses[variant];
+  const v = useVariantClasses()[variant];
   const colors = useColors();
 
   return (

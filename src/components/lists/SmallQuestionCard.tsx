@@ -1,6 +1,6 @@
 import { Question } from "@/src/data/types";
 import useColors from "@/src/hooks/useColors";
-import { clamp, pluralize } from "@/src/lib/utils";
+import { clamp, cn, pluralize } from "@/src/lib/utils";
 import { router } from "expo-router";
 import { Book, Check, Lightbulb, Timer, Waypoints } from "lucide-react-native";
 import { memo } from "react";
@@ -14,6 +14,8 @@ const SmallQuestionCard = memo(function SmallQuestionCard({
   question?: Question;
   learned?: boolean;
 }) {
+  const colors = useColors();
+
   if (!question) return null;
 
   return (
@@ -23,7 +25,10 @@ const SmallQuestionCard = memo(function SmallQuestionCard({
         router.push(`/(notabs)/question/${question.id}`);
       }}
       activeOpacity={0.7}
-      className="w-full flex flex-col bg-white rounded-2xl p-4 gap-3"
+      className={cn(
+        "w-full flex flex-col rounded-2xl p-4 gap-3",
+        colors.dark ? "bg-gray-950" : "bg-white",
+      )}
     >
       <View className="flex flex-row justify-between items-center gap-2">
         <View className="flex flex-row gap-2 flex-wrap flex-1">

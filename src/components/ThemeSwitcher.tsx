@@ -1,5 +1,6 @@
 import colors, { ThemeName } from "@/src/constants/colors";
 import { cn } from "@/src/lib/utils";
+import { MoonStar } from "lucide-react-native";
 import { Text, TouchableOpacity, View } from "react-native";
 import { useThemeContext } from "./context/ThemeContext";
 import Divider from "./ui/Divider";
@@ -13,6 +14,10 @@ const SOLID_THEMES: { name: ThemeName; label: string }[] = [
   { name: "orange", label: "Pomarańczowy" },
   { name: "yellow", label: "Żółty" },
   { name: "gray", label: "Szary" },
+  { name: "midnight", label: "Północ" },
+  { name: "cognac", label: "Koniak" },
+  { name: "mist", label: "Mgła" },
+  { name: "magma", label: "Magma" },
 ];
 
 const MIXED_THEMES: { name: ThemeName; label: string; subtitle: string }[] = [
@@ -30,6 +35,9 @@ const MIXED_THEMES: { name: ThemeName; label: string; subtitle: string }[] = [
   { name: "sunset", label: "Zachód", subtitle: "koral · pomarańcz" },
   { name: "forest", label: "Las", subtitle: "zieleń · szmaragd" },
   { name: "aurora", label: "Aurora", subtitle: "fuksja · cyjan" },
+  { name: "galaxy", label: "Galaktyka", subtitle: "indygo · fiolet" },
+  { name: "deep", label: "Głębia", subtitle: "cyjan · błękit" },
+  { name: "lavender", label: "Lawenda", subtitle: "fiolet · fuksja" },
 ];
 
 function SolidSwatch({
@@ -58,14 +66,19 @@ function SolidSwatch({
         className="w-10 h-10 rounded-full border-2 border-white/80"
         style={{ backgroundColor: themeColors.primary }}
       />
-      <Text
-        className={cn(
-          "text-xs font-pmedium text-center",
-          isActive ? "text-primary" : "text-foreground",
-        )}
-      >
-        {theme.label}
-      </Text>
+      <View className="flex flex-row items-center justify-center gap-1">
+        {themeColors.dark ? (
+          <MoonStar size={16} color={themeColors.primary} />
+        ) : null}
+        <Text
+          className={cn(
+            "text-xs font-pmedium text-center",
+            isActive ? "text-primary" : "text-foreground",
+          )}
+        >
+          {theme.label}
+        </Text>
+      </View>
       {isActive && <View className="w-1.5 h-1.5 rounded-full bg-primary" />}
     </TouchableOpacity>
   );
@@ -105,14 +118,20 @@ function MixedSwatch({
       </View>
 
       <View className="flex flex-col gap-0.5">
-        <Text
-          className={cn(
-            "text-sm font-psemibold",
-            isActive ? "text-primary" : "text-foreground",
-          )}
-        >
-          {theme.label}
-        </Text>
+        <View className="flex flex-row items-start justify-start gap-1">
+          {themeColors.dark ? (
+            <MoonStar size={16} color={themeColors.primary} />
+          ) : null}
+          <Text
+            className={cn(
+              "text-sm font-psemibold",
+              isActive ? "text-primary" : "text-foreground",
+            )}
+          >
+            {theme.label}
+          </Text>
+        </View>
+
         <Text className="text-foreground-secondary text-xs font-pregular">
           {theme.subtitle}
         </Text>

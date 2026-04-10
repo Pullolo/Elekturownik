@@ -15,7 +15,7 @@ import { useState } from "react";
 import { Text, View } from "react-native";
 import { Question } from "../data/types";
 import useColors from "../hooks/useColors";
-import { clamp, pluralize } from "../lib/utils";
+import { clamp, cn, pluralize } from "../lib/utils";
 import { useLearnedItemsContext } from "./context/LearnedItemsContext";
 import ExamplesCard from "./ExamplesCard";
 import ExpandableCard from "./ExpandableCard";
@@ -79,7 +79,12 @@ export default function QuestionCard({
       </View>
 
       {showAnswer ? (
-        <View className="w-full flex flex-col justify-center items-start h-fit bg-white rounded-3xl p-4">
+        <View
+          className={cn(
+            "w-full flex flex-col justify-center items-start h-fit rounded-3xl p-4",
+            colors.dark ? "bg-gray-950" : "bg-white",
+          )}
+        >
           <View className="w-full flex flex-row justify-between items-center">
             <Badge text={`Przykładowa odpowiedź`} theme="primary" />
             <Badge

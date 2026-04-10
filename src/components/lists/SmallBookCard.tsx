@@ -1,5 +1,6 @@
 import { Book } from "@/src/data/types";
-import { clamp } from "@/src/lib/utils";
+import useColors from "@/src/hooks/useColors";
+import { clamp, cn } from "@/src/lib/utils";
 import { router } from "expo-router";
 import { Book as BookIcon, Check } from "lucide-react-native";
 import { memo } from "react";
@@ -13,6 +14,8 @@ const SmallBookCard = memo(function SmallBookCard({
   book?: Book;
   learned?: boolean;
 }) {
+  const colors = useColors();
+
   if (!book) return null;
 
   return (
@@ -22,7 +25,10 @@ const SmallBookCard = memo(function SmallBookCard({
         router.push(`/(notabs)/book/${book.id}`);
       }}
       activeOpacity={0.7}
-      className="w-full flex flex-col bg-white rounded-3xl p-5 gap-4"
+      className={cn(
+        "w-full flex flex-col rounded-3xl p-5 gap-4",
+        colors.dark ? "bg-gray-950" : "bg-white",
+      )}
     >
       <View className="flex flex-row justify-between items-center gap-2">
         <View className="flex flex-row gap-2 flex-wrap flex-1">

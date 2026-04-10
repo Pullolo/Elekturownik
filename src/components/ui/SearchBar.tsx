@@ -1,3 +1,5 @@
+import useColors from "@/src/hooks/useColors";
+import { cn } from "@/src/lib/utils";
 import { Search } from "lucide-react-native";
 import { TextInput, View } from "react-native";
 
@@ -10,11 +12,21 @@ export default function SearchBar({
   placeholder: string;
   onQueryChange: (v: string) => void;
 }) {
+  const colors = useColors();
+
   return (
-    <View className="flex-row items-center bg-gray-100 rounded-3xl px-4 py-2 gap-2">
+    <View
+      className={cn(
+        "flex-row items-center rounded-3xl px-4 py-2 gap-2",
+        colors.dark ? "bg-gray-900" : "bg-gray-100",
+      )}
+    >
       <Search size={24} color={"#bfbfbf"} />
       <TextInput
-        className="flex-1 text-base text-gray-900"
+        className={cn(
+          "flex-1 text-base",
+          colors.dark ? "text-white" : "text-gray-900",
+        )}
         placeholder={placeholder}
         placeholderTextColor="#9ca3af"
         value={query}

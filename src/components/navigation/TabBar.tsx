@@ -1,4 +1,5 @@
 import { useTabBar } from "@/src/hooks/TabBarContext";
+import useColors from "@/src/hooks/useColors";
 import { BottomTabBarProps } from "@react-navigation/bottom-tabs";
 import { BlurView } from "expo-blur";
 import { Dimensions, View } from "react-native";
@@ -10,6 +11,8 @@ const TabBar = ({ state, descriptors, navigation }: BottomTabBarProps) => {
   const { setTabBarHeight } = useTabBar();
   const { height } = Dimensions.get("window");
   const extraPadding = height * 0.04;
+
+  const colors = useColors();
 
   return (
     <View
@@ -24,8 +27,10 @@ const TabBar = ({ state, descriptors, navigation }: BottomTabBarProps) => {
       }
     >
       <BlurView
-        intensity={80}
-        tint="systemChromeMaterial"
+        intensity={75}
+        tint={
+          colors.dark ? "systemChromeMaterialDark" : "systemChromeMaterialLight"
+        }
         className="flex-row justify-around items-center"
       >
         {state.routes.map((route, index) => {

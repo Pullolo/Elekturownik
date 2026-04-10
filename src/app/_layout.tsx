@@ -1,6 +1,5 @@
 import { useFonts } from "expo-font";
 import { SplashScreen, Stack } from "expo-router";
-import { StatusBar } from "expo-status-bar";
 import { useEffect } from "react";
 import { View } from "react-native";
 import "react-native-reanimated";
@@ -9,8 +8,32 @@ import { ThemeProvider } from "../components/context/ThemeContext";
 import { UserDataProvider } from "../components/context/UserDataContext";
 import "../global.css";
 import { TabBarProvider } from "../hooks/TabBarContext";
+import { useSystemUI } from "../hooks/useSystemUI";
 
 SplashScreen.preventAutoHideAsync();
+
+function AppContent() {
+  const statusBar = useSystemUI(); // now inside ThemeProvider ✓
+
+  return (
+    <LearnedItemsProvider>
+      <UserDataProvider>
+        <View className="flex-1 w-full h-full bg-background">
+          <TabBarProvider>
+            <Stack
+              screenOptions={{ headerShown: false }}
+              initialRouteName="index"
+            >
+              <Stack.Screen name="(tabs)" />
+              <Stack.Screen name="(notabs)" />
+            </Stack>
+            {statusBar}
+          </TabBarProvider>
+        </View>
+      </UserDataProvider>
+    </LearnedItemsProvider>
+  );
+}
 
 export default function RootLayout() {
   const [loaded, error] = useFonts({
@@ -20,41 +43,19 @@ export default function RootLayout() {
     "Poppins-SemiBold": require("../assets/fonts/poppins/Poppins-SemiBold.ttf"),
   });
 
-  // Expo Router uses Error Boundaries to catch errors in the navigation tree.
   useEffect(() => {
     if (error) throw error;
   }, [error]);
 
   useEffect(() => {
-    if (loaded) {
-      SplashScreen.hideAsync();
-    }
+    if (loaded) SplashScreen.hideAsync();
   }, [loaded]);
 
-  if (!loaded) {
-    return null;
-  }
+  if (!loaded) return null;
 
   return (
     <ThemeProvider>
-      <LearnedItemsProvider>
-        <UserDataProvider>
-          <View className="flex-1 w-full h-full bg-background">
-            <TabBarProvider>
-              <Stack
-                screenOptions={{
-                  headerShown: false,
-                }}
-                initialRouteName="index"
-              >
-                <Stack.Screen name="(tabs)" />
-                <Stack.Screen name="(notabs)" />
-              </Stack>
-              <StatusBar style="auto" />
-            </TabBarProvider>
-          </View>
-        </UserDataProvider>
-      </LearnedItemsProvider>
+      <AppContent />
     </ThemeProvider>
   );
 }

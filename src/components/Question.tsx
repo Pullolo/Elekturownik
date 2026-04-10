@@ -142,9 +142,7 @@ export default function QuestionCard({
             </View>
           </ExpandableCard>
           {/* konteksty */}
-          <ExamplesCard
-            examples={question.contexts.map((context) => context.title)}
-          />
+          <ExamplesCard examples={question.contexts} />
           {/* Schemat */}
           <ExpandableCard LIcon={Pin} text="Schemat odpowiedzi">
             <View className="w-full flex flex-col gap-2 items-start justify-center pt-4">
@@ -161,7 +159,7 @@ export default function QuestionCard({
                       <View className="w-full gap-2 flex flex-row items-start justify-start">
                         <Dot size={16} color={colors.secondary} />
                         <View className="flex flex-col items-start justify-center gap-1 w-full pr-8">
-                          <Text className="text-secondary font-pmedium text-base text-wrap w-full">
+                          <Text className="text-foreground/75 font-psemibold text-sm text-wrap w-full">
                             {`${scheme.rule}`}
                           </Text>
                           <Text className="text-foreground/60 font-pregular text-xs text-wrap w-full">

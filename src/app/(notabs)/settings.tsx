@@ -6,6 +6,7 @@ import Button from "@/src/components/ui/Button";
 import Divider from "@/src/components/ui/Divider";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import { format } from "date-fns";
+import * as Application from "expo-application";
 import { router } from "expo-router";
 import * as Updates from "expo-updates";
 import { ImageOff, Trash } from "lucide-react-native";
@@ -58,6 +59,9 @@ export default function Settings() {
           </Text>
           <Text className="font-pregular text-xs text-foreground/15">
             Mikołaj Szlosowski | Aleksandra Polaczyk | Martyna Kamecka
+          </Text>
+          <Text className="font-pregular text-xs text-foreground/15">
+            {`v${Application.nativeApplicationVersion}-${Application.nativeBuildVersion}`}
           </Text>
         </View>
       </ScrollView>

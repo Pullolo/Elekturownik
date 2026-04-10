@@ -1,11 +1,17 @@
 import { Dot, Eye, EyeOff, LibraryBig } from "lucide-react-native";
 import { useState } from "react";
-import { Text, TouchableOpacity, View } from "react-native";
-import Animated, { LinearTransition } from "react-native-reanimated";
+import { Text, View } from "react-native";
+import Animated, {
+  FadeIn,
+  FadeOut,
+  LinearTransition,
+} from "react-native-reanimated";
+import { Context } from "../data/types";
 import useColors from "../hooks/useColors";
 import { clamp } from "../lib/utils";
+import { AnimatedTouchable } from "./ExpandableCard";
 
-export default function ExamplesCard({ examples }: { examples: string[] }) {
+export default function ExamplesCard({ examples }: { examples: Context[] }) {
   const colors = useColors();
   const [visible, setVisible] = useState<boolean[]>(
     Array(examples.length).fill(false),
@@ -25,7 +31,7 @@ export default function ExamplesCard({ examples }: { examples: string[] }) {
       <View className="w-full flex flex-col gap-2 items-start justify-center">
         {examples.map((example, index) => {
           return (
-            <TouchableOpacity
+            <AnimatedTouchable
               onPress={() => {
                 setVisible((prev) => {
                   const updated = [...prev];
@@ -33,6 +39,7 @@ export default function ExamplesCard({ examples }: { examples: string[] }) {
                   return updated;
                 });
               }}
+              layout={LinearTransition.springify()}
               className="w-full flex flex-col gap-2 justify-center items-center"
               key={`mapped-example-${index}`}
               activeOpacity={0.7}
@@ -40,22 +47,45 @@ export default function ExamplesCard({ examples }: { examples: string[] }) {
               {index === 0 ? null : (
                 <View className="w-full h-[1px] bg-foreground-primary/10 rounded-full z-50"></View>
               )}
-              <View className="w-full gap-2 flex flex-row items-center justify-between">
-                <View className="w-fit gap-2 flex flex-row items-center justify-start">
-                  <Dot size={16} color={colors.secondary} />
-                  <Text className="text-foreground/60 font-pmedium text-sm">
-                    {visible[index]
-                      ? clamp(example, 38)
-                      : clamp("*".repeat(example.length), 38, "***")}
-                  </Text>
+              <View className="w-full gap-2 flex flex-row items-start justify-between">
+                <View className="w-fit gap-2 flex flex-row items-start justify-start flex-1">
+                  <Dot
+                    size={16}
+                    color={colors.secondary}
+                    className="shrink-0"
+                  />
+                  {visible[index] ? (
+                    <Animated.View
+                      entering={FadeIn}
+                      exiting={FadeOut}
+                      className="flex flex-col gap-1"
+                    >
+                      <Text className="text-foreground/75 font-psemibold text-sm">
+                        {example.title}
+                      </Text>
+                      <Text className="text-foreground/50 font-pregular text-xs leading-relaxed">
+                        {example.description}
+                      </Text>
+                    </Animated.View>
+                  ) : (
+                    <Animated.Text
+                      entering={FadeIn}
+                      exiting={FadeOut}
+                      className="text-foreground/75 font-psemibold text-sm flex-1 text-wrap"
+                    >
+                      {clamp("*".repeat(example.title.length), 38, "***")}
+                    </Animated.Text>
+                  )}
                 </View>
-                {visible[index] ? (
-                  <Eye size={16} color={colors.secondary} />
-                ) : (
-                  <EyeOff size={16} color={colors.secondary} />
-                )}
+                <View className="w-fit h-fit flex justify-center items-center shrink-0">
+                  {visible[index] ? (
+                    <Eye size={16} color={colors.secondary} />
+                  ) : (
+                    <EyeOff size={16} color={colors.secondary} />
+                  )}
+                </View>
               </View>
-            </TouchableOpacity>
+            </AnimatedTouchable>
           );
         })}
       </View>

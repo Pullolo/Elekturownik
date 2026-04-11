@@ -58,7 +58,7 @@ export default function ExamplesCard({ examples }: { examples: Context[] }) {
                     <Animated.View
                       entering={FadeIn}
                       exiting={FadeOut}
-                      className="flex flex-col gap-1"
+                      className="flex flex-col gap-1 flex-1"
                     >
                       <Text className="text-foreground/75 font-psemibold text-sm">
                         {example.title}

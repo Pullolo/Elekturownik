@@ -27,10 +27,11 @@ const TabBar = ({ state, descriptors, navigation }: BottomTabBarProps) => {
       }
     >
       <BlurView
-        intensity={75}
+        intensity={60}
         tint={
           colors.dark ? "systemChromeMaterialDark" : "systemChromeMaterialLight"
         }
+        experimentalBlurMethod="dimezisBlurView"
         className="flex-row justify-around items-center"
       >
         {state.routes.map((route, index) => {

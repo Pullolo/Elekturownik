@@ -2,12 +2,18 @@
   "expo": {
     "name": "Elekturownik",
     "slug": "elekturownik",
-    "version": "1.1.1",
+    "version": "2.0.0",
     "orientation": "portrait",
     "icon": "./src/assets/images/icon.png",
     "scheme": "elekturownik",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
+    "updates": {
+      "url": "https://u.expo.dev/72288663-0199-4fe1-8fe8-a2e2cd1a2d38"
+    },
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
     "ios": {
       "supportsTablet": true
     },

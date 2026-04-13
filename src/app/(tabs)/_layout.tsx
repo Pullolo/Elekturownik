@@ -1,6 +1,7 @@
 import TabBar from "@/src/components/navigation/TabBar";
 import { Tabs } from "expo-router";
 import {
+  Amphora,
   Calendar,
   Home,
   LibraryBig,
@@ -45,6 +46,12 @@ export default function TabLayout() {
           tabBarIcon: ({ color }) => (
             <LibraryBig size={iconSize} color={color} />
           ),
+        }}
+      />
+      <Tabs.Screen
+        name="epochs"
+        options={{
+          tabBarIcon: ({ color }) => <Amphora size={iconSize} color={color} />,
         }}
       />
     </Tabs>

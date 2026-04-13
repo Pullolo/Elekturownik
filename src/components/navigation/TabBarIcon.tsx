@@ -34,7 +34,9 @@ const TabBarIcon = ({
       className={cn("justify-center items-center")}
     >
       <View
-        className={cn("flex justify-center items-center rounded-full p-4 py-1")}
+        className={cn(
+          "flex justify-center items-center rounded-full px-2 py-1",
+        )}
       >
         <View className={cn("w-fit aspect-square p-2 rounded-full")}>
           {icon?.({

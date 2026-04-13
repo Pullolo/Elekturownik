@@ -72,15 +72,16 @@ export function pluralize(
   one: string,
   few: string,
   many: string,
+  showCount = true,
 ): string {
-  if (count === 1) return `${count} ${one}`;
+  if (count === 1) return showCount ? `${count} ${one}` : one;
   if (
     count % 10 >= 2 &&
     count % 10 <= 4 &&
     (count % 100 < 10 || count % 100 >= 20)
   )
-    return `${count} ${few}`;
-  return `${count} ${many}`;
+    return showCount ? `${count} ${few}` : few;
+  return showCount ? `${count} ${many}` : many;
 }
 
 export function getRandomPath(

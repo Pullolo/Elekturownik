@@ -32,7 +32,7 @@ const TabBar = ({ state, descriptors, navigation }: BottomTabBarProps) => {
           colors.dark ? "systemChromeMaterialDark" : "systemChromeMaterialLight"
         }
         experimentalBlurMethod="dimezisBlurView"
-        className="flex-row justify-around items-center"
+        className="flex-row justify-around items-center pb-1"
       >
         {state.routes.map((route, index) => {
           const { options } = descriptors[route.key];

@@ -1,5 +1,6 @@
 import { Book } from "@/src/data/types";
 import { cn, pluralize } from "@/src/lib/utils";
+import { router } from "expo-router";
 import {
   BookOpen,
   Check,
@@ -112,7 +113,15 @@ function HeaderSection({ book }: { book: Book }) {
     <SectionCard>
       <View className="flex flex-row justify-between items-start gap-2">
         <View className="flex flex-row gap-2 flex-wrap flex-1">
-          <Badge text={book.epoch} LIcon={BookOpen} theme="primary" />
+          <Badge
+            onPress={() => {
+              //@ts-ignore
+              router.push(`/(notabs)/epoch/${book.epoch_id}`);
+            }}
+            text={book.epoch}
+            LIcon={BookOpen}
+            theme="primary"
+          />
         </View>
         <Text className="text-foreground/40 font-pregular text-sm shrink-0">
           {book.year}

@@ -7,6 +7,7 @@ export const books: Book[] = [
     author: "tradycyjnie przypisywana Mojżeszowi",
     year: "ok. XIII–V w. p.n.e.",
     epoch: "Antyk",
+    epoch_id: 1,
     summary: {
       short:
         "Księga Rodzaju opisuje stworzenie świata i człowieka, historię pierwszych ludzi, upadek moralny ludzkości oraz początki narodu wybranego poprzez dzieje patriarchów.",
@@ -238,6 +239,7 @@ export const books: Book[] = [
     author: "anonimowy",
     year: "ok. VI–IV w. p.n.e.",
     epoch: "Antyk",
+    epoch_id: 1,
     summary: {
       short:
         "Księga Hioba opowiada historię sprawiedliwego człowieka, który mimo swojej niewinności doświadcza ogromnego cierpienia, co staje się pretekstem do rozważań nad sensem bólu, sprawiedliwością Boga i ludzką wiarą.",
@@ -447,6 +449,7 @@ export const books: Book[] = [
     author: "tradycyjnie przypisywana Salomonowi",
     year: "ok. III w. p.n.e.",
     epoch: "Antyk",
+    epoch_id: 1,
     summary: {
       short:
         "Księga Koheleta to refleksyjny traktat filozoficzny o sensie życia, przemijaniu i marności ludzkich działań, podkreślający nietrwałość świata i konieczność pogodzenia się z losem oraz zaufania Bogu.",
@@ -640,6 +643,7 @@ export const books: Book[] = [
     author: "św. Jan Apostoł",
     year: "I wiek n.e.",
     epoch: "Antyk",
+    epoch_id: 1,
     summary: {
       short:
         "Symboliczna wizja końca świata, sądu ostatecznego oraz ostatecznego zwycięstwa dobra nad złem, ukazana poprzez prorocze objawienia św. Jana.",
@@ -831,6 +835,7 @@ export const books: Book[] = [
     author: "Jan Parandowski",
     year: 1924,
     epoch: "XX-lecie międzywojenne",
+    epoch_id: 9,
     summary: {
       short:
         "Zbiór mitów greckich opracowanych i zinterpretowanych przez Jana Parandowskiego, ukazujący wierzenia starożytnych Greków, ich bogów, herosów oraz wyobrażenia o świecie i człowieku.",
@@ -1028,6 +1033,7 @@ export const books: Book[] = [
     author: "Homer",
     year: "VIII w. p.n.e.",
     epoch: "Antyk",
+    epoch_id: 1,
     summary: {
       short:
         "Epos opowiada o wydarzeniach z ostatniego roku wojny trojańskiej, koncentrując się na gniewie Achillesa i jego konsekwencjach dla losów Greków i Trojan.",
@@ -1238,6 +1244,7 @@ export const books: Book[] = [
     author: "Sofokles",
     year: "ok. 442 p.n.e.",
     epoch: "Antyk",
+    epoch_id: 1,
     summary: {
       short:
         "Tragedia ukazująca konflikt między prawem boskim a ludzkim na przykładzie decyzji Antygony, która sprzeciwia się zakazowi Kreona i grzebie brata, za co zostaje skazana na śmierć.",
@@ -1436,6 +1443,7 @@ export const books: Book[] = [
     author: "Anonim",
     year: "XV w.",
     epoch: "Średniowiecze",
+    epoch_id: 2,
     summary: {
       short:
         "Monolog Matki Boskiej opłakującej śmierć Jezusa, ukazujący jej ludzkie cierpienie i bezsilność wobec losu.",
@@ -1628,6 +1636,7 @@ export const books: Book[] = [
     author: "Anonim",
     year: "XV wiek",
     epoch: "Średniowiecze",
+    epoch_id: 2,
     summary: {
       short:
         "Utwór przedstawia dialog uczonego Polikarpa ze spersonifikowaną Śmiercią, która ukazuje swoją wszechwładzę i nieuchronność, krytykując jednocześnie ludzkie wady i grzechy.",
@@ -1792,6 +1801,7 @@ export const books: Book[] = [
     author: "anonim",
     year: "XI wiek",
     epoch: "Średniowiecze",
+    epoch_id: 2,
     summary: {
       short:
         "Epos rycerski opowiadający o bohaterskiej śmierci Rolanda podczas odwrotu wojsk Karola Wielkiego z Hiszpanii, zdradzie Ganelona i konflikcie z Saracenami.",
@@ -1991,6 +2001,7 @@ export const books: Book[] = [
     author: "Jan Kochanowski",
     year: "1580",
     epoch: "Renesans",
+    epoch_id: 3,
     summary: {
       short:
         "Cykl dziewiętnastu trenów poświęconych zmarłej córce Urszuli, ukazujący kryzys światopoglądowy poety i jego drogę od rozpaczy do odzyskania wewnętrznej równowagi.",
@@ -2196,6 +2207,7 @@ export const books: Book[] = [
     author: "Jan Kochanowski",
     year: "XVI wiek",
     epoch: "Renesans",
+    epoch_id: 3,
     summary: {
       short:
         "Zbiory liryków Jana Kochanowskiego ukazujące renesansową wizję świata opartą na harmonii, umiarze i refleksji nad życiem, łączące filozofię stoicką i epikurejską z doświadczeniem codzienności.",
@@ -2400,6 +2412,7 @@ export const books: Book[] = [
     author: "William Szekspir",
     year: "ok. 1606",
     epoch: "Barok",
+    epoch_id: 4,
     summary: {
       short:
         "Tragedia ukazująca mechanizm rodzenia się zbrodni i jej konsekwencje. Makbet, pod wpływem przepowiedni i ambicji, dokonuje morderstwa króla, co prowadzi do jego moralnego upadku i ostatecznej klęski.",
@@ -2633,6 +2646,7 @@ export const books: Book[] = [
     author: "Molier",
     year: 1668,
     epoch: "Barok",
+    epoch_id: 4,
     summary: {
       short:
         "Komedia przedstawiająca historię Harpagona – chorobliwie skąpego człowieka, który podporządkowuje życie swoje i swoich dzieci żądzy posiadania pieniędzy.",
@@ -2848,6 +2862,7 @@ export const books: Book[] = [
     author: "Ignacy Krasicki",
     year: 1779,
     epoch: "Oświecenie",
+    epoch_id: 5,
     summary: {
       short:
         "Dwie satyry ukazujące wady polskiej szlachty: bezmyślne naśladownictwo cudzoziemszczyzny oraz pijaństwo jako narodową przywarę.",
@@ -3042,6 +3057,7 @@ export const books: Book[] = [
     author: "Adam Mickiewicz",
     year: 1822,
     epoch: "Romantyzm",
+    epoch_id: 6,
     summary: {
       short:
         "Ballada ukazuje konflikt między rozumem a wiarą i uczuciem na przykładzie historii Karusi, która rozmawia ze zmarłym ukochanym. Utwór manifestuje romantyczne podejście do poznania świata.",
@@ -3249,6 +3265,7 @@ export const books: Book[] = [
     author: "Adam Mickiewicz",
     year: "1832",
     epoch: "Romantyzm",
+    epoch_id: 6,
     summary: {
       short:
         "Dramat romantyczny ukazujący losy polskiej młodzieży prześladowanej przez carat oraz przemianę Gustawa w Konrada – poetę i buntownika, który podejmuje walkę duchową z Bogiem w imię narodu.",
@@ -3442,6 +3459,7 @@ export const books: Book[] = [
     author: "Bolesław Prus",
     year: "1887–1889",
     epoch: "Pozytywizm",
+    epoch_id: 7,
     summary: {
       short:
         "Powieść realistyczna ukazująca losy Stanisława Wokulskiego – kupca zakochanego w arystokratce Izabeli Łęckiej – oraz panoramę społeczeństwa polskiego drugiej połowy XIX wieku.",
@@ -3674,6 +3692,7 @@ export const books: Book[] = [
     author: "Henryk Sienkiewicz",
     year: "1886",
     epoch: "Pozytywizm",
+    epoch_id: 7,
     summary: {
       short:
         "Historia przemiany Andrzeja Kmicica na tle najazdu szwedzkiego na Rzeczpospolitą. Od awanturnika i zdrajcy do bohatera narodowego.",
@@ -3860,6 +3879,7 @@ export const books: Book[] = [
     author: "Fiodor Dostojewski",
     year: 1866,
     epoch: "Pozytywizm",
+    epoch_id: 7,
     summary: {
       short:
         "Powieść psychologiczna ukazująca historię Rodiona Raskolnikowa, który dokonuje morderstwa, próbując udowodnić swoją teorię o jednostkach wybitnych, a następnie zmaga się z poczuciem winy i moralnym rozdarciem.",
@@ -4062,6 +4082,7 @@ export const books: Book[] = [
     author: "Stanisław Wyspiański",
     year: 1901,
     epoch: "Młoda Polska",
+    epoch_id: 8,
     summary: {
       short:
         "Dramat ukazujący spotkanie inteligencji i chłopów podczas wesela, które staje się symbolicznym obrazem polskiego społeczeństwa niezdolnego do wspólnego działania i odzyskania niepodległości.",
@@ -4283,6 +4304,7 @@ export const books: Book[] = [
     author: "Władysław Stanisław Reymont",
     year: "1904–1909",
     epoch: "Młoda Polska",
+    epoch_id: 8,
     summary: {
       short:
         "„Chłopi” to realistyczna epopeja ukazująca życie społeczności wiejskiej w Lipcach, podporządkowane rytmowi natury i tradycji, skupiona wokół konfliktów rodzinnych, miłości oraz walki o ziemię.",
@@ -4481,6 +4503,7 @@ export const books: Book[] = [
     author: "Stefan Żeromski",
     year: 1924,
     epoch: "XX-lecie międzywojenne",
+    epoch_id: 9,
     summary: {
       short:
         "Powieść ukazuje losy Cezarego Baryki – młodego człowieka dojrzewającego w czasie rewolucji i odbudowy Polski, który poszukuje własnej tożsamości i wizji ojczyzny.",
@@ -4679,6 +4702,7 @@ export const books: Book[] = [
     author: "Witold Gombrowicz",
     year: 1937,
     epoch: "XX-lecie międzywojenne",
+    epoch_id: 9,
     summary: {
       short:
         "Powieść groteskowa ukazująca proces „upupiania” jednostki przez społeczeństwo, które narzuca jej formy, role i schematy zachowań.",
@@ -4898,6 +4922,7 @@ export const books: Book[] = [
     author: "Tadeusz Borowski",
     year: 1946,
     epoch: "Współczesność",
+    epoch_id: 10,
     summary: {
       short:
         "Opowiadanie przedstawia jeden dzień pracy więźniów w obozie Auschwitz, którzy uczestniczą w rozładunku transportu ludzi przeznaczonych do komór gazowych. Ukazuje dehumanizację i moralne wyniszczenie człowieka w warunkach obozowych.",
@@ -5085,6 +5110,7 @@ export const books: Book[] = [
     author: "Gustaw Herling-Grudziński",
     year: 1951,
     epoch: "Współczesność",
+    epoch_id: 10,
     summary: {
       short:
         "„Inny świat” to autobiograficzna relacja z pobytu autora w sowieckim łagrze, ukazująca ekstremalne warunki życia, degradację moralną człowieka oraz walkę o zachowanie godności w nieludzkim systemie totalitarnym.",
@@ -5284,6 +5310,7 @@ export const books: Book[] = [
     author: "Hanna Krall",
     year: 1977,
     epoch: "Współczesność",
+    epoch_id: 10,
     summary: {
       short:
         "Reportaż będący zapisem rozmowy z Markiem Edelmanem – jednym z przywódców powstania w getcie warszawskim – ukazujący walkę o godność i sens życia w obliczu Zagłady.",
@@ -5511,6 +5538,7 @@ export const books: Book[] = [
     author: "Albert Camus",
     year: 1947,
     epoch: "Współczesność",
+    epoch_id: 10,
     summary: {
       short:
         "Powieść ukazuje epidemię dżumy w Oranie jako metaforę ludzkiego losu, zła i absurdu istnienia, a także próbę odpowiedzi na pytanie, jak zachować człowieczeństwo w obliczu cierpienia.",
@@ -5709,6 +5737,7 @@ export const books: Book[] = [
     author: "George Orwell",
     year: 1949,
     epoch: "Współczesność",
+    epoch_id: 10,
     summary: {
       short:
         "Powieść przedstawia totalitarny świat Oceanii, w którym jednostka jest całkowicie podporządkowana władzy Partii, a główny bohater Winston Smith podejmuje próbę buntu przeciwko systemowi.",
@@ -5925,6 +5954,7 @@ export const books: Book[] = [
     author: "Sławomir Mrożek",
     year: 1964,
     epoch: "Współczesność",
+    epoch_id: 10,
     summary: {
       short:
         "Dramat groteskowy ukazujący konflikt pokoleń oraz kryzys wartości w świecie pozbawionym zasad, w którym bunt młodego inteligenta kończy się triumfem prymitywnej siły.",
@@ -6137,6 +6167,7 @@ export const books: Book[] = [
     author: "Marek Nowakowski",
     year: "1970 (tom „Prawo prerii”)",
     epoch: "Współczesność",
+    epoch_id: 10,
     summary: {
       short:
         "Opowiadanie ukazuje brutalną rzeczywistość środowiska przestępczego, w którym liczy się siła i spryt. Tytułowy Edek zdobywa dominację dzięki bezwzględności, co odzwierciedla zasadę „prawa prerii” – wygrywa silniejszy.",
@@ -6328,6 +6359,7 @@ export const books: Book[] = [
     author: "Olga Tokarczuk",
     year: 2001,
     epoch: "Współczesność",
+    epoch_id: 10,
     summary: {
       short:
         "Opowiadanie przedstawia historię angielskiego profesora, który przypadkowo trafia do Warszawy w czasie stanu wojennego i doświadcza chaosu, izolacji oraz absurdów rzeczywistości PRL.",
@@ -6518,6 +6550,7 @@ export const books: Book[] = [
     author: "Andrzej Stasiuk",
     year: "1995",
     epoch: "Współczesność",
+    epoch_id: 10,
     summary: {
       short:
         "Opowiadanie ukazuje historię opuszczonej cerkwi w Beskidach i jej powolnego niszczenia przez ludzi, którzy traktują ją jako źródło materiałów budowlanych. Narrator obserwuje proces degradacji miejsca, które kiedyś miało znaczenie duchowe.",
@@ -6724,6 +6757,7 @@ export const books: Book[] = [
     author: "Ryszard Kapuściński",
     year: 2004,
     epoch: "Współczesność",
+    epoch_id: 10,
     summary: {
       short:
         "Reporterska opowieść o podróżach autora po świecie, spleciona z refleksjami nad dziełem Herodota i naturą poznania innych kultur.",
@@ -6943,6 +6977,7 @@ export const books: Book[] = [
     author: "Juliusz Słowacki",
     year: 1839,
     epoch: "Romantyzm",
+    epoch_id: 6,
     summary: {
       short:
         "Tragiczna historia Balladyny, która w dążeniu do władzy popełnia kolejne zbrodnie, aż zostaje ukarana przez siły wyższe.",
@@ -7165,6 +7200,7 @@ export const books: Book[] = [
     author: "Ignacy Krasicki",
     year: "1779",
     epoch: "Oświecenie",
+    epoch_id: 5,
     summary: {
       short:
         "Zbiór krótkich utworów dydaktycznych, w których poprzez alegoryczne historie ze świata ludzi i zwierząt autor ukazuje wady ludzkie oraz formułuje uniwersalne prawdy moralne.",
@@ -7355,6 +7391,7 @@ export const books: Book[] = [
     author: "Adam Mickiewicz",
     year: "1823",
     epoch: "Romantyzm",
+    epoch_id: 6,
     summary: {
       short:
         "Dramat romantyczny przedstawiający obrzęd dziadów, podczas którego żywi nawiązują kontakt z duchami, by pomóc im osiągnąć zbawienie.",
@@ -7571,6 +7608,7 @@ export const books: Book[] = [
     author: "Adam Mickiewicz",
     year: "1834",
     epoch: "Romantyzm",
+    epoch_id: 6,
     summary: {
       short:
         "Epopeja narodowa ukazująca życie polskiej szlachty na Litwie w przededniu kampanii napoleońskiej, łącząca wątek miłosny Tadeusza i Zosi z konfliktem o zamek oraz nadziejami na odzyskanie niepodległości.",
@@ -7781,6 +7819,7 @@ export const books: Book[] = [
     author: "Aleksander Fredro",
     year: 1834,
     epoch: "Romantyzm",
+    epoch_id: 6,
     summary: {
       short:
         "Komedia ukazująca konflikt dwóch szlachciców – Cześnika i Rejenta – oraz jego rozwiązanie dzięki miłości młodego pokolenia.",

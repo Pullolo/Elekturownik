@@ -32,7 +32,15 @@ const SmallBookCard = memo(function SmallBookCard({
     >
       <View className="flex flex-row justify-between items-center gap-2">
         <View className="flex flex-row gap-2 flex-wrap flex-1">
-          <Badge text={book.epoch} LIcon={BookIcon} theme="primary" />
+          <Badge
+            onPress={() => {
+              //@ts-ignore
+              router.push(`/(notabs)/epoch/${book.epoch_id}`);
+            }}
+            text={book.epoch}
+            LIcon={BookIcon}
+            theme="primary"
+          />
         </View>
         {learned && (
           <View className="shrink-0">

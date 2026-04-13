@@ -2,8 +2,10 @@ import { useLearnedItemsContext } from "@/src/components/context/LearnedItemsCon
 import DailyQuestionWidget from "@/src/components/DailyQuestionWidget";
 import Heading from "@/src/components/Heading";
 import BooksIconographySvg from "@/src/components/icons/BooksIconographySvg";
+import HappyIconographySvg from "@/src/components/icons/HappyIconographySvg";
 import IdeaIconographySvg from "@/src/components/icons/IdeaIconographySvg";
 import QuestionIconographySvg from "@/src/components/icons/QuestionIconographySvg";
+import ReadingIconographySvg from "@/src/components/icons/ReadingIconographySvg";
 import ScreenWrapper from "@/src/components/ScreenWrapper";
 import { useTabBar } from "@/src/hooks/TabBarContext";
 import { useBooks } from "@/src/hooks/useBooks";
@@ -67,6 +69,7 @@ export default function Home() {
         <Heading text="Hejka" />
         <DailyQuestionWidget question={question} />
         <View className="flex flex-col w-full gap-4">
+          {/* row1 */}
           <View className="w-full flex flex-row gap-4">
             <GirdCard
               title="Lista Pytań"
@@ -82,16 +85,13 @@ export default function Home() {
               Svg={BooksIconographySvg}
             />
           </View>
+          {/* row2 */}
           <View className="w-full flex flex-row gap-4">
             <GirdCard
-              title="Zaskocz Mnie"
-              description="Wylosuj pytanie albo opracowanie lektury."
-              onPress={() => {
-                const path = getRandomPath(books, questions);
-                // @ts-ignore
-                router.push(`/(notabs)/${path}`);
-              }}
-              Svg={IdeaIconographySvg}
+              title="Lista Epok"
+              description="Najważniejsze epoki literackie, ich cechy, twórcy i konteksty."
+              onPress={() => router.push("/epochs")}
+              Svg={ReadingIconographySvg}
             />
 
             <TouchableOpacity
@@ -136,6 +136,31 @@ export default function Home() {
                 {"Monitoruj swoje postępy każdego dnia."}
               </Text>
             </TouchableOpacity>
+          </View>
+          {/* row3 */}
+          <View className="w-full flex flex-row gap-4">
+            <GirdCard
+              title="Losuj Pytanie"
+              description="Wylosuj pytanie jawne do odpowiedzi ustnej."
+              onPress={() => {
+                const randomQuestion =
+                  questions[Math.floor(Math.random() * questions.length)];
+                // @ts-ignore
+                router.push(`/(notabs)/question/${randomQuestion.id}`);
+              }}
+              Svg={HappyIconographySvg}
+            />
+
+            <GirdCard
+              title="Zaskocz Mnie"
+              description="Wylosuj pytanie albo opracowanie lektury."
+              onPress={() => {
+                const path = getRandomPath(books, questions);
+                // @ts-ignore
+                router.push(`/(notabs)/${path}`);
+              }}
+              Svg={IdeaIconographySvg}
+            />
           </View>
         </View>
         {book.terms.length > 0 && (

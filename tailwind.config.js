@@ -5,8 +5,10 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
+        pitalic: ["Poppins-Italic", "sans-serif"],
         pregular: ["Poppins-Regular", "sans-serif"],
         pmedium: ["Poppins-Medium", "sans-serif"],
+        pmediumitalic: ["Poppins-MediumItalic", "sans-serif"],
         psemibold: ["Poppins-SemiBold", "sans-serif"],
         pbold: ["Poppins-Bold", "sans-serif"],
       },

@@ -61,8 +61,10 @@ export default function RootLayout() {
   const [loaded, error] = useFonts({
     "Poppins-Bold": require("../assets/fonts/poppins/Poppins-Bold.ttf"),
     "Poppins-Medium": require("../assets/fonts/poppins/Poppins-Medium.ttf"),
+    "Poppins-MediumItalic": require("../assets/fonts/poppins/Poppins-MediumItalic.ttf"),
     "Poppins-Regular": require("../assets/fonts/poppins/Poppins-Regular.ttf"),
     "Poppins-SemiBold": require("../assets/fonts/poppins/Poppins-SemiBold.ttf"),
+    "Poppins-Italic": require("../assets/fonts/poppins/Poppins-Italic.ttf"),
   });
 
   useEffect(() => {

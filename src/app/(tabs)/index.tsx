@@ -183,7 +183,7 @@ export default function Home() {
                   key={i}
                   className="border-l-2 border-secondary/30 pl-3 flex flex-col gap-1"
                 >
-                  <Text className="text-foreground font-pmedium text-sm leading-relaxed italic">
+                  <Text className="text-foreground font-pmediumitalic text-sm leading-relaxed">
                     {terms.name}
                   </Text>
                   <Text className="text-foreground/40 font-pregular text-xs leading-relaxed">

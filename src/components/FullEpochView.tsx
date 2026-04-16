@@ -326,7 +326,7 @@ function GenresSection({ genres }: { genres: Genre[] }) {
                     key={j}
                     className="border border-foreground/10 rounded-lg px-2 py-0.5 bg-foreground/[0.02] flex flex-row items-center w-fit"
                   >
-                    <Text className="text-foreground/40 font-pregular text-xs italic">
+                    <Text className="text-foreground/40 font-pitalic text-xs px-[1px]">
                       {ex}
                     </Text>
                   </View>
@@ -382,7 +382,7 @@ function CreatorCard({ creator }: { creator: Creator }) {
           className="border-l-2 border-primary/30 pl-3"
           style={{ borderRadius: 0 }}
         >
-          <Text className="text-foreground/60 font-pregular text-xs leading-relaxed italic">
+          <Text className="text-foreground/60 text-xs leading-relaxed font-pitalic">
             {creator.quote}
           </Text>
         </View>
@@ -396,7 +396,10 @@ function CreatorCard({ creator }: { creator: Creator }) {
                   colors.dark ? "bg-gray-950" : "bg-white",
                 )}
               >
-                <Text className="text-foreground/40 font-pregular text-xs italic">
+                <Text
+                  style={{ includeFontPadding: false }}
+                  className="text-foreground/40 font-pitalic text-xs px-[1px]"
+                >
                   {work}
                 </Text>
               </View>
@@ -578,7 +581,7 @@ function ComparisonsSection({ comparisons }: { comparisons: Comparison[] }) {
               {i > 0 && <Divider />}
 
               <View className="flex flex-row items-center gap-2 flex-wrap">
-                <Text className="text-foreground font-psemibold text-sm">
+                <Text className="text-foreground font-psemibold text-sm px-[1px]">
                   vs. {comp.withEpoch}
                 </Text>
                 <View className="w-fit h-fit flex justify-center items-center rounded-full bg-white">
@@ -754,7 +757,7 @@ function ExamSection({ exam }: { exam: EpochStudy["exam"] }) {
                 className="border-l-2 border-primary/20 pl-3"
                 style={{ borderRadius: 0 }}
               >
-                <Text className="text-foreground/60 font-pregular text-xs leading-relaxed italic">
+                <Text className="text-foreground/60 font-pitalic text-xs leading-relaxed">
                   {s}
                 </Text>
               </View>
@@ -776,7 +779,7 @@ function ExamSection({ exam }: { exam: EpochStudy["exam"] }) {
                 className="border-l-2 border-secondary/20 pl-3"
                 style={{ borderRadius: 0 }}
               >
-                <Text className="text-foreground/60 font-pregular text-xs leading-relaxed italic">
+                <Text className="text-foreground/60 font-pitalic text-xs leading-relaxed">
                   {s}
                 </Text>
               </View>

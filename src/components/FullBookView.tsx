@@ -348,7 +348,7 @@ function QuotesSection({ quotes }: { quotes: Book["quotes"] }) {
             key={i}
             className="border-l-2 border-primary/30 pl-3 flex flex-col gap-1"
           >
-            <Text className="text-foreground font-pmedium text-sm leading-relaxed italic">
+            <Text className="text-foreground font-pmediumitalic text-sm leading-relaxed">
               {quote.text}
             </Text>
             <Text className="text-foreground/40 font-pregular text-xs leading-relaxed">
@@ -374,7 +374,7 @@ function TermsSection({ terms }: { terms: Book["terms"] }) {
             key={i}
             className="border-l-2 border-primary/30 pl-3 flex flex-col gap-1"
           >
-            <Text className="text-foreground font-pmedium text-sm leading-relaxed italic">
+            <Text className="text-foreground font-pmediumitalic text-sm leading-relaxed">
               {terms.name}
             </Text>
             <Text className="text-foreground/40 font-pregular text-xs leading-relaxed">
@@ -455,7 +455,7 @@ function ExamSection({ exam }: { exam: Book["exam"] }) {
             </Text>
             {exam.introStarters.map((s, i) => (
               <View key={i} className="border-l-2 border-primary/20 pl-3">
-                <Text className="text-foreground/60 font-pregular text-xs leading-relaxed italic">
+                <Text className="text-foreground/60 font-pitalic text-xs leading-relaxed">
                   {s}
                 </Text>
               </View>

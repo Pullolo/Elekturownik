@@ -102,7 +102,9 @@ function StatPill({
   return (
     <View className="flex flex-row gap-1 items-center">
       <Icon size={12} color={colors.foreground} />
-      <Text className="text-foreground/60 font-pregular text-xs">{label}</Text>
+      <Text className="text-foreground/60 font-pregular text-xs px-[1px]">
+        {label}
+      </Text>
     </View>
   );
 }

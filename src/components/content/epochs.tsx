@@ -1,5 +1,4 @@
 import SmallEpochCard from "@/src/components/lists/SmallEpochCard";
-import ScreenWrapper from "@/src/components/ScreenWrapper";
 import BackButton from "@/src/components/ui/BackButton";
 import SearchBar from "@/src/components/ui/SearchBar";
 import { epochs } from "@/src/data/epochs";
@@ -58,25 +57,21 @@ export default function Epochs() {
   );
 
   return (
-    <ScreenWrapper>
-      <FlatList
-        style={{ flex: 1 }}
-        contentContainerStyle={{ paddingBottom: tabBarHeight }}
-        showsVerticalScrollIndicator={false}
-        contentContainerClassName="flex w-full flex-col gap-2 justify-center pb-4"
-        data={filteredEpochs}
-        keyExtractor={(item) =>
-          `rendered-epoch-flat-list-${item.id.toString()}`
-        }
-        renderItem={renderItem}
-        ListHeaderComponent={header}
-        ListEmptyComponent={
-          <View className="flex items-center justify-center py-16">
-            <Text className="text-gray-400 text-base">Brak wyników</Text>
-          </View>
-        }
-      />
-    </ScreenWrapper>
+    <FlatList
+      style={{ flex: 1 }}
+      contentContainerStyle={{ paddingBottom: tabBarHeight }}
+      showsVerticalScrollIndicator={false}
+      contentContainerClassName="flex w-full flex-col gap-2 justify-center pb-4"
+      data={filteredEpochs}
+      keyExtractor={(item) => `rendered-epoch-flat-list-${item.id.toString()}`}
+      renderItem={renderItem}
+      ListHeaderComponent={header}
+      ListEmptyComponent={
+        <View className="flex items-center justify-center py-16">
+          <Text className="text-gray-400 text-base">Brak wyników</Text>
+        </View>
+      }
+    />
   );
 }
 

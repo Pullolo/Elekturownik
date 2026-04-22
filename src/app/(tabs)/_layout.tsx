@@ -1,12 +1,6 @@
 import TabBar from "@/src/components/navigation/TabBar";
 import { Tabs } from "expo-router";
-import {
-  Amphora,
-  Calendar,
-  Home,
-  LibraryBig,
-  MessageCircleQuestion,
-} from "lucide-react-native";
+import { Calendar, Gift, Home, LibraryBig } from "lucide-react-native";
 import React from "react";
 
 export default function TabLayout() {
@@ -33,15 +27,7 @@ export default function TabLayout() {
         }}
       />
       <Tabs.Screen
-        name="questions"
-        options={{
-          tabBarIcon: ({ color }) => (
-            <MessageCircleQuestion size={iconSize} color={color} />
-          ),
-        }}
-      />
-      <Tabs.Screen
-        name="books"
+        name="content"
         options={{
           tabBarIcon: ({ color }) => (
             <LibraryBig size={iconSize} color={color} />
@@ -49,9 +35,9 @@ export default function TabLayout() {
         }}
       />
       <Tabs.Screen
-        name="epochs"
+        name="lootboxes"
         options={{
-          tabBarIcon: ({ color }) => <Amphora size={iconSize} color={color} />,
+          tabBarIcon: ({ color }) => <Gift size={iconSize} color={color} />,
         }}
       />
     </Tabs>

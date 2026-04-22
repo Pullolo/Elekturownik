@@ -74,14 +74,24 @@ export default function Home() {
             <GirdCard
               title="Lista Pytań"
               description="Przeglądaj pytania maturalne i ćwicz odpowiedzi krok po kroku."
-              onPress={() => router.push("/questions")}
+              onPress={() =>
+                router.push({
+                  pathname: "/content",
+                  params: { tab: "questions" },
+                })
+              }
               Svg={QuestionIconographySvg}
             />
 
             <GirdCard
               title="Spis Lektur"
               description="Opracowania, motywy i bohaterowie wszystkich lektur."
-              onPress={() => router.push("/books")}
+              onPress={() =>
+                router.push({
+                  pathname: "/content",
+                  params: { tab: "books" },
+                })
+              }
               Svg={BooksIconographySvg}
             />
           </View>
@@ -90,7 +100,12 @@ export default function Home() {
             <GirdCard
               title="Lista Epok"
               description="Najważniejsze epoki literackie, ich cechy, twórcy i konteksty."
-              onPress={() => router.push("/epochs")}
+              onPress={() =>
+                router.push({
+                  pathname: "/content",
+                  params: { tab: "epochs" },
+                })
+              }
               Svg={ReadingIconographySvg}
             />
 

@@ -1,6 +1,5 @@
 import { useLearnedItemsContext } from "@/src/components/context/LearnedItemsContext";
 import SmallBookCard from "@/src/components/lists/SmallBookCard";
-import ScreenWrapper from "@/src/components/ScreenWrapper";
 import BackButton from "@/src/components/ui/BackButton";
 import FilterChip from "@/src/components/ui/FilterChip";
 import SearchBar from "@/src/components/ui/SearchBar";
@@ -105,23 +104,21 @@ export default function Books() {
   );
 
   return (
-    <ScreenWrapper>
-      <FlatList
-        style={{ flex: 1 }}
-        contentContainerStyle={{ paddingBottom: tabBarHeight }}
-        showsVerticalScrollIndicator={false}
-        contentContainerClassName="flex w-full flex-col gap-2 justify-center pb-4"
-        data={filteredBooks}
-        keyExtractor={(item) => `rendered-book-flat-list-${item.id.toString()}`}
-        renderItem={renderItem}
-        ListHeaderComponent={header}
-        ListEmptyComponent={
-          <View className="flex items-center justify-center py-16">
-            <Text className="text-gray-400 text-base">Brak wyników</Text>
-          </View>
-        }
-      />
-    </ScreenWrapper>
+    <FlatList
+      style={{ flex: 1 }}
+      contentContainerStyle={{ paddingBottom: tabBarHeight }}
+      showsVerticalScrollIndicator={false}
+      contentContainerClassName="flex w-full flex-col gap-2 justify-center pb-4"
+      data={filteredBooks}
+      keyExtractor={(item) => `rendered-book-flat-list-${item.id.toString()}`}
+      renderItem={renderItem}
+      ListHeaderComponent={header}
+      ListEmptyComponent={
+        <View className="flex items-center justify-center py-16">
+          <Text className="text-gray-400 text-base">Brak wyników</Text>
+        </View>
+      }
+    />
   );
 }
 

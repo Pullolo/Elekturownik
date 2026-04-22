@@ -1,5 +1,4 @@
 import SmallEpochCard from "@/src/components/lists/SmallEpochCard";
-import BackButton from "@/src/components/ui/BackButton";
 import SearchBar from "@/src/components/ui/SearchBar";
 import { epochs } from "@/src/data/epochs";
 import { EpochStudy } from "@/src/data/types";
@@ -84,8 +83,6 @@ type HeaderProps = {
 function TopOfTheEpochs({ query, onQueryChange, resultCount }: HeaderProps) {
   return (
     <View className="w-full flex flex-col gap-4 pb-4">
-      <BackButton text="Wszystkie epoki" />
-
       {/* Search bar */}
       <SearchBar
         placeholder="Szukaj epoki, motywu, autora…"

@@ -1,6 +1,5 @@
 import { useLearnedItemsContext } from "@/src/components/context/LearnedItemsContext";
 import SmallQuestionCard from "@/src/components/lists/SmallQuestionCard";
-import BackButton from "@/src/components/ui/BackButton";
 import FilterChip from "@/src/components/ui/FilterChip";
 import SearchBar from "@/src/components/ui/SearchBar";
 import { questions } from "@/src/data/questions";
@@ -108,8 +107,6 @@ function TopOfTheQuestions({
 }: HeaderProps) {
   return (
     <View className="w-full flex flex-col gap-4 pb-4">
-      <BackButton text={`Wszystkie pytania 2026`} />
-
       <SearchBar
         placeholder="Szukaj pytania..."
         query={query}

@@ -1,6 +1,5 @@
 import { useLearnedItemsContext } from "@/src/components/context/LearnedItemsContext";
 import SmallBookCard from "@/src/components/lists/SmallBookCard";
-import BackButton from "@/src/components/ui/BackButton";
 import FilterChip from "@/src/components/ui/FilterChip";
 import SearchBar from "@/src/components/ui/SearchBar";
 import { books } from "@/src/data/books";
@@ -143,8 +142,6 @@ function TopOfTheBooks({
 }: HeaderProps) {
   return (
     <View className="w-full flex flex-col gap-4 pb-4">
-      <BackButton text="Wszystkie lektury" />
-
       {/* Search bar */}
       <SearchBar
         placeholder="Szukaj tytułu, autora, motywu…"

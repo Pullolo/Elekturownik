@@ -2,6 +2,7 @@ import Books from "@/src/components/content/books";
 import Epochs from "@/src/components/content/epochs";
 import Questions from "@/src/components/content/questions";
 import ScreenWrapper from "@/src/components/ScreenWrapper";
+import BackButton from "@/src/components/ui/BackButton";
 import SegmentedControl from "@/src/components/ui/SegmentedControl";
 import { useLocalSearchParams } from "expo-router";
 import { Book, HelpCircle, Landmark } from "lucide-react-native";
@@ -28,6 +29,15 @@ export default function Content() {
 
   return (
     <ScreenWrapper className="gap-4">
+      <BackButton
+        text={
+          selectedTab === "questions"
+            ? `Wszystkie pytania 2026`
+            : selectedTab === "books"
+              ? `Wszystkie lektury`
+              : `Wszystkie epoki`
+        }
+      />
       <SegmentedControl
         segments={TABS}
         selected={selectedTab}

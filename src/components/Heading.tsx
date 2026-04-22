@@ -10,13 +10,16 @@ import { useUserData } from "./context/UserDataContext";
 export default function Heading({
   text,
   className,
+  emoji = "📖",
+  description = "Miło cię widzieć!",
 }: {
   text: string;
   className?: string;
+  description?: string;
+  emoji?: string;
 }) {
   const colors = useColors();
   const { avatar, pickAvatar } = useUserData();
-  const description = "Miło cię widzieć!";
   const [timer, setTimer] = useState(0);
 
   useEffect(() => {
@@ -31,7 +34,7 @@ export default function Heading({
     }, 100);
 
     return () => clearInterval(interval);
-  }, []);
+  }, [description]);
 
   return (
     <View className={cn("w-full", className)}>
@@ -48,7 +51,7 @@ export default function Heading({
           </TouchableOpacity>
           <View>
             <Text className="text-foreground text-3xl font-pmedium">
-              {`${text} 📖`}
+              {`${text} ${emoji}`}
             </Text>
             <Text className="text-foreground/50 text-sm font-pregular">
               {`${description.substring(0, timer)}${description.length > timer ? "_" : ""}`}

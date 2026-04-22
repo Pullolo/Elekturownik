@@ -1,3 +1,4 @@
+import { useActiveRewards } from "@/src/components/context/InventoryContext";
 import { useLearnedItemsContext } from "@/src/components/context/LearnedItemsContext";
 import DailyQuestionWidget from "@/src/components/DailyQuestionWidget";
 import Heading from "@/src/components/Heading";
@@ -26,6 +27,7 @@ type DonutChartData = {
 };
 
 export default function Home() {
+  const { activeEmoji, activeText } = useActiveRewards();
   const colors = useColors();
   const { questions } = useQuestions();
   const { books } = useBooks();
@@ -66,7 +68,11 @@ export default function Home() {
         showsVerticalScrollIndicator={false}
         contentContainerClassName="flex flex-col gap-6 items-start justify-center pb-4"
       >
-        <Heading text="Hejka" />
+        <Heading
+          text="Hejka"
+          emoji={activeEmoji?.reward.value}
+          description={activeText?.reward.value}
+        />
         <DailyQuestionWidget question={question} />
         <View className="flex flex-col w-full gap-4">
           {/* row1 */}

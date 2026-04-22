@@ -4,6 +4,8 @@ import * as Updates from "expo-updates";
 import { useEffect } from "react";
 import { Alert, View } from "react-native";
 import "react-native-reanimated";
+import { ClaimedAchievementsProvider } from "../components/context/ClaimedAchievementsContext";
+import { InventoryProvider } from "../components/context/InventoryContext";
 import { LearnedItemsProvider } from "../components/context/LearnedItemsContext";
 import { ThemeProvider } from "../components/context/ThemeContext";
 import { UserDataProvider } from "../components/context/UserDataContext";
@@ -40,18 +42,22 @@ function AppContent() {
   return (
     <LearnedItemsProvider>
       <UserDataProvider>
-        <View className="flex-1 w-full h-full bg-background">
-          <TabBarProvider>
-            <Stack
-              screenOptions={{ headerShown: false }}
-              initialRouteName="index"
-            >
-              <Stack.Screen name="(tabs)" />
-              <Stack.Screen name="(notabs)" />
-            </Stack>
-            {statusBar}
-          </TabBarProvider>
-        </View>
+        <ClaimedAchievementsProvider>
+          <InventoryProvider>
+            <View className="flex-1 w-full h-full bg-background">
+              <TabBarProvider>
+                <Stack
+                  screenOptions={{ headerShown: false }}
+                  initialRouteName="index"
+                >
+                  <Stack.Screen name="(tabs)" />
+                  <Stack.Screen name="(notabs)" />
+                </Stack>
+                {statusBar}
+              </TabBarProvider>
+            </View>
+          </InventoryProvider>
+        </ClaimedAchievementsProvider>
       </UserDataProvider>
     </LearnedItemsProvider>
   );

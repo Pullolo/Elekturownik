@@ -1,10 +1,19 @@
-import LootBox, { ChestVariant } from "@/src/components/lootboxes/Lootbox";
+import {
+  useChests,
+  useOwnedRewards,
+} from "@/src/components/context/InventoryContext";
+import LootBox, {
+  ChestVariant,
+  RewardResultCard,
+} from "@/src/components/lootboxes/Lootbox";
 import ScreenWrapper from "@/src/components/ScreenWrapper";
 import BackButton from "@/src/components/ui/BackButton";
+import { Reward } from "@/src/data/rewardmanager";
 import { useTabBar } from "@/src/hooks/TabBarContext";
 import { useChestClasses } from "@/src/hooks/useChestClasses";
 import useColors from "@/src/hooks/useColors";
 import { cn } from "@/src/lib/utils";
+import { router } from "expo-router";
 import { Award, Backpack, Box, Boxes, SquareDashed } from "lucide-react-native";
 import { useState } from "react";
 import { ScrollView, Text, TouchableOpacity, View } from "react-native";
@@ -12,8 +21,30 @@ import Animated, { LinearTransition } from "react-native-reanimated";
 
 export default function LootBoxes() {
   const [currentVariant, setCurrentVariant] = useState<ChestVariant>("common");
+  const [canSwitchVariant, setCanSwitchVariant] = useState(true);
+  const [reward, setReward] = useState<Reward | null>(null);
+  const [chestKey, setChestKey] = useState(0);
+
   const { tabBarHeight } = useTabBar();
   const colors = useColors();
+
+  const { chests, adjustChestCount } = useChests();
+  const { addReward } = useOwnedRewards();
+
+  function handleRewardRevealed(r: Reward) {
+    // Deduct one chest and save the reward
+    adjustChestCount(currentVariant, -1);
+    addReward(r);
+    setReward(r);
+  }
+
+  function handleClose() {
+    setReward(null);
+    setChestKey((k) => k + 1);
+    setCanSwitchVariant(true);
+  }
+
+  const currentChestCount = chests[currentVariant];
 
   return (
     <ScreenWrapper className="items-center">
@@ -26,14 +57,28 @@ export default function LootBoxes() {
 
         {/* Loot box */}
         <View className="flex-col flex justify-center w-full items-center pb-4 pt-6 gap-2">
-          <LootBox amount={0} variant={currentVariant} />
-          <Text className="font-pitalic text-xs text-foreground/20">
-            {"Wciśnij aby otworzyć"}
-          </Text>
+          <LootBox
+            key={chestKey}
+            amount={currentChestCount}
+            variant={currentVariant}
+            onRewardRevealed={handleRewardRevealed}
+            setCanSwitchVariant={setCanSwitchVariant}
+          />
+          {!reward && (
+            <Text className="font-pitalic text-xs text-foreground/20">
+              {currentChestCount > 0
+                ? "Wciśnij aby otworzyć"
+                : "Brak skrzynek tego typu"}
+            </Text>
+          )}
         </View>
 
-        {/* Result */}
-        {/* todo: show result when loot box is opened (best if it exapnds (animated)) */}
+        {/* Result panel */}
+        {reward && (
+          <View className="w-full">
+            <RewardResultCard reward={reward} onClose={handleClose} />
+          </View>
+        )}
 
         {/* Box selection */}
         <Animated.View
@@ -42,61 +87,64 @@ export default function LootBoxes() {
         >
           <TouchableOpacity
             activeOpacity={0.7}
-            className={cn(
-              `flex flex-col bg-background-secondary w-full rounded-3xl border-l-4 p-4 border-primary`,
-            )}
+            onPress={() => {
+              router.push("/(notabs)/inventory");
+            }}
+            className="flex flex-col bg-background-secondary w-full rounded-3xl border-l-4 p-4 border-primary"
           >
             <View className="flex flex-row gap-4 items-center w-full">
               <Backpack size={32} color={colors.primary} />
               <View className="flex flex-col items-start justify-center">
-                <Text className={cn("font-pbold text-lg p-px text-primary")}>
+                <Text className="font-pbold text-lg p-px text-primary">
                   {"Zobacz ekwipunek"}
                 </Text>
-                <Text
-                  className={cn("font-pitalic text-xs text-foreground/40 p-px")}
-                >
+                <Text className="font-pitalic text-xs text-foreground/40 p-px">
                   {"Wszystkie twoje zebrane przedmioty"}
                 </Text>
               </View>
             </View>
           </TouchableOpacity>
+
           <TouchableOpacity
             activeOpacity={0.7}
-            className={cn(
-              `flex flex-col bg-background-secondary w-full rounded-3xl border-l-4 p-4 border-secondary`,
-            )}
+            onPress={() => {
+              router.push("/(notabs)/achievements");
+            }}
+            className="flex flex-col bg-background-secondary w-full rounded-3xl border-l-4 p-4 border-secondary"
           >
             <View className="flex flex-row gap-4 items-center w-full">
               <Award size={32} color={colors.secondary} />
               <View className="flex flex-col items-start justify-center">
-                <Text className={cn("font-pbold text-lg p-px text-secondary")}>
+                <Text className="font-pbold text-lg p-px text-secondary">
                   {"Osiągnięcia"}
                 </Text>
-                <Text
-                  className={cn("font-pitalic text-xs text-foreground/40 p-px")}
-                >
+                <Text className="font-pitalic text-xs text-foreground/40 p-px">
                   {"Zdobywaj nagrody za postępy"}
                 </Text>
               </View>
             </View>
           </TouchableOpacity>
+
           <ChestCard
             onPress={() => {
-              setCurrentVariant("common");
+              if (canSwitchVariant) setCurrentVariant("common");
             }}
-            variant={"common"}
+            variant="common"
+            count={chests.common}
           />
           <ChestCard
             onPress={() => {
-              setCurrentVariant("gold");
+              if (canSwitchVariant) setCurrentVariant("gold");
             }}
-            variant={"gold"}
+            variant="gold"
+            count={chests.gold}
           />
           <ChestCard
             onPress={() => {
-              setCurrentVariant("prismatic");
+              if (canSwitchVariant) setCurrentVariant("prismatic");
             }}
-            variant={"prismatic"}
+            variant="prismatic"
+            count={chests.prismatic}
           />
         </Animated.View>
       </ScrollView>
@@ -107,17 +155,16 @@ export default function LootBoxes() {
 export function ChestCard({
   variant,
   onPress,
+  count,
 }: {
   variant: ChestVariant;
   onPress?: () => void;
+  count: number;
 }) {
   const classes = useChestClasses(variant);
 
   const textVariants = {
-    common: {
-      title: "Zwykła Skrzynka",
-      description: "Podstawowe nagrody",
-    },
+    common: { title: "Zwykła Skrzynka", description: "Podstawowe nagrody" },
     gold: {
       title: "Złota Skrzynka",
       description: "Gwarantowane rzadkie lub lepsze",
@@ -140,7 +187,7 @@ export function ChestCard({
     <TouchableOpacity
       activeOpacity={0.7}
       className={cn(
-        `flex flex-col bg-background-secondary w-full rounded-3xl border-l-4 p-4`,
+        "flex flex-col bg-background-secondary w-full rounded-3xl border-l-4 p-4",
         classes.topBorder,
       )}
       onPress={onPress}
@@ -152,16 +199,14 @@ export function ChestCard({
             <Text className={cn("font-pbold text-lg p-px", classes.text)}>
               {text.title}
             </Text>
-            <Text
-              className={cn("font-pitalic text-xs text-foreground/40 p-px")}
-            >
+            <Text className="font-pitalic text-xs text-foreground/40 p-px">
               {text.description}
             </Text>
           </View>
         </View>
         <View className="flex flex-row items-center justify-center rounded-full bg-secondary/25 px-3 py-1 w-fit h-fit shrink-0">
           <Text className="text-secondary font-psemibold text-base h-fit">
-            {`x${0}`}
+            {`x${count}`}
           </Text>
         </View>
       </View>

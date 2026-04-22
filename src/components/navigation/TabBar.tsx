@@ -31,8 +31,7 @@ const TabBar = ({ state, descriptors, navigation }: BottomTabBarProps) => {
         tint={
           colors.dark ? "systemChromeMaterialDark" : "systemChromeMaterialLight"
         }
-        //TODO: restore blur
-        // experimentalBlurMethod="dimezisBlurView"
+        experimentalBlurMethod="dimezisBlurView"
         className="flex-row justify-around items-center pb-1"
       >
         {state.routes.map((route, index) => {

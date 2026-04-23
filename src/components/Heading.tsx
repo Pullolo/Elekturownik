@@ -39,7 +39,7 @@ export default function Heading({
   return (
     <View className={cn("w-full", className)}>
       <View className="w-full flex flex-row justify-between items-center">
-        <View className="flex flex-row gap-4 items-center">
+        <View className="flex flex-row gap-4 items-center flex-1">
           <TouchableOpacity onPress={pickAvatar} activeOpacity={0.8}>
             <View className="h-16 w-16 bg-secondary/25 rounded-full overflow-hidden flex items-center justify-center">
               <Image
@@ -63,7 +63,7 @@ export default function Heading({
             router.push("/(notabs)/settings");
           }}
           activeOpacity={0.7}
-          className="w-fit flex flex-row justify-center items-center p-4 bg-primary/25 rounded-3xl"
+          className="w-fit flex flex-row justify-center items-center p-4 bg-primary/25 rounded-3xl shrink-0"
         >
           <Settings2 size={24} color={colors.primary} />
         </TouchableOpacity>

@@ -445,10 +445,11 @@ function RedeemCodeCard() {
           onPress={handleRedeem}
           disabled={!code.trim() || loading}
           activeOpacity={0.7}
+          className="rounded-2xl overflow-hidden"
         >
           <View
             className={cn(
-              "h-12 px-5 rounded-2xl items-center justify-center",
+              "h-12 px-5 items-center justify-center",
               code.trim() && !loading ? "bg-primary" : "bg-foreground/8",
             )}
           >

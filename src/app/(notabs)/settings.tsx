@@ -7,6 +7,7 @@ import Divider from "@/src/components/ui/Divider";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import { format } from "date-fns";
 import * as Application from "expo-application";
+import Constants from "expo-constants";
 import { router } from "expo-router";
 import * as Updates from "expo-updates";
 import { ImageOff, Trash } from "lucide-react-native";
@@ -24,6 +25,12 @@ const resetApp = async () => {
 
 export default function Settings() {
   const { restoreDefaultAvatar } = useUserData();
+
+  const otaVersion =
+    Constants.expoConfig?.extra?.otaVersion ??
+    Constants.manifest2?.extra?.expoClient?.extra?.otaVersion ??
+    "0";
+  const versionString = `v${Application.nativeApplicationVersion}.${otaVersion}-b${Application.nativeBuildVersion} (${Updates.updateId?.slice(0, 8)})`;
 
   return (
     <ScreenWrapper>
@@ -61,7 +68,7 @@ export default function Settings() {
             Mikołaj Szlosowski | Aleksandra Polaczyk | Martyna Kamecka
           </Text>
           <Text className="font-pregular text-xs text-foreground/15">
-            {`v${Application.nativeApplicationVersion}-${Application.nativeBuildVersion}`}
+            {versionString}
           </Text>
         </View>
       </ScrollView>

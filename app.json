@@ -51,6 +51,7 @@
       "reactCompiler": true
     },
     "extra": {
+      "otaVersion": "2",
       "router": {},
       "eas": {
         "projectId": "72288663-0199-4fe1-8fe8-a2e2cd1a2d38"

@@ -60,6 +60,16 @@ const EMOJI_REWARDS: Omit<Reward, "id">[] = [
   { type: "emoji", rarity: "common", value: "🙂", label: "Spokój" },
   { type: "emoji", rarity: "common", value: "😄", label: "Radość" },
   { type: "emoji", rarity: "common", value: "🤝", label: "Uścisk dłoni" },
+  { type: "emoji", rarity: "common", value: "🌸", label: "Kwiat" },
+  { type: "emoji", rarity: "common", value: "🍀", label: "Szczęście" },
+  { type: "emoji", rarity: "common", value: "☀️", label: "Słońce" },
+  { type: "emoji", rarity: "common", value: "🌙", label: "Księżyc" },
+  { type: "emoji", rarity: "common", value: "🍎", label: "Jabłko" },
+  { type: "emoji", rarity: "common", value: "🐱", label: "Kot" },
+  { type: "emoji", rarity: "common", value: "🐶", label: "Pies" },
+  { type: "emoji", rarity: "common", value: "🕊️", label: "Gołąb" },
+  { type: "emoji", rarity: "common", value: "🎈", label: "Balon" },
+  { type: "emoji", rarity: "common", value: "📘", label: "Książka" },
 
   // Uncommon
   { type: "emoji", rarity: "uncommon", value: "😎", label: "Luz" },
@@ -67,6 +77,16 @@ const EMOJI_REWARDS: Omit<Reward, "id">[] = [
   { type: "emoji", rarity: "uncommon", value: "🎉", label: "Świętowanie" },
   { type: "emoji", rarity: "uncommon", value: "🦊", label: "Lis" },
   { type: "emoji", rarity: "uncommon", value: "🌈", label: "Tęcza" },
+  { type: "emoji", rarity: "uncommon", value: "🐼", label: "Panda" },
+  { type: "emoji", rarity: "uncommon", value: "🦉", label: "Sowa" },
+  { type: "emoji", rarity: "uncommon", value: "🌊", label: "Fala" },
+  { type: "emoji", rarity: "uncommon", value: "🎵", label: "Melodia" },
+  { type: "emoji", rarity: "uncommon", value: "🍕", label: "Pizza" },
+  { type: "emoji", rarity: "uncommon", value: "🧩", label: "Puzzle" },
+  { type: "emoji", rarity: "uncommon", value: "🎮", label: "Gra" },
+  { type: "emoji", rarity: "uncommon", value: "🛹", label: "Deskorolka" },
+  { type: "emoji", rarity: "uncommon", value: "🪄", label: "Magia" },
+  { type: "emoji", rarity: "uncommon", value: "🌻", label: "Słonecznik" },
 
   // Rare
   { type: "emoji", rarity: "rare", value: "🚀", label: "Rakieta" },
@@ -74,6 +94,16 @@ const EMOJI_REWARDS: Omit<Reward, "id">[] = [
   { type: "emoji", rarity: "rare", value: "💎", label: "Diament" },
   { type: "emoji", rarity: "rare", value: "🦁", label: "Lew" },
   { type: "emoji", rarity: "rare", value: "⚡", label: "Błyskawica" },
+  { type: "emoji", rarity: "rare", value: "🦅", label: "Orzeł" },
+  { type: "emoji", rarity: "rare", value: "🌋", label: "Wulkan" },
+  { type: "emoji", rarity: "rare", value: "🧠", label: "Umysł" },
+  { type: "emoji", rarity: "rare", value: "🛰️", label: "Satelita" },
+  { type: "emoji", rarity: "rare", value: "🏹", label: "Łucznik" },
+  { type: "emoji", rarity: "rare", value: "🛡️", label: "Tarcza" },
+  { type: "emoji", rarity: "rare", value: "🌪️", label: "Tornado" },
+  { type: "emoji", rarity: "rare", value: "🐺", label: "Wilk" },
+  { type: "emoji", rarity: "rare", value: "🦈", label: "Rekin" },
+  { type: "emoji", rarity: "rare", value: "🏔️", label: "Szczyt" },
 
   // Epic
   { type: "emoji", rarity: "epic", value: "🔥", label: "Ogień" },
@@ -81,6 +111,16 @@ const EMOJI_REWARDS: Omit<Reward, "id">[] = [
   { type: "emoji", rarity: "epic", value: "🌌", label: "Galaktyka" },
   { type: "emoji", rarity: "epic", value: "⚔️", label: "Miecze" },
   { type: "emoji", rarity: "epic", value: "🦋", label: "Motyl" },
+  { type: "emoji", rarity: "epic", value: "🦖", label: "Tytan" },
+  { type: "emoji", rarity: "epic", value: "🌠", label: "Kosmiczny pył" },
+  { type: "emoji", rarity: "epic", value: "👁️", label: "Proroctwo" },
+  { type: "emoji", rarity: "epic", value: "🗿", label: "Monolit" },
+  { type: "emoji", rarity: "epic", value: "🌋", label: "Inferno" },
+  { type: "emoji", rarity: "epic", value: "🦂", label: "Skorpion" },
+  { type: "emoji", rarity: "epic", value: "🧿", label: "Oko losu" },
+  { type: "emoji", rarity: "epic", value: "🪐", label: "Planeta" },
+  { type: "emoji", rarity: "epic", value: "🦾", label: "Moc stali" },
+  { type: "emoji", rarity: "epic", value: "⚜️", label: "Herb" },
 
   // Legendary
   { type: "emoji", rarity: "legendary", value: "👑", label: "Korona" },
@@ -92,7 +132,14 @@ const EMOJI_REWARDS: Omit<Reward, "id">[] = [
   },
   { type: "emoji", rarity: "legendary", value: "🦄", label: "Jednorożec" },
   { type: "emoji", rarity: "legendary", value: "🏆", label: "Trofeum" },
-  { type: "emoji", rarity: "legendary", value: "💫", label: "Komet" },
+  { type: "emoji", rarity: "legendary", value: "💫", label: "Kometa" },
+  { type: "emoji", rarity: "legendary", value: "🐲", label: "Pradawny smok" },
+  { type: "emoji", rarity: "legendary", value: "☄️", label: "Kataklizm" },
+  { type: "emoji", rarity: "legendary", value: "👁️‍🗨️", label: "Wszechwidzący" },
+  { type: "emoji", rarity: "legendary", value: "🪽", label: "Boskie skrzydła" },
+  { type: "emoji", rarity: "legendary", value: "🔱", label: "Trójząb" },
+  { type: "emoji", rarity: "legendary", value: "🌞", label: "Boskie słońce" },
+  { type: "emoji", rarity: "legendary", value: "🪭", label: "Wachlarz" },
 ];
 
 // ─── Welcome text rewards ─────────────────────────────────────────────────────
@@ -102,7 +149,7 @@ const WELCOME_TEXT_REWARDS: Omit<Reward, "id">[] = [
   {
     type: "welcome_text",
     rarity: "common",
-    value: "Cześć! Miło cię widzieć.",
+    value: "Miło cię widzieć.",
     label: "Powitanie",
   },
   {
@@ -114,7 +161,7 @@ const WELCOME_TEXT_REWARDS: Omit<Reward, "id">[] = [
   {
     type: "welcome_text",
     rarity: "common",
-    value: "Hej! Co słychać?",
+    value: "Co słychać?",
     label: "Pytanie",
   },
   {
@@ -122,6 +169,30 @@ const WELCOME_TEXT_REWARDS: Omit<Reward, "id">[] = [
     rarity: "common",
     value: "Dzień dobry!",
     label: "Dzień dobry",
+  },
+  {
+    type: "welcome_text",
+    rarity: "common",
+    value: "Fajnie, że jesteś!",
+    label: "Obecność",
+  },
+  {
+    type: "welcome_text",
+    rarity: "common",
+    value: "Dobrze cię znowu widzieć!",
+    label: "Powitanie plus",
+  },
+  {
+    type: "welcome_text",
+    rarity: "common",
+    value: "Startujemy?",
+    label: "Start",
+  },
+  {
+    type: "welcome_text",
+    rarity: "common",
+    value: "Nowy dzień, nowe możliwości!",
+    label: "Nowy dzień",
   },
 
   // Uncommon
@@ -143,6 +214,24 @@ const WELCOME_TEXT_REWARDS: Omit<Reward, "id">[] = [
     value: "Dobra robota, wracasz!",
     label: "Pochwała",
   },
+  {
+    type: "welcome_text",
+    rarity: "uncommon",
+    value: "Wracasz silniejszy niż wcześniej!",
+    label: "Siła",
+  },
+  {
+    type: "welcome_text",
+    rarity: "uncommon",
+    value: "Twoja konsekwencja robi wrażenie!",
+    label: "Konsekwencja",
+  },
+  {
+    type: "welcome_text",
+    rarity: "uncommon",
+    value: "Każdy powrót to kolejny krok naprzód.",
+    label: "Postęp",
+  },
 
   // Rare
   {
@@ -162,6 +251,24 @@ const WELCOME_TEXT_REWARDS: Omit<Reward, "id">[] = [
     rarity: "rare",
     value: "Twoja wytrwałość inspiruje!",
     label: "Inspiracja",
+  },
+  {
+    type: "welcome_text",
+    rarity: "rare",
+    value: "Witaj, zdobywco wiedzy!",
+    label: "Zdobywca",
+  },
+  {
+    type: "welcome_text",
+    rarity: "rare",
+    value: "Twój progres jest naprawdę imponujący.",
+    label: "Imponujący",
+  },
+  {
+    type: "welcome_text",
+    rarity: "rare",
+    value: "Mistrz wraca na swoje miejsce.",
+    label: "Powrót mistrza",
   },
 
   // Epic
@@ -183,6 +290,24 @@ const WELCOME_TEXT_REWARDS: Omit<Reward, "id">[] = [
     value: "Twoja energia jest niesamowita!",
     label: "Energia",
   },
+  {
+    type: "welcome_text",
+    rarity: "epic",
+    value: "Twoja obecność zmienia zasady gry.",
+    label: "Zmiana gry",
+  },
+  {
+    type: "welcome_text",
+    rarity: "epic",
+    value: "Witaj ponownie, architekcie sukcesu!",
+    label: "Architekt",
+  },
+  {
+    type: "welcome_text",
+    rarity: "epic",
+    value: "Dziś znowu zapiszesz historię.",
+    label: "Historia",
+  },
 
   // Legendary
   {
@@ -202,6 +327,30 @@ const WELCOME_TEXT_REWARDS: Omit<Reward, "id">[] = [
     rarity: "legendary",
     value: "Chwała ci, Heronie! Jesteś wyjątkowy.",
     label: "Heros",
+  },
+  {
+    type: "welcome_text",
+    rarity: "legendary",
+    value: "Powrót legendy został odnotowany przez los.",
+    label: "Legenda losu",
+  },
+  {
+    type: "welcome_text",
+    rarity: "legendary",
+    value: "Nie zatrzyma cię nic — nawet przeznaczenie.",
+    label: "Przeznaczenie",
+  },
+  {
+    type: "welcome_text",
+    rarity: "legendary",
+    value: "Witaj, istoto wyjątkowa. Świat znów nabiera sensu.",
+    label: "Wyjątkowość",
+  },
+  {
+    type: "welcome_text",
+    rarity: "legendary",
+    value: "Nawet cisza tęskni za Twoją obecnością.",
+    label: "Tęsknota",
   },
 ];
 

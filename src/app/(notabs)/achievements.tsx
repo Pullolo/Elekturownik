@@ -16,15 +16,27 @@ import {
   Lock,
   SquareDashed,
   Star,
+  Tag,
   Trophy,
   Zap,
 } from "lucide-react-native";
-import { useState } from "react";
-import { ScrollView, Text, TouchableOpacity, View } from "react-native";
+import { useRef, useState } from "react";
+import {
+  ActivityIndicator,
+  ScrollView,
+  Text,
+  TextInput,
+  TouchableOpacity,
+  View,
+} from "react-native";
 
 // ─── Types ────────────────────────────────────────────────────────────────────
 
 type ChestVariant = "common" | "gold" | "prismatic";
+
+type RedeemResult =
+  | { success: true; variant: ChestVariant; amount: number }
+  | { success: false; error: string };
 
 // ─── Helpers ──────────────────────────────────────────────────────────────────
 
@@ -353,6 +365,144 @@ function MilestoneCard({
   );
 }
 
+// ─── Redeem Code Card ─────────────────────────────────────────────────────────
+
+function RedeemCodeCard() {
+  const { redeemCode } = useClaimedAchievements();
+  const { adjustChestCount } = useChests();
+
+  const [code, setCode] = useState("");
+  const [loading, setLoading] = useState(false);
+  const [result, setResult] = useState<RedeemResult | null>(null);
+  const inputRef = useRef<TextInput>(null);
+
+  async function handleRedeem() {
+    const trimmed = code.trim();
+    if (!trimmed || loading) return;
+
+    setLoading(true);
+    setResult(null);
+
+    // Small delay for UX feedback
+    await new Promise((r) => setTimeout(r, 500));
+
+    const res = redeemCode(trimmed);
+
+    if (res.success) {
+      adjustChestCount(res.variant, res.amount);
+      setCode("");
+    }
+
+    setResult(res);
+    setLoading(false);
+  }
+
+  const cfg = result?.success ? CHEST_CONFIG[result.variant] : null;
+
+  const errorMessage =
+    !result || result.success
+      ? null
+      : result.error === "already_used"
+        ? "Ten kod został już wykorzystany."
+        : "Nieprawidłowy kod.";
+
+  return (
+    <View className="w-full rounded-3xl border-l-4 border-foreground/10 p-4 bg-background-secondary gap-4">
+      {/* Header */}
+      <View className="flex-row items-center gap-3">
+        <View className="w-12 h-12 rounded-2xl items-center justify-center bg-foreground/5">
+          <Tag size={22} color="#6b7280" />
+        </View>
+        <View className="flex-1">
+          <Text className="font-pbold text-base text-foreground">
+            Kod Promocyjny
+          </Text>
+          <Text className="font-pregular text-xs text-foreground/40 mt-0.5">
+            Wpisz kod aby otrzymać skrzynki
+          </Text>
+        </View>
+      </View>
+
+      {/* Input row */}
+      <View className="flex-row gap-2 items-center">
+        <TextInput
+          ref={inputRef}
+          value={code}
+          onChangeText={(t) => {
+            setCode(t.toUpperCase());
+            if (result) setResult(null);
+          }}
+          placeholder="WPISZ KOD..."
+          placeholderTextColor="#4b5563"
+          autoCapitalize="characters"
+          autoCorrect={false}
+          returnKeyType="done"
+          onSubmitEditing={handleRedeem}
+          className="flex-1 bg-foreground/5 rounded-2xl px-4 h-12 font-pmedium text-sm text-foreground"
+          style={{ letterSpacing: 2 }}
+        />
+        <TouchableOpacity
+          onPress={handleRedeem}
+          disabled={!code.trim() || loading}
+          activeOpacity={0.7}
+        >
+          <View
+            className={cn(
+              "h-12 px-5 rounded-2xl items-center justify-center",
+              code.trim() && !loading ? "bg-primary" : "bg-foreground/8",
+            )}
+          >
+            {loading ? (
+              <ActivityIndicator size="small" color="#a78bfa" />
+            ) : (
+              <Text
+                className={cn(
+                  "font-pbold text-sm",
+                  code.trim() ? "text-white" : "text-foreground/30",
+                )}
+              >
+                Odbierz
+              </Text>
+            )}
+          </View>
+        </TouchableOpacity>
+      </View>
+
+      {/* Result feedback */}
+      {result && (
+        <View
+          className={cn(
+            "rounded-2xl px-4 py-3 flex-row items-center gap-3",
+            result.success
+              ? (cfg?.bgColor ?? "bg-primary/10")
+              : "bg-red-500/10",
+          )}
+        >
+          {result.success ? (
+            <>
+              <Check
+                size={16}
+                color={cfg?.hexColor ?? "#a78bfa"}
+                strokeWidth={2.5}
+              />
+              <Text
+                className={cn("font-pmedium text-sm flex-1", cfg?.textColor)}
+              >
+                Otrzymałeś {result.amount}× {CHEST_CONFIG[result.variant].label}
+                !
+              </Text>
+            </>
+          ) : (
+            <Text className="text-red-400 font-pmedium text-sm flex-1">
+              {errorMessage}
+            </Text>
+          )}
+        </View>
+      )}
+    </View>
+  );
+}
+
 // ─── Stats Row ────────────────────────────────────────────────────────────────
 
 function StatsRow({ totalProgress }: { totalProgress: number }) {
@@ -440,6 +590,15 @@ export default function Achievements() {
           {PROGRESS_MILESTONES.map((m) => (
             <MilestoneCard key={m.threshold} {...m} progress={totalProgress} />
           ))}
+        </View>
+
+        {/* ── Redeem Code ── */}
+        <View className="w-full gap-3">
+          <SectionLabel
+            text="Kod Promocyjny"
+            sub="Masz kod? Odbierz darmowe skrzynki"
+          />
+          <RedeemCodeCard />
         </View>
       </ScrollView>
     </ScreenWrapper>

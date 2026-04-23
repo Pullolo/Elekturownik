@@ -40,7 +40,11 @@ export default function Heading({
     <View className={cn("w-full", className)}>
       <View className="w-full flex flex-row justify-between items-center">
         <View className="flex flex-row gap-4 items-center flex-1">
-          <TouchableOpacity onPress={pickAvatar} activeOpacity={0.8}>
+          <TouchableOpacity
+            onPress={pickAvatar}
+            activeOpacity={0.8}
+            className="shrink-0"
+          >
             <View className="h-16 w-16 bg-secondary/25 rounded-full overflow-hidden flex items-center justify-center">
               <Image
                 style={{ width: "100%", height: "100%" }}
@@ -49,7 +53,7 @@ export default function Heading({
               />
             </View>
           </TouchableOpacity>
-          <View>
+          <View className="flex-1">
             <Text className="text-foreground text-3xl font-pmedium">
               {`${text} ${emoji}`}
             </Text>

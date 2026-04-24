@@ -38,7 +38,7 @@ export default function Heading({
 
   return (
     <View className={cn("w-full", className)}>
-      <View className="w-full flex flex-row justify-between items-center">
+      <View className="w-full flex flex-row justify-between items-start">
         <View className="flex flex-row gap-4 items-center flex-1">
           <TouchableOpacity
             onPress={pickAvatar}

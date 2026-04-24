@@ -51,6 +51,28 @@ export const RARITY_CONFIG: Record<
   },
 };
 
+// ─── ID generation ────────────────────────────────────────────────────────────
+
+function slugify(s: string): string {
+  return s
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "") // strip diacritics
+    .replace(/\s+/g, "_")
+    .replace(/[^a-z0-9_]/g, "");
+}
+
+function assignIds(rewards: Omit<Reward, "id">[], prefix: string): Reward[] {
+  const seen = new Map<string, number>();
+  return rewards.map((r) => {
+    const base = `${prefix}_${slugify(r.label)}`;
+    const count = seen.get(base) ?? 0;
+    seen.set(base, count + 1);
+    const id = count === 0 ? base : `${base}_${count}`;
+    return { ...r, id };
+  });
+}
+
 // ─── Emoji rewards ────────────────────────────────────────────────────────────
 
 const EMOJI_REWARDS: Omit<Reward, "id">[] = [
@@ -457,12 +479,20 @@ const WELCOME_TEXT_REWARDS: Omit<Reward, "id">[] = [
   },
 ];
 
-// ─── All rewards with IDs ─────────────────────────────────────────────────────
+// ─── All rewards with stable slug-based IDs ───────────────────────────────────
 
 export const ALL_REWARDS: Reward[] = [
-  ...EMOJI_REWARDS.map((r, i) => ({ ...r, id: `emoji_${i}` })),
-  ...WELCOME_TEXT_REWARDS.map((r, i) => ({ ...r, id: `text_${i}` })),
+  ...assignIds(EMOJI_REWARDS, "new_emoji"),
+  ...assignIds(WELCOME_TEXT_REWARDS, "new_text"),
 ];
+
+// Sanity check in development — catches any bugs in assignIds itself
+if (process.env.NODE_ENV === "development") {
+  const ids = ALL_REWARDS.map((r) => r.id);
+  const dupes = ids.filter((id, i) => ids.indexOf(id) !== i);
+  if (dupes.length)
+    throw new Error(`Duplicate reward IDs: ${dupes.join(", ")}`);
+}
 
 // ─── Loot table weights per chest variant ─────────────────────────────────────
 

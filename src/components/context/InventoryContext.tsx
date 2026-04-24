@@ -34,6 +34,7 @@ interface InventoryContextValue {
   isLoaded: boolean;
   // Reward actions
   addReward: (reward: Reward) => Promise<void>;
+  clearAllRewards: () => Promise<void>;
   // Chest actions
   setChestCount: (variant: ChestVariant, count: number) => Promise<void>;
   adjustChestCount: (variant: ChestVariant, delta: number) => Promise<void>;
@@ -52,6 +53,16 @@ const KEYS = {
 
 const DEFAULT_CHESTS: ChestCounts = { common: 3, gold: 1, prismatic: 1 };
 const DEFAULT_ACTIVE: ActiveSelections = { emojiId: null, textId: null };
+
+// ─── Legacy detection ─────────────────────────────────────────────────────────
+
+/**
+ * Returns true if any saved reward was created before the new_ prefix system.
+ * Those IDs look like "emoji_0", "text_3", etc. — no "new_" at the start.
+ */
+function hasLegacyRewards(saved: Record<string, OwnedReward>): boolean {
+  return Object.keys(saved).some((id) => !id.startsWith("new_"));
+}
 
 // ─── Context ──────────────────────────────────────────────────────────────────
 
@@ -77,11 +88,28 @@ export function InventoryProvider({ children }: { children: ReactNode }) {
         ]);
         const [rawRewards, rawChests, rawActive] = results;
 
-        if (rawRewards[1]) setRewards(JSON.parse(rawRewards[1]));
+        if (rawRewards[1]) {
+          const parsed: Record<string, OwnedReward> = JSON.parse(rawRewards[1]);
+
+          if (hasLegacyRewards(parsed)) {
+            // Wipe everything — old IDs are no longer valid
+            console.warn(
+              "[Inventory] Legacy reward IDs detected — wiping inventory.",
+            );
+            await AsyncStorage.multiSet([
+              [KEYS.rewards, JSON.stringify({})],
+              [KEYS.active, JSON.stringify(DEFAULT_ACTIVE)],
+            ]);
+            // Leave chests intact — no reason to punish the user for that
+          } else {
+            setRewards(parsed);
+            if (rawActive[1])
+              setActive({ ...DEFAULT_ACTIVE, ...JSON.parse(rawActive[1]) });
+          }
+        }
+
         if (rawChests[1])
           setChests({ ...DEFAULT_CHESTS, ...JSON.parse(rawChests[1]) });
-        if (rawActive[1])
-          setActive({ ...DEFAULT_ACTIVE, ...JSON.parse(rawActive[1]) });
       } catch (e) {
         console.error("[Inventory] Failed to load:", e);
       } finally {
@@ -113,6 +141,15 @@ export function InventoryProvider({ children }: { children: ReactNode }) {
       persist(KEYS.rewards, updated);
       return updated;
     });
+  }, []);
+
+  const clearAllRewards = useCallback(async () => {
+    setRewards({});
+    setActive(DEFAULT_ACTIVE);
+    await AsyncStorage.multiSet([
+      [KEYS.rewards, JSON.stringify({})],
+      [KEYS.active, JSON.stringify(DEFAULT_ACTIVE)],
+    ]).catch((e) => console.error("[Inventory] Failed to clear rewards:", e));
   }, []);
 
   // ─── Chest actions ───────────────────────────────────────────────────────────
@@ -175,6 +212,7 @@ export function InventoryProvider({ children }: { children: ReactNode }) {
         active,
         isLoaded,
         addReward,
+        clearAllRewards,
         setChestCount,
         adjustChestCount,
         setActiveEmoji,
@@ -201,11 +239,12 @@ function useInventory(): InventoryContextValue {
  * Access collected rewards and add new ones.
  *
  * @example
- * const { ownedRewards, addReward } = useOwnedRewards();
+ * const { ownedRewards, addReward, clearAllRewards } = useOwnedRewards();
  */
 export function useOwnedRewards() {
-  const { ownedRewards, rewards, addReward, isLoaded } = useInventory();
-  return { ownedRewards, rewards, addReward, isLoaded };
+  const { ownedRewards, rewards, addReward, clearAllRewards, isLoaded } =
+    useInventory();
+  return { ownedRewards, rewards, addReward, clearAllRewards, isLoaded };
 }
 
 // ─── useChests ───────────────────────────────────────────────────────────────

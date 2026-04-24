@@ -1,3 +1,4 @@
+import { useInventory } from "@/src/components/context/InventoryContext";
 import { useUserData } from "@/src/components/context/UserDataContext";
 import ScreenWrapper from "@/src/components/ScreenWrapper";
 import ThemeSwitcher from "@/src/components/ThemeSwitcher";
@@ -10,7 +11,7 @@ import * as Application from "expo-application";
 import Constants from "expo-constants";
 import { router } from "expo-router";
 import * as Updates from "expo-updates";
-import { ImageOff, Trash } from "lucide-react-native";
+import { ArchiveX, ImageOff, Trash } from "lucide-react-native";
 import { DevSettings, ScrollView, Text, View } from "react-native";
 
 const resetApp = async () => {
@@ -25,6 +26,7 @@ const resetApp = async () => {
 
 export default function Settings() {
   const { restoreDefaultAvatar } = useUserData();
+  const { clearAllRewards } = useInventory();
 
   const otaVersion =
     Constants.expoConfig?.extra?.otaVersion ??
@@ -50,6 +52,15 @@ export default function Settings() {
             className="w-full"
             text="Zresetuj profilowe"
             icon={ImageOff}
+            variant="error"
+          />
+          <Button
+            onPress={() => {
+              clearAllRewards().then(() => router.push("/(tabs)"));
+            }}
+            className="w-full"
+            text="Zresetuj nagrody"
+            icon={ArchiveX}
             variant="error"
           />
           <Button

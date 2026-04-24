@@ -53,14 +53,20 @@ export default function Heading({
               />
             </View>
           </TouchableOpacity>
-          <View className="flex-1">
+          <TouchableOpacity
+            activeOpacity={0.7}
+            onPress={() => {
+              router.push("/(notabs)/inventory");
+            }}
+            className="flex-1"
+          >
             <Text className="text-foreground text-3xl font-pmedium">
               {`${text} ${emoji}`}
             </Text>
             <Text className="text-foreground/50 text-sm font-pregular">
               {`${description.substring(0, timer)}${description.length > timer ? "_" : ""}`}
             </Text>
-          </View>
+          </TouchableOpacity>
         </View>
         <TouchableOpacity
           onPress={() => {

@@ -232,6 +232,18 @@ const WELCOME_TEXT_REWARDS: Omit<Reward, "id">[] = [
     value: "Każdy powrót to kolejny krok naprzód.",
     label: "Postęp",
   },
+  {
+    type: "welcome_text",
+    rarity: "uncommon",
+    value: "Dziś nie Dziady, dziś żywi i gotowi do nauki.",
+    label: "Dziady light",
+  },
+  {
+    type: "welcome_text",
+    rarity: "uncommon",
+    value: "Nie panikuj. Nawet w kosmosie da się zdać maturę.",
+    label: "Kosmiczny spokój",
+  },
 
   // Rare
   {
@@ -270,6 +282,30 @@ const WELCOME_TEXT_REWARDS: Omit<Reward, "id">[] = [
     value: "Mistrz wraca na swoje miejsce.",
     label: "Powrót mistrza",
   },
+  {
+    type: "welcome_text",
+    rarity: "rare",
+    value: "Niech Moc będzie z Tobą… szczególnie na matematyce.",
+    label: "Moc maturzysty",
+  },
+  {
+    type: "welcome_text",
+    rarity: "rare",
+    value: "Houston, mamy maturzystę gotowego do startu.",
+    label: "Start misji",
+  },
+  {
+    type: "welcome_text",
+    rarity: "rare",
+    value: "Jack Sparrow też improwizował. Ty też dasz radę.",
+    label: "Piracka improwizacja",
+  },
+  {
+    type: "welcome_text",
+    rarity: "rare",
+    value: "Twoja wiedza rośnie szybciej niż czarna dziura.",
+    label: "Interstellar",
+  },
 
   // Epic
   {
@@ -307,6 +343,37 @@ const WELCOME_TEXT_REWARDS: Omit<Reward, "id">[] = [
     rarity: "epic",
     value: "Dziś znowu zapiszesz historię.",
     label: "Historia",
+  },
+  {
+    type: "welcome_text",
+    rarity: "epic",
+    value: "Dziś piszesz własnego Pana Tadeusza — tylko z lepszym endingiem.",
+    label: "Własna epopeja",
+  },
+  {
+    type: "welcome_text",
+    rarity: "epic",
+    value:
+      "Nie jesteś spóźniony. Po prostu podróżujesz w czasie jak w Interstellar.",
+    label: "Relatywność czasu",
+  },
+  {
+    type: "welcome_text",
+    rarity: "epic",
+    value: "Matura to tylko boss fight. A Ty masz już endgame build.",
+    label: "Boss fight",
+  },
+  {
+    type: "welcome_text",
+    rarity: "epic",
+    value: "Kapitanie, kurs ustawiony: zdana matura.",
+    label: "Kapitan",
+  },
+  {
+    type: "welcome_text",
+    rarity: "epic",
+    value: "Nawet Mickiewicz zrobiłby Ci miejsce w pierwszej ławce.",
+    label: "Mickiewicz approved",
   },
 
   // Legendary
@@ -351,6 +418,42 @@ const WELCOME_TEXT_REWARDS: Omit<Reward, "id">[] = [
     rarity: "legendary",
     value: "Nawet cisza tęskni za Twoją obecnością.",
     label: "Tęsknota",
+  },
+  {
+    type: "welcome_text",
+    rarity: "legendary",
+    value: "Wybraniec powrócił. Arkusze drżą, komisja przeczuwa legendę.",
+    label: "Wybraniec",
+  },
+  {
+    type: "welcome_text",
+    rarity: "legendary",
+    value: "Legenda mówi, że ktoś zdał wszystko bez stresu. To chyba Ty.",
+    label: "Legenda matury",
+  },
+  {
+    type: "welcome_text",
+    rarity: "legendary",
+    value: "Nie uczysz się do matury. To matura przygotowuje się na Ciebie.",
+    label: "Odwrócenie losu",
+  },
+  {
+    type: "welcome_text",
+    rarity: "legendary",
+    value: "Twoja obecność zakrzywia czasoprzestrzeń i próg zdawalności.",
+    label: "Grawitacja sukcesu",
+  },
+  {
+    type: "welcome_text",
+    rarity: "legendary",
+    value: "Nawet Gwiazda Śmierci nie budzi takiego respektu jak Twój progres.",
+    label: "Galaktyczny respekt",
+  },
+  {
+    type: "welcome_text",
+    rarity: "legendary",
+    value: "Dziś nie zdajesz egzaminu. Dziś egzamin zdaje Ciebie.",
+    label: "Ostateczna próba",
   },
 ];
 

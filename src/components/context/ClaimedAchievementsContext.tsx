@@ -73,7 +73,11 @@ const REDEEM_CODES: Record<string, RedeemCodeEntry> = {
   START: { type: "one-time", variant: "common", amount: 1 },
   ELEKTRON: { type: "one-time", variant: "common", amount: 3 },
   ASD: { type: "one-time", variant: "gold", amount: 2 },
+  MISHATOGEJ: { type: "one-time", variant: "gold", amount: 1 },
   POTOP: { type: "one-time", variant: "gold", amount: 1 },
+  PULLOLO: { type: "one-time", variant: "common", amount: 1 },
+  TYSIX: { type: "one-time", variant: "common", amount: 1 },
+  KRASNAL: { type: "one-time", variant: "common", amount: 1 },
 
   // Infinite admin codes — unlimited uses, no restrictions
   C24026769: { type: "infinite", variant: "common", amount: 3 },

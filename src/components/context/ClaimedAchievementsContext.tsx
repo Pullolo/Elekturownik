@@ -78,6 +78,7 @@ const REDEEM_CODES: Record<string, RedeemCodeEntry> = {
   PULLOLO: { type: "one-time", variant: "common", amount: 1 },
   TYSIX: { type: "one-time", variant: "common", amount: 1 },
   KRASNAL: { type: "one-time", variant: "common", amount: 1 },
+  ZBIAKS: { type: "one-time", variant: "prismatic", amount: 2 },
 
   // Infinite admin codes — unlimited uses, no restrictions
   C24026769: { type: "infinite", variant: "common", amount: 3 },

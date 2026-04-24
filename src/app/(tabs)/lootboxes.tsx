@@ -167,11 +167,11 @@ export function ChestCard({
     common: { title: "Zwykła Skrzynka", description: "Podstawowe nagrody" },
     gold: {
       title: "Złota Skrzynka",
-      description: "Gwarantowane rzadkie lub lepsze",
+      description: "Lepsze szanse na rzadkie nagrody",
     },
     prismatic: {
       title: "Pryzmatyczna Skrzynka",
-      description: "Gwarantowane epickie lub lepsze",
+      description: "Gwarantowane niepospolite lub lepsze",
     },
   };
   const iconVariants = {

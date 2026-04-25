@@ -264,7 +264,7 @@ export default function InventorySwitcher({
         </View>
 
         {/* Text row */}
-        <View className="flex-row items-center gap-3">
+        <View className="flex-row items-start gap-3">
           {activeText ? (
             <>
               <View
@@ -285,10 +285,7 @@ export default function InventorySwitcher({
                   }}
                 />
               </View>
-              <Text
-                className="text-foreground font-pmedium flex-1"
-                numberOfLines={1}
-              >
+              <Text className="text-foreground font-pmedium flex-1">
                 Powitanie:{" "}
                 <Text className="text-primary font-psemibold">
                   {activeText.reward.value}

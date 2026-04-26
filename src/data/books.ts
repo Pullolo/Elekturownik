@@ -834,7 +834,7 @@ export const books: Book[] = [
     title: "Mitologia, cz. I Grecja",
     author: "Jan Parandowski",
     year: 1924,
-    epoch: "XX-lecie międzywojenne",
+    epoch: "Antyk",
     epoch_id: 9,
     summary: {
       short:

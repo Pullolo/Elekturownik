@@ -8,7 +8,6 @@ import {
   OpenTestQuestion,
   Test as TestType,
 } from "@/src/data/tests/types";
-import { useTabBar } from "@/src/hooks/TabBarContext";
 import useColors from "@/src/hooks/useColors";
 import { cn } from "@/src/lib/utils";
 import { router, useLocalSearchParams } from "expo-router";
@@ -62,7 +61,6 @@ const DIFFICULTY_BG: Record<string, string> = {
 export default function Test() {
   const { test: testJson } = useLocalSearchParams();
   const test: TestType = JSON.parse(testJson?.toString() ?? "[]");
-  const { tabBarHeight } = useTabBar();
   const colors = useColors();
 
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -129,7 +127,6 @@ export default function Test() {
   return (
     <ScreenWrapper>
       <ScrollView
-        contentContainerStyle={{ paddingBottom: tabBarHeight + 16 }}
         showsVerticalScrollIndicator={false}
         contentContainerClassName="flex flex-col gap-4 items-start"
       >
@@ -533,7 +530,6 @@ function SummaryScreen({
   onBack: () => void;
 }) {
   const colors = useColors();
-  const { tabBarHeight } = useTabBar();
 
   const closedQuestions = test.filter((q) =>
     isClosed(q as BookTestQuestion),
@@ -559,7 +555,6 @@ function SummaryScreen({
   return (
     <ScreenWrapper>
       <ScrollView
-        contentContainerStyle={{ paddingBottom: tabBarHeight + 16 }}
         showsVerticalScrollIndicator={false}
         contentContainerClassName="flex flex-col gap-4 items-start"
       >
@@ -683,18 +678,20 @@ function SummaryScreen({
         })}
 
         {/* ── Actions ── */}
-        <Button
-          className="w-full"
-          text="Spróbuj ponownie"
-          variant="primary"
-          onPress={onRestart}
-        />
-        <Button
-          className="w-full"
-          text="Wróć do generatora"
-          variant="success"
-          onPress={onBack}
-        />
+        <View className="flex flex-col w-full gap-2 pb-4">
+          <Button
+            className="w-full"
+            text="Spróbuj ponownie"
+            variant="primary"
+            onPress={onRestart}
+          />
+          <Button
+            className="w-full"
+            text="Wróć do generatora"
+            variant="success"
+            onPress={onBack}
+          />
+        </View>
       </ScrollView>
     </ScreenWrapper>
   );

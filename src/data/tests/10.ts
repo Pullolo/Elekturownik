@@ -1,3 +1,2279 @@
-import { TestQuestion } from "./types";
+import {
+  ClosedTestQuestion,
+  MaturaTestQuestion,
+  OpenTestQuestion,
+  TestQuestion,
+} from "./types";
 
-export const test_questions10: TestQuestion[] = [];
+export const test_questions10: TestQuestion[] = [
+  {
+    question_type: "Zamknięty",
+    difficulty: "Łatwy",
+    epoch_id: 10,
+    book_id: 25,
+    question: "Kto jest narratorem opowiadania „Proszę państwa do gazu”?",
+    answers: [
+      { value: "Tadeusz", isCorrect: true },
+      { value: "Henri", isCorrect: false },
+      { value: "Kapitan SS", isCorrect: false },
+      { value: "Nieznany więzień", isCorrect: false },
+    ],
+  } as ClosedTestQuestion,
+  {
+    question_type: "Zamknięty",
+    difficulty: "Łatwy",
+    epoch_id: 10,
+    book_id: 25,
+    question: "Gdzie rozgrywa się akcja opowiadania?",
+    answers: [
+      { value: "W obozie Auschwitz-Birkenau", isCorrect: true },
+      { value: "W getcie warszawskim", isCorrect: false },
+      { value: "W obozie Majdanek", isCorrect: false },
+      { value: "W łagrze syberyjskim", isCorrect: false },
+    ],
+  } as ClosedTestQuestion,
+  {
+    question_type: "Zamknięty",
+    difficulty: "Średni",
+    epoch_id: 10,
+    book_id: 25,
+    question: "Jaką funkcję pełni Tadeusz w obozie?",
+    answers: [
+      { value: "Członka Sonderkommando", isCorrect: true },
+      { value: "Lekarza", isCorrect: false },
+      { value: "Kapłana", isCorrect: false },
+      { value: "Strażnika SS", isCorrect: false },
+    ],
+  } as ClosedTestQuestion,
+  {
+    question_type: "Zamknięty",
+    difficulty: "Średni",
+    epoch_id: 10,
+    book_id: 25,
+    question: "Jak przedstawiony jest proces selekcji więźniów?",
+    answers: [
+      { value: "Jako rutynowa, mechaniczna czynność", isCorrect: true },
+      { value: "Jako dramatyczne wydarzenie pełne emocji", isCorrect: false },
+      { value: "Jako przypadkowe zdarzenie", isCorrect: false },
+      { value: "Jako forma sprawiedliwości", isCorrect: false },
+    ],
+  } as ClosedTestQuestion,
+  {
+    question_type: "Zamknięty",
+    difficulty: "Trudny",
+    epoch_id: 10,
+    book_id: 25,
+    question: "Jaki jest stosunek narratora do nowych transportów więźniów?",
+    answers: [
+      { value: "Zobojętniały i pragmatyczny", isCorrect: true },
+      { value: "Pełen współczucia i empatii", isCorrect: false },
+      { value: "Wrogi i agresywny", isCorrect: false },
+      { value: "Obojętny religijnie", isCorrect: false },
+    ],
+  } as ClosedTestQuestion,
+  {
+    question_type: "Zamknięty",
+    difficulty: "Średni",
+    epoch_id: 10,
+    book_id: 25,
+    question: "Co symbolizuje tytułowe „gazowanie”?",
+    answers: [
+      { value: "Masową zagładę ludzi", isCorrect: true },
+      { value: "Proces dezynfekcji ubrań", isCorrect: false },
+      { value: "Eksperyment medyczny", isCorrect: false },
+      { value: "Karanie więźniów", isCorrect: false },
+    ],
+  } as ClosedTestQuestion,
+  {
+    question_type: "Zamknięty",
+    difficulty: "Trudny",
+    epoch_id: 10,
+    book_id: 25,
+    question: "Jaką funkcję pełni język narracji?",
+    answers: [
+      {
+        value: "Oddaje odczłowieczenie i brutalność rzeczywistości obozowej",
+        isCorrect: true,
+      },
+      { value: "Buduje romantyczny obraz cierpienia", isCorrect: false },
+      { value: "Podkreśla heroizm bohaterów", isCorrect: false },
+      { value: "Służy wyłącznie opisowi przyrody", isCorrect: false },
+    ],
+  } as ClosedTestQuestion,
+  {
+    question_type: "Zamknięty",
+    difficulty: "Średni",
+    epoch_id: 10,
+    book_id: 25,
+    question: "Jaką rolę pełni ironia w opowiadaniu?",
+    answers: [
+      { value: "Podkreśla absurd i grozę sytuacji", isCorrect: true },
+      { value: "Rozładowuje napięcie humorystycznie", isCorrect: false },
+      { value: "Służy idealizacji bohaterów", isCorrect: false },
+      { value: "Buduje klimat nostalgii", isCorrect: false },
+    ],
+  } as ClosedTestQuestion,
+
+  {
+    question_type: "Otwarty",
+    difficulty: "Łatwy",
+    epoch_id: 10,
+    book_id: 25,
+    question: "Kim był Tadek i jaką pełnił rolę w obozie?",
+    suggested_answer:
+      "Tadek był więźniem obozu koncentracyjnego, pracującym przy rozładunku transportów i selekcji więźniów, co czyniło go częścią mechanizmu zagłady.",
+  } as OpenTestQuestion,
+  {
+    question_type: "Otwarty",
+    difficulty: "Średni",
+    epoch_id: 10,
+    book_id: 25,
+    question: "Na czym polega proces odczłowieczenia w opowiadaniu?",
+    suggested_answer:
+      "Odczłowieczenie polega na traktowaniu ludzi jak przedmiotów, pozbawieniu ich godności, emocji i indywidualności oraz podporządkowaniu brutalnym zasadom obozowym.",
+  } as OpenTestQuestion,
+  {
+    question_type: "Otwarty",
+    difficulty: "Średni",
+    epoch_id: 10,
+    book_id: 25,
+    question: "Jak narrator opisuje reakcje więźniów na przybycie transportów?",
+    suggested_answer:
+      "Narrator ukazuje je jako rutynowe i pozbawione emocji, wynikające z przyzwyczajenia i konieczności przetrwania.",
+  } as OpenTestQuestion,
+  {
+    question_type: "Otwarty",
+    difficulty: "Trudny",
+    epoch_id: 10,
+    book_id: 25,
+    question: "Wyjaśnij, dlaczego narrator nie okazuje współczucia ofiarom.",
+    suggested_answer:
+      "Brak współczucia wynika z mechanizmów obronnych, konieczności przetrwania oraz przystosowania się do nieludzkich warunków obozowych.",
+  } as OpenTestQuestion,
+  {
+    question_type: "Otwarty",
+    difficulty: "Trudny",
+    epoch_id: 10,
+    book_id: 25,
+    question: "Jakie znaczenie ma tytuł opowiadania?",
+    suggested_answer:
+      "Tytuł ma ironiczny i tragiczny charakter, ukazuje brutalną rzeczywistość obozową i banalizację śmierci poprzez język.",
+  } as OpenTestQuestion,
+  {
+    question_type: "Otwarty",
+    difficulty: "Średni",
+    epoch_id: 10,
+    book_id: 25,
+    question: "Jaką funkcję pełni narrator pierwszoosobowy?",
+    suggested_answer:
+      "Narrator pierwszoosobowy zwiększa autentyczność przekazu i pozwala ukazać subiektywne doświadczenia więźnia.",
+  } as OpenTestQuestion,
+
+  {
+    question_type: "Matura",
+    difficulty: "Średni",
+    epoch_id: 10,
+    book_id: 25,
+    question:
+      "Wyjaśnij, w jaki sposób narrator przedstawia rzeczywistość obozową. Odwołaj się do całego utworu.",
+    suggested_answer:
+      "Narrator ukazuje rzeczywistość obozową jako brutalną, zmechanizowaną i pozbawioną moralności, w której ludzie tracą człowieczeństwo.",
+    max_points: 4,
+    pointsExplanations: [
+      "1 pkt – wskazanie brutalności obozu",
+      "1 pkt – omówienie mechanizacji życia",
+      "1 pkt – odniesienie do narracji",
+      "1 pkt – poprawność językowa",
+    ],
+  } as MaturaTestQuestion,
+  {
+    question_type: "Matura",
+    difficulty: "Trudny",
+    epoch_id: 10,
+    book_id: 25,
+    question:
+      "Przeanalizuj problem moralności w warunkach obozowych na podstawie opowiadania.",
+    suggested_answer:
+      "W obozie moralność ulega zatarciu – więźniowie podejmują działania sprzeczne z etyką, aby przetrwać.",
+    max_points: 5,
+    pointsExplanations: [
+      "1 pkt – wskazanie problemu moralności",
+      "2 pkt – analiza przykładów z utworu",
+      "1 pkt – wnioski",
+      "1 pkt – poprawność językowa",
+    ],
+  } as MaturaTestQuestion,
+  {
+    question_type: "Matura",
+    difficulty: "Średni",
+    epoch_id: 10,
+    book_id: 25,
+    question: "Omów funkcję języka w budowaniu obrazu obozu.",
+    suggested_answer:
+      "Język jest oszczędny, brutalny i ironiczny, co potęguje realizm i grozę przedstawionej rzeczywistości.",
+    max_points: 4,
+    pointsExplanations: [
+      "1 pkt – wskazanie cech języka",
+      "2 pkt – analiza ich funkcji",
+      "1 pkt – poprawność",
+    ],
+  } as MaturaTestQuestion,
+  {
+    question_type: "Matura",
+    difficulty: "Trudny",
+    epoch_id: 10,
+    book_id: 25,
+    question:
+      "Czy człowiek w obozie może zachować człowieczeństwo? Uzasadnij na podstawie utworu.",
+    suggested_answer:
+      "Zachowanie człowieczeństwa jest bardzo trudne, ponieważ warunki obozowe zmuszają do działań sprzecznych z etyką.",
+    max_points: 5,
+    pointsExplanations: [
+      "1 pkt – zajęcie stanowiska",
+      "2 pkt – argumenty z utworu",
+      "1 pkt – wniosek",
+      "1 pkt – poprawność językowa",
+    ],
+  } as MaturaTestQuestion,
+  {
+    question_type: "Zamknięty",
+    difficulty: "Łatwy",
+    epoch_id: 10,
+    book_id: 26,
+    question: "Kto jest autorem „Innego świata”?",
+    answers: [
+      { value: "Tadeusz Borowski", isCorrect: false },
+      { value: "Gustaw Herling-Grudziński", isCorrect: true },
+      { value: "Zofia Nałkowska", isCorrect: false },
+      { value: "Czesław Miłosz", isCorrect: false },
+    ],
+  } as ClosedTestQuestion,
+  {
+    question_type: "Zamknięty",
+    difficulty: "Łatwy",
+    epoch_id: 10,
+    book_id: 26,
+    question: "W jakim kraju znajduje się łagier opisany w „Innym świecie”?",
+    answers: [
+      { value: "W Niemczech", isCorrect: false },
+      { value: "W Polsce", isCorrect: false },
+      { value: "W Związku Radzieckim", isCorrect: true },
+      { value: "We Francji", isCorrect: false },
+    ],
+  } as ClosedTestQuestion,
+  {
+    question_type: "Zamknięty",
+    difficulty: "Średni",
+    epoch_id: 10,
+    book_id: 26,
+    question: "Jaką funkcję pełni narrator w „Innym świecie”?",
+    answers: [
+      { value: "Jest narratorem wszechwiedzącym", isCorrect: false },
+      { value: "Jest uczestnikiem wydarzeń", isCorrect: true },
+      { value: "Jest postacią fikcyjną niezwiązaną z akcją", isCorrect: false },
+      { value: "Jest jedynie obserwatorem z zewnątrz", isCorrect: false },
+    ],
+  } as ClosedTestQuestion,
+  {
+    question_type: "Zamknięty",
+    difficulty: "Średni",
+    epoch_id: 10,
+    book_id: 26,
+    question: "Jak nazywa się łagier opisany w utworze?",
+    answers: [
+      { value: "Kołyma", isCorrect: false },
+      { value: "Jercewo", isCorrect: true },
+      { value: "Workuta", isCorrect: false },
+      { value: "Magadan", isCorrect: false },
+    ],
+  } as ClosedTestQuestion,
+  {
+    question_type: "Zamknięty",
+    difficulty: "Trudny",
+    epoch_id: 10,
+    book_id: 26,
+    question: "Jaką rolę pełni motyw głodu w „Innym świecie”?",
+    answers: [
+      { value: "Jest elementem humorystycznym", isCorrect: false },
+      {
+        value: "Symbolizuje walkę o przetrwanie i degradację moralną",
+        isCorrect: true,
+      },
+      { value: "Nie ma większego znaczenia", isCorrect: false },
+      { value: "Dotyczy wyłącznie strażników", isCorrect: false },
+    ],
+  } as ClosedTestQuestion,
+  {
+    question_type: "Zamknięty",
+    difficulty: "Średni",
+    epoch_id: 10,
+    book_id: 26,
+    question: "Jak kończy się pobyt narratora w łagrze?",
+    answers: [
+      { value: "Zostaje rozstrzelany", isCorrect: false },
+      { value: "Ucieka z obozu", isCorrect: false },
+      { value: "Zostaje zwolniony na mocy amnestii", isCorrect: true },
+      { value: "Zostaje przeniesiony do innego obozu", isCorrect: false },
+    ],
+  } as ClosedTestQuestion,
+  {
+    question_type: "Zamknięty",
+    difficulty: "Trudny",
+    epoch_id: 10,
+    book_id: 26,
+    question: "Czym był „dom widzeń” w łagrze?",
+    answers: [
+      { value: "Miejscem odpoczynku więźniów", isCorrect: false },
+      { value: "Miejscem spotkań z rodziną", isCorrect: false },
+      { value: "Miejscem pracy administracyjnej", isCorrect: false },
+      {
+        value: "Miejscem wykorzystywania kobiet przez więźniów",
+        isCorrect: true,
+      },
+    ],
+  } as ClosedTestQuestion,
+  {
+    question_type: "Zamknięty",
+    difficulty: "Łatwy",
+    epoch_id: 10,
+    book_id: 26,
+    question: "Do jakiego gatunku literackiego należy „Inny świat”?",
+    answers: [
+      { value: "Powieść historyczna", isCorrect: false },
+      { value: "Reportaż literacki / literatura faktu", isCorrect: true },
+      { value: "Dramat", isCorrect: false },
+      { value: "Ballada", isCorrect: false },
+    ],
+  } as ClosedTestQuestion,
+  {
+    question_type: "Otwarty",
+    difficulty: "Łatwy",
+    epoch_id: 10,
+    book_id: 26,
+    question: "Wyjaśnij znaczenie tytułu „Inny świat”.",
+    suggested_answer:
+      "Tytuł odnosi się do rzeczywistości łagrowej, która rządzi się odmiennymi, nieludzkimi zasadami, różniącymi się od normalnego świata.",
+  } as OpenTestQuestion,
+  {
+    question_type: "Otwarty",
+    difficulty: "Średni",
+    epoch_id: 10,
+    book_id: 26,
+    question: "Opisz warunki życia więźniów w łagrze.",
+    suggested_answer:
+      "Warunki były skrajnie ciężkie: głód, zimno, niewolnicza praca, przemoc, brak opieki medycznej i ciągłe zagrożenie życia.",
+  } as OpenTestQuestion,
+  {
+    question_type: "Otwarty",
+    difficulty: "Średni",
+    epoch_id: 10,
+    book_id: 26,
+    question: "Na czym polegała degradacja moralna więźniów?",
+    suggested_answer:
+      "Więźniowie często tracili zasady moralne, walczyli o przetrwanie kosztem innych, donosili, kradli i tracili poczucie solidarności.",
+  } as OpenTestQuestion,
+  {
+    question_type: "Otwarty",
+    difficulty: "Trudny",
+    epoch_id: 10,
+    book_id: 26,
+    question: "Wyjaśnij znaczenie pracy w łagrze.",
+    suggested_answer:
+      "Praca była narzędziem wyniszczenia więźniów, decydowała o przydziale racji żywnościowych i często prowadziła do śmierci z wycieńczenia.",
+  } as OpenTestQuestion,
+  {
+    question_type: "Otwarty",
+    difficulty: "Średni",
+    epoch_id: 10,
+    book_id: 26,
+    question: "Kim byli „urki” i jaką pełnili rolę w obozie?",
+    suggested_answer:
+      "Urki to przestępcy kryminalni uprzywilejowani przez władze obozowe, którzy terroryzowali innych więźniów.",
+  } as OpenTestQuestion,
+  {
+    question_type: "Otwarty",
+    difficulty: "Trudny",
+    epoch_id: 10,
+    book_id: 26,
+    question: "Jak narrator zachowuje człowieczeństwo w nieludzkich warunkach?",
+    suggested_answer:
+      "Narrator stara się zachować moralność, refleksję i współczucie wobec innych mimo trudnych warunków.",
+  } as OpenTestQuestion,
+  {
+    question_type: "Matura",
+    difficulty: "Średni",
+    epoch_id: 10,
+    book_id: 26,
+    question:
+      "Na podstawie „Innego świata” wyjaśnij, w jaki sposób system totalitarny wpływa na jednostkę.",
+    suggested_answer:
+      "System totalitarny niszczy jednostkę psychicznie i fizycznie, odbiera jej godność i zmusza do walki o przetrwanie kosztem innych.",
+    max_points: 3,
+    pointsExplanations: [
+      "1 pkt – wskazanie wpływu systemu na psychikę",
+      "1 pkt – wskazanie wpływu na moralność",
+      "1 pkt – odniesienie do utworu",
+    ],
+  } as MaturaTestQuestion,
+  {
+    question_type: "Matura",
+    difficulty: "Trudny",
+    epoch_id: 10,
+    book_id: 26,
+    question: "Omów problem dehumanizacji na przykładzie „Innego świata”.",
+    suggested_answer:
+      "Dehumanizacja polega na odebraniu więźniom godności, sprowadzeniu ich do roli narzędzi pracy i pozbawieniu indywidualności.",
+    max_points: 4,
+    pointsExplanations: [
+      "1 pkt – definicja dehumanizacji",
+      "1 pkt – przykłady z utworu",
+      "1 pkt – analiza skutków",
+      "1 pkt – spójność wypowiedzi",
+    ],
+  } as MaturaTestQuestion,
+  {
+    question_type: "Matura",
+    difficulty: "Średni",
+    epoch_id: 10,
+    book_id: 26,
+    question:
+      "Czy w „Innym świecie” możliwe jest zachowanie człowieczeństwa? Uzasadnij.",
+    suggested_answer:
+      "Jest to trudne, ale możliwe – niektórzy bohaterowie zachowują wartości moralne mimo ekstremalnych warunków.",
+    max_points: 3,
+    pointsExplanations: [
+      "1 pkt – zajęcie stanowiska",
+      "1 pkt – argumentacja",
+      "1 pkt – odniesienie do utworu",
+    ],
+  } as MaturaTestQuestion,
+  {
+    question_type: "Zamknięty",
+    difficulty: "Łatwy",
+    epoch_id: 10,
+    book_id: 27,
+    question:
+      "Kto jest głównym bohaterem reportażu „Zdążyć przed Panem Bogiem”?",
+    answers: [
+      { value: "Janusz Korczak", isCorrect: false },
+      { value: "Marek Edelman", isCorrect: true },
+      { value: "Władysław Szpilman", isCorrect: false },
+      { value: "Emanuel Ringelblum", isCorrect: false },
+    ],
+  } as ClosedTestQuestion,
+  {
+    question_type: "Zamknięty",
+    difficulty: "Łatwy",
+    epoch_id: 10,
+    book_id: 27,
+    question: "Autorką utworu „Zdążyć przed Panem Bogiem” jest:",
+    answers: [
+      { value: "Hanna Krall", isCorrect: true },
+      { value: "Zofia Nałkowska", isCorrect: false },
+      { value: "Maria Dąbrowska", isCorrect: false },
+      { value: "Olga Tokarczuk", isCorrect: false },
+    ],
+  } as ClosedTestQuestion,
+  {
+    question_type: "Zamknięty",
+    difficulty: "Średni",
+    epoch_id: 10,
+    book_id: 27,
+    question:
+      "Jaką funkcję pełnił Marek Edelman podczas powstania w getcie warszawskim?",
+    answers: [
+      { value: "Był dowódcą całego powstania", isCorrect: false },
+      {
+        value: "Był jednym z przywódców Żydowskiej Organizacji Bojowej",
+        isCorrect: true,
+      },
+      { value: "Był lekarzem w getcie", isCorrect: false },
+      { value: "Był kronikarzem wydarzeń", isCorrect: false },
+    ],
+  } as ClosedTestQuestion,
+  {
+    question_type: "Zamknięty",
+    difficulty: "Średni",
+    epoch_id: 10,
+    book_id: 27,
+    question: "Co według Edelmana oznaczało „wybrać sposób umierania”?",
+    answers: [
+      { value: "Decydować o miejscu pochówku", isCorrect: false },
+      { value: "Podjąć walkę zamiast biernie iść na śmierć", isCorrect: true },
+      { value: "Uciec z getta", isCorrect: false },
+      { value: "Ukrywać się do końca wojny", isCorrect: false },
+    ],
+  } as ClosedTestQuestion,
+  {
+    question_type: "Zamknięty",
+    difficulty: "Średni",
+    epoch_id: 10,
+    book_id: 27,
+    question: "Jakie zajęcie wykonywał Marek Edelman po wojnie?",
+    answers: [
+      { value: "Był pisarzem", isCorrect: false },
+      { value: "Był lekarzem kardiologiem", isCorrect: true },
+      { value: "Był nauczycielem", isCorrect: false },
+      { value: "Był politykiem", isCorrect: false },
+    ],
+  } as ClosedTestQuestion,
+  {
+    question_type: "Zamknięty",
+    difficulty: "Trudny",
+    epoch_id: 10,
+    book_id: 27,
+    question: "Jak Edelman postrzega rolę Boga w kontekście Zagłady?",
+    answers: [
+      { value: "Bóg aktywnie pomaga ludziom", isCorrect: false },
+      {
+        value: "Bóg jest obojętny, a człowiek musi działać sam",
+        isCorrect: true,
+      },
+      { value: "Bóg karze ludzi za ich czyny", isCorrect: false },
+      { value: "Bóg całkowicie nie istnieje", isCorrect: false },
+    ],
+  } as ClosedTestQuestion,
+  {
+    question_type: "Zamknięty",
+    difficulty: "Średni",
+    epoch_id: 10,
+    book_id: 27,
+    question: "Jaką rolę pełni motyw liczenia ludzi przez Edelmana?",
+    answers: [
+      { value: "Symbolizuje statystyki wojenne", isCorrect: false },
+      { value: "Podkreśla próbę ratowania jednostek", isCorrect: true },
+      { value: "Ukazuje chaos wojny", isCorrect: false },
+      { value: "Jest elementem humorystycznym", isCorrect: false },
+    ],
+  } as ClosedTestQuestion,
+  {
+    question_type: "Zamknięty",
+    difficulty: "Trudny",
+    epoch_id: 10,
+    book_id: 27,
+    question: "Jaki gatunek reprezentuje utwór „Zdążyć przed Panem Bogiem”?",
+    answers: [
+      { value: "Powieść historyczna", isCorrect: false },
+      { value: "Reportaż literacki", isCorrect: true },
+      { value: "Dramat", isCorrect: false },
+      { value: "Esej filozoficzny", isCorrect: false },
+    ],
+  } as ClosedTestQuestion,
+  {
+    question_type: "Otwarty",
+    difficulty: "Łatwy",
+    epoch_id: 10,
+    book_id: 27,
+    question: "Wyjaśnij, czym było powstanie w getcie warszawskim.",
+    suggested_answer:
+      "Było to zbrojne wystąpienie Żydów przeciwko Niemcom w 1943 roku, będące próbą oporu wobec deportacji do obozów zagłady.",
+  } as OpenTestQuestion,
+  {
+    question_type: "Otwarty",
+    difficulty: "Średni",
+    epoch_id: 10,
+    book_id: 27,
+    question: "Jak Marek Edelman rozumie sens ratowania życia ludzkiego?",
+    suggested_answer:
+      "Uważa, że każde życie ma wartość i należy je ratować niezależnie od okoliczności, nawet jeśli szanse są niewielkie.",
+  } as OpenTestQuestion,
+  {
+    question_type: "Otwarty",
+    difficulty: "Średni",
+    epoch_id: 10,
+    book_id: 27,
+    question: "Dlaczego Edelman nie uważa się za bohatera?",
+    suggested_answer:
+      "Ponieważ traktuje swoje działania jako konieczność i moralny obowiązek, a nie coś nadzwyczajnego.",
+  } as OpenTestQuestion,
+  {
+    question_type: "Otwarty",
+    difficulty: "Trudny",
+    epoch_id: 10,
+    book_id: 27,
+    question: "Wyjaśnij symbolikę „zdążenia przed Panem Bogiem”.",
+    suggested_answer:
+      "Oznacza próbę uratowania człowieka przed śmiercią, zanim nastąpi ona nieuchronnie, czyli walkę o życie mimo przeciwności.",
+  } as OpenTestQuestion,
+  {
+    question_type: "Otwarty",
+    difficulty: "Średni",
+    epoch_id: 10,
+    book_id: 27,
+    question: "Jaką rolę pełni narrator w utworze?",
+    suggested_answer:
+      "Narrator pełni rolę słuchacza i rozmówcy Edelmana, przekazując jego relację w formie reportażu.",
+  } as OpenTestQuestion,
+  {
+    question_type: "Otwarty",
+    difficulty: "Trudny",
+    epoch_id: 10,
+    book_id: 27,
+    question: "W jaki sposób utwór ukazuje problem heroizmu?",
+    suggested_answer:
+      "Heroizm jest przedstawiony jako codzienna walka o życie i godność, a nie spektakularne czyny.",
+  } as OpenTestQuestion,
+  {
+    question_type: "Matura",
+    difficulty: "Średni",
+    epoch_id: 10,
+    book_id: 27,
+    question:
+      "Wyjaśnij, na czym polega specyfika reportażu jako gatunku literackiego na przykładzie „Zdążyć przed Panem Bogiem”.",
+    suggested_answer:
+      "Reportaż łączy elementy faktograficzne z literackimi, opiera się na autentycznych wydarzeniach i relacjach świadków.",
+    max_points: 3,
+    pointsExplanations: [
+      "1 pkt – wskazanie cech reportażu",
+      "1 pkt – odniesienie do utworu",
+      "1 pkt – poprawność językowa i logiczna",
+    ],
+  } as MaturaTestQuestion,
+  {
+    question_type: "Matura",
+    difficulty: "Trudny",
+    epoch_id: 10,
+    book_id: 27,
+    question:
+      "Omów postawę Marka Edelmana wobec śmierci i życia, odwołując się do całego utworu.",
+    suggested_answer:
+      "Edelman traktuje życie jako najwyższą wartość i podejmuje działania, by je ratować, natomiast śmierć postrzega jako nieuniknioną, ale nie należy jej biernie akceptować.",
+    max_points: 4,
+    pointsExplanations: [
+      "1 pkt – omówienie stosunku do życia",
+      "1 pkt – omówienie stosunku do śmierci",
+      "1 pkt – odwołanie do przykładów",
+      "1 pkt – spójność wypowiedzi",
+    ],
+  } as MaturaTestQuestion,
+  {
+    question_type: "Matura",
+    difficulty: "Trudny",
+    epoch_id: 10,
+    book_id: 27,
+    question:
+      "Czy można mówić o sensie walki skazanej na porażkę? Odpowiedz, odwołując się do „Zdążyć przed Panem Bogiem”.",
+    suggested_answer:
+      "Tak, ponieważ walka daje godność i możliwość wyboru sposobu śmierci, nawet jeśli nie prowadzi do zwycięstwa.",
+    max_points: 4,
+    pointsExplanations: [
+      "1 pkt – sformułowanie stanowiska",
+      "1 pkt – argumentacja",
+      "1 pkt – odwołanie do utworu",
+      "1 pkt – poprawność językowa",
+    ],
+  } as MaturaTestQuestion,
+  {
+    question_type: "Zamknięty",
+    difficulty: "Łatwy",
+    epoch_id: 10,
+    book_id: 28,
+    question: "Gdzie rozgrywa się akcja powieści „Dżuma”?",
+    answers: [
+      { value: "W Algierze", isCorrect: false },
+      { value: "W Oranie", isCorrect: true },
+      { value: "W Paryżu", isCorrect: false },
+      { value: "W Marsylii", isCorrect: false },
+    ],
+  } as ClosedTestQuestion,
+  {
+    question_type: "Zamknięty",
+    difficulty: "Łatwy",
+    epoch_id: 10,
+    book_id: 28,
+    question: "Kim jest narrator „Dżumy”?",
+    answers: [
+      { value: "Jean Tarrou", isCorrect: false },
+      { value: "Bernard Rieux", isCorrect: true },
+      { value: "Raymond Rambert", isCorrect: false },
+      { value: "Joseph Grand", isCorrect: false },
+    ],
+  } as ClosedTestQuestion,
+  {
+    question_type: "Zamknięty",
+    difficulty: "Średni",
+    epoch_id: 10,
+    book_id: 28,
+    question: "Jaką funkcję pełni doktor Rieux w powieści?",
+    answers: [
+      { value: "Dziennikarza", isCorrect: false },
+      { value: "Lekarza", isCorrect: true },
+      { value: "Pisarza", isCorrect: false },
+      { value: "Urzędnika", isCorrect: false },
+    ],
+  } as ClosedTestQuestion,
+  {
+    question_type: "Zamknięty",
+    difficulty: "Średni",
+    epoch_id: 10,
+    book_id: 28,
+    question: "Co symbolizuje dżuma w utworze Camusa?",
+    answers: [
+      { value: "Miłość", isCorrect: false },
+      { value: "Zło i absurd istnienia", isCorrect: true },
+      { value: "Postęp cywilizacyjny", isCorrect: false },
+      { value: "Rozwój nauki", isCorrect: false },
+    ],
+  } as ClosedTestQuestion,
+  {
+    question_type: "Zamknięty",
+    difficulty: "Średni",
+    epoch_id: 10,
+    book_id: 28,
+    question: "Kim jest Jean Tarrou?",
+    answers: [
+      { value: "Lekarzem", isCorrect: false },
+      {
+        value: "Turystą i organizatorem oddziałów sanitarnych",
+        isCorrect: true,
+      },
+      { value: "Policjantem", isCorrect: false },
+      { value: "Księdzem", isCorrect: false },
+    ],
+  } as ClosedTestQuestion,
+  {
+    question_type: "Zamknięty",
+    difficulty: "Trudny",
+    epoch_id: 10,
+    book_id: 28,
+    question: "Jaką postawę reprezentuje ojciec Paneloux?",
+    answers: [
+      { value: "Ateizm", isCorrect: false },
+      { value: "Fatalizm religijny", isCorrect: true },
+      { value: "Nihilizm", isCorrect: false },
+      { value: "Hedonizm", isCorrect: false },
+    ],
+  } as ClosedTestQuestion,
+  {
+    question_type: "Zamknięty",
+    difficulty: "Średni",
+    epoch_id: 10,
+    book_id: 28,
+    question: "Dlaczego Rambert początkowo chce opuścić Oran?",
+    answers: [
+      { value: "Bo boi się choroby", isCorrect: false },
+      { value: "Chce wrócić do ukochanej", isCorrect: true },
+      { value: "Ma ważną pracę", isCorrect: false },
+      { value: "Nie lubi miasta", isCorrect: false },
+    ],
+  } as ClosedTestQuestion,
+  {
+    question_type: "Zamknięty",
+    difficulty: "Trudny",
+    epoch_id: 10,
+    book_id: 28,
+    question: "Jaką funkcję pełni postać Josepha Granda?",
+    answers: [
+      {
+        value: "Symbol przeciętności i heroizmu codzienności",
+        isCorrect: true,
+      },
+      { value: "Symbol buntu", isCorrect: false },
+      { value: "Symbol władzy", isCorrect: false },
+      { value: "Symbol zdrady", isCorrect: false },
+    ],
+  } as ClosedTestQuestion,
+  {
+    question_type: "Zamknięty",
+    difficulty: "Trudny",
+    epoch_id: 10,
+    book_id: 28,
+    question: "Jak kończy się epidemia dżumy?",
+    answers: [
+      { value: "Nagłym wybuchem", isCorrect: false },
+      { value: "Stopniowym wygaszeniem", isCorrect: true },
+      { value: "Interwencją wojska", isCorrect: false },
+      { value: "Odkryciem szczepionki", isCorrect: false },
+    ],
+  } as ClosedTestQuestion,
+  {
+    question_type: "Otwarty",
+    difficulty: "Łatwy",
+    epoch_id: 10,
+    book_id: 28,
+    question: "Wyjaśnij, czym jest dżuma jako symbol w powieści.",
+    suggested_answer:
+      "Dżuma symbolizuje zło, absurd życia oraz doświadczenie cierpienia i śmierci obecne w ludzkiej egzystencji.",
+  } as OpenTestQuestion,
+  {
+    question_type: "Otwarty",
+    difficulty: "Średni",
+    epoch_id: 10,
+    book_id: 28,
+    question: "Scharakteryzuj postawę doktora Rieux wobec epidemii.",
+    suggested_answer:
+      "Rieux jest racjonalny, odpowiedzialny i oddany swojej pracy. Walczy z epidemią mimo świadomości jej absurdalności.",
+  } as OpenTestQuestion,
+  {
+    question_type: "Otwarty",
+    difficulty: "Średni",
+    epoch_id: 10,
+    book_id: 28,
+    question: "Dlaczego Rambert zmienia swoją decyzję i pozostaje w Oranie?",
+    suggested_answer:
+      "Rambert uznaje, że solidarność z innymi ludźmi jest ważniejsza niż osobiste szczęście.",
+  } as OpenTestQuestion,
+  {
+    question_type: "Otwarty",
+    difficulty: "Trudny",
+    epoch_id: 10,
+    book_id: 28,
+    question: "Wyjaśnij sens pojęcia „absurd” w kontekście powieści.",
+    suggested_answer:
+      "Absurd oznacza sprzeczność między ludzką potrzebą sensu a chaotycznym i obojętnym światem.",
+  } as OpenTestQuestion,
+  {
+    question_type: "Otwarty",
+    difficulty: "Średni",
+    epoch_id: 10,
+    book_id: 28,
+    question: "Jaką rolę pełnią oddziały sanitarne?",
+    suggested_answer:
+      "Są wyrazem solidarności i wspólnej walki ludzi przeciwko złu i cierpieniu.",
+  } as OpenTestQuestion,
+  {
+    question_type: "Otwarty",
+    difficulty: "Trudny",
+    epoch_id: 10,
+    book_id: 28,
+    question: "Omów postawę ojca Paneloux wobec cierpienia.",
+    suggested_answer:
+      "Paneloux interpretuje cierpienie jako karę boską i próbuje nadać mu religijny sens.",
+  } as OpenTestQuestion,
+  {
+    question_type: "Otwarty",
+    difficulty: "Średni",
+    epoch_id: 10,
+    book_id: 28,
+    question: "Wyjaśnij znaczenie zakończenia powieści.",
+    suggested_answer:
+      "Zakończenie pokazuje, że zło nigdy nie znika całkowicie i może powrócić.",
+  } as OpenTestQuestion,
+  {
+    question_type: "Matura",
+    difficulty: "Średni",
+    epoch_id: 10,
+    book_id: 28,
+    question:
+      "Na podstawie całego utworu omów problem solidarności międzyludzkiej w „Dżumie”.",
+    suggested_answer:
+      "Solidarność przejawia się w działaniach bohaterów walczących z epidemią i wspierających się nawzajem.",
+    max_points: 4,
+    pointsExplanations: [
+      "1 pkt – wskazanie problemu solidarności",
+      "1 pkt – odwołanie do bohaterów",
+      "1 pkt – omówienie przykładów",
+      "1 pkt – wniosek",
+    ],
+  } as MaturaTestQuestion,
+  {
+    question_type: "Matura",
+    difficulty: "Trudny",
+    epoch_id: 10,
+    book_id: 28,
+    question:
+      "Rozważ problem odpowiedzialności człowieka wobec zła w „Dżumie”.",
+    suggested_answer:
+      "Bohaterowie podejmują walkę ze złem mimo jego nieuchronności, co świadczy o ich moralnej odpowiedzialności.",
+    max_points: 5,
+    pointsExplanations: [
+      "1 pkt – sformułowanie problemu",
+      "2 pkt – analiza postaw bohaterów",
+      "1 pkt – interpretacja",
+      "1 pkt – wniosek",
+    ],
+  } as MaturaTestQuestion,
+  {
+    question_type: "Matura",
+    difficulty: "Średni",
+    epoch_id: 10,
+    book_id: 28,
+    question: "Omów funkcję narratora w powieści „Dżuma”.",
+    suggested_answer:
+      "Narrator jako uczestnik wydarzeń zwiększa wiarygodność relacji i nadaje jej charakter świadectwa.",
+    max_points: 3,
+    pointsExplanations: [
+      "1 pkt – wskazanie narratora",
+      "1 pkt – opis funkcji",
+      "1 pkt – wniosek",
+    ],
+  } as MaturaTestQuestion,
+  {
+    question_type: "Matura",
+    difficulty: "Trudny",
+    epoch_id: 10,
+    book_id: 28,
+    question:
+      "Czy człowiek może być szczęśliwy w świecie absurdu? Odpowiedz, odwołując się do „Dżumy”.",
+    suggested_answer:
+      "Człowiek może odnaleźć sens i szczęście poprzez działanie, solidarność i akceptację absurdu.",
+    max_points: 5,
+    pointsExplanations: [
+      "1 pkt – teza",
+      "2 pkt – argumenty",
+      "1 pkt – odwołanie do utworu",
+      "1 pkt – wniosek",
+    ],
+  } as MaturaTestQuestion,
+  {
+    question_type: "Zamknięty",
+    difficulty: "Łatwy",
+    epoch_id: 10,
+    book_id: 29,
+    question: "Jak nazywa się główny bohater powieści?",
+    answers: [
+      { value: "Winston Smith", isCorrect: true },
+      { value: "O'Brien", isCorrect: false },
+      { value: "Syme", isCorrect: false },
+      { value: "Parsons", isCorrect: false },
+    ],
+  } as ClosedTestQuestion,
+  {
+    question_type: "Zamknięty",
+    difficulty: "Łatwy",
+    epoch_id: 10,
+    book_id: 29,
+    question: "Jak nazywa się państwo, w którym toczy się akcja powieści?",
+    answers: [
+      { value: "Eurazja", isCorrect: false },
+      { value: "Oceania", isCorrect: true },
+      { value: "Wschodazja", isCorrect: false },
+      { value: "Europa", isCorrect: false },
+    ],
+  } as ClosedTestQuestion,
+  {
+    question_type: "Zamknięty",
+    difficulty: "Średni",
+    epoch_id: 10,
+    book_id: 29,
+    question: "Czym zajmuje się Winston Smith?",
+    answers: [
+      { value: "Jest żołnierzem", isCorrect: false },
+      { value: "Pracuje w Ministerstwie Prawdy", isCorrect: true },
+      { value: "Jest nauczycielem", isCorrect: false },
+      { value: "Jest lekarzem", isCorrect: false },
+    ],
+  } as ClosedTestQuestion,
+  {
+    question_type: "Zamknięty",
+    difficulty: "Średni",
+    epoch_id: 10,
+    book_id: 29,
+    question: "Na czym polega nowomowa?",
+    answers: [
+      { value: "Na tworzeniu nowych języków literackich", isCorrect: false },
+      {
+        value: "Na upraszczaniu języka w celu ograniczenia myślenia",
+        isCorrect: true,
+      },
+      { value: "Na tłumaczeniu tekstów", isCorrect: false },
+      { value: "Na używaniu archaizmów", isCorrect: false },
+    ],
+  } as ClosedTestQuestion,
+  {
+    question_type: "Zamknięty",
+    difficulty: "Trudny",
+    epoch_id: 10,
+    book_id: 29,
+    question: "Co symbolizuje Wielki Brat?",
+    answers: [
+      { value: "Opiekuna narodu", isCorrect: false },
+      { value: "System totalitarnej kontroli", isCorrect: true },
+      { value: "Przywódcę wojskowego", isCorrect: false },
+      { value: "Religijnego proroka", isCorrect: false },
+    ],
+  } as ClosedTestQuestion,
+  {
+    question_type: "Zamknięty",
+    difficulty: "Średni",
+    epoch_id: 10,
+    book_id: 29,
+    question: "Jak nazywa się ukochana Winstona?",
+    answers: [
+      { value: "Julia", isCorrect: true },
+      { value: "Katharine", isCorrect: false },
+      { value: "Anna", isCorrect: false },
+      { value: "Mary", isCorrect: false },
+    ],
+  } as ClosedTestQuestion,
+  {
+    question_type: "Zamknięty",
+    difficulty: "Trudny",
+    epoch_id: 10,
+    book_id: 29,
+    question: "Czym jest pokój 101?",
+    answers: [
+      { value: "Miejscem odpoczynku", isCorrect: false },
+      { value: "Najstraszniejszym miejscem tortur", isCorrect: true },
+      { value: "Biurem O'Briena", isCorrect: false },
+      { value: "Archiwum", isCorrect: false },
+    ],
+  } as ClosedTestQuestion,
+  {
+    question_type: "Zamknięty",
+    difficulty: "Średni",
+    epoch_id: 10,
+    book_id: 29,
+    question: "Jakie hasło Partii pojawia się w powieści?",
+    answers: [
+      { value: "Wolność jest siłą", isCorrect: false },
+      { value: "Wojna to pokój", isCorrect: true },
+      { value: "Prawda zwycięża", isCorrect: false },
+      { value: "Siła to wiedza", isCorrect: false },
+    ],
+  } as ClosedTestQuestion,
+  {
+    question_type: "Otwarty",
+    difficulty: "Łatwy",
+    epoch_id: 10,
+    book_id: 29,
+    question: "Wyjaśnij, czym jest totalitaryzm na podstawie powieści.",
+    suggested_answer:
+      "Totalitaryzm to system władzy, w którym państwo kontroluje wszystkie aspekty życia obywateli, ogranicza wolność jednostki i stosuje propagandę oraz terror.",
+  } as OpenTestQuestion,
+  {
+    question_type: "Otwarty",
+    difficulty: "Średni",
+    epoch_id: 10,
+    book_id: 29,
+    question: "Jaką funkcję pełni Ministerstwo Prawdy?",
+    suggested_answer:
+      "Ministerstwo Prawdy zajmuje się fałszowaniem historii i propagandą, aby dostosować przeszłość do aktualnej linii Partii.",
+  } as OpenTestQuestion,
+  {
+    question_type: "Otwarty",
+    difficulty: "Średni",
+    epoch_id: 10,
+    book_id: 29,
+    question: "Dlaczego Winston buntuje się przeciwko Partii?",
+    suggested_answer:
+      "Winston sprzeciwia się Partii, ponieważ pragnie prawdy, wolności i indywidualizmu, których system mu odmawia.",
+  } as OpenTestQuestion,
+  {
+    question_type: "Otwarty",
+    difficulty: "Trudny",
+    epoch_id: 10,
+    book_id: 29,
+    question: "Wyjaśnij znaczenie manipulacji językiem w powieści.",
+    suggested_answer:
+      "Manipulacja językiem poprzez nowomowę ogranicza zdolność myślenia i krytyki, co ułatwia kontrolę społeczeństwa.",
+  } as OpenTestQuestion,
+  {
+    question_type: "Otwarty",
+    difficulty: "Średni",
+    epoch_id: 10,
+    book_id: 29,
+    question: "Jak kończy się historia Winstona?",
+    suggested_answer:
+      "Winston zostaje złamany psychicznie i zaczyna kochać Wielkiego Brata.",
+  } as OpenTestQuestion,
+  {
+    question_type: "Otwarty",
+    difficulty: "Trudny",
+    epoch_id: 10,
+    book_id: 29,
+    question: "Scharakteryzuj postać O'Briena.",
+    suggested_answer:
+      "O'Brien jest lojalnym członkiem Partii, który manipuluje Winstonem i ostatecznie go zdradza, reprezentując bezwzględność systemu.",
+  } as OpenTestQuestion,
+  {
+    question_type: "Matura",
+    difficulty: "Średni",
+    epoch_id: 10,
+    book_id: 29,
+    question:
+      "Wyjaśnij, jak propaganda wpływa na życie bohaterów powieści. Odwołaj się do całego utworu.",
+    suggested_answer:
+      "Propaganda kształtuje sposób myślenia bohaterów, narzuca im jedyną słuszną wizję rzeczywistości i eliminuje możliwość krytyki.",
+    max_points: 3,
+    pointsExplanations: [
+      "1 pkt – wskazanie roli propagandy",
+      "1 pkt – odniesienie do bohaterów",
+      "1 pkt – przykład z utworu",
+    ],
+  } as MaturaTestQuestion,
+  {
+    question_type: "Matura",
+    difficulty: "Trudny",
+    epoch_id: 10,
+    book_id: 29,
+    question:
+      "Omów problem wolności jednostki w państwie totalitarnym na podstawie powieści.",
+    suggested_answer:
+      "Jednostka nie ma wolności, ponieważ jest stale kontrolowana i manipulowana przez władzę.",
+    max_points: 4,
+    pointsExplanations: [
+      "1 pkt – określenie problemu",
+      "1 pkt – analiza sytuacji bohatera",
+      "1 pkt – odniesienie do systemu",
+      "1 pkt – wniosek",
+    ],
+  } as MaturaTestQuestion,
+  {
+    question_type: "Matura",
+    difficulty: "Średni",
+    epoch_id: 10,
+    book_id: 29,
+    question: "Zinterpretuj znaczenie hasła „Wojna to pokój”.",
+    suggested_answer:
+      "Hasło pokazuje manipulację językową i absurd logiki totalitarnej.",
+    max_points: 2,
+    pointsExplanations: [
+      "1 pkt – interpretacja hasła",
+      "1 pkt – odniesienie do systemu",
+    ],
+  } as MaturaTestQuestion,
+  {
+    question_type: "Zamknięty",
+    difficulty: "Łatwy",
+    epoch_id: 10,
+    book_id: 30,
+    question: "Kto jest autorem dramatu „Tango”?",
+    answers: [
+      { value: "Sławomir Mrożek", isCorrect: true },
+      { value: "Witold Gombrowicz", isCorrect: false },
+      { value: "Tadeusz Różewicz", isCorrect: false },
+      { value: "Stanisław Ignacy Witkiewicz", isCorrect: false },
+    ],
+  } as ClosedTestQuestion,
+  {
+    question_type: "Zamknięty",
+    difficulty: "Łatwy",
+    epoch_id: 10,
+    book_id: 30,
+    question: "Kim jest Artur w dramacie?",
+    answers: [
+      { value: "Ojcem Stomila", isCorrect: false },
+      { value: "Synem Eleonory i Stomila", isCorrect: true },
+      { value: "Wujem Edka", isCorrect: false },
+      { value: "Narzeczonym Eleonory", isCorrect: false },
+    ],
+  } as ClosedTestQuestion,
+  {
+    question_type: "Zamknięty",
+    difficulty: "Średni",
+    epoch_id: 10,
+    book_id: 30,
+    question: "Co symbolizuje postać Edka?",
+    answers: [
+      { value: "Tradycyjne wartości", isCorrect: false },
+      { value: "Inteligencję i refleksję", isCorrect: false },
+      { value: "Prymitywną siłę i władzę", isCorrect: true },
+      { value: "Artystyczny bunt", isCorrect: false },
+    ],
+  } as ClosedTestQuestion,
+  {
+    question_type: "Zamknięty",
+    difficulty: "Średni",
+    epoch_id: 10,
+    book_id: 30,
+    question: "Jaką funkcję pełni chaos w domu bohaterów?",
+    answers: [
+      { value: "Symbolizuje porządek społeczny", isCorrect: false },
+      { value: "Ukazuje brak norm i wartości", isCorrect: true },
+      { value: "Oznacza bogactwo rodziny", isCorrect: false },
+      {
+        value: "Jest elementem komizmu sytuacyjnego wyłącznie",
+        isCorrect: false,
+      },
+    ],
+  } as ClosedTestQuestion,
+  {
+    question_type: "Zamknięty",
+    difficulty: "Trudny",
+    epoch_id: 10,
+    book_id: 30,
+    question: "Jak kończy się dramat „Tango”?",
+    answers: [
+      { value: "Artur zwycięża i przywraca porządek", isCorrect: false },
+      { value: "Edek przejmuje władzę", isCorrect: true },
+      { value: "Rodzina się godzi", isCorrect: false },
+      { value: "Wszyscy bohaterowie giną", isCorrect: false },
+    ],
+  } as ClosedTestQuestion,
+  {
+    question_type: "Zamknięty",
+    difficulty: "Średni",
+    epoch_id: 10,
+    book_id: 30,
+    question: "Kim jest Stomil?",
+    answers: [
+      { value: "Przedstawicielem tradycji", isCorrect: false },
+      { value: "Artystą i anarchistą", isCorrect: true },
+      { value: "Politykiem", isCorrect: false },
+      { value: "Robotnikiem", isCorrect: false },
+    ],
+  } as ClosedTestQuestion,
+  {
+    question_type: "Zamknięty",
+    difficulty: "Średni",
+    epoch_id: 10,
+    book_id: 30,
+    question: "Jaką rolę pełni taniec w finale dramatu?",
+    answers: [
+      { value: "Symbol pojednania", isCorrect: false },
+      { value: "Symbol triumfu siły nad kulturą", isCorrect: true },
+      { value: "Element romantyczny", isCorrect: false },
+      { value: "Wyraz wolności artystycznej", isCorrect: false },
+    ],
+  } as ClosedTestQuestion,
+  {
+    question_type: "Zamknięty",
+    difficulty: "Trudny",
+    epoch_id: 10,
+    book_id: 30,
+    question: "Do jakiego gatunku należy „Tango”?",
+    answers: [
+      { value: "Tragedia klasyczna", isCorrect: false },
+      { value: "Dramat groteskowy", isCorrect: true },
+      { value: "Komedia romantyczna", isCorrect: false },
+      { value: "Epos", isCorrect: false },
+    ],
+  } as ClosedTestQuestion,
+
+  {
+    question_type: "Otwarty",
+    difficulty: "Łatwy",
+    epoch_id: 10,
+    book_id: 30,
+    question:
+      "Wyjaśnij, dlaczego Artur pragnie przywrócenia porządku w rodzinie.",
+    suggested_answer:
+      "Artur pragnie przywrócić porządek, ponieważ wychował się w świecie chaosu i braku zasad, co prowadzi do jego potrzeby ustanowienia norm i hierarchii.",
+  } as OpenTestQuestion,
+  {
+    question_type: "Otwarty",
+    difficulty: "Średni",
+    epoch_id: 10,
+    book_id: 30,
+    question: "Scharakteryzuj postać Edka.",
+    suggested_answer:
+      "Edek jest prostym, prymitywnym człowiekiem, który reprezentuje brutalną siłę i brak refleksji. Ostatecznie zdobywa władzę.",
+  } as OpenTestQuestion,
+  {
+    question_type: "Otwarty",
+    difficulty: "Średni",
+    epoch_id: 10,
+    book_id: 30,
+    question: "Na czym polega konflikt pokoleń w „Tangu”?",
+    suggested_answer:
+      "Konflikt polega na sprzeczności między starszym pokoleniem, które odrzuciło tradycję, a młodszym (Artur), które chce ją przywrócić.",
+  } as OpenTestQuestion,
+  {
+    question_type: "Otwarty",
+    difficulty: "Trudny",
+    epoch_id: 10,
+    book_id: 30,
+    question: "Wyjaśnij znaczenie groteski w dramacie.",
+    suggested_answer:
+      "Groteska ukazuje absurd rzeczywistości, łączy komizm z tragizmem i podkreśla deformację świata wartości.",
+  } as OpenTestQuestion,
+  {
+    question_type: "Otwarty",
+    difficulty: "Łatwy",
+    epoch_id: 10,
+    book_id: 30,
+    question: "Gdzie rozgrywa się akcja dramatu?",
+    suggested_answer: "Akcja rozgrywa się w domu rodziny Artura.",
+  } as OpenTestQuestion,
+  {
+    question_type: "Otwarty",
+    difficulty: "Trudny",
+    epoch_id: 10,
+    book_id: 30,
+    question: "Zinterpretuj symbolikę finałowego tańca.",
+    suggested_answer:
+      "Taniec symbolizuje triumf prymitywnej siły nad kulturą i upadek wartości intelektualnych.",
+  } as OpenTestQuestion,
+
+  {
+    question_type: "Matura",
+    difficulty: "Średni",
+    epoch_id: 10,
+    book_id: 30,
+    question: "Omów motyw buntu w „Tangu” na podstawie całego utworu.",
+    suggested_answer:
+      "Bunt w „Tangu” ukazany jest jako reakcja na chaos i brak norm. Artur buntuje się przeciw anarchii rodziców, jednak jego działania kończą się klęską.",
+    max_points: 6,
+    pointsExplanations: [
+      "1 pkt – wskazanie bohatera buntownika",
+      "1 pkt – opis przyczyn buntu",
+      "2 pkt – analiza przebiegu buntu",
+      "2 pkt – wnioski dotyczące jego skutków",
+    ],
+  } as MaturaTestQuestion,
+  {
+    question_type: "Matura",
+    difficulty: "Trudny",
+    epoch_id: 10,
+    book_id: 30,
+    question:
+      "Na podstawie „Tanga” wyjaśnij, czym może skutkować brak zasad w społeczeństwie.",
+    suggested_answer:
+      "Brak zasad prowadzi do chaosu, a następnie do przejęcia władzy przez jednostki silniejsze fizycznie, jak Edek.",
+    max_points: 7,
+    pointsExplanations: [
+      "1 pkt – wskazanie problemu",
+      "2 pkt – analiza sytuacji w utworze",
+      "2 pkt – odniesienie do postaci",
+      "2 pkt – wnioski ogólne",
+    ],
+  } as MaturaTestQuestion,
+  {
+    question_type: "Matura",
+    difficulty: "Średni",
+    epoch_id: 10,
+    book_id: 30,
+    question: "Zinterpretuj znaczenie postaci Artura jako inteligenta.",
+    suggested_answer:
+      "Artur reprezentuje inteligencję, która próbuje narzucić porządek, ale okazuje się bezsilna wobec brutalnej siły.",
+    max_points: 5,
+    pointsExplanations: [
+      "1 pkt – identyfikacja roli Artura",
+      "2 pkt – analiza jego działań",
+      "2 pkt – interpretacja symboliczna",
+    ],
+  } as MaturaTestQuestion,
+  {
+    question_type: "Zamknięty",
+    difficulty: "Łatwy",
+    epoch_id: 10,
+    book_id: 31,
+    question: "Kim jest Edek w dramacie „Górą Edek”?",
+    answers: [
+      { value: "Inteligentnym studentem filozofii", isCorrect: false },
+      { value: "Przedstawicielem prymitywnej siły i władzy", isCorrect: true },
+      { value: "Artystą awangardowym", isCorrect: false },
+      { value: "Nauczycielem Artura", isCorrect: false },
+    ],
+  } as ClosedTestQuestion,
+  {
+    question_type: "Zamknięty",
+    difficulty: "Średni",
+    epoch_id: 10,
+    book_id: 31,
+    question: "Co symbolizuje zwycięstwo Edka?",
+    answers: [
+      { value: "Triumf sztuki nad polityką", isCorrect: false },
+      { value: "Powrót do tradycji", isCorrect: false },
+      { value: "Upadek inteligencji i triumf prymitywizmu", isCorrect: true },
+      { value: "Zwycięstwo nauki", isCorrect: false },
+    ],
+  } as ClosedTestQuestion,
+  {
+    question_type: "Zamknięty",
+    difficulty: "Średni",
+    epoch_id: 10,
+    book_id: 31,
+    question: "Jaką rolę pełni Artur w konflikcie z Edkiem?",
+    answers: [
+      { value: "Reprezentuje chaos i anarchię", isCorrect: false },
+      { value: "Jest biernym obserwatorem", isCorrect: false },
+      { value: "Próbuje przywrócić porządek i wartości", isCorrect: true },
+      { value: "Wspiera Edka", isCorrect: false },
+    ],
+  } as ClosedTestQuestion,
+  {
+    question_type: "Zamknięty",
+    difficulty: "Łatwy",
+    epoch_id: 10,
+    book_id: 31,
+    question: "W jakim utworze pojawia się motyw „Górą Edek”?",
+    answers: [
+      { value: "Dżuma", isCorrect: false },
+      { value: "Tango", isCorrect: true },
+      { value: "Inny świat", isCorrect: false },
+      { value: "Rok 1984", isCorrect: false },
+    ],
+  } as ClosedTestQuestion,
+  {
+    question_type: "Zamknięty",
+    difficulty: "Trudny",
+    epoch_id: 10,
+    book_id: 31,
+    question: "Jak można interpretować taniec Edka na końcu utworu?",
+    answers: [
+      { value: "Jako symbol wolności artystycznej", isCorrect: false },
+      {
+        value: "Jako wyraz triumfu brutalnej siły nad kulturą",
+        isCorrect: true,
+      },
+      { value: "Jako powrót do tradycyjnych wartości", isCorrect: false },
+      { value: "Jako znak pojednania bohaterów", isCorrect: false },
+    ],
+  } as ClosedTestQuestion,
+  {
+    question_type: "Zamknięty",
+    difficulty: "Średni",
+    epoch_id: 10,
+    book_id: 31,
+    question: "Jaki jest stosunek Edka do kultury?",
+    answers: [
+      { value: "Pełen szacunku", isCorrect: false },
+      { value: "Obojętny lub lekceważący", isCorrect: true },
+      { value: "Entuzjastyczny", isCorrect: false },
+      { value: "Krytyczny, ale konstruktywny", isCorrect: false },
+    ],
+  } as ClosedTestQuestion,
+  {
+    question_type: "Zamknięty",
+    difficulty: "Łatwy",
+    epoch_id: 10,
+    book_id: 31,
+    question: "Jak kończy się konflikt między Arturem a Edkiem?",
+    answers: [
+      { value: "Pojednaniem", isCorrect: false },
+      { value: "Śmiercią Artura", isCorrect: true },
+      { value: "Ucieczką Edka", isCorrect: false },
+      { value: "Zwycięstwem Artura", isCorrect: false },
+    ],
+  } as ClosedTestQuestion,
+  {
+    question_type: "Zamknięty",
+    difficulty: "Trudny",
+    epoch_id: 10,
+    book_id: 31,
+    question: "Edek jako postać reprezentuje przede wszystkim:",
+    answers: [
+      { value: "Romantycznego buntownika", isCorrect: false },
+      { value: "Egzystencjalnego bohatera", isCorrect: false },
+      { value: "Masową kulturę i brutalną siłę", isCorrect: true },
+      { value: "Arystokratyczne wartości", isCorrect: false },
+    ],
+  } as ClosedTestQuestion,
+
+  {
+    question_type: "Otwarty",
+    difficulty: "Łatwy",
+    epoch_id: 10,
+    book_id: 31,
+    question: "Wyjaśnij znaczenie powiedzenia „Górą Edek”.",
+    suggested_answer:
+      "Oznacza triumf prymitywizmu, siły fizycznej i prostactwa nad kulturą, inteligencją i wartościami.",
+  } as OpenTestQuestion,
+  {
+    question_type: "Otwarty",
+    difficulty: "Średni",
+    epoch_id: 10,
+    book_id: 31,
+    question: "Scharakteryzuj postać Edka.",
+    suggested_answer:
+      "Edek jest prostym, prymitywnym człowiekiem kierującym się siłą i instynktem. Nie szanuje kultury ani zasad, a jego zwycięstwo symbolizuje upadek wartości.",
+  } as OpenTestQuestion,
+  {
+    question_type: "Otwarty",
+    difficulty: "Średni",
+    epoch_id: 10,
+    book_id: 31,
+    question: "Jaką funkcję pełni konflikt między Arturem a Edkiem?",
+    suggested_answer:
+      "Ukazuje starcie dwóch światów: inteligencji i kultury z brutalną siłą i prostactwem.",
+  } as OpenTestQuestion,
+  {
+    question_type: "Otwarty",
+    difficulty: "Trudny",
+    epoch_id: 10,
+    book_id: 31,
+    question: "Wyjaśnij symbolikę zakończenia dramatu.",
+    suggested_answer:
+      "Zakończenie symbolizuje zwycięstwo chaosu i prymitywizmu nad porządkiem i kulturą, co wskazuje na kryzys wartości.",
+  } as OpenTestQuestion,
+  {
+    question_type: "Otwarty",
+    difficulty: "Łatwy",
+    epoch_id: 10,
+    book_id: 31,
+    question: "Kto ginie w finale utworu?",
+    suggested_answer: "Artur.",
+  } as OpenTestQuestion,
+  {
+    question_type: "Otwarty",
+    difficulty: "Trudny",
+    epoch_id: 10,
+    book_id: 31,
+    question: "Jak można interpretować Edka jako symbol społeczny?",
+    suggested_answer:
+      "Edek symbolizuje społeczeństwo masowe, które przejmuje władzę, odrzucając wartości kultury i intelektu.",
+  } as OpenTestQuestion,
+
+  {
+    question_type: "Matura",
+    difficulty: "Średni",
+    epoch_id: 10,
+    book_id: 31,
+    question:
+      "Wyjaśnij, na czym polega konflikt wartości w dramacie i jakie są jego konsekwencje.",
+    suggested_answer:
+      "Konflikt polega na starciu kultury i tradycji reprezentowanej przez Artura z prymitywizmem Edka. Kończy się zwycięstwem siły nad wartościami.",
+    max_points: 4,
+    pointsExplanations: [
+      "1 pkt – wskazanie konfliktu wartości",
+      "1 pkt – omówienie postaci Artura",
+      "1 pkt – omówienie postaci Edka",
+      "1 pkt – wskazanie konsekwencji konfliktu",
+    ],
+  } as MaturaTestQuestion,
+  {
+    question_type: "Matura",
+    difficulty: "Trudny",
+    epoch_id: 10,
+    book_id: 31,
+    question: "Na podstawie całego utworu omów znaczenie finału dramatu.",
+    suggested_answer:
+      "Finał ukazuje triumf Edka jako symbol zwycięstwa brutalności nad kulturą i intelektem.",
+    max_points: 5,
+    pointsExplanations: [
+      "1 pkt – opis finału",
+      "1 pkt – interpretacja postaci Edka",
+      "1 pkt – odniesienie do konfliktu",
+      "1 pkt – wskazanie symboliki",
+      "1 pkt – poprawność językowa",
+    ],
+  } as MaturaTestQuestion,
+  {
+    question_type: "Matura",
+    difficulty: "Średni",
+    epoch_id: 10,
+    book_id: 31,
+    question:
+      "Czy można uznać Edka za symbol współczesnego społeczeństwa? Uzasadnij.",
+    suggested_answer:
+      "Tak, ponieważ reprezentuje masowość, brak refleksji i dominację siły nad wartościami.",
+    max_points: 4,
+    pointsExplanations: [
+      "1 pkt – zajęcie stanowiska",
+      "1 pkt – argument 1",
+      "1 pkt – argument 2",
+      "1 pkt – poprawność argumentacji",
+    ],
+  } as MaturaTestQuestion,
+  {
+    question_type: "Matura",
+    difficulty: "Trudny",
+    epoch_id: 10,
+    book_id: 31,
+    question: "Omów rolę inteligencji w dramacie i przyczyny jej porażki.",
+    suggested_answer:
+      "Inteligencja reprezentowana przez Artura przegrywa, ponieważ nie potrafi skutecznie działać i przeciwstawić się brutalnej sile.",
+    max_points: 5,
+    pointsExplanations: [
+      "1 pkt – wskazanie roli inteligencji",
+      "1 pkt – charakterystyka Artura",
+      "1 pkt – przyczyny porażki",
+      "1 pkt – odniesienie do Edka",
+      "1 pkt – spójność wypowiedzi",
+    ],
+  } as MaturaTestQuestion,
+  {
+    question_type: "Zamknięty",
+    difficulty: "Łatwy",
+    epoch_id: 10,
+    book_id: 32,
+    question:
+      "Kim jest tytułowy bohater opowiadania „Profesor Andrews w Warszawie” autorstwa ?",
+    answers: [
+      { value: "Polskim studentem", isCorrect: false },
+      { value: "Angielskim profesorem", isCorrect: true },
+      { value: "Rosyjskim dyplomatą", isCorrect: false },
+      { value: "Amerykańskim dziennikarzem", isCorrect: false },
+    ],
+  } as ClosedTestQuestion,
+  {
+    question_type: "Zamknięty",
+    difficulty: "Łatwy",
+    epoch_id: 10,
+    book_id: 32,
+    question: "W jakim mieście rozgrywa się akcja utworu?",
+    answers: [
+      { value: "Kraków", isCorrect: false },
+      { value: "Warszawa", isCorrect: true },
+      { value: "Gdańsk", isCorrect: false },
+      { value: "Poznań", isCorrect: false },
+    ],
+  } as ClosedTestQuestion,
+  {
+    question_type: "Zamknięty",
+    difficulty: "Średni",
+    epoch_id: 10,
+    book_id: 32,
+    question: "Jakie wydarzenie historyczne stanowi tło opowiadania?",
+    answers: [
+      { value: "Powstanie warszawskie", isCorrect: false },
+      { value: "Stan wojenny w Polsce", isCorrect: true },
+      { value: "II wojna światowa", isCorrect: false },
+      { value: "Transformacja ustrojowa 1989 roku", isCorrect: false },
+    ],
+  } as ClosedTestQuestion,
+  {
+    question_type: "Zamknięty",
+    difficulty: "Średni",
+    epoch_id: 10,
+    book_id: 32,
+    question:
+      "Dlaczego profesor Andrews ma trudności ze zrozumieniem sytuacji w Polsce?",
+    answers: [
+      { value: "Nie zna języka polskiego", isCorrect: false },
+      {
+        value: "Nie zna kontekstu politycznego i społecznego",
+        isCorrect: true,
+      },
+      { value: "Jest chory", isCorrect: false },
+      { value: "Nie interesuje się światem", isCorrect: false },
+    ],
+  } as ClosedTestQuestion,
+  {
+    question_type: "Zamknięty",
+    difficulty: "Trudny",
+    epoch_id: 10,
+    book_id: 32,
+    question: "Jaką funkcję pełni postać profesora Andrewsa w utworze?",
+    answers: [
+      { value: "Narratora wszechwiedzącego", isCorrect: false },
+      { value: "Obserwatora z zewnątrz", isCorrect: true },
+      { value: "Przywódcy protestu", isCorrect: false },
+      { value: "Reprezentanta władzy", isCorrect: false },
+    ],
+  } as ClosedTestQuestion,
+  {
+    question_type: "Zamknięty",
+    difficulty: "Średni",
+    epoch_id: 10,
+    book_id: 32,
+    question: "Co symbolizuje zagubienie profesora w Warszawie?",
+    answers: [
+      { value: "Brak orientacji w przestrzeni", isCorrect: false },
+      { value: "Chaos polityczny i społeczny", isCorrect: true },
+      { value: "Problemy zdrowotne", isCorrect: false },
+      { value: "Brak znajomości kultury", isCorrect: false },
+    ],
+  } as ClosedTestQuestion,
+  {
+    question_type: "Zamknięty",
+    difficulty: "Trudny",
+    epoch_id: 10,
+    book_id: 32,
+    question:
+      "Jak można interpretować zachowanie mieszkańców Warszawy w oczach profesora?",
+    answers: [
+      { value: "Jako obojętność", isCorrect: false },
+      { value: "Jako niezrozumiały chaos", isCorrect: true },
+      { value: "Jako agresję wobec obcych", isCorrect: false },
+      { value: "Jako przejaw gościnności", isCorrect: false },
+    ],
+  } as ClosedTestQuestion,
+  {
+    question_type: "Zamknięty",
+    difficulty: "Łatwy",
+    epoch_id: 10,
+    book_id: 32,
+    question: "Jak profesor Andrews reaguje na sytuację w Polsce?",
+    answers: [
+      { value: "Z pełnym zrozumieniem", isCorrect: false },
+      { value: "Z dezorientacją", isCorrect: true },
+      { value: "Z entuzjazmem", isCorrect: false },
+      { value: "Z obojętnością", isCorrect: false },
+    ],
+  } as ClosedTestQuestion,
+  {
+    question_type: "Zamknięty",
+    difficulty: "Średni",
+    epoch_id: 10,
+    book_id: 32,
+    question: "Jaką rolę pełni język w utworze?",
+    answers: [
+      { value: "Jest głównym środkiem humoru", isCorrect: false },
+      { value: "Podkreśla barierę komunikacyjną", isCorrect: true },
+      { value: "Nie ma większego znaczenia", isCorrect: false },
+      { value: "Służy jedynie opisowi miejsca", isCorrect: false },
+    ],
+  } as ClosedTestQuestion,
+  {
+    question_type: "Otwarty",
+    difficulty: "Łatwy",
+    epoch_id: 10,
+    book_id: 32,
+    question: "Wyjaśnij, kim jest profesor Andrews.",
+    suggested_answer:
+      "Profesor Andrews to angielski uczony, który przyjeżdża do Warszawy i staje się świadkiem wydarzeń związanych ze stanem wojennym.",
+  } as OpenTestQuestion,
+  {
+    question_type: "Otwarty",
+    difficulty: "Średni",
+    epoch_id: 10,
+    book_id: 32,
+    question: "Dlaczego profesor nie rozumie sytuacji w Polsce?",
+    suggested_answer:
+      "Nie zna realiów politycznych i społecznych Polski oraz nie rozumie języka i kontekstu wydarzeń.",
+  } as OpenTestQuestion,
+  {
+    question_type: "Otwarty",
+    difficulty: "Średni",
+    epoch_id: 10,
+    book_id: 32,
+    question: "Jakie znaczenie ma motyw obcości w utworze?",
+    suggested_answer:
+      "Motyw obcości ukazuje dystans między bohaterem a rzeczywistością oraz trudność zrozumienia innej kultury i sytuacji politycznej.",
+  } as OpenTestQuestion,
+  {
+    question_type: "Otwarty",
+    difficulty: "Trudny",
+    epoch_id: 10,
+    book_id: 32,
+    question: "Zinterpretuj symbolikę zagubienia bohatera.",
+    suggested_answer:
+      "Zagubienie symbolizuje chaos rzeczywistości oraz brak orientacji jednostki w skomplikowanej sytuacji politycznej.",
+  } as OpenTestQuestion,
+  {
+    question_type: "Otwarty",
+    difficulty: "Łatwy",
+    epoch_id: 10,
+    book_id: 32,
+    question: "Jakie wydarzenie historyczne stanowi tło opowiadania?",
+    suggested_answer: "Stan wojenny w Polsce.",
+  } as OpenTestQuestion,
+  {
+    question_type: "Otwarty",
+    difficulty: "Średni",
+    epoch_id: 10,
+    book_id: 32,
+    question: "Jak autor ukazuje Polskę oczami cudzoziemca?",
+    suggested_answer:
+      "Jako kraj chaotyczny, niezrozumiały i pełen napięć społecznych.",
+  } as OpenTestQuestion,
+  {
+    question_type: "Otwarty",
+    difficulty: "Trudny",
+    epoch_id: 10,
+    book_id: 32,
+    question: "Wyjaśnij znaczenie tytułu utworu.",
+    suggested_answer:
+      "Tytuł podkreśla perspektywę obcego obserwatora oraz konfrontację jednostki z nieznaną rzeczywistością.",
+  } as OpenTestQuestion,
+  {
+    question_type: "Matura",
+    difficulty: "Średni",
+    epoch_id: 10,
+    book_id: 32,
+    question:
+      "Na podstawie całego utworu wyjaśnij, jak przedstawiona została rzeczywistość stanu wojennego.",
+    suggested_answer:
+      "Rzeczywistość stanu wojennego ukazana jest jako chaotyczna, niezrozumiała i pełna napięcia, szczególnie z perspektywy cudzoziemca.",
+    max_points: 3,
+    pointsExplanations: [
+      "1 pkt – wskazanie chaosu rzeczywistości",
+      "1 pkt – odniesienie do perspektywy cudzoziemca",
+      "1 pkt – poprawność językowa",
+    ],
+  } as MaturaTestQuestion,
+  {
+    question_type: "Matura",
+    difficulty: "Trudny",
+    epoch_id: 10,
+    book_id: 32,
+    question: "Omów funkcję bohatera-obserwatora w utworze.",
+    suggested_answer:
+      "Bohater-obserwator pozwala ukazać rzeczywistość z dystansu oraz podkreśla jej absurd i niezrozumiałość.",
+    max_points: 4,
+    pointsExplanations: [
+      "1 pkt – wskazanie funkcji obserwatora",
+      "1 pkt – odniesienie do dystansu",
+      "1 pkt – interpretacja znaczenia",
+      "1 pkt – poprawność językowa",
+    ],
+  } as MaturaTestQuestion,
+  {
+    question_type: "Matura",
+    difficulty: "Średni",
+    epoch_id: 10,
+    book_id: 32,
+    question:
+      "Czy można uznać profesora Andrewsa za reprezentanta zachodniego sposobu myślenia? Uzasadnij.",
+    suggested_answer:
+      "Tak, ponieważ kieruje się racjonalnym myśleniem i nie rozumie irracjonalności sytuacji politycznej w Polsce.",
+    max_points: 3,
+    pointsExplanations: [
+      "1 pkt – zajęcie stanowiska",
+      "1 pkt – uzasadnienie",
+      "1 pkt – poprawność językowa",
+    ],
+  } as MaturaTestQuestion,
+  {
+    question_type: "Matura",
+    difficulty: "Trudny",
+    epoch_id: 10,
+    book_id: 32,
+    question:
+      "Porównaj sposób przedstawienia rzeczywistości w utworze z innym znanym Ci tekstem kultury.",
+    suggested_answer:
+      "Uczeń powinien wskazać podobieństwa lub różnice w ukazaniu rzeczywistości, np. chaosu, absurdu lub niezrozumiałości świata.",
+    max_points: 5,
+    pointsExplanations: [
+      "1 pkt – wskazanie drugiego tekstu",
+      "2 pkt – analiza porównawcza",
+      "1 pkt – wnioski",
+      "1 pkt – poprawność językowa",
+    ],
+  } as MaturaTestQuestion,
+  {
+    question_type: "Zamknięty",
+    difficulty: "Łatwy",
+    epoch_id: 10,
+    book_id: 33,
+    question: "Kto jest autorem utworu „Miejsce”?",
+    answers: [
+      { value: "Olga Tokarczuk", isCorrect: false },
+      { value: "Andrzej Stasiuk", isCorrect: true },
+      { value: "Sławomir Mrożek", isCorrect: false },
+      { value: "Tadeusz Różewicz", isCorrect: false },
+    ],
+  } as ClosedTestQuestion,
+  {
+    question_type: "Zamknięty",
+    difficulty: "Łatwy",
+    epoch_id: 10,
+    book_id: 33,
+    question: "Gdzie znajduje się tytułowe miejsce w opowiadaniu?",
+    answers: [
+      { value: "W centrum dużego miasta", isCorrect: false },
+      { value: "Na opuszczonym cmentarzu", isCorrect: false },
+      { value: "W małej, zapomnianej wsi", isCorrect: true },
+      { value: "Na nadmorskiej plaży", isCorrect: false },
+    ],
+  } as ClosedTestQuestion,
+  {
+    question_type: "Zamknięty",
+    difficulty: "Średni",
+    epoch_id: 10,
+    book_id: 33,
+    question: "Jaką funkcję pełni przestrzeń w utworze „Miejsce”?",
+    answers: [
+      { value: "Jest tylko tłem wydarzeń", isCorrect: false },
+      { value: "Stanowi element symboliczny i metaforyczny", isCorrect: true },
+      { value: "Służy wyłącznie opisowi przyrody", isCorrect: false },
+      { value: "Nie ma żadnego znaczenia", isCorrect: false },
+    ],
+  } as ClosedTestQuestion,
+  {
+    question_type: "Zamknięty",
+    difficulty: "Średni",
+    epoch_id: 10,
+    book_id: 33,
+    question: "Jak można określić nastrój utworu?",
+    answers: [
+      { value: "Dynamiczny i radosny", isCorrect: false },
+      { value: "Refleksyjny i nostalgiczny", isCorrect: true },
+      { value: "Komediowy", isCorrect: false },
+      { value: "Sensacyjny", isCorrect: false },
+    ],
+  } as ClosedTestQuestion,
+  {
+    question_type: "Zamknięty",
+    difficulty: "Trudny",
+    epoch_id: 10,
+    book_id: 33,
+    question: "Jaką rolę odgrywa pamięć w utworze?",
+    answers: [
+      { value: "Nie ma żadnego znaczenia", isCorrect: false },
+      { value: "Jest narzędziem manipulacji", isCorrect: false },
+      {
+        value: "Stanowi sposób zachowania tożsamości miejsca",
+        isCorrect: true,
+      },
+      { value: "Jest przedstawiona negatywnie", isCorrect: false },
+    ],
+  } as ClosedTestQuestion,
+  {
+    question_type: "Zamknięty",
+    difficulty: "Średni",
+    epoch_id: 10,
+    book_id: 33,
+    question: "Narrator w utworze jest:",
+    answers: [
+      { value: "wszechwiedzący i zdystansowany", isCorrect: false },
+      { value: "pierwszoosobowy i subiektywny", isCorrect: true },
+      { value: "trzecioosobowy i obiektywny", isCorrect: false },
+      { value: "niewiarygodny narrator dziecka", isCorrect: false },
+    ],
+  } as ClosedTestQuestion,
+  {
+    question_type: "Zamknięty",
+    difficulty: "Łatwy",
+    epoch_id: 10,
+    book_id: 33,
+    question: "Do jakiego gatunku należy „Miejsce”?",
+    answers: [
+      { value: "Powieść historyczna", isCorrect: false },
+      { value: "Opowiadanie", isCorrect: true },
+      { value: "Dramat", isCorrect: false },
+      { value: "Reportaż", isCorrect: false },
+    ],
+  } as ClosedTestQuestion,
+  {
+    question_type: "Zamknięty",
+    difficulty: "Trudny",
+    epoch_id: 10,
+    book_id: 33,
+    question: "Jak można interpretować tytuł „Miejsce”?",
+    answers: [
+      { value: "Jako odniesienie wyłącznie do geografii", isCorrect: false },
+      { value: "Jako symbol pamięci i tożsamości", isCorrect: true },
+      { value: "Jako nazwę konkretnej miejscowości", isCorrect: false },
+      { value: "Jako element fabularny bez znaczenia", isCorrect: false },
+    ],
+  } as ClosedTestQuestion,
+  {
+    question_type: "Otwarty",
+    difficulty: "Łatwy",
+    epoch_id: 10,
+    book_id: 33,
+    question: "Wyjaśnij, czym jest tytułowe „miejsce” w utworze.",
+    suggested_answer:
+      "Tytułowe miejsce to opuszczona przestrzeń wiejska, która ma znaczenie symboliczne jako nośnik pamięci i historii.",
+  } as OpenTestQuestion,
+  {
+    question_type: "Otwarty",
+    difficulty: "Średni",
+    epoch_id: 10,
+    book_id: 33,
+    question: "Opisz nastrój panujący w utworze.",
+    suggested_answer:
+      "Nastrój utworu jest refleksyjny, melancholijny i nostalgiczny, związany z przemijaniem i zapomnieniem.",
+  } as OpenTestQuestion,
+  {
+    question_type: "Otwarty",
+    difficulty: "Średni",
+    epoch_id: 10,
+    book_id: 33,
+    question: "Jaką rolę odgrywa natura w utworze?",
+    suggested_answer:
+      "Natura ukazuje proces przemijania, zarastania i odzyskiwania przestrzeni przez przyrodę, co symbolizuje zapomnienie.",
+  } as OpenTestQuestion,
+  {
+    question_type: "Otwarty",
+    difficulty: "Trudny",
+    epoch_id: 10,
+    book_id: 33,
+    question: "Wyjaśnij znaczenie pamięci w kontekście utworu.",
+    suggested_answer:
+      "Pamięć pozwala zachować tożsamość miejsca i jego historię, mimo fizycznego zaniku przestrzeni.",
+  } as OpenTestQuestion,
+  {
+    question_type: "Otwarty",
+    difficulty: "Średni",
+    epoch_id: 10,
+    book_id: 33,
+    question: "Jak narrator odnosi się do opisywanego miejsca?",
+    suggested_answer:
+      "Narrator odnosi się do miejsca z emocjonalnym zaangażowaniem i nostalgią, podkreślając jego znaczenie.",
+  } as OpenTestQuestion,
+  {
+    question_type: "Otwarty",
+    difficulty: "Trudny",
+    epoch_id: 10,
+    book_id: 33,
+    question: "Zinterpretuj symbolikę opuszczenia w utworze.",
+    suggested_answer:
+      "Opuszczenie symbolizuje przemijanie, utratę i zanikanie pamięci o dawnych społecznościach.",
+  } as OpenTestQuestion,
+  {
+    question_type: "Matura",
+    difficulty: "Średni",
+    epoch_id: 10,
+    book_id: 33,
+    question:
+      "Na podstawie znajomości całego utworu wyjaśnij, jak autor ukazuje relację człowieka z przestrzenią.",
+    suggested_answer:
+      "Autor ukazuje relację jako głęboko emocjonalną i symboliczną – przestrzeń wpływa na tożsamość człowieka, a jej utrata oznacza utratę pamięci.",
+    max_points: 3,
+    pointsExplanations: [
+      "1 pkt – wskazanie relacji człowieka z przestrzenią",
+      "1 pkt – omówienie znaczenia emocjonalnego",
+      "1 pkt – odniesienie do symboliki utworu",
+    ],
+  } as MaturaTestQuestion,
+  {
+    question_type: "Matura",
+    difficulty: "Trudny",
+    epoch_id: 10,
+    book_id: 33,
+    question:
+      "Zinterpretuj znaczenie przemijania w utworze, odwołując się do konkretnych elementów tekstu.",
+    suggested_answer:
+      "Przemijanie ukazane jest poprzez zanik miejsca, zarastanie przez naturę i brak ludzi, co symbolizuje utratę historii.",
+    max_points: 4,
+    pointsExplanations: [
+      "1 pkt – wskazanie motywu przemijania",
+      "1 pkt – przykład z tekstu",
+      "1 pkt – interpretacja symboliki",
+      "1 pkt – spójność wypowiedzi",
+    ],
+  } as MaturaTestQuestion,
+  {
+    question_type: "Matura",
+    difficulty: "Średni",
+    epoch_id: 10,
+    book_id: 33,
+    question:
+      "Czy „Miejsce” można uznać za utwór o pamięci zbiorowej? Uzasadnij odpowiedź.",
+    suggested_answer:
+      "Tak, ponieważ przedstawia przestrzeń jako nośnik historii i wspólnej pamięci społeczności.",
+    max_points: 3,
+    pointsExplanations: [
+      "1 pkt – zajęcie stanowiska",
+      "1 pkt – argument",
+      "1 pkt – odniesienie do utworu",
+    ],
+  } as MaturaTestQuestion,
+  {
+    question_type: "Zamknięty",
+    difficulty: "Łatwy",
+    epoch_id: 10,
+    book_id: 34,
+    question: "Kto jest autorem książki „Podróże z Herodotem”?",
+    answers: [
+      { value: "Ryszard Kapuściński", isCorrect: true },
+      { value: "Czesław Miłosz", isCorrect: false },
+      { value: "Zbigniew Herbert", isCorrect: false },
+      { value: "Gustaw Herling-Grudziński", isCorrect: false },
+    ],
+  } as ClosedTestQuestion,
+  {
+    question_type: "Zamknięty",
+    difficulty: "Łatwy",
+    epoch_id: 10,
+    book_id: 34,
+    question: "Jaką funkcję pełni Herodot w książce Kapuścińskiego?",
+    answers: [
+      { value: "Jest głównym bohaterem fikcyjnym", isCorrect: false },
+      {
+        value: "Jest przewodnikiem duchowym i intelektualnym autora",
+        isCorrect: true,
+      },
+      { value: "Jest przeciwnikiem autora", isCorrect: false },
+      { value: "Jest postacią epizodyczną", isCorrect: false },
+    ],
+  } as ClosedTestQuestion,
+  {
+    question_type: "Zamknięty",
+    difficulty: "Średni",
+    epoch_id: 10,
+    book_id: 34,
+    question: "Czym dla Kapuścińskiego jest podróż?",
+    answers: [
+      { value: "Wyłącznie przemieszczaniem się", isCorrect: false },
+      { value: "Sposobem zarabiania pieniędzy", isCorrect: false },
+      { value: "Formą poznawania świata i ludzi", isCorrect: true },
+      { value: "Obowiązkiem zawodowym bez znaczenia", isCorrect: false },
+    ],
+  } as ClosedTestQuestion,
+  {
+    question_type: "Zamknięty",
+    difficulty: "Średni",
+    epoch_id: 10,
+    book_id: 34,
+    question: "Jaką rolę pełni książka Herodota w życiu Kapuścińskiego?",
+    answers: [
+      { value: "Jest nieistotnym dodatkiem", isCorrect: false },
+      { value: "Stanowi inspirację i punkt odniesienia", isCorrect: true },
+      { value: "Jest źródłem konfliktów", isCorrect: false },
+      { value: "Jest jedynie ciekawostką historyczną", isCorrect: false },
+    ],
+  } as ClosedTestQuestion,
+  {
+    question_type: "Zamknięty",
+    difficulty: "Trudny",
+    epoch_id: 10,
+    book_id: 34,
+    question: "Jaką cechę reportażu reprezentuje „Podróże z Herodotem”?",
+    answers: [
+      { value: "Całkowitą fikcyjność", isCorrect: false },
+      { value: "Obiektywny, naukowy styl bez emocji", isCorrect: false },
+      { value: "Subiektywność i refleksyjność narracji", isCorrect: true },
+      { value: "Brak odniesień do rzeczywistości", isCorrect: false },
+    ],
+  } as ClosedTestQuestion,
+  {
+    question_type: "Zamknięty",
+    difficulty: "Średni",
+    epoch_id: 10,
+    book_id: 34,
+    question: "W jakim zawodzie pracował Kapuściński?",
+    answers: [
+      { value: "Lekarz", isCorrect: false },
+      { value: "Reporter", isCorrect: true },
+      { value: "Nauczyciel", isCorrect: false },
+      { value: "Prawnik", isCorrect: false },
+    ],
+  } as ClosedTestQuestion,
+  {
+    question_type: "Zamknięty",
+    difficulty: "Trudny",
+    epoch_id: 10,
+    book_id: 34,
+    question: "Jak Kapuściński postrzega różnice kulturowe?",
+    answers: [
+      { value: "Jako przeszkodę nie do pokonania", isCorrect: false },
+      { value: "Jako zagrożenie", isCorrect: false },
+      { value: "Jako źródło wiedzy i refleksji", isCorrect: true },
+      { value: "Jako coś nieistotnego", isCorrect: false },
+    ],
+  } as ClosedTestQuestion,
+  {
+    question_type: "Zamknięty",
+    difficulty: "Łatwy",
+    epoch_id: 10,
+    book_id: 34,
+    question: "Do jakiego gatunku literackiego należy utwór?",
+    answers: [
+      { value: "Powieść historyczna", isCorrect: false },
+      { value: "Reportaż literacki", isCorrect: true },
+      { value: "Dramat", isCorrect: false },
+      { value: "Liryka", isCorrect: false },
+    ],
+  } as ClosedTestQuestion,
+  {
+    question_type: "Zamknięty",
+    difficulty: "Średni",
+    epoch_id: 10,
+    book_id: 34,
+    question: "Jaką funkcję pełni refleksja w książce?",
+    answers: [
+      { value: "Jest zbędna", isCorrect: false },
+      { value: "Stanowi element pogłębiający przekaz", isCorrect: true },
+      { value: "Zastępuje fakty", isCorrect: false },
+      { value: "Jest tylko ozdobą stylistyczną", isCorrect: false },
+    ],
+  } as ClosedTestQuestion,
+
+  {
+    question_type: "Otwarty",
+    difficulty: "Łatwy",
+    epoch_id: 10,
+    book_id: 34,
+    question: "Kim był Herodot?",
+    suggested_answer:
+      "Herodot był starożytnym greckim historykiem, uznawanym za ojca historiografii.",
+  } as OpenTestQuestion,
+  {
+    question_type: "Otwarty",
+    difficulty: "Średni",
+    epoch_id: 10,
+    book_id: 34,
+    question: "Wyjaśnij, dlaczego Kapuściński utożsamia się z Herodotem.",
+    suggested_answer:
+      "Kapuściński utożsamia się z Herodotem, ponieważ obaj podróżują, poznają różne kultury i próbują zrozumieć świat poprzez obserwację i opisywanie rzeczywistości.",
+  } as OpenTestQuestion,
+  {
+    question_type: "Otwarty",
+    difficulty: "Średni",
+    epoch_id: 10,
+    book_id: 34,
+    question:
+      "Jaką rolę pełni doświadczenie w pracy reportera według Kapuścińskiego?",
+    suggested_answer:
+      "Doświadczenie pozwala reporterowi lepiej rozumieć ludzi i wydarzenia oraz tworzyć bardziej wiarygodne i pogłębione relacje.",
+  } as OpenTestQuestion,
+  {
+    question_type: "Otwarty",
+    difficulty: "Trudny",
+    epoch_id: 10,
+    book_id: 34,
+    question: "Omów znaczenie spotkania z Innym w książce.",
+    suggested_answer:
+      "Spotkanie z Innym jest kluczowe, ponieważ pozwala na poznanie odmiennych kultur, przełamywanie stereotypów i budowanie zrozumienia między ludźmi.",
+  } as OpenTestQuestion,
+  {
+    question_type: "Otwarty",
+    difficulty: "Średni",
+    epoch_id: 10,
+    book_id: 34,
+    question: "Dlaczego podróż jest ważnym motywem w utworze?",
+    suggested_answer:
+      "Podróż symbolizuje poznanie świata, zdobywanie doświadczeń i rozwój osobisty autora.",
+  } as OpenTestQuestion,
+  {
+    question_type: "Otwarty",
+    difficulty: "Trudny",
+    epoch_id: 10,
+    book_id: 34,
+    question:
+      "Jak Kapuściński przedstawia rolę historii w zrozumieniu współczesności?",
+    suggested_answer:
+      "Autor pokazuje, że znajomość historii pomaga lepiej rozumieć współczesne wydarzenia i mechanizmy rządzące światem.",
+  } as OpenTestQuestion,
+  {
+    question_type: "Otwarty",
+    difficulty: "Łatwy",
+    epoch_id: 10,
+    book_id: 34,
+    question: "Jakie emocje towarzyszą autorowi podczas podróży?",
+    suggested_answer:
+      "Autor odczuwa ciekawość, niepewność, fascynację oraz czasem lęk.",
+  } as OpenTestQuestion,
+
+  {
+    question_type: "Matura",
+    difficulty: "Średni",
+    epoch_id: 10,
+    book_id: 34,
+    question:
+      "Wyjaśnij, na czym polega specyfika reportażu literackiego na przykładzie „Podróży z Herodotem”. Odwołaj się do utworu.",
+    suggested_answer:
+      "Reportaż literacki łączy fakty z refleksją autora. Kapuściński przedstawia rzeczywiste wydarzenia, ale jednocześnie interpretuje je i wzbogaca o osobiste przemyślenia.",
+    max_points: 3,
+    pointsExplanations: [
+      "1 pkt – wskazanie cech reportażu",
+      "1 pkt – odniesienie do utworu",
+      "1 pkt – poprawność i spójność wypowiedzi",
+    ],
+  } as MaturaTestQuestion,
+  {
+    question_type: "Matura",
+    difficulty: "Trudny",
+    epoch_id: 10,
+    book_id: 34,
+    question:
+      "Omów znaczenie podróży jako sposobu poznawania świata. Odwołaj się do „Podróży z Herodotem”.",
+    suggested_answer:
+      "Podróż pozwala zdobywać wiedzę o innych kulturach i ludziach. Kapuściński pokazuje, że bezpośrednie doświadczenie jest kluczowe dla zrozumienia świata.",
+    max_points: 4,
+    pointsExplanations: [
+      "1 pkt – sformułowanie tezy",
+      "1 pkt – przykład z utworu",
+      "1 pkt – rozwinięcie argumentu",
+      "1 pkt – poprawność językowa",
+    ],
+  } as MaturaTestQuestion,
+  {
+    question_type: "Matura",
+    difficulty: "Średni",
+    epoch_id: 10,
+    book_id: 34,
+    question: "Scharakteryzuj relację między Kapuścińskim a Herodotem.",
+    suggested_answer:
+      "Relacja ma charakter intelektualny – Herodot jest dla Kapuścińskiego mistrzem i inspiracją.",
+    max_points: 3,
+    pointsExplanations: [
+      "1 pkt – wskazanie charakteru relacji",
+      "1 pkt – uzasadnienie",
+      "1 pkt – odniesienie do tekstu",
+    ],
+  } as MaturaTestQuestion,
+  {
+    question_type: "Matura",
+    difficulty: "Trudny",
+    epoch_id: 10,
+    book_id: 34,
+    question:
+      "Czy można uznać Kapuścińskiego za współczesnego Herodota? Uzasadnij swoją opinię.",
+    suggested_answer:
+      "Tak, ponieważ podobnie jak Herodot podróżuje, opisuje świat i stara się go zrozumieć, łącząc obserwację z refleksją.",
+    max_points: 4,
+    pointsExplanations: [
+      "1 pkt – zajęcie stanowiska",
+      "1 pkt – argument",
+      "1 pkt – odniesienie do utworu",
+      "1 pkt – poprawność wypowiedzi",
+    ],
+  } as MaturaTestQuestion,
+];

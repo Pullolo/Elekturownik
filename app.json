@@ -2,7 +2,7 @@
   "expo": {
     "name": "Elekturownik",
     "slug": "elekturownik",
-    "version": "3.0.0",
+    "version": "3.1.0",
     "orientation": "portrait",
     "icon": "./src/assets/images/icon.png",
     "scheme": "elekturownik",
@@ -51,7 +51,7 @@
       "reactCompiler": true
     },
     "extra": {
-      "otaVersion": "10",
+      "otaVersion": "0",
       "router": {},
       "eas": {
         "projectId": "72288663-0199-4fe1-8fe8-a2e2cd1a2d38"

@@ -10,7 +10,7 @@ import {
 } from "@/src/data/tests/types";
 import { useBook } from "@/src/hooks/useBooks";
 import useColors from "@/src/hooks/useColors";
-import { cn } from "@/src/lib/utils";
+import { clamp, cn } from "@/src/lib/utils";
 import { router, useLocalSearchParams } from "expo-router";
 import {
   AlertCircle,
@@ -134,7 +134,9 @@ export default function Test() {
       >
         {/* ── Header ── */}
         <View className="w-full flex flex-row items-center justify-between pb-4">
-          <BackButton text={`Test${book ? ` - ${book.title}` : ""}`} />
+          <BackButton
+            text={`Test${book ? ` - ${clamp(book.title, 14)}` : ""}`}
+          />
           <Text className="text-foreground/40 font-psemibold text-xs">
             {currentIndex + 1} / {test.length}
           </Text>

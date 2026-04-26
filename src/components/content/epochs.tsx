@@ -5,13 +5,18 @@ import { EpochStudy } from "@/src/data/types";
 import { useTabBar } from "@/src/hooks/TabBarContext";
 import { useDebounce } from "@/src/hooks/useDebounce";
 import { pluralize } from "@/src/lib/utils";
-import { useCallback, useMemo, useState } from "react";
+import { useCallback, useMemo } from "react";
 import { FlatList, Text, View } from "react-native";
 
-export default function Epochs() {
+export default function Epochs({
+  query,
+  setQuery,
+}: {
+  query: string;
+  setQuery: (v: string) => void;
+}) {
   const { tabBarHeight } = useTabBar();
 
-  const [query, setQuery] = useState("");
   const debouncedQuery = useDebounce(query, 500);
 
   const filteredEpochs = useMemo(() => {

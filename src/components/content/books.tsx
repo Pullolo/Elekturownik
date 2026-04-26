@@ -33,11 +33,16 @@ const LEARNED_FILTERS: LearnedFilter[] = [
   "Nienauczone",
 ];
 
-export default function Books() {
+export default function Books({
+  query,
+  setQuery,
+}: {
+  query: string;
+  setQuery: (v: string) => void;
+}) {
   const { tabBarHeight } = useTabBar();
   const { isBookLearned } = useLearnedItemsContext();
 
-  const [query, setQuery] = useState("");
   const debouncedQuery = useDebounce(query, 500);
   const [epochFilter, setEpochFilter] = useState<EpochFilter>("Wszystkie");
   const [learnedFilter, setLearnedFilter] =

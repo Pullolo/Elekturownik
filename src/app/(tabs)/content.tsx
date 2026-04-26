@@ -17,6 +17,10 @@ const TABS = [
 ];
 
 export default function Content() {
+  const [questionsQuery, setQuestionsQuery] = useState("");
+  const [booksQuery, setBooksQuery] = useState("");
+  const [epochsQuery, setEpochsQuery] = useState("");
+
   const { tab } = useLocalSearchParams();
   const [selectedTab, setSelectedTab] = useState<Tab>(
     tab ? (tab as Tab) : "questions",
@@ -44,9 +48,15 @@ export default function Content() {
         onChange={setSelectedTab}
       />
 
-      {selectedTab === "books" && <Books />}
-      {selectedTab === "epochs" && <Epochs />}
-      {selectedTab === "questions" && <Questions />}
+      {selectedTab === "books" && (
+        <Books query={booksQuery} setQuery={setBooksQuery} />
+      )}
+      {selectedTab === "epochs" && (
+        <Epochs query={epochsQuery} setQuery={setEpochsQuery} />
+      )}
+      {selectedTab === "questions" && (
+        <Questions query={questionsQuery} setQuery={setQuestionsQuery} />
+      )}
     </ScreenWrapper>
   );
 }

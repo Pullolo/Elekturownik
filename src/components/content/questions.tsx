@@ -17,11 +17,16 @@ const LEARNED_FILTERS: LearnedFilter[] = [
   "Nienauczone",
 ];
 
-export default function Questions() {
+export default function Questions({
+  query,
+  setQuery,
+}: {
+  query: string;
+  setQuery: (v: string) => void;
+}) {
   const { tabBarHeight } = useTabBar();
   const { isQuestionLearned } = useLearnedItemsContext();
 
-  const [query, setQuery] = useState("");
   const debouncedQuery = useDebounce(query, 500);
   const [learnedFilter, setLearnedFilter] =
     useState<LearnedFilter>("Wszystkie");

@@ -1,7 +1,7 @@
 import useColors from "@/src/hooks/useColors";
 import { cn } from "@/src/lib/utils";
-import { Search } from "lucide-react-native";
-import { TextInput, View } from "react-native";
+import { Search, X } from "lucide-react-native";
+import { TextInput, TouchableOpacity, View } from "react-native";
 
 export default function SearchBar({
   query,
@@ -34,6 +34,11 @@ export default function SearchBar({
         returnKeyType="search"
         clearButtonMode="while-editing"
       />
+      {query && query.length > 0 && (
+        <TouchableOpacity activeOpacity={0.7} onPress={() => onQueryChange("")}>
+          <X size={24} color={"#bfbfbf"} />
+        </TouchableOpacity>
+      )}
     </View>
   );
 }

@@ -8,6 +8,7 @@ import {
   OpenTestQuestion,
   Test as TestType,
 } from "@/src/data/tests/types";
+import { useBook } from "@/src/hooks/useBooks";
 import useColors from "@/src/hooks/useColors";
 import { cn } from "@/src/lib/utils";
 import { router, useLocalSearchParams } from "expo-router";
@@ -74,6 +75,7 @@ export default function Test() {
   }));
 
   const question = test[currentIndex] as BookTestQuestion;
+  const book = useBook(question.book_id);
 
   function goNext() {
     if (currentIndex < test.length - 1) {
@@ -132,7 +134,7 @@ export default function Test() {
       >
         {/* ── Header ── */}
         <View className="w-full flex flex-row items-center justify-between pb-4">
-          <BackButton text="Test" />
+          <BackButton text={`Test${book ? ` - ${book.title}` : ""}`} />
           <Text className="text-foreground/40 font-psemibold text-xs">
             {currentIndex + 1} / {test.length}
           </Text>

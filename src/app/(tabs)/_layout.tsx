@@ -1,6 +1,12 @@
 import TabBar from "@/src/components/navigation/TabBar";
 import { Tabs } from "expo-router";
-import { Calendar, Gift, Home, LibraryBig } from "lucide-react-native";
+import {
+  Calendar,
+  Gift,
+  Home,
+  LibraryBig,
+  NotebookPen,
+} from "lucide-react-native";
 import React from "react";
 
 export default function TabLayout() {
@@ -31,6 +37,14 @@ export default function TabLayout() {
         options={{
           tabBarIcon: ({ color }) => (
             <LibraryBig size={iconSize} color={color} />
+          ),
+        }}
+      />
+      <Tabs.Screen
+        name="tests"
+        options={{
+          tabBarIcon: ({ color }) => (
+            <NotebookPen size={iconSize} color={color} />
           ),
         }}
       />

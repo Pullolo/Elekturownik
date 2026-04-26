@@ -1,0 +1,647 @@
+import {
+  ClosedTestQuestion,
+  MaturaTestQuestion,
+  OpenTestQuestion,
+  TestQuestion,
+} from "./types";
+
+export const test_questions7: TestQuestion[] = [
+  {
+    question_type: "Zamknięty",
+    difficulty: "Łatwy",
+    epoch_id: 7,
+    book_id: 18,
+    question: "Kto jest autorem powieści „Lalka”?",
+    answers: [
+      { value: "Bolesław Prus", isCorrect: true },
+      { value: "Henryk Sienkiewicz", isCorrect: false },
+      { value: "Eliza Orzeszkowa", isCorrect: false },
+      { value: "Stefan Żeromski", isCorrect: false },
+    ],
+  } as ClosedTestQuestion,
+  {
+    question_type: "Zamknięty",
+    difficulty: "Łatwy",
+    epoch_id: 7,
+    book_id: 18,
+    question: "Jak nazywa się główny bohater „Lalki”?",
+    answers: [
+      { value: "Ignacy Rzecki", isCorrect: false },
+      { value: "Stanisław Wokulski", isCorrect: true },
+      { value: "Julian Ochocki", isCorrect: false },
+      { value: "Kazimierz Starski", isCorrect: false },
+    ],
+  } as ClosedTestQuestion,
+  {
+    question_type: "Zamknięty",
+    difficulty: "Średni",
+    epoch_id: 7,
+    book_id: 18,
+    question: "Jaką funkcję pełni Ignacy Rzecki w sklepie Wokulskiego?",
+    answers: [
+      { value: "Kasjera", isCorrect: false },
+      { value: "Subiekta", isCorrect: true },
+      { value: "Kierownika magazynu", isCorrect: false },
+      { value: "Właściciela", isCorrect: false },
+    ],
+  } as ClosedTestQuestion,
+  {
+    question_type: "Zamknięty",
+    difficulty: "Średni",
+    epoch_id: 7,
+    book_id: 18,
+    question: "W jakim mieście rozgrywa się większość akcji powieści?",
+    answers: [
+      { value: "Kraków", isCorrect: false },
+      { value: "Warszawa", isCorrect: true },
+      { value: "Paryż", isCorrect: false },
+      { value: "Wilno", isCorrect: false },
+    ],
+  } as ClosedTestQuestion,
+  {
+    question_type: "Zamknięty",
+    difficulty: "Trudny",
+    epoch_id: 7,
+    book_id: 18,
+    question: "Która postać reprezentuje ideały pracy organicznej?",
+    answers: [
+      { value: "Izabela Łęcka", isCorrect: false },
+      { value: "Ignacy Rzecki", isCorrect: false },
+      { value: "Stanisław Wokulski", isCorrect: true },
+      { value: "Kazimierz Starski", isCorrect: false },
+    ],
+  } as ClosedTestQuestion,
+  {
+    question_type: "Zamknięty",
+    difficulty: "Średni",
+    epoch_id: 7,
+    book_id: 18,
+    question: "Jak nazywa się pamiętnik prowadzony przez Rzeckiego?",
+    answers: [
+      { value: "Pamiętnik starego subiekta", isCorrect: true },
+      { value: "Dziennik kupca", isCorrect: false },
+      { value: "Notatki warszawskie", isCorrect: false },
+      { value: "Kronika sklepu", isCorrect: false },
+    ],
+  } as ClosedTestQuestion,
+  {
+    question_type: "Zamknięty",
+    difficulty: "Trudny",
+    epoch_id: 7,
+    book_id: 18,
+    question: "Kim był Wokulski przed rozpoczęciem działalności handlowej?",
+    answers: [
+      { value: "Lekarzem", isCorrect: false },
+      { value: "Uczonym i powstańcem", isCorrect: true },
+      { value: "Pisarzem", isCorrect: false },
+      { value: "Urzędnikiem państwowym", isCorrect: false },
+    ],
+  } as ClosedTestQuestion,
+  {
+    question_type: "Zamknięty",
+    difficulty: "Średni",
+    epoch_id: 7,
+    book_id: 18,
+    question: "Do jakiej warstwy społecznej należy Izabela Łęcka?",
+    answers: [
+      { value: "Mieszczaństwo", isCorrect: false },
+      { value: "Arystokracja", isCorrect: true },
+      { value: "Chłopstwo", isCorrect: false },
+      { value: "Inteligencja", isCorrect: false },
+    ],
+  } as ClosedTestQuestion,
+  {
+    question_type: "Otwarty",
+    difficulty: "Łatwy",
+    epoch_id: 7,
+    book_id: 18,
+    question: "Wyjaśnij, czym jest realizm jako kierunek literacki.",
+    suggested_answer:
+      "Realizm to kierunek literacki dążący do wiernego i obiektywnego przedstawienia rzeczywistości, z uwzględnieniem szczegółów życia codziennego i problemów społecznych.",
+  } as OpenTestQuestion,
+  {
+    question_type: "Otwarty",
+    difficulty: "Średni",
+    epoch_id: 7,
+    book_id: 18,
+    question: "Scharakteryzuj postać Ignacego Rzeckiego.",
+    suggested_answer:
+      "Ignacy Rzecki to wierny subiekt, romantyk i idealista, przywiązany do dawnych wartości, lojalny wobec Wokulskiego i nostalgicznie wspominający przeszłość.",
+  } as OpenTestQuestion,
+  {
+    question_type: "Otwarty",
+    difficulty: "Średni",
+    epoch_id: 7,
+    book_id: 18,
+    question: "Na czym polega konflikt wewnętrzny Wokulskiego?",
+    suggested_answer:
+      "Wokulski zmaga się z konfliktem między romantyczną miłością do Izabeli a pozytywistycznym podejściem do pracy i rozwoju społecznego.",
+  } as OpenTestQuestion,
+  {
+    question_type: "Otwarty",
+    difficulty: "Trudny",
+    epoch_id: 7,
+    book_id: 18,
+    question: "Wyjaśnij symbolikę tytułu powieści „Lalka”.",
+    suggested_answer:
+      "Tytuł symbolizuje zarówno przedmiot ze sklepu, jak i ludzi traktowanych jak marionetki oraz Izabelę Łęcką jako „lalkę” pozbawioną głębi uczuć.",
+  } as OpenTestQuestion,
+  {
+    question_type: "Otwarty",
+    difficulty: "Średni",
+    epoch_id: 7,
+    book_id: 18,
+    question: "Jakie idee pozytywizmu są obecne w „Lalce”?",
+    suggested_answer:
+      "W powieści obecne są idee pracy organicznej, pracy u podstaw, rozwoju nauki oraz asymilacji Żydów.",
+  } as OpenTestQuestion,
+  {
+    question_type: "Matura",
+    difficulty: "Średni",
+    epoch_id: 7,
+    book_id: 18,
+    question:
+      "Omów relacje między Wokulskim a Izabelą Łęcką. Odwołaj się do całego utworu.",
+    suggested_answer:
+      "Relacja opiera się na jednostronnej miłości Wokulskiego, który idealizuje Izabelę, podczas gdy ona traktuje go z wyższością i egoizmem.",
+    max_points: 4,
+    pointsExplanations: [
+      "1 pkt – wskazanie charakteru relacji",
+      "1 pkt – opis postawy Wokulskiego",
+      "1 pkt – opis postawy Izabeli",
+      "1 pkt – wnioski interpretacyjne",
+    ],
+  } as MaturaTestQuestion,
+  {
+    question_type: "Matura",
+    difficulty: "Trudny",
+    epoch_id: 7,
+    book_id: 18,
+    question: "Przedstaw obraz społeczeństwa polskiego w „Lalce”.",
+    suggested_answer:
+      "Powieść ukazuje różne warstwy społeczne: arystokrację, mieszczaństwo i biedotę, podkreślając ich konflikty i problemy.",
+    max_points: 5,
+    pointsExplanations: [
+      "1 pkt – wskazanie warstw społecznych",
+      "2 pkt – charakterystyka co najmniej dwóch warstw",
+      "1 pkt – wskazanie konfliktów",
+      "1 pkt – wniosek",
+    ],
+  } as MaturaTestQuestion,
+  {
+    question_type: "Matura",
+    difficulty: "Średni",
+    epoch_id: 7,
+    book_id: 18,
+    question:
+      "Na podstawie „Lalki” wyjaśnij, czy Wokulski jest bardziej romantykiem czy pozytywistą.",
+    suggested_answer:
+      "Wokulski łączy cechy romantyka i pozytywisty – działa racjonalnie, ale kieruje się uczuciami.",
+    max_points: 4,
+    pointsExplanations: [
+      "1 pkt – wskazanie cech romantycznych",
+      "1 pkt – wskazanie cech pozytywistycznych",
+      "1 pkt – przykłady z utworu",
+      "1 pkt – wniosek",
+    ],
+  } as MaturaTestQuestion,
+  {
+    question_type: "Zamknięty",
+    difficulty: "Łatwy",
+    epoch_id: 7,
+    book_id: 19,
+    question: "Kto jest głównym bohaterem „Potopu”?",
+    answers: [
+      { value: "Jan Skrzetuski", isCorrect: false },
+      { value: "Andrzej Kmicic", isCorrect: true },
+      { value: "Michał Wołodyjowski", isCorrect: false },
+      { value: "Jan Onufry Zagłoba", isCorrect: false },
+    ],
+  } as ClosedTestQuestion,
+  {
+    question_type: "Zamknięty",
+    difficulty: "Łatwy",
+    epoch_id: 7,
+    book_id: 19,
+    question: "Kim była Oleńka Billewiczówna?",
+    answers: [
+      { value: "Siostrą Kmicica", isCorrect: false },
+      { value: "Narzeczoną Kmicica", isCorrect: true },
+      { value: "Królową Polski", isCorrect: false },
+      { value: "Szwedzką szlachcianką", isCorrect: false },
+    ],
+  } as ClosedTestQuestion,
+  {
+    question_type: "Zamknięty",
+    difficulty: "Średni",
+    epoch_id: 7,
+    book_id: 19,
+    question: "Jakie nazwisko przyjął Kmicic, ukrywając swoją tożsamość?",
+    answers: [
+      { value: "Babinicz", isCorrect: true },
+      { value: "Wołodyjowski", isCorrect: false },
+      { value: "Skrzetuski", isCorrect: false },
+      { value: "Radziwiłł", isCorrect: false },
+    ],
+  } as ClosedTestQuestion,
+  {
+    question_type: "Zamknięty",
+    difficulty: "Średni",
+    epoch_id: 7,
+    book_id: 19,
+    question:
+      "Który magnat zdradził Rzeczpospolitą, przechodząc na stronę Szwedów?",
+    answers: [
+      { value: "Jan Kazimierz", isCorrect: false },
+      { value: "Bogusław Radziwiłł", isCorrect: false },
+      { value: "Janusz Radziwiłł", isCorrect: true },
+      { value: "Stefan Czarniecki", isCorrect: false },
+    ],
+  } as ClosedTestQuestion,
+  {
+    question_type: "Zamknięty",
+    difficulty: "Średni",
+    epoch_id: 7,
+    book_id: 19,
+    question: "Jaką rolę pełni klasztor na Jasnej Górze w „Potopie”?",
+    answers: [
+      { value: "Jest miejscem koronacji króla", isCorrect: false },
+      { value: "Stanowi symbol oporu narodowego", isCorrect: true },
+      { value: "Jest siedzibą Radziwiłłów", isCorrect: false },
+      { value: "Pełni funkcję więzienia", isCorrect: false },
+    ],
+  } as ClosedTestQuestion,
+  {
+    question_type: "Zamknięty",
+    difficulty: "Trudny",
+    epoch_id: 7,
+    book_id: 19,
+    question:
+      "Która postać reprezentuje wzorzec szlachcica-sarmaty o cechach komicznych?",
+    answers: [
+      { value: "Kmicic", isCorrect: false },
+      { value: "Zagłoba", isCorrect: true },
+      { value: "Radziwiłł", isCorrect: false },
+      { value: "Wołodyjowski", isCorrect: false },
+    ],
+  } as ClosedTestQuestion,
+  {
+    question_type: "Zamknięty",
+    difficulty: "Trudny",
+    epoch_id: 7,
+    book_id: 19,
+    question: "Jak kończy się przemiana Kmicica?",
+    answers: [
+      { value: "Zostaje wygnany z kraju", isCorrect: false },
+      { value: "Ginął w walce", isCorrect: false },
+      { value: "Zostaje uznany za bohatera narodowego", isCorrect: true },
+      { value: "Wstępuje do zakonu", isCorrect: false },
+    ],
+  } as ClosedTestQuestion,
+  {
+    question_type: "Zamknięty",
+    difficulty: "Łatwy",
+    epoch_id: 7,
+    book_id: 19,
+    question:
+      "Kto był królem Polski w czasie wydarzeń przedstawionych w „Potopie”?",
+    answers: [
+      { value: "Zygmunt III Waza", isCorrect: false },
+      { value: "Jan Kazimierz", isCorrect: true },
+      { value: "August II Mocny", isCorrect: false },
+      { value: "Stanisław August Poniatowski", isCorrect: false },
+    ],
+  } as ClosedTestQuestion,
+  {
+    question_type: "Otwarty",
+    difficulty: "Łatwy",
+    epoch_id: 7,
+    book_id: 19,
+    question: "Wyjaśnij, dlaczego Andrzej Kmicic popadł w konflikt z Oleńką.",
+    suggested_answer:
+      "Kmicic popadł w konflikt z Oleńką z powodu swoich gwałtownych i nieodpowiedzialnych działań, m.in. spalenia Wołmontowicz i współpracy z Radziwiłłem.",
+  } as OpenTestQuestion,
+  {
+    question_type: "Otwarty",
+    difficulty: "Średni",
+    epoch_id: 7,
+    book_id: 19,
+    question: "Na czym polegała przemiana wewnętrzna Kmicica?",
+    suggested_answer:
+      "Przemiana Kmicica polegała na przejściu od egoistycznego, porywczego szlachcica do patrioty oddanego ojczyźnie, gotowego do poświęceń.",
+  } as OpenTestQuestion,
+  {
+    question_type: "Otwarty",
+    difficulty: "Średni",
+    epoch_id: 7,
+    book_id: 19,
+    question: "Jaką funkcję pełni postać Zagłoby w powieści?",
+    suggested_answer:
+      "Zagłoba pełni funkcję postaci komicznej, ale także mądrego doradcy i patrioty, który często pomaga bohaterom wyjść z trudnych sytuacji.",
+  } as OpenTestQuestion,
+  {
+    question_type: "Otwarty",
+    difficulty: "Trudny",
+    epoch_id: 7,
+    book_id: 19,
+    question:
+      "Wyjaśnij znaczenie obrony Jasnej Góry dla wymowy ideowej powieści.",
+    suggested_answer:
+      "Obrona Jasnej Góry symbolizuje opór narodu polskiego wobec najeźdźcy oraz jedność religijną i patriotyczną społeczeństwa.",
+  } as OpenTestQuestion,
+  {
+    question_type: "Otwarty",
+    difficulty: "Trudny",
+    epoch_id: 7,
+    book_id: 19,
+    question: "Scharakteryzuj postać Janusza Radziwiłła jako zdrajcy.",
+    suggested_answer:
+      "Janusz Radziwiłł jest przedstawiony jako ambitny magnat, który zdradza ojczyznę dla własnych korzyści politycznych i władzy.",
+  } as OpenTestQuestion,
+  {
+    question_type: "Otwarty",
+    difficulty: "Łatwy",
+    epoch_id: 7,
+    book_id: 19,
+    question: "Podaj jeden przykład bohaterstwa Kmicica.",
+    suggested_answer:
+      "Przykładem bohaterstwa Kmicica jest jego udział w obronie Jasnej Góry.",
+  } as OpenTestQuestion,
+  {
+    question_type: "Matura",
+    difficulty: "Średni",
+    epoch_id: 7,
+    book_id: 19,
+    question:
+      "Wyjaśnij, na czym polega motyw przemiany bohatera w „Potopie”, odwołując się do losów Andrzeja Kmicica.",
+    suggested_answer:
+      "Motyw przemiany polega na przejściu Kmicica od awanturnika do patrioty i bohatera narodowego.",
+    max_points: 4,
+    pointsExplanations: [
+      "1 pkt – wskazanie początkowych cech Kmicica",
+      "1 pkt – opis przemiany",
+      "1 pkt – wskazanie jej przyczyn",
+      "1 pkt – odniesienie do zakończenia powieści",
+    ],
+  } as MaturaTestQuestion,
+  {
+    question_type: "Matura",
+    difficulty: "Trudny",
+    epoch_id: 7,
+    book_id: 19,
+    question:
+      "Omów rolę patriotyzmu w „Potopie”, odwołując się do wybranych bohaterów.",
+    suggested_answer:
+      "Patriotyzm przejawia się w działaniach bohaterów takich jak Kmicic czy Wołodyjowski, którzy walczą w obronie ojczyzny.",
+    max_points: 5,
+    pointsExplanations: [
+      "1 pkt – zdefiniowanie patriotyzmu",
+      "2 pkt – przykłady bohaterów",
+      "1 pkt – omówienie ich działań",
+      "1 pkt – wniosek",
+    ],
+  } as MaturaTestQuestion,
+  {
+    question_type: "Matura",
+    difficulty: "Średni",
+    epoch_id: 7,
+    book_id: 19,
+    question: "Przedstaw obraz społeczeństwa polskiego w „Potopie”.",
+    suggested_answer:
+      "Społeczeństwo jest zróżnicowane – od zdrajców po patriotów, ale ostatecznie jednoczy się w walce.",
+    max_points: 4,
+    pointsExplanations: [
+      "1 pkt – opis różnych postaw",
+      "1 pkt – przykłady",
+      "1 pkt – analiza",
+      "1 pkt – wniosek",
+    ],
+  } as MaturaTestQuestion,
+  {
+    question_type: "Zamknięty",
+    difficulty: "Średni",
+    epoch_id: 7,
+    book_id: 19,
+    question:
+      "Który bohater słynie z powiedzenia „Kończ waść, wstydu oszczędź”?",
+    answers: [
+      { value: "Kmicic", isCorrect: false },
+      { value: "Zagłoba", isCorrect: true },
+      { value: "Wołodyjowski", isCorrect: false },
+      { value: "Radziwiłł", isCorrect: false },
+    ],
+  } as ClosedTestQuestion,
+  {
+    question_type: "Zamknięty",
+    difficulty: "Łatwy",
+    epoch_id: 7,
+    book_id: 20,
+    question: "Kto jest głównym bohaterem powieści „”?",
+    answers: [
+      { value: "Rodion Raskolnikow", isCorrect: true },
+      { value: "Dymitr Karamazow", isCorrect: false },
+      { value: "Eugeniusz Oniegin", isCorrect: false },
+      { value: "Andriej Bołkoński", isCorrect: false },
+    ],
+  } as ClosedTestQuestion,
+  {
+    question_type: "Zamknięty",
+    difficulty: "Łatwy",
+    epoch_id: 7,
+    book_id: 20,
+    question: "Jaką zbrodnię popełnia Raskolnikow?",
+    answers: [
+      { value: "Zabija lichwiarkę i jej siostrę", isCorrect: true },
+      { value: "Zabija swojego przyjaciela", isCorrect: false },
+      { value: "Okrada bank", isCorrect: false },
+      { value: "Podpala dom", isCorrect: false },
+    ],
+  } as ClosedTestQuestion,
+  {
+    question_type: "Zamknięty",
+    difficulty: "Średni",
+    epoch_id: 7,
+    book_id: 20,
+    question: "Jak nazywała się lichwiarka zamordowana przez Raskolnikowa?",
+    answers: [
+      { value: "Alona Iwanowna", isCorrect: true },
+      { value: "Sonia Marmieładowa", isCorrect: false },
+      { value: "Pulcheria Aleksandrowna", isCorrect: false },
+      { value: "Katarzyna Iwanowna", isCorrect: false },
+    ],
+  } as ClosedTestQuestion,
+  {
+    question_type: "Zamknięty",
+    difficulty: "Średni",
+    epoch_id: 7,
+    book_id: 20,
+    question: "Jaką teorię stworzył Raskolnikow?",
+    answers: [
+      {
+        value: "Podział ludzi na zwyczajnych i nadzwyczajnych",
+        isCorrect: true,
+      },
+      { value: "Teorię ewolucji", isCorrect: false },
+      { value: "Teorię determinizmu historycznego", isCorrect: false },
+      { value: "Teorię pracy organicznej", isCorrect: false },
+    ],
+  } as ClosedTestQuestion,
+  {
+    question_type: "Zamknięty",
+    difficulty: "Średni",
+    epoch_id: 7,
+    book_id: 20,
+    question: "Kim była Sonia Marmieładowa?",
+    answers: [
+      { value: "Prostytutką utrzymującą rodzinę", isCorrect: true },
+      { value: "Studentką medycyny", isCorrect: false },
+      { value: "Siostrą Raskolnikowa", isCorrect: false },
+      { value: "Nauczycielką", isCorrect: false },
+    ],
+  } as ClosedTestQuestion,
+  {
+    question_type: "Zamknięty",
+    difficulty: "Trudny",
+    epoch_id: 7,
+    book_id: 20,
+    question: "Kto prowadzi śledztwo przeciwko Raskolnikowowi?",
+    answers: [
+      { value: "Porfiry Pietrowicz", isCorrect: true },
+      { value: "Razumichin", isCorrect: false },
+      { value: "Swidrygajłow", isCorrect: false },
+      { value: "Marmieładow", isCorrect: false },
+    ],
+  } as ClosedTestQuestion,
+  {
+    question_type: "Zamknięty",
+    difficulty: "Trudny",
+    epoch_id: 7,
+    book_id: 20,
+    question: "Co symbolizuje postać Sonii w powieści?",
+    answers: [
+      { value: "Miłość, poświęcenie i wiarę", isCorrect: true },
+      { value: "Bunt społeczny", isCorrect: false },
+      { value: "Bogactwo i sukces", isCorrect: false },
+      { value: "Obojętność moralną", isCorrect: false },
+    ],
+  } as ClosedTestQuestion,
+  {
+    question_type: "Zamknięty",
+    difficulty: "Średni",
+    epoch_id: 7,
+    book_id: 20,
+    question: "Gdzie toczy się akcja powieści?",
+    answers: [
+      { value: "W Petersburgu", isCorrect: true },
+      { value: "W Moskwie", isCorrect: false },
+      { value: "W Warszawie", isCorrect: false },
+      { value: "W Kijowie", isCorrect: false },
+    ],
+  } as ClosedTestQuestion,
+  {
+    question_type: "Otwarty",
+    difficulty: "Łatwy",
+    epoch_id: 7,
+    book_id: 20,
+    question:
+      "Wyjaśnij, dlaczego Raskolnikow decyduje się na popełnienie zbrodni.",
+    suggested_answer:
+      "Raskolnikow kieruje się swoją teorią o jednostkach nadzwyczajnych, które mogą łamać normy moralne dla wyższego dobra oraz chęcią poprawy swojej sytuacji materialnej.",
+  } as OpenTestQuestion,
+  {
+    question_type: "Otwarty",
+    difficulty: "Średni",
+    epoch_id: 7,
+    book_id: 20,
+    question: "Opisz relację między Raskolnikowem a Sonią.",
+    suggested_answer:
+      "Relacja opiera się na zaufaniu i duchowej więzi. Sonia prowadzi Raskolnikowa ku skrusze i odkupieniu poprzez miłość i wiarę.",
+  } as OpenTestQuestion,
+  {
+    question_type: "Otwarty",
+    difficulty: "Średni",
+    epoch_id: 7,
+    book_id: 20,
+    question: "Jaką rolę pełni Porfiry Pietrowicz w powieści?",
+    suggested_answer:
+      "Jest śledczym prowadzącym sprawę morderstwa, który poprzez psychologiczną grę doprowadza Raskolnikowa do przyznania się do winy.",
+  } as OpenTestQuestion,
+  {
+    question_type: "Otwarty",
+    difficulty: "Trudny",
+    epoch_id: 7,
+    book_id: 20,
+    question: "Wyjaśnij znaczenie tytułu powieści.",
+    suggested_answer:
+      "Tytuł odnosi się do popełnionej zbrodni oraz psychicznych i moralnych konsekwencji, jakie ponosi bohater.",
+  } as OpenTestQuestion,
+  {
+    question_type: "Otwarty",
+    difficulty: "Trudny",
+    epoch_id: 7,
+    book_id: 20,
+    question: "Scharakteryzuj przemianę wewnętrzną Raskolnikowa.",
+    suggested_answer:
+      "Raskolnikow przechodzi od przekonania o własnej wyjątkowości do skruchy i uznania winy, co prowadzi go do moralnego odrodzenia.",
+  } as OpenTestQuestion,
+  {
+    question_type: "Otwarty",
+    difficulty: "Średni",
+    epoch_id: 7,
+    book_id: 20,
+    question: "Jak przedstawiona jest bieda w powieści?",
+    suggested_answer:
+      "Bieda ukazana jest jako wszechobecna i degradująca człowieka, wpływająca na jego decyzje i moralność.",
+  } as OpenTestQuestion,
+  {
+    question_type: "Matura",
+    difficulty: "Średni",
+    epoch_id: 7,
+    book_id: 20,
+    question:
+      "Na podstawie znajomości całego utworu wyjaśnij, czy Raskolnikow ponosi karę adekwatną do swojej winy.",
+    suggested_answer:
+      "Raskolnikow ponosi zarówno karę prawną (zesłanie), jak i moralną (wyrzuty sumienia). Kara jest adekwatna, bo prowadzi do jego przemiany.",
+    max_points: 4,
+    pointsExplanations: [
+      "1 pkt – wskazanie rodzaju kary",
+      "1 pkt – omówienie kary psychicznej",
+      "1 pkt – odniesienie do przemiany bohatera",
+      "1 pkt – logiczna argumentacja",
+    ],
+  } as MaturaTestQuestion,
+  {
+    question_type: "Matura",
+    difficulty: "Trudny",
+    epoch_id: 7,
+    book_id: 20,
+    question: "Zinterpretuj rolę snów w powieści.",
+    suggested_answer:
+      "Sny odzwierciedlają stan psychiczny bohatera, jego lęki i poczucie winy oraz zapowiadają przyszłe wydarzenia.",
+    max_points: 5,
+    pointsExplanations: [
+      "1 pkt – wskazanie funkcji snów",
+      "1 pkt – odniesienie do psychiki bohatera",
+      "1 pkt – przykład snu",
+      "1 pkt – interpretacja symboliki",
+      "1 pkt – spójność wypowiedzi",
+    ],
+  } as MaturaTestQuestion,
+  {
+    question_type: "Matura",
+    difficulty: "Trudny",
+    epoch_id: 7,
+    book_id: 20,
+    question: "Omów problem winy i kary w kontekście powieści.",
+    suggested_answer:
+      "Motyw winy i kary obejmuje zarówno wymiar prawny, jak i moralny. Raskolnikow doświadcza wewnętrznych cierpień, które są równie istotne jak kara sądowa.",
+    max_points: 5,
+    pointsExplanations: [
+      "1 pkt – wskazanie problemu winy",
+      "1 pkt – omówienie kary prawnej",
+      "1 pkt – omówienie kary moralnej",
+      "1 pkt – odniesienie do bohatera",
+      "1 pkt – logiczna struktura",
+    ],
+  } as MaturaTestQuestion,
+];

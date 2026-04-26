@@ -835,7 +835,7 @@ export const books: Book[] = [
     author: "Jan Parandowski",
     year: 1924,
     epoch: "Antyk",
-    epoch_id: 9,
+    epoch_id: 1,
     summary: {
       short:
         "Zbiór mitów greckich opracowanych i zinterpretowanych przez Jana Parandowskiego, ukazujący wierzenia starożytnych Greków, ich bogów, herosów oraz wyobrażenia o świecie i człowieku.",

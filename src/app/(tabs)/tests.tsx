@@ -56,6 +56,8 @@ export default function Tests() {
       bookIdsWithQuestions.has(book.id),
   );
 
+  console.log(availableBooks.map((b) => b.id));
+
   // compute the max questions available for the current book + type + difficulty selection
   const dynamicMax = useMemo(() => {
     if (selectedBookIds.length === 0) return QUESTION_MAX;

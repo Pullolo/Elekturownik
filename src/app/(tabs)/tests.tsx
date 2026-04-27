@@ -113,6 +113,44 @@ export default function Tests() {
     );
   }
 
+  function selectAllEpochs() {
+    const validEpochIds = epochs
+      .filter((epoch) => epochIdsWithQuestions.has(epoch.id))
+      .map((epoch) => epoch.id)
+
+    if (
+      validEpochIds.length > 0 &&
+      validEpochIds.every((id) => selectedEpochIds.includes(id)) &&
+      selectedEpochIds.length === validEpochIds.length
+    ) {
+      // All are selected, so unselect all epochs and all books
+      setSelectedEpochIds([])
+      setSelectedBookIds([])
+    } else {
+      // Select all
+      setSelectedEpochIds(validEpochIds)
+    }
+  }
+
+  function selectAllBooks() {
+    // If all books are selected, unselect all. Otherwise, select all valid books for selected epochs
+    const validBookIds = books
+      .filter((book) => selectedEpochIds.includes(book.epoch_id))
+      .map((book) => book.id)
+
+    if (
+      validBookIds.length > 0 &&
+      validBookIds.every((id) => selectedBookIds.includes(id)) &&
+      selectedBookIds.length === validBookIds.length
+    ) {
+      // All are selected, so unselect all
+      setSelectedBookIds([])
+    } else {
+      // Select all valid books
+      setSelectedBookIds(validBookIds)
+    }
+  }
+
   return (
     <ScreenWrapper>
       <ScrollView
@@ -152,6 +190,15 @@ export default function Tests() {
                 />
               ))}
           </View>
+
+          <SelectAll onPress={selectAllEpochs}
+            active={
+              selectedEpochIds.length > 0 &&
+              epochs
+                .filter((epoch) => epochIdsWithQuestions.has(epoch.id))
+                .every((epoch) => selectedEpochIds.includes(epoch.id))
+            } />
+
         </SectionCard>
 
         {/* ── Books (only shown when at least one epoch is selected) ── */}
@@ -196,6 +243,11 @@ export default function Tests() {
                   })}
                 </View>
               )}
+              <SelectAll onPress={selectAllBooks}
+                active={
+                  availableBooks.length > 0 &&
+                  availableBooks.every((book) => selectedBookIds.includes(book.id))
+                } />
             </SectionCard>
           </Animated.View>
         )}
@@ -247,11 +299,10 @@ export default function Tests() {
                   width:
                     dynamicMax === QUESTION_MIN
                       ? "100%"
-                      : `${
-                          ((numQuestions - QUESTION_MIN) /
-                            (dynamicMax - QUESTION_MIN)) *
-                          100
-                        }%`,
+                      : `${((numQuestions - QUESTION_MIN) /
+                        (dynamicMax - QUESTION_MIN)) *
+                      100
+                      }%`,
                 }}
               />
             </View>
@@ -402,4 +453,13 @@ function StepperButton({
       </Text>
     </TouchableOpacity>
   );
+}
+
+
+function SelectAll({ onPress, active }: { onPress: () => void, active: boolean }) {
+  return (
+    <View className="self-end flex-row items-center gap-2">
+      <FilterChip active={active} label="Zaznacz wszystkie" onPress={onPress} textClassName={active ? "text-white" : "text-foreground-primary"} />
+    </View>
+  )
 }

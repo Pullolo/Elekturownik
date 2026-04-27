@@ -69,12 +69,8 @@ export default function SegmentedControl<T extends string>({
           style={{
             width: segmentWidth,
             transform: [{ translateX }],
-            shadowColor: colors.primary,
-            shadowOpacity: colors.dark ? 0.25 : 0.08,
-            shadowRadius: 6,
-            shadowOffset: { width: 0, height: 2 },
-            elevation: 3,
             borderRadius: 16,
+            boxShadow: `0 0 3px 0 ${colors.primary}BF`
           }}
         />
       )}

@@ -425,8 +425,8 @@ export const test_questions7: TestQuestion[] = [
     question:
       "Który bohater słynie z powiedzenia „Kończ waść, wstydu oszczędź”?",
     answers: [
-      { value: "Kmicic", isCorrect: false },
-      { value: "Zagłoba", isCorrect: true },
+      { value: "Kmicic", isCorrect: true },
+      { value: "Zagłoba", isCorrect: false },
       { value: "Wołodyjowski", isCorrect: false },
       { value: "Radziwiłł", isCorrect: false },
     ],

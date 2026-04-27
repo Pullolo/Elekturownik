@@ -35,10 +35,10 @@ const TabBarIcon = ({
     >
       <View
         className={cn(
-          "flex justify-center items-center rounded-full px-2 py-1",
+          "flex justify-center items-center rounded-full px-2 py-1 relative",
         )}
       >
-        <View className={cn("w-fit aspect-square p-2 rounded-full")}>
+        <View className={cn("w-fit aspect-square p-2 rounded-full z-10")}>
           {icon?.({
             focused,
             color: focused ? colors.primary : colors.foregroundPrimary,
@@ -46,14 +46,25 @@ const TabBarIcon = ({
           })}
         </View>
 
-        <View
-          className={cn(
-            "size-2 rounded-full bg-primary",
-            focused ? "visible" : "invisible",
-          )}
-        />
+
+        {focused && (
+          <View
+            pointerEvents="none"
+            className={cn(
+              "size-12 rounded-full absolute justify-center items-center"
+            )}
+            style={{ zIndex: 0 }}
+          >
+            <View
+              className="rounded-full size-0"
+              style={{
+                boxShadow: `0 0 40px 15px ${colors.primary}`,
+              }}
+            />
+          </View>
+        )}
       </View>
-    </TouchableOpacity>
+    </TouchableOpacity >
   );
 };
 

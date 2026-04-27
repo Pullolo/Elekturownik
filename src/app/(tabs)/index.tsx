@@ -16,7 +16,13 @@ import { getDailyBook, getDailyQuestion, getRandomPath } from "@/src/lib/utils";
 import { router } from "expo-router";
 import { Languages } from "lucide-react-native";
 import React, { useEffect, useState } from "react";
-import { ScrollView, Text, TouchableOpacity, View } from "react-native";
+import {
+  Linking,
+  ScrollView,
+  Text,
+  TouchableOpacity,
+  View,
+} from "react-native";
 import { DonutChart } from "react-native-circular-chart";
 import { SvgProps } from "react-native-svg";
 
@@ -215,6 +221,23 @@ export default function Home() {
             </View>
           </View>
         )}
+
+        {/* Bug report section */}
+        <View className="w-full flex flex-col items-center gap-1 pb-2">
+          <Text className="text-foreground/40 font-pregular text-xs text-center leading-relaxed">
+            {"Zauważyłeś błąd merytoryczny? Zgłoś go niezwłocznie tutaj:"}
+          </Text>
+          <TouchableOpacity
+            onPress={() =>
+              Linking.openURL("https://github.com/Pullolo/Elekturownik/issues")
+            }
+            activeOpacity={0.7}
+          >
+            <Text className="text-primary font-pmedium text-xs underline text-center">
+              {"github.com/Pullolo/Elekturownik/issues"}
+            </Text>
+          </TouchableOpacity>
+        </View>
       </ScrollView>
     </ScreenWrapper>
   );

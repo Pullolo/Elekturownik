@@ -75,10 +75,10 @@ export default function Settings() {
           <Text className="font-pregular text-xs text-foreground/25">
             {`@Copyright ${format(new Date(), "yyyy")}`}
           </Text>
-          <Text className="font-pregular text-xs text-foreground/15">
-            Mikołaj Szlosowski | Aleksandra Polaczyk | Martyna Kamecka
+          <Text className="font-pregular text-xs text-foreground/15 text-center">
+            Mikołaj Szlosowski • Aleksandra Polaczyk • Martyna Kamecka • Kacper Kozłowski
           </Text>
-          <Text className="font-pregular text-xs text-foreground/15">
+          <Text className="font-pregular text-xs text-foreground/15 mt-6">
             {versionString}
           </Text>
         </View>

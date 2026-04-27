@@ -2,7 +2,11 @@ import ScreenWrapper from "@/src/components/ScreenWrapper";
 import BackButton from "@/src/components/ui/BackButton";
 import Button from "@/src/components/ui/Button";
 import FilterChip from "@/src/components/ui/FilterChip";
-import { BookTestQuestion, Test } from "@/src/data/tests/types";
+import {
+  BookTestQuestion,
+  ClosedTestQuestion,
+  Test,
+} from "@/src/data/tests/types";
 import { useTabBar } from "@/src/hooks/TabBarContext";
 import { useBooks } from "@/src/hooks/useBooks";
 import useColors from "@/src/hooks/useColors";
@@ -310,7 +314,21 @@ export default function Tests() {
               [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
             }
 
-            const test: Test = shuffled.slice(0, numQuestions);
+            const test: Test = shuffled.slice(0, numQuestions).map((q) => {
+              if (q.question_type === "Zamknięty") {
+                const closed = q as ClosedTestQuestion;
+                const shuffledAnswers = [...closed.answers];
+                for (let i = shuffledAnswers.length - 1; i > 0; i--) {
+                  const j = Math.floor(Math.random() * (i + 1));
+                  [shuffledAnswers[i], shuffledAnswers[j]] = [
+                    shuffledAnswers[j],
+                    shuffledAnswers[i],
+                  ];
+                }
+                return { ...closed, answers: shuffledAnswers };
+              }
+              return q;
+            });
             router.push({
               pathname: "/(notabs)/test",
               params: { test: JSON.stringify(test) },
